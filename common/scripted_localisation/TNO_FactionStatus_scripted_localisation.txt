@@ -86,6 +86,28 @@ defined_text = {
 		trigger = { has_idea = Anti_Heydrich }
 		localization_key = "GFX_Pakt_Ordensstaat"
 	}
+	
+	### DDR ###
+	# Leader
+	text = {
+		trigger = { has_idea = RotFront_Leader }
+		localization_key = "GFX_Rotfront_Leader"
+	}
+	#Observer
+	text = {
+		trigger = { has_idea = RotFront_Observer }
+		localization_key = "GFX_RotFront_Observer"
+	}
+	#Member
+	text = {
+		trigger = { has_idea = RotFront_Member }
+		localization_key = "GFX_RotFront_Member"
+	}
+	#satellite
+	text = {
+		trigger = { has_idea = RotFront_Satellite }
+		localization_key = "GFX_RotFront_Satellite"
+	}
 
 	### Sphere ###
 	#Leader
@@ -408,6 +430,27 @@ defined_text = {
 		trigger = { has_idea = Anti_Heydrich }
 		localization_key = Anti_Heydrich
 	}
+	
+	### DDR ###
+	# Leader
+	text = {
+		trigger = { has_idea = RotFront_Leader }
+		localization_key = "RotFront_Leader"
+	}
+	#Observer
+	text = {
+		trigger = { has_idea = RotFront_Observer }
+		localization_key = "RotFront_Observer"
+	}
+	#Member
+	text = {
+		trigger = { has_idea = RotFront_Member }
+		localization_key = "RotFront_Member"
+	}
+	text = {
+		trigger = { has_idea = RotFront_Satellite }
+		localization_key = "RotFront_Satellite"
+	}
 
 	### Sphere ###
 	#Leader
@@ -700,6 +743,27 @@ defined_text = {
 		trigger = { has_idea = Anti_Heydrich }
 		localization_key = Anti_Heydrich_effect
 	}
+	
+	### DDR ###
+	# Leader
+	text = {
+		trigger = { has_idea = RotFront_Leader }
+		localization_key = "RotFront_Leader_effect"
+	}
+	#Observer
+	text = {
+		trigger = { has_idea = RotFront_Observer }
+		localization_key = "RotFront_Observer_effect"
+	}
+	#Member
+	text = {
+		trigger = { has_idea = RotFront_Member }
+		localization_key = "RotFront_Member_effect"
+	}
+	text = {
+		trigger = { has_idea = RotFront_Satellite }
+		localization_key = "RotFront_Satellite_effect"
+	}
 
 	### Sphere ###
 	#Leader
@@ -856,6 +920,27 @@ defined_text = {
 	text = {
 		trigger = { has_idea = Anti_Heydrich }
 		localization_key = Anti_Heydrich_desc
+	}
+	
+	### DDR ###
+	# Leader
+	text = {
+		trigger = { has_idea = RotFront_Leader }
+		localization_key = "RotFront_Leader_Desc"
+	}
+	#Observer
+	text = {
+		trigger = { has_idea = RotFront_Observer }
+		localization_key = "RotFront_Observer_desc"
+	}
+	#Member
+	text = {
+		trigger = { has_idea = RotFront_Member }
+		localization_key = "RotFront_Member_desc"
+	}
+	text = {
+		trigger = { has_idea = RotFront_Satellite }
+		localization_key = "RotFront_Satellite_desc"
 	}
 
 	### Sphere ###

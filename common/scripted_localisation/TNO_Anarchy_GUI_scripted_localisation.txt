@@ -56,6 +56,7 @@ defined_text = {
 		}
 		localization_key = "GFX_Anarchy_MCW_Dissapearance"
 	}
+	text = { localization_key = "GFX_Anarchy_OMS" }
 }
 
 defined_text = {
@@ -114,6 +115,7 @@ defined_text = {
 		}
 		localization_key = TNO_anarchy_MCW_Dissapearance_tt
 	}
+	text = { localization_key = TNO_anarchy_OMS_tt }
 }
 
 defined_text = {
@@ -172,4 +174,5 @@ defined_text = {
 		}
 		localization_key = TNO_anarchy_MCW_Dissapearance_tt_delayed
 	}
+	text = { localization_key = TNO_anarchy_OMS_tt_delayed }
 }

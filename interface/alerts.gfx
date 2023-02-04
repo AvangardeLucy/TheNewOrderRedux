@@ -62,7 +62,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_global_alert_icons"
-		texturefile = "gfx/interface/alerts/global_alert_icons.dds"
+		texturefile = "gfx/interface/alerts/TNO_global_alert_icons.png"
 		noOfFrames = 57
 	}
 
@@ -74,13 +74,13 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_alert_video_button_combined"
-		texturefile = "gfx/interface/alerts/alert_video_button_combined.dds"
+		texturefile = "gfx/interface/alerts/TNO_alert_video_button_combined.png"
 		noOfFrames = 2
 	}
 
 	spriteType = {
 		name = "GFX_global_diplorequest_icons"
-		texturefile = "gfx/interface/alerts/global_diplo_request_icons.dds"
+		texturefile = "gfx/interface/alerts/TNO_global_diplo_request_icons.png"
 		noOfFrames = 15
 	}
 	spriteType = {

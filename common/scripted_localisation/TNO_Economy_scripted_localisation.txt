@@ -4388,6 +4388,10 @@ defined_text = {
 		localization_key = econ_sphere_name_ENG
 	}
 	text = {
+		trigger = { check_variable = { ECON_SPHERE_LEADER = DDR } }
+		localization_key = econ_sphere_name_DDR
+	}
+	text = {
 		trigger = {
 			OR = {
 				check_variable = { ECON_SPHERE_LEADER = ADN }
@@ -4657,6 +4661,12 @@ defined_text = {
 			has_global_flag = german_civil_war_speervic
 		}
 		localization_key = "GFX_econ_sphere_icon_ZV_GER"
+	}
+	text = {
+		trigger = {
+			check_variable = { ECON_SPHERE_LEADER = DDR }
+		}
+		localization_key = "GFX_econ_sphere_icon_WIR_DDR"
 	}
 	text = {
 		trigger = {

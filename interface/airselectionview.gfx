@@ -1,13 +1,13 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_AV_wing_entry_bg"
-		texturefile = "gfx/interface/airview/wing_entry_bg.dds"
+		texturefile = "gfx/interface/airview/TNO_wing_entry_bg.png"
 		noOfFrames = 2
 	}
 
 	spriteType = {
 		name = "GFX_AV_base_entry_bg"
-		texturefile = "gfx/interface/airview/base_entry_bg.dds"
+		texturefile = "gfx/interface/airview/TNO_base_entry_bg.png"
 		#noOfFrames = 2
 	}
 

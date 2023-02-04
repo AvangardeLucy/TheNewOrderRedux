@@ -8,6 +8,6 @@ spriteTypes = {
 spriteTypes = {
 	spriteType = {
 		name = "GFX_interact_with_air_group"
-		texturefile = "gfx/interface/airview/air_group.dds"
+		texturefile = "gfx/interface/airview/TNO_air_group.png"
 	}
 }

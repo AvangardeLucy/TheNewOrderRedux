@@ -80,7 +80,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_Rotfront_Observer"
-		texturefile = "gfx/interface/factions/status/GFX_Rotfront_Observer.dds"
+		texturefile = "gfx/interface/factions/status/GFX_Rotfront_Observer.png"
 	}
 	spriteType = {
 		name = "GFX_Rotfront_Member"
@@ -88,7 +88,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_RotFront_Satellite"
-		texturefile = "gfx/interface/factions/status/GFX_Rotfront_Satellite.dds"
+		texturefile = "gfx/interface/factions/status/GFX_Rotfront_Satellite.png"
 	}
 	
 	spriteType = {

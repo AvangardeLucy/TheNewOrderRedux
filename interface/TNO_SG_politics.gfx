@@ -1451,51 +1451,55 @@ spriteTypes = {
 	##Anarchy shit
 	spriteType = {
 		name = "GFX_Anarchy_Relations_Block"
-		textureFile = "gfx/interface/anarchy/relations_block.dds"
+		textureFile = "gfx/interface/anarchy/relations_block.png"
 	}
 	spriteType = {
 		name = "GFX_Anarchy_scrollbar_block"
-		textureFile = "gfx/interface/anarchy/scrollbar_block.dds"
+		textureFile = "gfx/interface/anarchy/scrollbar_block.png"
 	}
 	spriteType = {
 		name = "GFX_Anarchy_ZZZ"
-		textureFile = "gfx/interface/anarchy/Anarchy_ZZZ.dds"
+		textureFile = "gfx/interface/anarchy/Anarchy_ZZZ.png"
 	}
 	spriteType = {
 		name = "GFX_Anarchy_ZZZ_Heydrich"
-		textureFile = "gfx/interface/anarchy/Anarchy_ZZZ_Heydrich.dds"
+		textureFile = "gfx/interface/anarchy/Anarchy_ZZZ_Heydrich.png"
 	}
 	spriteType = {
 		name = "GFX_Anarchy_ZZZ_Thermonuclear_War"
-		textureFile = "gfx/interface/anarchy/Anarchy_ZZZ_Thermonuclear_War.dds"
+		textureFile = "gfx/interface/anarchy/Anarchy_ZZZ_Thermonuclear_War.png"
 	}
 	spriteType = {
 		name = "GFX_Anarchy_OMO"
-		textureFile = "gfx/interface/anarchy/Anarchy_OMO.dds"
+		textureFile = "gfx/interface/anarchy/Anarchy_OMO.png"
 	}
 	spriteType = {
 		name = "GFX_Anarchy_VIL_AM"
-		textureFile = "gfx/interface/anarchy/Anarchy_VIL_AM.dds"
+		textureFile = "gfx/interface/anarchy/Anarchy_VIL_AM.png"
 	}
 	spriteType = {
 		name = "GFX_Anarchy_DRL"
-		textureFile = "gfx/interface/anarchy/Anarchy_DRL.dds"
+		textureFile = "gfx/interface/anarchy/Anarchy_DRL.png"
 	}
 	spriteType = {
 		name = "GFX_Anarchy_NRL"
-		textureFile = "gfx/interface/anarchy/Anarchy_NRL.dds"
+		textureFile = "gfx/interface/anarchy/Anarchy_NRL.png"
 	}
 	spriteType = {
 		name = "GFX_Anarchy_UZB"
-		textureFile = "gfx/interface/anarchy/Anarchy_UZB.dds"
+		textureFile = "gfx/interface/anarchy/Anarchy_UZB.png"
 	}
 	spriteType = {
 		name = "GFX_Anarchy_MCW_Dissapearance"
-		textureFile = "gfx/interface/anarchy/Anarchy_MCW_Dissapearance.dds"
+		textureFile = "gfx/interface/anarchy/Anarchy_MCW_Dissapearance.png"
+	}
+	spriteType = {
+		name = "GFX_Anarchy_OMS"
+		textureFile = "gfx/interface/anarchy/Anarchy_OMS.png"
 	}
 	frameAnimatedSpriteType = {
 		name = "GFX_Anarchy_diplo_animation"
-		textureFile = "gfx/interface/anarchy/Anarchy_diplo_animation.dds"
+		textureFile = "gfx/interface/anarchy/Anarchy_diplo_animation.png"
 		noOfFrames = 17
 		animation_rate_fps = 2
 		looping = yes

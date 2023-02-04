@@ -9,6 +9,7 @@ TNO_is_anarchy_visible = {
 		TNO_anarchy_DRL_Orsk = yes
 		TNO_anarchy_UZB = yes
 		TNO_anarchy_MCW_Dissapearance = yes
+		TNO_anarchy_OMS = yes
 	}
 }
 
@@ -65,4 +66,18 @@ TNO_anarchy_UZB = {
 TNO_anarchy_MCW_Dissapearance = {
 	original_tag = MCW
 	has_cosmetic_tag = MCW_Dissapearance
+}
+
+TNO_anarchy_OMS = {
+	original_tag = OMS
+	OR = {
+		has_country_leader = {
+			character = OMS_Collapsed_Authority
+			ruling_only = yes
+		}
+		has_country_leader = {
+			character = OMS_Collapsed_Authority_despot
+			ruling_only = yes
+		}
+	}
 }

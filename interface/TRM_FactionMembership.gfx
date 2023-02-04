@@ -1,14 +1,14 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_econ_sphere_icon_WIR_DDR"
-		textureFile = "gfx/interface/economy_gui/econ_panel/WIR_DDR_sphere_icon.dds"
+		textureFile = "gfx/interface/economy_gui/econ_panel/WIR_DDR_sphere_icon.png"
 	}
 	spriteType = {
 		name = "GFX_RotFront_Leader"
-		textureFile = "gfx/interface/factions/status/GFX_Rotfront_Leader.dds"
+		textureFile = "gfx/interface/factions/status/GFX_Rotfront_Leader.png"
 	}
 	spriteType = {
 		name = "GFX_RotFront_Member"
-		textureFile = "gfx/interface/factions/status/GFX_RotFront_Member.dds"
+		textureFile = "gfx/interface/factions/status/GFX_RotFront_Member.png"
 	}
 }
