@@ -90,71 +90,71 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_afrika_schild"
-		textureFile = "gfx/interface/factions/AS.dds"
+		textureFile = "gfx/interface/factions/AS.png"
 	}
 	spriteType = {
 		name = "GFX_coprosperity"
-		textureFile = "gfx/interface/factions/CP.dds"
+		textureFile = "gfx/interface/factions/CP.png"
 	}
 	spriteType = {
 		name = "GFX_generic_faction"
-		textureFile = "gfx/interface/factions/GF.dds"
+		textureFile = "gfx/interface/factions/GF.png"
 	}
 	spriteType = {
 		name = "GFX_generic_faction_small"
-		textureFile = "gfx/interface/factions/GF_small.dds"
+		textureFile = "gfx/interface/factions/GF_small.png"
 	}
 	spriteType = {
 		name = "GFX_OFN"
-		textureFile = "gfx/interface/factions/OFN.dds"
+		textureFile = "gfx/interface/factions/OFN.png"
 	}
 	spriteType = {
 		name = "GFX_UA"
-		textureFile = "gfx/interface/factions/UA.dds"
+		textureFile = "gfx/interface/factions/UA.png"
 	}
 	spriteType = {
 		name = "GFX_unity_pakt"
-		textureFile = "gfx/interface/factions/UP.dds"
+		textureFile = "gfx/interface/factions/UP.png"
 	}
 	spriteType = {
 		name = "GFX_triumvirate"
-		textureFile = "gfx/interface/factions/T.dds"
+		textureFile = "gfx/interface/factions/T.png"
 	}
 	spriteType = {
 		name = "GFX_NLF"
-		textureFile = "gfx/interface/factions/NLF.dds"
+		textureFile = "gfx/interface/factions/NLF.png"
 	}
 	spriteType = {
 		name = "GFX_ARC"
-		textureFile = "gfx/interface/factions/ARC.dds"
+		textureFile = "gfx/interface/factions/ARC.png"
 	}
 	spriteType = {
 		name = "GFX_FI"
-		textureFile = "gfx/interface/factions/FI.dds"
+		textureFile = "gfx/interface/factions/FI.png"
 	}
 	spriteType = {
 		name = "GFX_PALF_faction"
-		textureFile = "gfx/interface/factions/PALF.dds"
+		textureFile = "gfx/interface/factions/PALF.png"
 	}
 	spriteType = {
 		name = "GFX_FMA_faction"
-		textureFile = "gfx/interface/factions/FMA.dds"
+		textureFile = "gfx/interface/factions/FMA.png"
 	}
 	spriteType = {
 		name = "GFX_FRU_faction"
-		textureFile = "gfx/interface/factions/FRU.dds"
+		textureFile = "gfx/interface/factions/FRU.png"
 	}
 	spriteType = {
 		name = "GFX_WAA_faction"
-		textureFile = "gfx/interface/factions/WAA.dds"
+		textureFile = "gfx/interface/factions/WAA.png"
 	}
 	spriteType = {
 		name = "GFX_WAF_faction"
-		textureFile = "gfx/interface/factions/WAF.dds"
+		textureFile = "gfx/interface/factions/WAF.png"
 	}
 	spriteType = {
 		name = "GFX_Mano_faction"
-		textureFile = "gfx/interface/factions/Mano.dds"
+		textureFile = "gfx/interface/factions/Mano.png"
 	}
 	spriteType = {
 		name = "GFX_idea_single_up_arrow"

@@ -57,7 +57,7 @@ spriteTypes = {
 			## Seats ##
 				spriteType = {
 					name = "GFX_ParliamentMechanic_Seat_Boxes"
-					texturefile = "gfx/interface/parliament_mechanic/ParliamentMechanic_Seat_Boxes_18x18.dds"
+					texturefile = "gfx/interface/parliament_mechanic/ParliamentMechanic_Seat_Boxes_18x18.png"
 					noOfFrames = 23
 				}
 			## Seats ##
