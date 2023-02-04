@@ -2,10 +2,10 @@ spriteTypes = {
 	###TRESCKOW PART 1###
 	SpriteType = {
 		name = "GFX_GER_salvation_junta_shine"
-		texturefile = "gfx/interface/goals/GER_salvation_junta.dds"
+		texturefile = "gfx/interface/goals/GER_salvation_junta.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_salvation_junta.dds"
+			animationmaskfile = "gfx/interface/goals/GER_salvation_junta.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -18,7 +18,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_salvation_junta.dds"
+			animationmaskfile = "gfx/interface/goals/GER_salvation_junta.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -33,10 +33,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_healing_the_party_shine"
-		texturefile = "gfx/interface/goals/GER_healing_the_party.dds"
+		texturefile = "gfx/interface/goals/GER_healing_the_party.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_healing_the_party.dds"
+			animationmaskfile = "gfx/interface/goals/GER_healing_the_party.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -49,7 +49,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_healing_the_party.dds"
+			animationmaskfile = "gfx/interface/goals/GER_healing_the_party.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -64,10 +64,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_conciliate_moderates_shine"
-		texturefile = "gfx/interface/goals/GER_conciliate_moderates.dds"
+		texturefile = "gfx/interface/goals/GER_conciliate_moderates.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_conciliate_moderates.dds"
+			animationmaskfile = "gfx/interface/goals/GER_conciliate_moderates.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -80,7 +80,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_conciliate_moderates.dds"
+			animationmaskfile = "gfx/interface/goals/GER_conciliate_moderates.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -95,10 +95,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_out_with_the_speerites_shine"
-		texturefile = "gfx/interface/goals/GER_out_with_the_speerites.dds"
+		texturefile = "gfx/interface/goals/GER_out_with_the_speerites.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_out_with_the_speerites.dds"
+			animationmaskfile = "gfx/interface/goals/GER_out_with_the_speerites.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -111,7 +111,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_out_with_the_speerites.dds"
+			animationmaskfile = "gfx/interface/goals/GER_out_with_the_speerites.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -126,10 +126,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_promises_oberlander_shine"
-		texturefile = "gfx/interface/goals/GER_promises_oberlander.dds"
+		texturefile = "gfx/interface/goals/GER_promises_oberlander.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_promises_oberlander.dds"
+			animationmaskfile = "gfx/interface/goals/GER_promises_oberlander.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -142,7 +142,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_promises_oberlander.dds"
+			animationmaskfile = "gfx/interface/goals/GER_promises_oberlander.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -157,10 +157,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_pardon_some_shine"
-		texturefile = "gfx/interface/goals/GER_pardon_some.dds"
+		texturefile = "gfx/interface/goals/GER_pardon_some.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_pardon_some.dds"
+			animationmaskfile = "gfx/interface/goals/GER_pardon_some.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -173,7 +173,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_pardon_some.dds"
+			animationmaskfile = "gfx/interface/goals/GER_pardon_some.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -188,10 +188,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_target_others_shine"
-		texturefile = "gfx/interface/goals/GER_target_others.dds"
+		texturefile = "gfx/interface/goals/GER_target_others.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_target_others.dds"
+			animationmaskfile = "gfx/interface/goals/GER_target_others.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -204,7 +204,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_pardon_some.dds"
+			animationmaskfile = "gfx/interface/goals/GER_pardon_some.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -219,10 +219,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_greatest_change_shine"
-		texturefile = "gfx/interface/goals/GER_greatest_change.dds"
+		texturefile = "gfx/interface/goals/GER_greatest_change.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_greatest_change.dds"
+			animationmaskfile = "gfx/interface/goals/GER_greatest_change.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -235,7 +235,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_greatest_change.dds"
+			animationmaskfile = "gfx/interface/goals/GER_greatest_change.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -250,10 +250,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_cooperate_nobles_shine"
-		texturefile = "gfx/interface/goals/GER_cooperate_nobles.dds"
+		texturefile = "gfx/interface/goals/GER_cooperate_nobles.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_cooperate_nobles.dds"
+			animationmaskfile = "gfx/interface/goals/GER_cooperate_nobles.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -266,7 +266,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_cooperate_nobles.dds"
+			animationmaskfile = "gfx/interface/goals/GER_cooperate_nobles.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -281,10 +281,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_kaiser_invitation_shine"
-		texturefile = "gfx/interface/goals/GER_kaiser_invitation.dds"
+		texturefile = "gfx/interface/goals/GER_kaiser_invitation.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_kaiser_invitation.dds"
+			animationmaskfile = "gfx/interface/goals/GER_kaiser_invitation.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -297,7 +297,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_kaiser_invitation.dds"
+			animationmaskfile = "gfx/interface/goals/GER_kaiser_invitation.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -312,10 +312,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_gott_mitt_uns_shine"
-		texturefile = "gfx/interface/goals/GER_gott_mitt_uns.dds"
+		texturefile = "gfx/interface/goals/GER_gott_mitt_uns.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_gott_mitt_uns.dds"
+			animationmaskfile = "gfx/interface/goals/GER_gott_mitt_uns.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -328,7 +328,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_gott_mitt_uns.dds"
+			animationmaskfile = "gfx/interface/goals/GER_gott_mitt_uns.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -344,10 +344,10 @@ spriteTypes = {
 	###TRESCKOW PART 2#############################################################################################################################
 	SpriteType = {
 		name = "GFX_GER_tresckow_its_over_shine"
-		texturefile = "gfx/interface/goals/GER_tresckow_its_over.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_its_over.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_its_over.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_its_over.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -360,7 +360,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_its_over.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_its_over.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -375,10 +375,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_tresckow_because_him_shine"
-		texturefile = "gfx/interface/goals/GER_tresckow_because_him.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_because_him.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_because_him.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_because_him.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -391,7 +391,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_because_him.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_because_him.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -406,10 +406,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_tresckow_damage_control_shine"
-		texturefile = "gfx/interface/goals/GER_tresckow_damage_control.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_damage_control.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_damage_control.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_damage_control.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -422,7 +422,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_damage_control.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_damage_control.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -437,10 +437,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_tresckow_contact_americans_shine"
-		texturefile = "gfx/interface/goals/GER_tresckow_contact_americans.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_contact_americans.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_contact_americans.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_contact_americans.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -453,7 +453,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_contact_americans.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_contact_americans.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -468,10 +468,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_tresckow_dissolve_nsdap_shine"
-		texturefile = "gfx/interface/goals/GER_tresckow_dissolve_nsdap.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_dissolve_nsdap.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_dissolve_nsdap.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_dissolve_nsdap.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -484,7 +484,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_dissolve_nsdap.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_dissolve_nsdap.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -499,10 +499,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_tresckow_review_options_shine"
-		texturefile = "gfx/interface/goals/GER_tresckow_review_options.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_review_options.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_review_options.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_review_options.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -515,7 +515,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_review_options.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_review_options.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -530,10 +530,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_tresckow_leave_kiesinger_shine"
-		texturefile = "gfx/interface/goals/GER_tresckow_leave_kiesinger.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_leave_kiesinger.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_leave_kiesinger.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_leave_kiesinger.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -546,7 +546,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_leave_kiesinger.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_leave_kiesinger.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -561,10 +561,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_tresckow_send_erhard_and_schmidt_shine"
-		texturefile = "gfx/interface/goals/GER_tresckow_send_erhard_and_schmidt.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_send_erhard_and_schmidt.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_send_erhard_and_schmidt.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_send_erhard_and_schmidt.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -577,7 +577,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_send_erhard_and_schmidt.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_send_erhard_and_schmidt.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -592,10 +592,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_GER_tresckow_resignation_shine"
-		texturefile = "gfx/interface/goals/GER_tresckow_resignation.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_resignation.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_resignation.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_resignation.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -608,7 +608,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_tresckow_resignation.dds"
+			animationmaskfile = "gfx/interface/goals/GER_tresckow_resignation.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -625,10 +625,10 @@ spriteTypes = {
 	###WOLF PART 1###################################################################################################################################
 	SpriteType = {
 		name = "GFX_DDR_risen_from_ruins_shine"
-		texturefile = "gfx/interface/goals/DDR_risen_from_the_ruins.dds"
+		texturefile = "gfx/interface/goals/DDR_risen_from_the_ruins.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_risen_from_the_ruins.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_risen_from_the_ruins.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -641,7 +641,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_risen_from_the_ruins.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_risen_from_the_ruins.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -656,10 +656,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_the_chairman_speaks_shine"
-		texturefile = "gfx/interface/goals/DDR_the_chairman_speaks.dds"
+		texturefile = "gfx/interface/goals/DDR_the_chairman_speaks.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_the_chairman_speaks.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_the_chairman_speaks.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -672,7 +672,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_the_chairman_speaks.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_the_chairman_speaks.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -687,10 +687,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_uniting_the_sed_shine"
-		texturefile = "gfx/interface/goals/DDR_uniting_the_sed.dds"
+		texturefile = "gfx/interface/goals/DDR_uniting_the_sed.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_uniting_the_sed.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_uniting_the_sed.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -703,7 +703,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_uniting_the_sed.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_uniting_the_sed.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -718,10 +718,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_finishing_them_off_shine"
-		texturefile = "gfx/interface/goals/DDR_finishing_them_off.dds"
+		texturefile = "gfx/interface/goals/DDR_finishing_them_off.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_finishing_them_off.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_finishing_them_off.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -734,7 +734,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_finishing_them_off.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_finishing_them_off.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -749,10 +749,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_begin_the_long_reconstruction_shine"
-		texturefile = "gfx/interface/goals/DDR_begin_the_long_reconstruction.dds"
+		texturefile = "gfx/interface/goals/DDR_begin_the_long_reconstruction.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_begin_the_long_reconstruction.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_begin_the_long_reconstruction.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -765,7 +765,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_begin_the_long_reconstruction.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_begin_the_long_reconstruction.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -780,10 +780,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_the_anti_fascist_elections_shine"
-		texturefile = "gfx/interface/goals/DDR_the_anti_fascist_elections.dds"
+		texturefile = "gfx/interface/goals/DDR_the_anti_fascist_elections.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_the_anti_fascist_elections.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_the_anti_fascist_elections.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -796,7 +796,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_the_anti_fascist_elections.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_the_anti_fascist_elections.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -811,10 +811,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_striking_their_bases_shine"
-		texturefile = "gfx/interface/goals/DDR_striking_their_bases.dds"
+		texturefile = "gfx/interface/goals/DDR_striking_their_bases.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_striking_their_bases.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_striking_their_bases.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -827,7 +827,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_striking_their_bases.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_striking_their_bases.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -843,10 +843,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_DDR_found_the_stasi_shine"
-		texturefile = "gfx/interface/goals/DDR_found_the_stasi.dds"
+		texturefile = "gfx/interface/goals/DDR_found_the_stasi.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_found_the_stasi.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_found_the_stasi.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -859,7 +859,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_found_the_stasi.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_found_the_stasi.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -874,10 +874,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_smashing_the_swastika_shine"
-		texturefile = "gfx/interface/goals/DDR_smashing_the_swastika.dds"
+		texturefile = "gfx/interface/goals/DDR_smashing_the_swastika.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_smashing_the_swastika.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_smashing_the_swastika.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -890,7 +890,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_smashing_the_swastika.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_smashing_the_swastika.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -905,10 +905,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_expose_their_crimes_shine"
-		texturefile = "gfx/interface/goals/DDR_expose_their_crimes.dds"
+		texturefile = "gfx/interface/goals/DDR_expose_their_crimes.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_expose_their_crimes.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_expose_their_crimes.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -921,7 +921,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_expose_their_crimes.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_expose_their_crimes.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -936,10 +936,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_hold_the_hamburg_trials_shine"
-		texturefile = "gfx/interface/goals/DDR_hold_the_hamburg_trials.dds"
+		texturefile = "gfx/interface/goals/DDR_hold_the_hamburg_trials.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_hold_the_hamburg_trials.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_hold_the_hamburg_trials.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -952,7 +952,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_hold_the_hamburg_trials.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_hold_the_hamburg_trials.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -967,10 +967,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_a_house_for_every_german_shine"
-		texturefile = "gfx/interface/goals/DDR_house_for_every_german.dds"
+		texturefile = "gfx/interface/goals/DDR_house_for_every_german.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_house_for_every_german.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_house_for_every_german.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -983,7 +983,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_house_for_every_german.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_house_for_every_german.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -998,10 +998,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_the_plattenbau_system_shine"
-		texturefile = "gfx/interface/goals/DDR_the_plattenbau_system.dds"
+		texturefile = "gfx/interface/goals/DDR_the_plattenbau_system.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_the_plattenbau_system.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_the_plattenbau_system.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1014,7 +1014,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_the_plattenbau_system.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_the_plattenbau_system.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1029,10 +1029,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_enact_mass_nationalization_shine"
-		texturefile = "gfx/interface/goals/DDR_enact_mass_nationalization.dds"
+		texturefile = "gfx/interface/goals/DDR_enact_mass_nationalization.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_enact_mass_nationalization.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_enact_mass_nationalization.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1045,7 +1045,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_enact_mass_nationalization.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_enact_mass_nationalization.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1060,10 +1060,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_form_the_peoples_enterprises_shine"
-		texturefile = "gfx/interface/goals/DDR_form_the_peoples_enterprises.dds"
+		texturefile = "gfx/interface/goals/DDR_form_the_peoples_enterprises.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_form_the_peoples_enterprises.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_form_the_peoples_enterprises.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1076,7 +1076,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_form_the_peoples_enterprises.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_form_the_peoples_enterprises.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1091,10 +1091,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_securing_the_revolution_shine"
-		texturefile = "gfx/interface/goals/DDR_securing_the_revolution.dds"
+		texturefile = "gfx/interface/goals/DDR_securing_the_revolution.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_securing_the_revolution.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_securing_the_revolution.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1107,7 +1107,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_securing_the_revolution.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_securing_the_revolution.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1122,10 +1122,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_introduce_centralized_planning_shine"
-		texturefile = "gfx/interface/goals/DDR_introduce_centralized_planning.dds"
+		texturefile = "gfx/interface/goals/DDR_introduce_centralized_planning.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_introduce_centralized_planning.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_introduce_centralized_planning.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1138,7 +1138,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_introduce_centralized_planning.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_introduce_centralized_planning.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1153,10 +1153,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_organizing_land_reform_shine"
-		texturefile = "gfx/interface/goals/DDR_organizing_land_reform.dds"
+		texturefile = "gfx/interface/goals/DDR_organizing_land_reform.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_organizing_land_reform.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_organizing_land_reform.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1169,7 +1169,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_organizing_land_reform.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_organizing_land_reform.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1184,10 +1184,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_rooting_out_the_rats_shine"
-		texturefile = "gfx/interface/goals/DDR_rooting_out_the_rats.dds"
+		texturefile = "gfx/interface/goals/DDR_rooting_out_the_rats.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_rooting_out_the_rats.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_rooting_out_the_rats.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1200,7 +1200,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_rooting_out_the_rats.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_rooting_out_the_rats.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1215,10 +1215,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_and_the_assembly_declares_shine"
-		texturefile = "gfx/interface/goals/DDR_and_the_assembly_declares.dds"
+		texturefile = "gfx/interface/goals/DDR_and_the_assembly_declares.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_and_the_assembly_declares.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_and_the_assembly_declares.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1231,7 +1231,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_and_the_assembly_declares.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_and_the_assembly_declares.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1246,10 +1246,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_1966_socialist_constitution_shine"
-		texturefile = "gfx/interface/goals/DDR_1966_socialist_constitution.dds"
+		texturefile = "gfx/interface/goals/DDR_1966_socialist_constitution.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_1966_socialist_constitution.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_1966_socialist_constitution.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1262,7 +1262,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_1966_socialist_constitution.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_1966_socialist_constitution.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1277,10 +1277,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_DDR_expose_their_crimes_shine"
-		texturefile = "gfx/interface/goals/DDR_expose_their_crimes.dds"
+		texturefile = "gfx/interface/goals/DDR_expose_their_crimes.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_expose_their_crimes.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_expose_their_crimes.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1293,7 +1293,7 @@ spriteTypes = {
 		}
 	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/DDR_expose_their_crimes.dds"
+			animationmaskfile = "gfx/interface/goals/DDR_expose_their_crimes.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

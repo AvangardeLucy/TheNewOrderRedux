@@ -102,13 +102,13 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_theatre_army_shield_selected"
-		texturefile = "gfx/army_icons/army_selected_icons.dds"
+		texturefile = "gfx/army_icons/TNO_army_selected_icons.png"
 		noOfFrames = 74
 	}
 
 	spriteType = {
 		name = "GFX_theatre_army_shield"
-		texturefile = "gfx/army_icons/army_icons.dds"
+		texturefile = "gfx/army_icons/TNO_army_icons.png"
 		noOfFrames = 74
 	}
 
@@ -119,25 +119,25 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_theatre_army_group_shield_selected"
-		texturefile = "gfx/army_icons/army_group_selected_icons.dds"
+		texturefile = "gfx/army_icons/TNO_army_group_selected_icons.png"
 		noOfFrames = 6
 	}
 
 	spriteType = {
 		name = "GFX_theatre_army_group_shield"
-		texturefile = "gfx/army_icons/army_group_icons.dds"
+		texturefile = "gfx/army_icons/TNO_army_group_icons.png"
 		noOfFrames = 6
 	}
 
 	spriteType = {
 		name = "GFX_theatre_task_force_shield_selected"
-		texturefile = "gfx/army_icons/navy_selected_icons.dds"
+		texturefile = "gfx/army_icons/TNO_navy_selected_icons.png"
 		noOfFrames = 31
 	}
 
 	spriteType = {
 		name = "GFX_theatre_task_force_shield"
-		texturefile = "gfx/army_icons/navy_icons.dds"
+		texturefile = "gfx/army_icons/TNO_navy_icons.png"
 		noOfFrames = 31
 	}
 
@@ -258,13 +258,13 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_theatre_air_force_shield_selected"
-		texturefile = "gfx/army_icons/air_selected_icons.dds"
+		texturefile = "gfx/army_icons/TNO_air_selected_icons.png"
 		noOfFrames = 29
 	}
 
 	spriteType = {
 		name = "GFX_theatre_air_force_shield"
-		texturefile = "gfx/army_icons/air_icons.dds"
+		texturefile = "gfx/army_icons/TNO_air_icons.png"
 		noOfFrames = 29
 	}
 }

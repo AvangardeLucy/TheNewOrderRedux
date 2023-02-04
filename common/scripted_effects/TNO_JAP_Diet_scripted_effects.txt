@@ -2063,13 +2063,41 @@ JAP_diet_pop_wheel_translator = {
 				multiply_temp_variable = { tempNatSoc = 0.35 }
 				subtract_from_temp_variable = { tempFascist = tempNatSoc }
 			}
-
 			else = { # Kaya or Fukuda
 				set_temp_variable = { tempNatSoc = tempDespot }
 				multiply_temp_variable = { tempNatSoc = JAP_hardliner_influence }
 				subtract_from_temp_variable = { tempDespot = tempNatSoc }
 			}
-
+			if = {
+				limit = {
+					check_variable = { party_popularity@despotism > party_popularity@national_socialism }
+					has_country_leader = {
+						character = JAP_okinori_kaya
+						ruling_only = yes
+					}
+					has_government = national_socialism
+				}
+				set_politics = {
+					ruling_party = despotism
+					elections_allowed = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { party_popularity@national_socialism > party_popularity@despotism }
+					has_country_leader = {
+						character = JAP_okinori_kaya
+						ruling_only = yes
+					}
+					has_government = despotism
+				}
+				set_politics = {
+					ruling_party = national_socialism
+					elections_allowed = no
+				}
+			}
+			else = {}
+			
 			set_popularities = {
 				despotism = tempDespot
 				paternalism = tempAuthDem

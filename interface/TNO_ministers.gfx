@@ -3258,7 +3258,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ministers/JAP/JAP_minister_Hatoyama_Ichiro.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_JAP_Kouichi_Kido"
+		name = "GFX_idea_JAP_koichi_kido"
 		texturefile = "gfx/interface/ideas/ministers/JAP/JAP_minister_Kouichi_Kido.dds"
 	}
 	spriteType = {

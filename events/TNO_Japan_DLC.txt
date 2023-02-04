@@ -3429,7 +3429,7 @@ country_event = { # Jushin Coup
 			JAP_clear_PM_flags = yes
 			remove_all_ministers = yes
 			add_ideas = {
-				JAP_Kouichi_Kido_hog
+				JAP_koichi_kido_hog
 				JAP_ichiji_sugita_for
 				JAP_masamichi_yamagiwa_eco
 				JAP_noboru_saito_sec

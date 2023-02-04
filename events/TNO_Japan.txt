@@ -4477,7 +4477,7 @@ country_event = { # Prime Minister Takagi
 		hidden_effect = {
 			remove_all_ministers = yes
 			add_ideas = {
-				JAP_Kouichi_Kido_dep
+				JAP_koichi_kido_dep
 				JAP_tadashi_kuranari_for
 				JAP_yasuhiro_nakasone_eco
 				JAP_zenjiro_horikiri_sec

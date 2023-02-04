@@ -660,7 +660,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_fascism_group"
-		texturefile = "gfx/interface/ideologies/fascism_group.png"
+		texturefile = "gfx/interface/ideologies/fascism_group_tno.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_national_socialism_group"

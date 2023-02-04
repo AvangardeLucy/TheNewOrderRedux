@@ -7,6 +7,6 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ace_kia"
-		texturefile = "gfx/aces/ace_kia.dds"
+		texturefile = "gfx/aces/TNO_ace_kia.png"
 	}
 }

@@ -328,7 +328,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_country_army_navy_leader"
-		texturefile = "gfx/aces/ace_none.dds"
+		texturefile = "gfx/aces/TNO_ace_none.png"
 	}
 
 	spriteType = {

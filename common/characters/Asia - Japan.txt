@@ -20,7 +20,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/JAP/Portrait_Japan_Kido_Kouichi.dds"
-				small = "GFX_idea_JAP_Kouichi_Kido"
+				small = "GFX_idea_JAP_koichi_kido"
 			}
 		}
 		country_leader={
@@ -31,7 +31,7 @@ characters={
 		}
 		advisor = {
 			slot = head_of_government
-			idea_token = JAP_Kouichi_Kido_dep # takagi hog
+			idea_token = JAP_koichi_kido_dep # takagi hog
 			allowed = { original_tag = JAP }
 			traits = {
 				head_of_government

@@ -2,85 +2,85 @@ spriteTypes = {
 	###TRESCKOW PART 1###
 	SpriteType = {
 		name = "GFX_GER_salvation_junta"
-		texturefile = "gfx/interface/goals/GER_salvation_junta.dds"
+		texturefile = "gfx/interface/goals/GER_salvation_junta.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_healing_the_party"
-		texturefile = "gfx/interface/goals/GER_healing_the_party.dds"
+		texturefile = "gfx/interface/goals/GER_healing_the_party.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_conciliate_moderates"
-		texturefile = "gfx/interface/goals/GER_conciliate_moderates.dds"
+		texturefile = "gfx/interface/goals/GER_conciliate_moderates.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_out_with_the_speerites"
-		texturefile = "gfx/interface/goals/GER_out_with_the_speerites.dds"
+		texturefile = "gfx/interface/goals/GER_out_with_the_speerites.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_promises_oberlander"
-		texturefile = "gfx/interface/goals/GER_promises_oberlander.dds"
+		texturefile = "gfx/interface/goals/GER_promises_oberlander.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_pardon_some"
-		texturefile = "gfx/interface/goals/GER_pardon_some.dds"
+		texturefile = "gfx/interface/goals/GER_pardon_some.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_target_others"
-		texturefile = "gfx/interface/goals/GER_target_others.dds"
+		texturefile = "gfx/interface/goals/GER_target_others.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_greatest_change"
-		texturefile = "gfx/interface/goals/GER_greatest_change.dds"
+		texturefile = "gfx/interface/goals/GER_greatest_change.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_cooperate_nobles"
-		texturefile = "gfx/interface/goals/GER_cooperate_nobles.dds"
+		texturefile = "gfx/interface/goals/GER_cooperate_nobles.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_kaiser_invitation"
-		texturefile = "gfx/interface/goals/GER_kaiser_invitation.dds"
+		texturefile = "gfx/interface/goals/GER_kaiser_invitation.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_gott_mitt_uns"
-		texturefile = "gfx/interface/goals/GER_gott_mitt_uns.dds"
+		texturefile = "gfx/interface/goals/GER_gott_mitt_uns.png"
 	}
 
 	###TRESCKOW PART 2###
 	SpriteType = {
 		name = "GFX_GER_tresckow_its_over"
-		texturefile = "gfx/interface/goals/GER_tresckow_its_over.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_its_over.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_tresckow_because_him"
-		texturefile = "gfx/interface/goals/GER_tresckow_because_him.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_because_him.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_tresckow_damage_control"
-		texturefile = "gfx/interface/goals/GER_tresckow_damage_control.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_damage_control.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_tresckow_contact_americans"
-		texturefile = "gfx/interface/goals/GER_tresckow_contact_americans.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_contact_americans.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_tresckow_dissolve_nsdap"
-		texturefile = "gfx/interface/goals/GER_tresckow_dissolve_nsdap.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_dissolve_nsdap.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_tresckow_review_options"
-		texturefile = "gfx/interface/goals/GER_tresckow_review_options.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_review_options.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_tresckow_leave_kiesinger"
-		texturefile = "gfx/interface/goals/GER_tresckow_leave_kiesinger.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_leave_kiesinger.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_tresckow_send_erhard_and_schmidt"
-		texturefile = "gfx/interface/goals/GER_tresckow_send_erhard_and_schmidt.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_send_erhard_and_schmidt.png"
 	}
 	SpriteType = {
 		name = "GFX_GER_tresckow_resignation"
-		texturefile = "gfx/interface/goals/GER_tresckow_resignation.dds"
+		texturefile = "gfx/interface/goals/GER_tresckow_resignation.png"
 	}
 	
 	
@@ -88,86 +88,86 @@ spriteTypes = {
 	###WOLF PART 1###
 	SpriteType = {
 		name = "GFX_DDR_risen_from_ruins"
-		texturefile = "gfx/interface/goals/DDR_risen_from_the_ruins.dds"
+		texturefile = "gfx/interface/goals/DDR_risen_from_the_ruins.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_the_chairman_speaks"
-		texturefile = "gfx/interface/goals/DDR_the_chairman_speaks.dds"
+		texturefile = "gfx/interface/goals/DDR_the_chairman_speaks.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_uniting_the_sed"
-		texturefile = "gfx/interface/goals/DDR_uniting_the_sed.dds"
+		texturefile = "gfx/interface/goals/DDR_uniting_the_sed.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_finishing_them_off"
-		texturefile = "gfx/interface/goals/DDR_finishing_them_off.dds"
+		texturefile = "gfx/interface/goals/DDR_finishing_them_off.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_begin_the_long_reconstruction"
-		texturefile = "gfx/interface/goals/DDR_begin_the_long_reconstruction.dds"
+		texturefile = "gfx/interface/goals/DDR_begin_the_long_reconstruction.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_the_anti_fascist_elections"
-		texturefile = "gfx/interface/goals/DDR_the_anti_fascist_elections.dds"
+		texturefile = "gfx/interface/goals/DDR_the_anti_fascist_elections.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_striking_their_bases"
-		texturefile = "gfx/interface/goals/DDR_striking_their_bases.dds"
+		texturefile = "gfx/interface/goals/DDR_striking_their_bases.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_smashing_the_swastika"
-		texturefile = "gfx/interface/goals/DDR_smashing_the_swastika.dds"
+		texturefile = "gfx/interface/goals/DDR_smashing_the_swastika.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_expose_their_crimes"
-		texturefile = "gfx/interface/goals/DDR_expose_their_crimes.dds"
+		texturefile = "gfx/interface/goals/DDR_expose_their_crimes.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_hold_the_hamburg_trials"
-		texturefile = "gfx/interface/goals/DDR_hold_the_hamburg_trials.dds"
+		texturefile = "gfx/interface/goals/DDR_hold_the_hamburg_trials.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_a_house_for_every_german"
-		texturefile = "gfx/interface/goals/DDR_house_for_every_german.dds"
+		texturefile = "gfx/interface/goals/DDR_house_for_every_german.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_enact_mass_nationalization"
-		texturefile = "gfx/interface/goals/DDR_enact_mass_nationalization.dds"
+		texturefile = "gfx/interface/goals/DDR_enact_mass_nationalization.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_form_the_peoples_enterprises"
-		texturefile = "gfx/interface/goals/DDR_form_the_peoples_enterprises.dds"
+		texturefile = "gfx/interface/goals/DDR_form_the_peoples_enterprises.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_the_plattenbau_system"
-		texturefile = "gfx/interface/goals/DDR_the_plattenbau_system.dds"
+		texturefile = "gfx/interface/goals/DDR_the_plattenbau_system.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_securing_the_revolution"
-		texturefile = "gfx/interface/goals/DDR_securing_the_revolution.dds"
+		texturefile = "gfx/interface/goals/DDR_securing_the_revolution.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_found_the_stasi"
-		texturefile = "gfx/interface/goals/DDR_found_the_stasi.dds"
+		texturefile = "gfx/interface/goals/DDR_found_the_stasi.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_introduce_centralized_planning"
-		texturefile = "gfx/interface/goals/DDR_introduce_centralized_planning.dds"
+		texturefile = "gfx/interface/goals/DDR_introduce_centralized_planning.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_organizing_land_reform"
-		texturefile = "gfx/interface/goals/DDR_organizing_land_reform.dds"
+		texturefile = "gfx/interface/goals/DDR_organizing_land_reform.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_rooting_out_the_rats"
-		texturefile = "gfx/interface/goals/DDR_rooting_out_the_rats.dds"
+		texturefile = "gfx/interface/goals/DDR_rooting_out_the_rats.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_and_the_assembly_declares"
-		texturefile = "gfx/interface/goals/DDR_and_the_assembly_declares.dds"
+		texturefile = "gfx/interface/goals/DDR_and_the_assembly_declares.png"
 	}
 	SpriteType = {
 		name = "GFX_DDR_1966_socialist_constitution"
-		texturefile = "gfx/interface/goals/DDR_1966_socialist_constitution.dds"
+		texturefile = "gfx/interface/goals/DDR_1966_socialist_constitution.png"
 	}
 }
