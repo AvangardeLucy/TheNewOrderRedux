@@ -89,6 +89,16 @@ scripted_gui = {
 						add_to_array = { CountryInfo_array_main = v }
 					}
 				}
+				else_if = {
+					limit = {
+						check_variable = { d = 5 }
+					}
+					clear_array = CountryInfo_array_main
+					for_each_loop = {
+						array = CountryInfo_submod_store
+						add_to_array = { CountryInfo_array_main = v }
+					}
+				}
 				if = {
 					limit = {
 						NOT = {
@@ -182,6 +192,20 @@ scripted_gui = {
 							FOLDER = "[?f]"
 						}
 					}
+					else_if = {
+						limit = {
+							check_variable = { CountryInfo_tab = 5 }
+						}
+						meta_effect = {
+							text = {
+								for_each_loop = {
+									array = CountryInfo_folder_submod_[FOLDER]
+									add_to_array = { CountryInfo_array_main = v }
+								}
+							}
+							FOLDER = "[?f]"
+						}
+					}
 					
 					# Readds previously removed entries
 					for_each_loop = {
@@ -238,6 +262,25 @@ scripted_gui = {
 							text = {
 								for_each_loop = {
 									array = CountryInfo_folder_development_[FOLDER]
+									if = {
+										limit = {
+											is_in_array = { array = CountryInfo_array_main value = v }
+										}
+										remove_from_array = { array = CountryInfo_array_main value = v }
+									}
+								}
+							}
+							FOLDER = "[?f]"
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = { CountryInfo_tab = 5 }
+						}
+						meta_effect = {
+							text = {
+								for_each_loop = {
+									array = CountryInfo_folder_submod_[FOLDER]
 									if = {
 										limit = {
 											is_in_array = { array = CountryInfo_array_main value = v }
@@ -386,7 +429,7 @@ scripted_gui = {
 				y = tab_icon_y
 				frame = tab_frame
 			}
-			tab_text= {
+			tab_text=  {
 				y = tab_icon_y
 			}
 		}
