@@ -1,5 +1,5 @@
 name="The New Order Redux"
-version="1.4.0"
+version="1.12.*"
 tags={
 	"Gameplay"
 	"Map"

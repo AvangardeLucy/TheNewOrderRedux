@@ -1,0 +1,528 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "nazi_hunt_gui_window"
+		position = { x = 0 y = 0}	
+		size = { width = 1280 height= 720 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_DDR_nazi_hunt_bg"
+		}
+		
+		buttonType ={
+			name ="close_button"
+			spriteType = "GFX_DDR_nazi_hunt_close_button"
+			position = { x = 1270 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "DDR_nazi_hunt_action_history_text"
+			position = { x = 800 y = 600 }
+			font = "aldrich_24_outline"
+			text = "DDR_nazi_hunt_action_history_text"
+			maxWidth = 415
+			maxHeight = 22
+		}
+		
+		instantTextboxType = {
+			name = "DDR_nazi_hunt_next_turn_text"
+			position = { x = 800 y = 550 }
+			font = "aldrich_24_outline"
+			text = "DDR_nazi_hunt_next_turn_text"
+			maxWidth = 415
+			maxHeight = 22
+		}
+		containerWindowType = {
+			name = "DDR_hp_bars"
+			size = { width = 1280 height= 720 }
+			position = { x = 610 y = 74 }
+			containerWindowType = { #Combined progress bar together so it's easier to move it if needed.
+				name = "DDR_hp_bar_commie"
+				size = { width = 1280 height= 720 }
+				position = { x = -50 y = 0 }
+				iconType = {
+					name = "DDR_hp_bar_frame_commie"
+					position = { x = 0 y = 0 }
+					quadTextureSprite = GFX_DDR_hp_bar_frame
+				}
+				iconType = {
+					name = "DDR_hp_bar_commie"
+					position = { x = 0 y = 0 }
+					spriteType = GFX_DDR_hp_bar_commie
+				}
+				
+			}
+			containerWindowType = { #Combined progress bar together so it's easier to move it if needed.
+				name = "DDR_hp_bar_nazi"
+				size = { width = 1280 height= 720 }
+				position = { x = 50 y = 0 }
+				iconType = {
+					name = "DDR_hp_bar_frame_nazi"
+					position = { x = 0 y = 0 }
+					spriteType = GFX_DDR_hp_bar_frame
+					alwaystransparent = yes 
+				}
+				iconType = {
+					name = "DDR_hp_bar_nazi"
+					position = { x = 0 y = 0 }
+					spriteType = GFX_DDR_hp_bar_nazi
+				}
+			}
+		}
+		containerWindowType = {
+			name = "stasi_characters"
+			position = { x = 40 y = 30}	
+			size = { width = 1280 height= 720 }
+			###Currently adding compatibility for 3 characters in the gui. 
+			###Thought of doing something like general recruitment thing in 
+			###vanilla hoi4 to make it possible to add infinite amount of characters for each side
+			###but thought it may be not worth the additinal time spent researching it
+			containerWindowType = {
+				name = "stasi_character_one"
+				position = { x = 0 y = 0}	
+				size = { width = 1280 height= 720 }
+				iconType ={
+					name ="stasi_character_one_portrait"
+					spriteType = "GFX_DDR_nazi_hunt_stasi_portrait_one"
+					position = { x = 0 y = 0 }
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "nazi_hunt_stasi_character_one_description"
+				}
+				
+				containerWindowType = {
+					name = "stasi_character_one_stats"
+					position = { x = 200 y = 10}	
+					size = { width = 1280 height= 720 }
+					instantTextboxType = {
+						name = "stasi_character_one_stats_supply"
+						position = { x = 0 y = 0 }
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 0}
+						text = "stasi_character_one_stats_supply"
+						maxWidth = 400
+						maxHeight = 20
+						fixedsize = yes
+					}
+					instantTextboxType = {
+						name = "stasi_character_one_stats_morale"
+						position = { x = 0 y = 36 }
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 0}
+						text = "stasi_character_one_stats_morale"
+						maxWidth = 400
+						maxHeight = 20
+						fixedsize = yes
+					}
+					instantTextboxType = {
+						name = "stasi_character_one_stats_corruption"
+						position = { x = 0 y = 72 }
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 0}
+						text = "stasi_character_one_stats_corruption"
+						maxWidth = 400
+						maxHeight = 20
+						fixedsize = yes
+					}
+				}
+			}
+		}
+		containerWindowType = {
+			name = "nazi_characters"
+			position = { x = 1100 y = 30}	
+			size = { width = 1280 height= 720 }
+			###Currently adding compatibility for 3 characters in the gui. 
+			###Thought of doing something like general recruitment thing in 
+			###vanilla hoi4 to make it possible to add infinite amount of characters for each side
+			###but thought it may be not worth the additinal time spent researching it
+			containerWindowType = {
+				name = "nazi_character_one"
+				position = { x = 0 y = 0}	
+				size = { width = 1280 height= 720 }
+				buttonType ={
+					name ="nazi_character_one_portrait"
+					spriteType = "GFX_DDR_nazi_hunt_nazi_portrait_one"
+					position = { x = -10 y = 0 }
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = [nazi_hunt_nazi_character_one_description]
+				}
+				iconType = {
+					name ="nazi_character_one_portrait_chosen"
+					spriteType = "GFX_DDR_nazi_hunt_portrait_chosen"
+					position = { x = -50 y = -52 }
+					frame = 2
+					alwaystransparent = yes
+				}
+				containerWindowType = {
+					name = "nazi_character_one_stats"
+					position = { x = -460 y = 10}	
+					size = { width = 1280 height= 720 }
+					instantTextboxType = {
+						name = "nazi_character_one_stats_strength"
+						position = { x = 0 y = 0 }
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 0}
+						text = "nazi_character_one_stats_strength"
+						maxWidth = 400
+						maxHeight = 20
+						fixedsize = yes
+						format = right
+					}
+					instantTextboxType = {
+						name = "nazi_character_one_stats_morale"
+						position = { x = 0 y = 36 }
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 0}
+						text = "nazi_character_one_stats_morale"
+						maxWidth = 400
+						maxHeight = 20
+						fixedsize = yes
+						format = right
+					}
+					instantTextboxType = {
+						name = "nazi_character_one_stats_infiltration"
+						position = { x = 0 y = 72 }
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 0}
+						text = "nazi_character_one_stats_infiltration"
+						maxWidth = 400
+						maxHeight = 20
+						fixedsize = yes
+						format = right
+					}
+				}
+			}
+		}
+		containerWindowType = {
+			name = "nazi_hunt_gui_actions_window"
+			position = { x = 0 y = 695}	
+			size = { width = 1280 height= 720 }
+			orientation = center
+			origo = center
+			fade_time = 100
+			fade_type = linear
+			click_to_front = no
+			clipping = no
+			background = {
+				name = "Background_actions"		
+				quadTextureSprite ="GFX_DDR_nazi_hunt_bg_actions"
+			}
+			buttonType ={
+				name ="targeted_arrests_button"
+				spriteType = "GFX_DDR_nazi_hunt_targeted_arrests_button"
+				position = { x = 30 y = 30 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = arrests_tt
+			}
+			buttonType ={
+				name ="raids_button"
+				spriteType = "GFX_DDR_nazi_hunt_raids_button"
+				position = { x = 30 y = 100 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = raids_tt
+			}
+			buttonType ={
+				name ="antinazi_propaganda_button"
+				spriteType = "GFX_DDR_nazi_hunt_antinazi_propaganda_button"
+				position = { x = 160 y = 30 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = antipropaganda_tt
+			}
+			buttonType ={
+				name ="infiltrate_nazis_button"
+				spriteType = "GFX_DDR_nazi_hunt_infiltrate_nazis_button"
+				position = { x = 160 y = 100 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = infil_nazi_tt
+			}
+			buttonType ={
+				name ="exalt_heroes_button"
+				spriteType = "GFX_DDR_nazi_hunt_exalt_heroes_button"
+				position = { x = 290 y = 30 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = exalt_kpd_tt
+			}
+			buttonType ={
+				name ="request_support_button"
+				spriteType = "GFX_DDR_nazi_hunt_request_support_button"
+				position = { x = 290 y = 100 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = req_support_tt
+			}
+			buttonType ={
+				name ="local_bombing_button"
+				spriteType = "GFX_DDR_nazi_hunt_local_bombing_button"
+				position = { x = -145 y = 30 }
+				Orientation = "UPPER_RIGHT"
+				pdx_tooltip = bombings_tt
+			}
+			buttonType ={
+				name ="officer_assassination_button"
+				spriteType = "GFX_DDR_nazi_hunt_officer_assassination_button"
+				position = { x = -145 y = 100 }
+				Orientation = "UPPER_RIGHT"
+				pdx_tooltip = kill_officer_tt
+			}
+			buttonType ={
+				name ="anticommunist_propaganda_button"
+				spriteType = "GFX_DDR_nazi_hunt_anticommunist_propaganda_button"
+				position = { x = -275 y = 30 }
+				Orientation = "UPPER_RIGHT"
+				pdx_tooltip = antileft_prop_tt
+			}
+			buttonType ={
+				name ="bribes_blackmail_button"
+				spriteType = "GFX_DDR_nazi_hunt_bribes_blackmail_button"
+				position = { x = -275 y = 100 }
+				Orientation = "UPPER_RIGHT"
+				pdx_tooltip = bribes_tt
+			}
+			buttonType ={
+				name ="smuggle_equipment_button"
+				spriteType = "GFX_DDR_nazi_hunt_smuggle_equipment_button"
+				position = { x = -405 y = 30 }
+				Orientation = "UPPER_RIGHT"
+				pdx_tooltip = smuggle_eq_tt
+			}
+			buttonType ={
+				name ="glorify_past_button"
+				spriteType = "GFX_DDR_nazi_hunt_glorify_past_button"
+				position = { x = -405 y = 100 }
+				Orientation = "UPPER_RIGHT"
+				pdx_tooltip = glorify_tt
+			}
+			buttonType ={
+				name ="skip_turn_button"
+				spriteType = "GFX_DDR_nazi_hunt_skip_turn_button"
+				position = { x = 580 y = 30 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = skip_turn_tt
+			}
+			iconType ={
+				name ="information_button"
+				spriteType = "GFX_DDR_nazi_hunt_information_button"
+				position = { x = 580 y = 100 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = nh_information_tt
+			}
+			iconType ={
+				name ="werwolves_icon"
+				spriteType = "GFX_DDR_nazi_hunt_werwolves_icon"
+				position = { x = 735 y = 36 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType ={
+				name ="stasi_icon"
+				spriteType = "GFX_DDR_nazi_hunt_stasi_icon"
+				position = { x = 430 y = 31 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+		}
+	}
+	containerWindowType = {
+		name = "stasi_character_two"
+		position = { x = 40 y = 252}	
+		size = { width = 1280 height= 720 }
+		orientation = center
+		origo = center
+		iconType ={
+			name ="stasi_character_two_portrait"
+			spriteType = "GFX_DDR_nazi_hunt_stasi_portrait_two"
+			position = { x = 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = [nazi_hunt_stasi_character_two_description]
+		}
+		
+		containerWindowType = {
+			name = "stasi_character_two_stats"
+			position = { x = 200 y = 10}	
+			size = { width = 1280 height= 720 }
+			instantTextboxType = {
+				name = "stasi_character_two_stats_supply"
+				position = { x = 0 y = 0 }
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "stasi_character_two_stats_supply"
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+			instantTextboxType = {
+				name = "stasi_character_two_stats_morale"
+				position = { x = 0 y = 36 }
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "stasi_character_two_stats_morale"
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+			instantTextboxType = {
+				name = "stasi_character_two_stats_corruption"
+				position = { x = 0 y = 72 }
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "stasi_character_two_stats_corruption"
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+		}
+		
+	}
+	containerWindowType = {
+		name = "stasi_character_three"
+		position = { x = 40 y = 475}	
+		size = { width = 1280 height= 720 }
+		orientation = center
+		origo = center
+		iconType ={
+			name ="stasi_character_three_portrait"
+			spriteType = "GFX_DDR_nazi_hunt_stasi_portrait_three"
+			position = { x = 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "[nazi_hunt_stasi_character_three_description]"
+		}
+		
+		containerWindowType = {
+			name = "stasi_character_three_stats"
+			position = { x = 200 y = 10}	
+			size = { width = 1280 height= 720 }
+			instantTextboxType = {
+				name = "stasi_character_three_stats_supply"
+				position = { x = 0 y = 0 }
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "stasi_character_three_stats_supply"
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+			instantTextboxType = {
+				name = "stasi_character_three_stats_morale"
+				position = { x = 0 y = 36 }
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "stasi_character_three_stats_morale"
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+			instantTextboxType = {
+				name = "stasi_character_three_stats_corruption"
+				position = { x = 0 y = 72 }
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "stasi_character_three_stats_corruption"
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+		}
+		
+	}
+	containerWindowType = {
+		name = "nazi_character_two"
+		position = { x = 1100 y = 252}	
+		size = { width = 1280 height= 720 }
+		orientation = center
+		origo = center
+		buttonType ={
+			name ="nazi_character_two_portrait"
+			spriteType = "GFX_DDR_nazi_hunt_nazi_portrait_two"
+			position = { x = -10 y = 0 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = [nazi_hunt_nazi_character_two_description]
+		}
+		iconType = {
+			name ="nazi_character_two_portrait_chosen"
+			spriteType = "GFX_DDR_nazi_hunt_portrait_chosen"
+			position = { x = -50 y = -52 }
+			frame = 2
+			alwaystransparent = yes
+		}
+		containerWindowType = {
+			name = "nazi_character_two_stats"
+			position = { x = -460 y = 10}	
+			size = { width = 1280 height= 720 }
+			instantTextboxType = {
+				name = "nazi_character_two_stats_strength"
+				position = { x = 0 y = 0 }
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "nazi_character_two_stats_strength"
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+				format = right
+			}
+			instantTextboxType = {
+				name = "nazi_character_two_stats_morale"
+				position = { x = 0 y = 36 }
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "nazi_character_two_stats_morale"
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+				format = right
+			}
+			instantTextboxType = {
+				name = "nazi_character_two_stats_infiltration"
+				position = { x = 0 y = 72 }
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "nazi_character_two_stats_infiltration"
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+				format = right
+			}
+		}
+	}
+	containerWindowType = {
+		name = "DDR_failed_signs"
+		size = { width = 1280 height= 720 }
+		position = { x = 33 y = 22 }
+		orientation = center
+		origo = center
+		iconType ={
+			name ="stasi_character_one_failed"
+			spriteType = "GFX_DDR_nazi_hunt_failed"
+			position = { x = 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType ={
+			name ="stasi_character_two_failed"
+			spriteType = "GFX_DDR_nazi_hunt_failed"
+			position = { x = 0 y = 223 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType ={
+			name ="stasi_character_three_failed"
+			spriteType = "GFX_DDR_nazi_hunt_failed"
+			position = { x = 0 y = 446 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType ={
+			name ="nazi_character_one_failed"
+			spriteType = "GFX_DDR_nazi_hunt_eliminated"
+			position = { x = 723 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType ={
+			name ="nazi_character_two_failed"
+			spriteType = "GFX_DDR_nazi_hunt_eliminated"
+			position = { x = 723 y = 223 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+	}
+}

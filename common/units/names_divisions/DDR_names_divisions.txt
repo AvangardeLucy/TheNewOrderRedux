@@ -1,0 +1,389 @@
+﻿DDR_infantry = {
+	name = "Infanterie-Division"
+
+	for_countries = { DDR }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Infanterie-Division"
+
+	ordered = {
+		1 = { "%d. Infanterie-Division" }
+		2 = { "%d. Infanterie-Division" }
+		3 = { "%d. Infanterie-Division" }
+		4 = { "%d. Infanterie-Division" }
+		5 = { "%d. Infanterie-Division" }
+		6 = { "%d. Infanterie-Division" }
+		7 = { "%d. Infanterie-Division" }
+		8 = { "%d. Infanterie-Division" }
+		9 = { "%d. Infanterie-Division" }
+		10 = { "%d. Infanterie-Division" }
+		11 = { "%d. Infanterie-Division" }
+		12 = { "%d. Infanterie-Division" }
+		13 = { "%d. Infanterie-Division" }
+		14 = { "%d. Infanterie-Division" }
+		15 = { "%d. Infanterie-Division" }
+		16 = { "%d. Infanterie-Division" }
+		17 = { "%d. Infanterie-Division" }
+		18 = { "%d. Infanterie-Division" }
+		19 = { "%d. Infanterie-Division" }
+		20 = { "%d. Infanterie-Division" }
+		21 = { "%d. Infanterie-Division" }
+		22 = { "%d. Infanterie-Division" }
+		23 = { "%d. Infanterie-Division" }
+		24 = { "%d. Infanterie-Division" }
+		25 = { "%d. Infanterie-Division" }
+		26 = { "%d. Infanterie-Division" }
+		27 = { "%d. Infanterie-Division" }
+		28 = { "%d. Infanterie-Division" }
+		29 = { "%d. Infanterie-Division" }
+		30 = { "%d. Infanterie-Division" }
+		31 = { "%d. Infanterie-Division" }
+		32 = { "%d. Infanterie-Division" }
+		33 = { "%d. Infanterie-Division" }
+		34 = { "%d. Infanterie-Division" }
+		35 = { "%d. Infanterie-Division" }
+		36 = { "%d. Infanterie-Division" }
+		37 = { "%d. Infanterie-Division" }
+		38 = { "%d. Infanterie-Division" }
+		39 = { "%d. Infanterie-Division" }
+		40 = { "%d. Infanterie-Division" }
+		41 = { "%d. Infanterie-Division" }
+		42 = { "%d. Infanterie-Division" }
+		43 = { "%d. Infanterie-Division" }
+		44 = { "%d. Infanterie-Division" }
+		45 = { "%d. Infanterie-Division" }
+		46 = { "%d. Infanterie-Division" }
+		47 = { "%d. Infanterie-Division" }
+		48 = { "%d. Infanterie-Division" }
+		49 = { "%d. Infanterie-Division" }
+		50 = { "%d. Infanterie-Division" }
+		51 = { "%d. Infanterie-Division" }
+		52 = { "%d. Infanterie-Division" }
+		53 = { "%d. Infanterie-Division" }
+		54 = { "%d. Infanterie-Division" }
+		55 = { "%d. Infanterie-Division" }
+		56 = { "%d. Infanterie-Division" }
+		57 = { "%d. Infanterie-Division" }
+		58 = { "%d. Infanterie-Division" }
+		59 = { "%d. Infanterie-Division" }
+		60 = { "%d. Infanterie-Division" }
+	}
+}
+
+DDR_panzer = {
+	name = "Panzerdivision"
+
+	for_countries = { DDR }
+
+	can_use = { always = yes }
+
+	division_types = { "MBT" }
+
+	fallback_name = "%d. Panzerdivision"
+
+	ordered = {
+		1 = { "%d. Panzerdivision" }
+		2 = { "%d. Panzerdivision" }
+		3 = { "%d. Panzerdivision" }
+		4 = { "%d. Panzerdivision" }
+		5 = { "%d. Panzerdivision" }
+		6 = { "%d. Panzerdivision" }
+		7 = { "%d. Panzerdivision" }
+		8 = { "%d. Panzerdivision" }
+		9 = { "%d. Panzerdivision" }
+		10 = { "%d. Panzerdivision" }
+		11 = { "%d. Panzerdivision" }
+		12 = { "%d. Panzerdivision" }
+		13 = { "%d. Panzerdivision" }
+		14 = { "%d. Panzerdivision" }
+		15 = { "%d. Panzerdivision" }
+		16 = { "%d. Panzerdivision" }
+		17 = { "%d. Panzerdivision" }
+		18 = { "%d. Panzerdivision" }
+		19 = { "%d. Panzerdivision" }
+		20 = { "%d. Panzerdivision" }
+		21 = { "%d. Panzerdivision" }
+		22 = { "%d. Panzerdivision" }
+		23 = { "%d. Panzerdivision" }
+		24 = { "%d. Panzerdivision" }
+		25 = { "%d. Panzerdivision" }
+		26 = { "%d. Panzerdivision" }
+		27 = { "%d. Panzerdivision" }
+		28 = { "%d. Panzerdivision" }
+		29 = { "%d. Panzerdivision" }
+		30 = { "%d. Panzerdivision" }
+	}
+}
+
+DDR_paratroopers = {
+	name = "Fallschirmjägerbataillon"
+
+	for_countries = { DDR }
+
+	can_use = { always = yes }
+
+	division_types = { "air_assault" }
+
+	fallback_name = "%d. Fallschirmjägerbataillon"
+
+	ordered = {
+		1 = { "%d. Fallschirmjägerbataillon" }
+		2 = { "%d. Fallschirmjägerbataillon" }
+		3 = { "%d. Fallschirmjägerbataillon" }
+		4 = { "%d. Fallschirmjägerbataillon" }
+		5 = { "%d. Fallschirmjägerbataillon" }
+		6 = { "%d. Fallschirmjägerbataillon" }
+		7 = { "%d. Fallschirmjägerbataillon" }
+		8 = { "%d. Fallschirmjägerbataillon" }
+		9 = { "%d. Fallschirmjägerbataillon" }
+		10 = { "%d. Fallschirmjägerbataillon" }
+		11 = { "%d. Fallschirmjägerbataillon" }
+		12 = { "%d. Fallschirmjägerbataillon" }
+		13 = { "%d. Fallschirmjägerbataillon" }
+		14 = { "%d. Fallschirmjägerbataillon" }
+		15 = { "%d. Fallschirmjägerbataillon" }
+		16 = { "%d. Fallschirmjägerbataillon" }
+		17 = { "%d. Fallschirmjägerbataillon" }
+		18 = { "%d. Fallschirmjägerbataillon" }
+		19 = { "%d. Fallschirmjägerbataillon" }
+		20 = { "%d. Fallschirmjägerbataillon" }
+		21 = { "%d. Fallschirmjägerbataillon" }
+		22 = { "%d. Fallschirmjägerbataillon" }
+		23 = { "%d. Fallschirmjägerbataillon" }
+		24 = { "%d. Fallschirmjägerbataillon" }
+		25 = { "%d. Fallschirmjägerbataillon" }
+		26 = { "%d. Fallschirmjägerbataillon" }
+		27 = { "%d. Fallschirmjägerbataillon" }
+		28 = { "%d. Fallschirmjägerbataillon" }
+		29 = { "%d. Fallschirmjägerbataillon" }
+		30 = { "%d. Fallschirmjägerbataillon" }
+	}
+}
+
+DDR_special = {
+	name = "Diensteinheit"
+
+	for_countries = { DDR }
+
+	can_use = { always = yes }
+
+	division_types = { "elite_infantry" }
+
+	fallback_name = "%d Diensteinheit"
+
+	ordered = {
+		1 = { "Diensteinheint 'Friedrich Wolf'" }
+		2 = { "Diensteinheint 'Rosa Luxemburg'" }
+		3 = { "%d Diensteinheint" }
+		4 = { "%d Diensteinheint" }
+		5 = { "%d Diensteinheint" }
+		6 = { "%d Diensteinheint" }
+		7 = { "%d Diensteinheint" }
+		8 = { "%d Diensteinheint" }
+		9 = { "%d Diensteinheint" }
+		10 = { "%d Diensteinheint" }
+		11 = { "%d Diensteinheint" }
+		12 = { "%d Diensteinheint" }
+		13 = { "%d Diensteinheint" }
+		14 = { "%d Diensteinheint" }
+		15 = { "%d Diensteinheint" }
+		16 = { "%d Diensteinheint" }
+		17 = { "%d Diensteinheint" }
+		18 = { "%d Diensteinheint" }
+		19 = { "%d Diensteinheint" }
+		20 = { "%d Diensteinheint" }
+		21 = { "%d Diensteinheint" }
+		22 = { "%d Diensteinheint" }
+		23 = { "%d Diensteinheint" }
+		24 = { "%d Diensteinheint" }
+		25 = { "%d Diensteinheint" }
+		26 = { "%d Diensteinheint" }
+		27 = { "%d Diensteinheint" }
+		28 = { "%d Diensteinheint" }
+		29 = { "%d Diensteinheint" }
+		30 = { "%d Diensteinheint" }
+	}
+}
+
+DDR_marines = {
+	name = "Seetruppe"
+
+	for_countries = { DDR }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	fallback_name = "%d. Seetruppe"
+
+	ordered = {
+		1 = { "%d. Seetruppe" }
+		2 = { "%d. Seetruppe" }
+		3 = { "%d. Seetruppe" }
+		4 = { "%d. Seetruppe" }
+		5 = { "%d. Seetruppe" }
+		6 = { "%d. Seetruppe" }
+		7 = { "%d. Seetruppe" }
+		8 = { "%d. Seetruppe" }
+		9 = { "%d. Seetruppe" }
+		10 = { "%d. Seetruppe" }
+		11 = { "%d. Seetruppe" }
+		12 = { "%d. Seetruppe" }
+		13 = { "%d. Seetruppe" }
+		14 = { "%d. Seetruppe" }
+		15 = { "%d. Seetruppe" }
+		16 = { "%d. Seetruppe" }
+		17 = { "%d. Seetruppe" }
+		18 = { "%d. Seetruppe" }
+		19 = { "%d. Seetruppe" }
+		20 = { "%d. Seetruppe" }
+		21 = { "%d. Seetruppe" }
+		22 = { "%d. Seetruppe" }
+		23 = { "%d. Seetruppe" }
+		24 = { "%d. Seetruppe" }
+		25 = { "%d. Seetruppe" }
+		26 = { "%d. Seetruppe" }
+		27 = { "%d. Seetruppe" }
+		28 = { "%d. Seetruppe" }
+		29 = { "%d. Seetruppe" }
+		30 = { "%d. Seetruppe" }
+	}
+}
+
+DDR_mountaineers = {
+	name = "Gebirgsbataillon"
+
+	for_countries = { DDR }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	fallback_name = "%d. Gebirgsbataillon"
+
+	ordered = {
+		1 = { "%d. Gebirgsbataillon" }
+		2 = { "%d. Gebirgsbataillon" }
+		3 = { "%d. Gebirgsbataillon" }
+		4 = { "%d. Gebirgsbataillon" }
+		5 = { "%d. Gebirgsbataillon" }
+		6 = { "%d. Gebirgsbataillon" }
+		7 = { "%d. Gebirgsbataillon" }
+		8 = { "%d. Gebirgsbataillon" }
+		9 = { "%d. Gebirgsbataillon" }
+		10 = { "%d. Gebirgsbataillon" }
+		11 = { "%d. Gebirgsbataillon" }
+		12 = { "%d. Gebirgsbataillon" }
+		13 = { "%d. Gebirgsbataillon" }
+		14 = { "%d. Gebirgsbataillon" }
+		15 = { "%d. Gebirgsbataillon" }
+		16 = { "%d. Gebirgsbataillon" }
+		17 = { "%d. Gebirgsbataillon" }
+		18 = { "%d. Gebirgsbataillon" }
+		19 = { "%d. Gebirgsbataillon" }
+		20 = { "%d. Gebirgsbataillon" }
+		21 = { "%d. Gebirgsbataillon" }
+		22 = { "%d. Gebirgsbataillon" }
+		23 = { "%d. Gebirgsbataillon" }
+		24 = { "%d. Gebirgsbataillon" }
+		25 = { "%d. Gebirgsbataillon" }
+		26 = { "%d. Gebirgsbataillon" }
+		27 = { "%d. Gebirgsbataillon" }
+		28 = { "%d. Gebirgsbataillon" }
+		29 = { "%d. Gebirgsbataillon" }
+		30 = { "%d. Gebirgsbataillon" }
+	}
+}
+
+DDR_motorized = {
+	name = "Motorisierte-Schützen-Division"
+
+	for_countries = { DDR }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	fallback_name = "%d. Motorisierte-Schützen-Division"
+
+	ordered = {
+		1 = { "%d. Motorisierte-Schützen-Division" }
+		2 = { "%d. Motorisierte-Schützen-Division" }
+		3 = { "%d. Motorisierte-Schützen-Division" }
+		4 = { "%d. Motorisierte-Schützen-Division" }
+		5 = { "%d. Motorisierte-Schützen-Division" }
+		6 = { "%d. Motorisierte-Schützen-Division" }
+		7 = { "%d. Motorisierte-Schützen-Division" }
+		8 = { "%d. Motorisierte-Schützen-Division" }
+		9 = { "%d. Motorisierte-Schützen-Division" }
+		10 = { "%d. Motorisierte-Schützen-Division" }
+		11 = { "%d. Motorisierte-Schützen-Division" }
+		12 = { "%d. Motorisierte-Schützen-Division" }
+		13 = { "%d. Motorisierte-Schützen-Division" }
+		14 = { "%d. Motorisierte-Schützen-Division" }
+		15 = { "%d. Motorisierte-Schützen-Division" }
+		16 = { "%d. Motorisierte-Schützen-Division" }
+		17 = { "%d. Motorisierte-Schützen-Division" }
+		18 = { "%d. Motorisierte-Schützen-Division" }
+		19 = { "%d. Motorisierte-Schützen-Division" }
+		20 = { "%d. Motorisierte-Schützen-Division" }
+		21 = { "%d. Motorisierte-Schützen-Division" }
+		22 = { "%d. Motorisierte-Schützen-Division" }
+		23 = { "%d. Motorisierte-Schützen-Division" }
+		24 = { "%d. Motorisierte-Schützen-Division" }
+		25 = { "%d. Motorisierte-Schützen-Division" }
+		26 = { "%d. Motorisierte-Schützen-Division" }
+		27 = { "%d. Motorisierte-Schützen-Division" }
+		28 = { "%d. Motorisierte-Schützen-Division" }
+		29 = { "%d. Motorisierte-Schützen-Division" }
+		30 = { "%d. Motorisierte-Schützen-Division" }
+	}
+}
+
+DDR_polizei = {
+	name = "Volkspolizei"
+
+	for_countries = { DDR }
+
+	can_use = { always = yes }
+
+	division_types = { "light_infantry" }
+
+	fallback_name = "%d. Volkspolizei"
+
+	ordered = {
+		1 = { "%d. Volkspolizei" }
+		2 = { "%d. Volkspolizei" }
+		3 = { "%d. Volkspolizei" }
+		4 = { "%d. Volkspolizei" }
+		5 = { "%d. Volkspolizei" }
+		6 = { "%d. Volkspolizei" }
+		7 = { "%d. Volkspolizei" }
+		8 = { "%d. Volkspolizei" }
+		9 = { "%d. Volkspolizei" }
+		10 = { "%d. Volkspolizei" }
+		11 = { "%d. Volkspolizei" }
+		12 = { "%d. Volkspolizei" }
+		13 = { "%d. Volkspolizei" }
+		14 = { "%d. Volkspolizei" }
+		15 = { "%d. Volkspolizei" }
+		16 = { "%d. Volkspolizei" }
+		17 = { "%d. Volkspolizei" }
+		18 = { "%d. Volkspolizei" }
+		19 = { "%d. Volkspolizei" }
+		20 = { "%d. Volkspolizei" }
+		21 = { "%d. Volkspolizei" }
+		22 = { "%d. Volkspolizei" }
+		23 = { "%d. Volkspolizei" }
+		24 = { "%d. Volkspolizei" }
+		25 = { "%d. Volkspolizei" }
+		26 = { "%d. Volkspolizei" }
+		27 = { "%d. Volkspolizei" }
+		28 = { "%d. Volkspolizei" }
+		29 = { "%d. Volkspolizei" }
+		30 = { "%d. Volkspolizei" }
+	}
+}

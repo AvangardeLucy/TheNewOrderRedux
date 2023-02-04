@@ -1,0 +1,7 @@
+spritetypes = {
+	spritetype = {
+		name = "GFX_custom_header_DDR"
+		texturefile = "gfx/interface/custom_news_headers/custom_header_DDR.dds"
+		legacy_lazy_load = no
+	}
+}

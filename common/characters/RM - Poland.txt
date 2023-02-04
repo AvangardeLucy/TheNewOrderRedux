@@ -1,0 +1,119 @@
+characters = {
+	POL_wladyslaw_gomulka = {
+		name = POL_wladyslaw_gomulka
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_wladyslaw_gomulka.dds" } }
+		country_leader = {
+			#desc = "POLITICS_POL_wladyslaw_gomulka_DESC"
+			ideology = communist_national_communism_subtype
+			expire = "1999.1.1.1"
+			id = -1
+		}
+	}
+
+	# Ministers
+
+	POL_leon_kasman = {
+		name = POL_leon_kasman
+		portraits = {
+			civilian { small = "GFX_idea_POL_minister_leon_kasman" }
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = POL_leon_kasman_hog
+			allowed = { original_tag = POL }
+			traits = {
+				head_of_government
+				hog_respected_war_hero
+				hog_silent_workhorse
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	POL_mieczyslaw_moczar = {
+		name = POL_mieczyslaw_moczar
+		portraits = {
+			civilian { small = "GFX_idea_POL_minister_mieczyslaw_moczar" }
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = POL_mieczyslaw_moczar_sec
+			allowed = { original_tag = POL }
+			traits = {
+				security_minister
+				sec_prince_of_terror
+				sec_resistance_hero
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	POL_oskar_lange = {
+		name = POL_oskar_lange
+		portraits = { 
+			civilian = { small = "GFX_idea_POL_minister_oskar_lange" } 
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = POL_oskar_lange_eco
+			allowed = { original_tag = POL }
+			traits = {
+				economy_minister
+				eco_balanced_budget_economy
+				eco_planned_economy_proponent
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	POL_wladyslaw_bienkowski = {
+		name = POL_wladyslaw_bienkowski
+		portraits = { 
+			civilian = { small = "GFX_idea_POL_minister_wladyslaw_bienkowski" } 
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = POL_wladyslaw_bienkowski_for
+			allowed = { original_tag = POL }
+			traits = {
+				foreign_minister
+				for_fierce_negotiator
+				for_well_connected
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	# Generals and Marshals
+
+	POL_stefan_michnik = {
+        name = POL_stefan_michnik
+        portraits = {
+            army = {
+                large = "gfx/leaders/POL/POL_stefan_michnik.dds"
+            }
+        }
+    }
+
+	POL_wojciech_jaruzelski = {
+		name = POL_wojciech_jaruzelski
+		portraits = {
+			army = {
+				large = "gfx/leaders/POL/POL_wojciech_jaruzelski.dds"
+			}
+		}
+	}
+
+}

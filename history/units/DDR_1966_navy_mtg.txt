@@ -1,0 +1,131 @@
+﻿units = {
+    fleet = {
+        name = "Kriegsflottille"
+        naval_base = 3
+        task_force = {
+            name = "1. Trägerdivision"
+            location = 9347
+            ship = { name = "C1" definition = carrier start_experience_factor = 0.1 equipment = { ship_hull_carrier_1 = { amount = 1 owner = GER version_name = "Graf Zeppelin Class" } } }
+            ship = { name = "C2" definition = carrier start_experience_factor = 0.1 equipment = { ship_hull_carrier_2 = { amount = 1 owner = GER version_name = "Europa Class" } } }
+        }
+        task_force = {
+            name = "1. Schlachtschiffdivision"
+            location = 9347
+            ship = { name = "B1" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_2  = { amount = 1 owner = GER version_name = "Thule Class" } } }
+            ship = { name = "B2" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_2  = { amount = 1 owner = GER version_name = "Thule Class" } } }
+         
+        }
+        task_force = {
+            name = "1. Kreuzerdivision"
+            location = 9347
+            ship = { name = "Cr1" definition = cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "P-Class" } } }
+            ship = { name = "Cr2" definition = cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "P-Class" } } }
+            ship = { name = "Cr3" definition = cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "P-Class" } } }
+			ship = { name = "Cr4" definition = cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "P-Class" } } }
+			ship = { name = "Cr5" definition = cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "P-Class" } } }
+			ship = { name = "Cr6" definition = cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "P-Class" } } }
+			ship = { name = "Cr7" definition = cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "P-Class" } } }
+        }
+        task_force = {
+            name = "Küstengruppe 1."
+            location = 9347
+            ship = { name = "F120" definition = frigate start_experience_factor = 0.1 equipment = { ship_hull_more_light_2 = { amount = 1 owner = GER version_name = "Rostock-Class" } } }
+			ship = { name = "F121" definition = frigate start_experience_factor = 0.1 equipment = { ship_hull_more_light_2 = { amount = 1 owner = GER version_name = "Rostock-Class" } } }
+            ship = { name = "F122" definition = frigate start_experience_factor = 0.1 equipment = { ship_hull_more_light_2 = { amount = 1 owner = GER version_name = "Rostock-Class" } } }
+			ship = { name = "F123" definition = frigate start_experience_factor = 0.1 equipment = { ship_hull_more_light_2 = { amount = 1 owner = GER version_name = "Rostock-Class" } } }
+			ship = { name = "F124" definition = frigate start_experience_factor = 0.1 equipment = { ship_hull_more_light_2 = { amount = 1 owner = GER version_name = "Rostock-Class" } } }
+        }
+		task_force = {
+            name = "1. Unterseebootsflottille 'Weddigen'"
+            location = 9347
+            ship = { name = "U3622" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U3621" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U3620" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U3619" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U3618" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U3617" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U2199" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type XXVI-Class" } } }
+            ship = { name = "U2198" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type XXVI-Class" } } }
+            ship = { name = "U2722" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type XXVI-Class" } } }
+			ship = { name = "U3722" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U3821" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U3920" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U4019" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U4118" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U4217" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U4399" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type XXVI-Class" } } }
+            ship = { name = "U4498" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type XXVI-Class" } } }
+            ship = { name = "U4522" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type XXVI-Class" } } }
+        }
+    }
+ 
+    fleet = {
+        name = "Küstenwache"
+        naval_base = 6
+        task_force = {
+            name = "1. Trägerdivision"
+            location = 321
+            ship = { name = "C3" definition = carrier start_experience_factor = 0.1 equipment = { ship_hull_carrier_1 = { amount = 1 owner = GER version_name = "Graf Zeppelin Class" } }
+				air_wings = {
+					cv_jet_fighter_equipment_1 = { owner = GER amount = 10 }
+					cv_jet_CAS_equipment_1 = { owner = GER amount = 10 }
+				}
+			}
+            ship = { name = "C4" definition = carrier start_experience_factor = 0.1 equipment = { ship_hull_carrier_2 = { amount = 1 owner = GER version_name = "Europa Class" } }
+				air_wings = {
+					cv_jet_fighter_equipment_1 = { owner = GER amount = 20 }
+					cv_jet_CAS_equipment_1 = { owner = GER amount = 10 }
+				}
+			}
+        }
+        task_force = {
+            name = "1. Schlachtschiffdivision"
+            location = 321
+            ship = { name = "B3" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_2  = { amount = 1 owner = GER version_name = "Thule Class" } } }
+            ship = { name = "B4" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_2  = { amount = 1 owner = GER version_name = "Thule Class" } } }
+         
+        }
+        task_force = {
+            name = "1. Kreuzerdivision"
+            location = 321
+            ship = { name = "Cr9" definition = cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "P-Class" } } }
+            ship = { name = "Cr9" definition = cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "P-Class" } } }
+            ship = { name = "Cr13" definition = cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "P-Class" } } }
+			ship = { name = "Cr14" definition = cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "P-Class" } } }
+			ship = { name = "Cr15" definition = cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "P-Class" } } }
+			ship = { name = "Cr16" definition = cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "P-Class" } } }
+			ship = { name = "Cr17" definition = cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "P-Class" } } }
+        }
+        task_force = {
+            name = "Küstengruppe 1."
+            location = 321
+            ship = { name = "F2120" definition = frigate start_experience_factor = 0.1 equipment = { ship_hull_more_light_2 = { amount = 1 owner = GER version_name = "Rostock-Class" } } }
+			ship = { name = "F2121" definition = frigate start_experience_factor = 0.1 equipment = { ship_hull_more_light_2 = { amount = 1 owner = GER version_name = "Rostock-Class" } } }
+            ship = { name = "F2122" definition = frigate start_experience_factor = 0.1 equipment = { ship_hull_more_light_2 = { amount = 1 owner = GER version_name = "Rostock-Class" } } }
+			ship = { name = "F2123" definition = frigate start_experience_factor = 0.1 equipment = { ship_hull_more_light_2 = { amount = 1 owner = GER version_name = "Rostock-Class" } } }
+			ship = { name = "F2124" definition = frigate start_experience_factor = 0.1 equipment = { ship_hull_more_light_2 = { amount = 1 owner = GER version_name = "Rostock-Class" } } }
+        }
+		task_force = {
+            name = "1. Unterseebootsflottille 'Weddigen'"
+            location = 321
+            ship = { name = "U43622" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U43621" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U43620" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U43619" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U43618" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U43617" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U42199" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type XXVI-Class" } } }
+            ship = { name = "U42198" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type XXVI-Class" } } }
+            ship = { name = "U42722" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type XXVI-Class" } } }
+			ship = { name = "U43722" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U43821" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U43920" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U44019" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U44118" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U44217" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = GER version_name = "Type 401-Class" } } }
+            ship = { name = "U44399" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type XXVI-Class" } } }
+            ship = { name = "U44498" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type XXVI-Class" } } }
+            ship = { name = "U44522" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type XXVI-Class" } } }
+        }
+    }
+}

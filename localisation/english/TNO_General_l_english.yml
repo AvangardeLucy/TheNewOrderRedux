@@ -118,6 +118,7 @@ scripted_gui_open_tt_CAN_gov: "Open the Canadian GUIs"
 scripted_gui_open_tt_OMO_fer:0 "Access §YProject Ferus§! Records"
 
 ###Drift###
+anarchism_drift:0 "Daily Anarchist Support"
 communist_drift:0 "Daily Communist Support"
 socialist_drift:0 "Daily Socialist Support"
 progressivism_drift:0 "Daily Progressivism Support"

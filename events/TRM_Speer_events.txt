@@ -1,0 +1,1163 @@
+add_namespace = speer_rm
+add_namespace = tresckow
+add_namespace = news_rm
+#TODO: implement Compromise Event Effects
+#TODO: implement Uprising after The Brandt-Dutschke Affair
+#TODO: implement activation of Demobilization mechanic in first event(? May be unnecessary)
+##Demobilization Events
+country_event = { #Disarming the Traitors
+#triggered after Speer Win
+#Introduces Demobilization GUI and decision tree
+
+	id = speer_rm.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.1" }
+	title = speer_rm.1.t
+	desc = speer_rm.1.desc
+	picture = GFX_report_event_epic
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = speer_rm.1.a
+		hidden_effect = {
+			set_country_flag = SPR_demobilisation_phase
+		}
+		add_ideas = GER_armed_militias
+	}
+}
+
+country_event = { #For Naught
+	#triggered by taking decision "Offering Economic Incentives"
+	#Demobilization progress
+	
+	id = speer_rm.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.22" }
+	title = speer_rm.2.t
+	desc = speer_rm.2.desc
+	picture = GFX_report_event_generic_money
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.2.a
+		hidden_effect = { #it's a flavor event idk
+		}
+	}
+}
+
+country_event = { #Ideologues Along the Rhine
+	#Trigger: Success of "Targetted Raids" Decision
+	#Effect: Demobilization progress
+	
+	id = speer_rm.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.3" }
+	title = speer_rm.3.t
+	desc = speer_rm.3.desc
+	picture = GFX_report_event_german_house_raid
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.3.a
+		hidden_effect = { #it's a flavor event idk all the stuff is done in decision
+		}
+	}
+}
+
+country_event = { #Blood and Books in Berlin
+	#Trigger: Failure of "Targetted Raids" Decision
+	#Effect: Demobilization progress
+	
+	id = speer_rm.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.4" }
+	title = speer_rm.4.t
+	desc = speer_rm.4.desc
+	picture = GFX_report_event_german_army3
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.4.a
+		hidden_effect = { 
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -100
+				producer = GER
+			}
+		}
+	}
+}
+
+country_event = { #By Hitler's Words
+	#Trigger: Success of "Gun Confiscations" Decision
+	#Effect: Demobilization progress
+	
+	id = speer_rm.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.5" }
+	title = speer_rm.5.t
+	desc = speer_rm.5.desc
+	picture = GFX_report_event_german_police
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.5.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 100
+			producer = GER
+		}
+	}
+}
+
+country_event = { #Scattered Roses in an Armed Garden
+	#Trigger: Failure of "Gun Confiscations" Decision
+	#Effect: Demobilization progress
+	
+	id = speer_rm.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.6" }
+	title = speer_rm.6.t
+	desc = speer_rm.6.desc
+	picture = GFX_report_event_epic2
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.6.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -200
+			producer = GER
+		}
+		add_to_variable = { global.partisan_demobilization = -5 }
+	}
+}
+
+country_event = { #Business as Usual
+	#Trigger: Success of Demobilization (Reaches 100)
+	#Effect: Demobilization decisions close; Speer germany proceeds as normal
+	
+	id = speer_rm.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.7" }
+	title = speer_rm.7.t
+	desc = speer_rm.7.desc
+	picture = GFX_report_event_germania_night
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.7.a
+		hidden_effect = { #it's a flavor event idk all the stuff is done in decision
+		}
+	}
+}
+
+country_event = { #Out of Our Grasp
+	#Trigger: Success of Demobilization (Time runs out)
+	#Effect: Demobilization decisions close; initiate Riot events
+	
+	id = speer_rm.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.8" }
+	title = speer_rm.8.t
+	desc = speer_rm.8.desc
+	picture = GFX_report_event_sad_speer_2
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.8.a
+		hidden_effect = {
+			country_event = {
+				days = 10
+				id = speer_rm.9
+			}
+		}
+		swap_ideas = {
+			remove_idea = GER_armed_militias
+			add_idea = GER_organised_armed_militias
+		}
+	}
+}
+
+##Riot Events
+country_event = { #The Rhine Riots
+	#Trigger: Failed Demobilization 
+	#Effect: Leads to Option 1 Event - Bloody Crashes on the Rhine or Option 2 Event - A Meeting with Dutschke
+	
+	id = speer_rm.9
+	immediate = { hidden_effect = {add_ideas = GER_rhine_riots } }
+	title = speer_rm.9.t
+	desc = speer_rm.9.desc
+	picture = GFX_report_event_german_democracy_riot
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.9.a
+		hidden_effect = {
+			country_event = {
+				days = 10
+				id = speer_rm.10
+			}
+		}
+	}
+	option = {
+		name = speer_rm.9.b
+		hidden_effect = {
+			country_event = {
+				days = 10
+				id = speer_rm.901
+			}
+			
+		}
+	}
+}
+
+country_event = { #A Meeting with Dutschke
+	id = speer_rm.901
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.901" }
+	title = speer_rm.901.t
+	desc = speer_rm.901.desc
+	picture = GFX_report_event_speer_wins
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.901.a
+		remove_ideas = {
+			GER_organised_armed_militias
+			GER_rhine_riots
+		}
+		add_ideas = GER_student_negotiations
+	}
+}
+
+country_event = { #Bloody Clashes on the Rhine
+	#Trigger: Rhine Riots Option 1
+	#Effect: Leads to Option 1 Event - Slave Strikes or Option 2 Event - Making Some Concessions
+	
+	id = speer_rm.10
+	immediate = { hidden_effect = { add_ideas = GER_student_resistance } }
+	title = speer_rm.10.t
+	desc = speer_rm.10.desc
+	picture = GFX_report_event_riot_chaos
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.10.a
+		hidden_effect = {
+			country_event = {
+				days = 10
+				id = speer_rm.11
+			}
+			
+		}
+	}
+
+	option = {
+		name = speer_rm.10.b
+		hidden_effect = {
+			country_event = {
+				days = 10
+				id = speer_rm.1001
+			}
+			
+		}
+	}
+}
+
+country_event = { #Making Some Concessions
+	id = speer_rm.1001
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.1001" }
+	title = speer_rm.1001.t
+	desc = speer_rm.1001.desc
+	picture = GFX_report_event_german_slavery
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.1001.a
+		remove_ideas = {
+			GER_student_resistance 
+			GER_organised_armed_militias
+			GER_rhine_riots
+		}
+	}
+}
+
+country_event = { #The Slave Strikes
+	#Trigger: Bloody Clashes on the Rhine
+	#Effect: Leads to Option 1 Event - The General Strike or Option 2 Event - A Meeting With Brandt
+	
+	id = speer_rm.11
+	immediate = { 
+		hidden_effect = {
+			add_ideas = {
+				GER_slave_strikes 
+				GER_reichsbanner_resistance
+			}
+		}
+	}
+	title = speer_rm.11.t
+	desc = speer_rm.11.desc
+	picture = GFX_report_event_german_democracy_riot_2
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.11.a
+		hidden_effect = {
+			country_event = {
+				days = 10
+				id = speer_rm.12
+			}
+		}
+		
+	}
+
+	option = {
+		name = speer_rm.11.b
+		hidden_effect = {
+			country_event = {
+				days = 10
+				id = speer_rm.1101
+			}
+			
+		}
+	}
+}
+
+country_event = { #A Meeting with Brandt
+	id = speer_rm.1101
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.1101" }
+	title = speer_rm.1101.t
+	desc = speer_rm.1101.desc
+	picture = GFX_report_event_corporate_board_meeting
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.1101.a
+		remove_ideas = {
+			GER_student_resistance 
+			GER_organised_armed_militias
+			GER_slave_strikes 
+			GER_reichsbanner_resistance
+			GER_rhine_riots
+			
+		}
+		add_ideas = GER_willys_negotiations
+	}
+}
+
+country_event = { #The General Strike
+	#Trigger: The Slave Strikes Option 1
+	#Effect: Leads to Option 1 Event - March on Germania or Option 2 Event - In the Unions
+	
+	id = speer_rm.12
+	immediate = { hidden_effect = { add_ideas = GER_general_strikes } }
+	title = speer_rm.12.t
+	desc = speer_rm.12.desc
+	picture = GFX_report_event_german_democracy_riot_3
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.12.a
+		hidden_effect = {
+			country_event = {
+				days = 10
+				id = speer_rm.13
+			}
+			
+		}
+	}
+
+	option = {
+		name = speer_rm.12.b
+		hidden_effect = {
+			country_event = {
+				days = 10
+				id = speer_rm.1201
+			}
+			
+		}
+	}
+}
+
+country_event = { #In The Unions
+	id = speer_rm.1201
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.1201" }
+	title = speer_rm.1201.t
+	desc = speer_rm.1201.desc
+	picture = GFX_report_event_workers_union
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.1201.a
+		remove_ideas = {
+			GER_student_resistance 
+			GER_organised_armed_militias
+			GER_slave_strikes 
+			GER_reichsbanner_resistance
+			GER_rhine_riots
+			GER_general_strikes
+		}
+		add_ideas = GER_union_negotiations
+	}
+}
+
+country_event = { #March on Germania for Freedom
+	#Trigger: The General Strike Option 1
+	#Effect: Leads to Option 1 Event - The Brandenburg Gate Massacre or Option 2 Event - The Four Meet the Two
+	
+	id = speer_rm.13
+	immediate = { hidden_effect = { add_ideas = GER_nationwide_protests } }
+	title = speer_rm.13.t
+	desc = speer_rm.13.desc
+	picture = GFX_report_event_generic_riot
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.13.a
+		hidden_effect = {
+			country_event = {
+				days = 10
+				id = speer_rm.14
+			}
+			
+		}
+	}
+
+	option = {
+		name = speer_rm.13.b
+		hidden_effect = {
+			country_event = {
+				days = 10
+				id = speer_rm.1301
+			}
+			
+		}
+	}
+}
+
+country_event = { #The Four Meet The Two
+	id = speer_rm.1301
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.1301" }
+	title = speer_rm.1301.t
+	desc = speer_rm.1301.desc
+	picture = GFX_gang_of_four_intro
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.1301.a
+		remove_ideas = {
+			GER_student_resistance 
+			GER_organised_armed_militias
+			GER_slave_strikes 
+			GER_reichsbanner_resistance
+			GER_general_strikes
+			GER_rhine_riots
+			GER_nationwide_protests
+		}
+		add_ideas = GER_six_concessions
+	}
+}
+
+
+country_event = { #The Brandenburg Gate Massacre
+	#Trigger: March on Germania for Freedom Option 1
+	#Effect: Leads to Option 1 Event - The Bund Demonstrations
+	
+	id = speer_rm.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.14" }
+	title = speer_rm.14.t
+	desc = speer_rm.14.desc
+	picture = GFX_report_event_germania_tank
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.14.a
+		hidden_effect = {
+			every_country = {
+				country_event = speer_rm.1401
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				days = 10
+				id = speer_rm.15
+			}
+			
+		}
+		remove_ideas = {
+			GER_student_resistance 
+			GER_reichsbanner_resistance
+			GER_nationwide_protests
+		}
+		add_ideas = GER_brandenburg_massacre
+	}
+}
+
+news_event = { #The Brandenburg Gate Massacre news
+	#Trigger: March on Germania for Freedom Option 1
+	#Effect: Leads to Option 1 Event - The Bund Demonstrations
+	
+	id = speer_rm.1401
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.1401" }
+	title = speer_rm.1401.t
+	desc = speer_rm.1401.desc
+	picture = GFX_news_report_event_germania_tank
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.1401.a
+	}
+}
+
+country_event = { #The Bund Demonstrations
+	#Trigger: The Brandenburg Gate Massacre Option 1
+	#Effect: Leads to Option 1 Event - The Brandt-Dutschke Affair
+	
+	id = speer_rm.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.15" }
+	title = speer_rm.15.t
+	desc = speer_rm.15.desc
+	picture = GFX_report_event_german_democracy_riot
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.15.a
+		hidden_effect = {
+			country_event = {
+				days = 10
+				id = speer_rm.16
+			}
+			
+		}
+	}
+}
+
+country_event = { #The Brandt-Dutschke Affair
+	#Trigger: The Bund Demonstrations Option 1
+	#Effect: End of Event Chain - Spartacist Uprising Imminent
+	
+	id = speer_rm.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.16" }
+	title = speer_rm.16.t
+	desc = speer_rm.16.desc
+	picture = GFX_report_event_CAU_execution
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.16.a
+		hidden_effect = {
+			TRM_SPR_nationwide_riots_init = yes
+			TRM_SPR_nationwide_riots_update_everything = yes
+			set_country_flag = SPR_riots_phase 
+		}
+		add_ideas = GER_nationwide_uprisings
+		add_popularity = { ideology = communist popularity = 0.25 }
+	}
+}
+
+country_event = { #luftwaffe infiltration
+	
+	id = speer_rm.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.17" }
+	title = speer_rm.17.t
+	desc = speer_rm.17.desc
+	picture = GFX_report_event_CAU_execution
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.17.a
+	}
+}
+
+country_event = { #wehrmacht infiltration
+
+	id = speer_rm.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.18" }
+	title = speer_rm.18.t
+	desc = speer_rm.18.desc
+	picture = GFX_report_event_CAU_execution
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.18.a
+	}
+}
+country_event = { #kriegsmarine infiltration
+
+	id = speer_rm.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.19" }
+	title = speer_rm.19.t
+	desc = speer_rm.19.desc
+	picture = GFX_report_event_CAU_execution
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.19.a
+	}
+}
+
+country_event = { #speer assasination
+
+	id = speer_rm.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.20" }
+	title = speer_rm.20.t
+	desc = speer_rm.20.desc
+	picture = GFX_report_event_generic_speer
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.20.a
+		
+		#here we change to reichstag government
+		hidden_effect = {
+			every_country = { 
+				country_event = speer_rm.2001
+			}
+		}
+		GER = {
+			kill_country_leader = yes	
+			create_country_leader = {
+				name = "Reichstag Emergency Council"
+				# desc = "POLITICS_INTERIMREGIERUNG_DESC"
+				picture = "gfx/leaders/GER/Portrait_Germany_Reichstag_Emergency_Council.dds"
+				expire = "1984.10.28"
+				ideology = fascism_reformed_national_socialism_subtype
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = speer_rm.21
+				days = 4
+			}
+		}
+	}
+}
+
+news_event = { #speer assasination news
+
+	id = speer_rm.2001
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.2001" }
+	title = speer_rm.2001.t
+	desc = speer_rm.2001.desc
+	picture = GFX_news_event_german_funeral
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.2001.a
+	}
+}
+
+country_event = { #tresckow comes into power
+
+	id = speer_rm.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer_rm.21" }
+	title = speer_rm.21.t
+	desc = speer_rm.21.desc
+	picture = GFX_report_event_germania_2
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = speer_rm.21.a
+		
+		#here we change to tresckow government
+		
+		
+		GER = {
+			retire_country_leader = yes
+			set_party_name = {
+				ideology = despotism
+				long_name = GER_despotism_party_tresckow_long
+				name = GER_despotism_party_tresckow
+			}
+			promote_character = GER_henning_von_tresckow
+			
+			set_politics = { ruling_party = despotism }
+			set_political_party = {
+				ideology = despotism
+				popularity = 50
+			}
+			remove_all_ministers = yes
+			add_ideas = {
+				GER_Hans_Speidel_for
+				GER_Kurt_Georg_Kiesinger_hog_tresckow
+				GER_Theodor_Oberlander_sec
+				GER_Hermann_Josef_Abs_eco
+			}
+			load_focus_tree = GER_tresckow_starting_tree
+		}
+		GER = {
+			set_country_leader_description = { desc = GER_henning_von_tresckow_desc }
+		}
+		
+	}
+}
+
+country_event = { #ANOTHER CRISIS?!!??!?!?!?!?
+	id = tresckow.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.1" }
+	title = tresckow.1.t
+	desc = tresckow.1.desc
+	picture = GFX_report_event_generic_oberlander
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.1.a
+		country_event = {
+			id = tresckow.2
+			days = 10
+		}
+	}
+}
+
+country_event = { #bloody noon
+	id = tresckow.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.2" }
+	title = tresckow.2.t
+	desc = tresckow.2.desc
+	picture = GFX_report_event_bloody_noon
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.2.a
+		hidden_effect = {
+			country_event = {
+				id = tresckow.2000
+			}
+		}
+		hidden_effect = {
+			GER_henning_von_tresckow = {
+				set_portraits = {
+					army = { 
+						large = "GFX_portrait_tresckow_old"
+					}
+				}
+			}
+		}
+		GER = {
+			load_focus_tree = GER_tresckow_ending_tree
+			set_country_leader_description = { desc = GER_henning_von_tresckow_old_desc }
+			remove_all_ministers = yes
+			add_ideas = {
+				GER_Hermann_Josef_Abs_eco
+				GER_Hans_Speidel_for
+				GER_Henning_von_Tresckow_sec
+			}
+		}
+	}
+}
+
+news_event = { 
+	id = tresckow.2000
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.2000" }
+	title = tresckow.2000.t
+	desc = tresckow.2000.desc
+	picture = GFX_news_report_event_bloody_noon
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.2000.a
+	}
+}
+
+country_event = {
+	id = tresckow.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.3" }
+	title = tresckow.3.t
+	desc = tresckow.3.desc
+	picture = GFX_report_event_german_city_burning
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.3.a
+		#rhein
+		51 = { set_demilitarized_zone = yes }
+		42 = { set_demilitarized_zone = yes }
+		8 = { set_demilitarized_zone = yes }
+		28 = { set_demilitarized_zone = yes }
+		#hamburg
+		775 = { set_demilitarized_zone = yes }
+		#austria
+		152 = { set_demilitarized_zone = yes }
+		4 = { set_demilitarized_zone = yes }
+		153 = { set_demilitarized_zone = yes }
+		770 = { set_demilitarized_zone = yes }
+		1025 = { set_demilitarized_zone = yes }
+	}
+}
+
+country_event = {
+	id = tresckow.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.4" }
+	title = tresckow.4.t
+	desc = tresckow.4.desc
+	picture = GFX_report_event_generic_tresckow
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.4.a
+		add_stability = 0.05
+		add_popularity = { ideology = despotism popularity = 0.03 }
+	}
+}
+
+country_event = {
+	id = tresckow.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.5" }
+	title = tresckow.5.t
+	desc = tresckow.5.desc
+	picture = GFX_report_event_schmidt	
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.5.a
+		#austria
+		152 = { set_demilitarized_zone = no }
+		4 = { set_demilitarized_zone = no }
+		153 = { set_demilitarized_zone = no }
+		770 = { set_demilitarized_zone = no }
+		1025 = { set_demilitarized_zone = no }
+	}
+}
+
+country_event = {
+	id = tresckow.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.6" }
+	title = tresckow.6.t
+	desc = tresckow.6.desc
+	picture = GFX_report_event_german_wine
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.6.a
+		custom_effect_tooltip = tresckow_6_tooltip
+		remove_ideas = GER_slave_strikes
+		add_stability = 0.04
+	}
+}
+
+country_event = {
+	id = tresckow.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.7" }
+	title = tresckow.7.t
+	desc = tresckow.7.desc
+	picture = GFX_report_event_german_house_raid
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.7.a
+		add_popularity = { ideology = fascism popularity = -0.07 }
+		add_popularity = { ideology = despotism popularity = 0.02 }
+	}
+}
+
+country_event = {
+	id = tresckow.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.8" }
+	title = tresckow.8.t
+	desc = tresckow.8.desc
+	picture = GFX_report_event_iberia_prison_jail_cell
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.8.a
+		custom_effect_tooltip = tresckow_8_tooltip
+		remove_ideas = GER_general_strikes
+		add_stability = 0.04
+	}
+}
+
+country_event = {
+	id = tresckow.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.9" }
+	title = tresckow.9.t
+	desc = tresckow.9.desc
+	picture = GFX_report_event_german_army2
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.9.a
+		add_popularity = { ideology = communist popularity = -0.04 }
+		add_manpower = -50
+		775 = { set_demilitarized_zone = no }
+	}
+}
+
+country_event = { ##fall of dortmund
+	id = tresckow.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.10" }
+	title = tresckow.10.t
+	desc = tresckow.10.desc
+	picture = GFX_report_event_dortmund
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.10.a
+		57 = { set_demilitarized_zone = yes }
+		152 = { set_demilitarized_zone = yes }
+		4 = { set_demilitarized_zone = yes }
+		153 = { set_demilitarized_zone = yes }
+		770 = { set_demilitarized_zone = yes }
+		1025 = { set_demilitarized_zone = yes }
+	}
+}
+
+country_event = { #marshall's demise
+	id = tresckow.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.11" }
+	title = tresckow.11.t
+	desc = tresckow.11.desc
+	picture = GFX_report_event_GER_germania_snow
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.11.a
+		country_event = {
+			id = tresckow.12
+		}
+	}
+}
+
+country_event = { #battle of germania
+	id = tresckow.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.12" }
+	title = tresckow.12.t
+	desc = tresckow.12.desc
+	picture = GFX_report_event_germania_battle
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.12.a
+		hidden_effect = {
+			country_event = {
+				id = tresckow.1200
+			}
+		}
+		country_event = {
+			id = ddr.1
+		}
+	}
+}
+
+news_event = { 
+	id = tresckow.1200
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.1200" }
+	title = tresckow.1200.t
+	desc = tresckow.1200.desc
+	picture = GFX_news_report_event_german_revolution
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.1200.a
+		every_country = {
+			limit = { is_ai = no }
+			set_temp_variable = { TRM_temp_super_event = 10001 }
+			TRM_fire_super_event = yes
+		}
+	}
+}
+
+country_event = { #Theodor’s Fate
+	id = tresckow.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.13" }
+	title = tresckow.13.t
+	desc = tresckow.13.desc
+	picture = GFX_IRE_event_prison
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.13.a
+		add_popularity = { ideology = national_socialism popularity = -0.05 }
+	}
+}
+
+country_event = { #The Bremen Agreement
+	id = tresckow.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.14" }
+	title = tresckow.14.t
+	desc = tresckow.14.desc
+	picture = GFX_report_event_telephone_generic
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.14.a
+		188 = { set_demilitarized_zone = yes }
+		775 = { set_demilitarized_zone = yes }
+	}
+}
+
+country_event = { #Unholy Deals
+	id = tresckow.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.15" }
+	title = tresckow.15.t
+	desc = tresckow.15.desc
+	picture = GFX_night_sky
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.15.a
+		55 = { set_demilitarized_zone = yes }
+		1373 = { set_demilitarized_zone = yes }
+		56 = { set_demilitarized_zone = yes }
+	}
+}
+
+country_event = { #Hitler's Nightmare
+	id = tresckow.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.16" }
+	title = tresckow.16.t
+	desc = tresckow.16.desc
+	picture = GFX_report_event_germany_court
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.16.a
+		add_popularity = { ideology = national_socialism popularity = -0.02 }
+	}
+}
+
+country_event = { #leipzig event
+	id = tresckow.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.17" }
+	title = tresckow.17.t
+	desc = tresckow.17.desc
+	picture = GFX_report_event_german_anarchy
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.17.a
+		9 = { set_demilitarized_zone = yes }
+		65 = { set_demilitarized_zone = yes }
+		60 = { set_demilitarized_zone = yes }
+		69 = { set_demilitarized_zone = yes }
+	}
+}
+
+country_event = { #1919 event
+	id = tresckow.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.18" }
+	title = tresckow.18.t
+	desc = tresckow.18.desc
+	picture = GFX_report_event_generic_kiesinger
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.18.a
+		72 = { set_demilitarized_zone = yes }
+		50 = { set_demilitarized_zone = yes }
+		52 = { set_demilitarized_zone = yes }
+		53 = { set_demilitarized_zone = yes }
+	}
+}
+
+country_event = { #evacuate rostok
+	id = tresckow.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tresckow.19" }
+	title = tresckow.19.t
+	desc = tresckow.19.desc
+	picture = GFX_BRA_event_ship_swastika
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tresckow.19.a
+		56 = { set_demilitarized_zone = yes }
+		58 = { set_demilitarized_zone = yes }
+		774 = { set_demilitarized_zone = yes }
+		53 = { set_demilitarized_zone = yes }
+		61 = { set_demilitarized_zone = yes }
+		62 = { set_demilitarized_zone = yes }
+		63 = { set_demilitarized_zone = yes }
+		85 = { set_demilitarized_zone = yes }
+		5 = { set_demilitarized_zone = yes }
+		1026 = { set_demilitarized_zone = yes }
+		776 = { set_demilitarized_zone = yes }
+	}
+}

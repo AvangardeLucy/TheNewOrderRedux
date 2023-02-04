@@ -621,6 +621,10 @@ spriteTypes = {
 		name = "GFX_ideology_socialist_buddhist_socialism_subtype"
 		texturefile = "gfx/interface/ideologies/socialist_buddhist_socialism_subtype.png"
 	}
+	spriteType = {
+		name = "GFX_ideology_communist_spartacism_subtype"
+		texturefile = "gfx/interface/ideologies/communist_spartacism_subtype.png"
+	}
 	# --- Main Ideologies --- #
 	spriteType = {
 		name = "GFX_ideology_communist_group"

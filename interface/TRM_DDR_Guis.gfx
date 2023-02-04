@@ -1,0 +1,349 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_DDR_Demobpicture"
+		texturefile = "gfx/interface/DDR_GUIS/Demobilization_Gui/DDR_Demobpicture.dds"
+	}
+    SpriteType = {
+		name = "GFX_DDR_doubleframe_box"
+		texturefile = "gfx/interface/DDR_GUIS/Demobilization_Gui/DDR_doubleframe_box.dds"
+	}
+    SpriteType = {
+		name = "GFX_DDR_progress_box_frame"
+		texturefile = "gfx/interface/DDR_GUIS/Demobilization_Gui/DDR_progress_box_frame.dds"
+	}
+    progressbartype = {
+		name = "GFX_DDR_Partisan_Bar"
+		textureFile1 = "gfx/interface/DDR_GUIS/Demobilization_Gui/DDR_full_partisan_bar.dds"
+		textureFile2 = "gfx/interface/DDR_GUIS/Demobilization_Gui/DDR_empty_partisan_bar.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 386
+			y = 52
+		}
+		effectFile = "gfx/FX/progress.lua"
+	}
+
+	### Nationwide Riots ###
+	SpriteType = {
+		name = "GFX_SGR_Riot_Banner"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/SGR_Riot_Banner.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_big_map_box"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/big_map_box.dds"
+	}
+	SpriteType = {
+		name = "GFX_germany_map_outline"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/germany_map_outline.dds"
+	}
+	SpriteType = {
+		name = "GFX_pol_sta_progress_box"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/pol_sta_progress_box.dds"
+	}
+	progressbartype = {
+		name = "GFX_DDR_anarcho_commie_bar"
+		textureFile1 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/anarchism_bar.dds"
+		textureFile2 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/communism_bar.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 227
+			y = 23
+		}
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_DDR_speer_empty_bar"
+		textureFile1 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/fascism_bar.dds"
+		textureFile2 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/pol_sta_progress_box_empty.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 227
+			y = 23
+		}
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_DDR_stability_bar"
+		textureFile1 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/stability_bar.dds"
+		textureFile2 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/pol_sta_progress_box_empty.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 227
+			y = 23
+		}
+		effectFile = "gfx/FX/progress.lua"
+	}
+	SpriteType = {
+		name = "GFX_pol_sta_progress_box"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/pol_sta_progress_box.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_ideologies_box"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/ideologies_box.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_anarchism"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/ideology_anarchism.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_communism"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/ideology_communism.dds"
+	}
+	SpriteType = {
+		name = "GFX_ideology_fascism"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/ideology_fascism.dds"
+	}
+	SpriteType = {
+		name = "GFX_pol_sta_big_box"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/pol_sta_big_box.dds"
+	}
+	SpriteType = {
+		name = "GFX_region_1"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_1.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_1_selected"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_1_selected.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_2"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_2.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_2_selected"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_2_selected.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_3"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_3.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_3_selected"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_3_selected.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_4"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_4.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_4_selected"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_4_selected.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_5"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_5.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_5_selected"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_5_selected.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_6"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_6.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_6_selected"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_6_selected.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_7"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_7.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_7_selected"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_7_selected.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_8"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_8.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_8_selected"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_8_selected.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_9"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_9.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_9_selected"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_9_selected.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_10"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_10.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_10_selected"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_10_selected.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_11"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_11.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_11_selected"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_11_selected.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_12"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_12.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_12_selected"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_12_selected.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_13"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_13.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_13_selected"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_13_selected.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_14"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_14.dds"
+		transparencecheck = yes
+		noOfFrames = 3
+	}
+	SpriteType = {
+		name = "GFX_region_14_selected"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_14_selected.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_15"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_15.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_15_selected"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_15_selected.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_16"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_16.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_16_selected"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_16_selected.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_17"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_17.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_region_17_selected"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_17_selected.dds"
+		transparencecheck = yes
+	}
+	###army_and_party
+	SpriteType = {
+		name = "GFX_parties_background"
+		texturefile = "gfx/interface/army_and_party/parties_background.dds"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_army_background"
+		texturefile = "gfx/interface/army_and_party/army_background.dds"
+		transparencecheck = yes
+	}
+	progressbartype = {
+		name = "GFX_DDR_stability_bar"
+		textureFile1 = "gfx/interface/army_and_party/stability_bar.dds"
+		textureFile2 = "gfx/interface/army_and_party/empty_bar.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 173
+			y = 22
+		}
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_DDR_unity_bar"
+		textureFile1 = "gfx/interface/army_and_party/unity_bar.dds"
+		textureFile2 = "gfx/interface/army_and_party/empty_bar.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 173
+			y = 22
+		}
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_DDR_congress_hammer"
+		textureFile1 = "gfx/interface/army_and_party/congress_hammer_full.dds"
+		textureFile2 = "gfx/interface/army_and_party/congress_hammer_empty.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 100
+			y = 99
+		}
+		horizontal = no
+		effectFile = "gfx/FX/progress.lua"
+	}
+	SpriteType = {
+		name = "GFX_army_button"
+		texturefile = "gfx/interface/army_and_party/army_button.dds"
+	}
+	SpriteType = {
+		name = "GFX_party_button"
+		texturefile = "gfx/interface/army_and_party/party_button.dds"
+	}
+}

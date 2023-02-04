@@ -579,3 +579,6 @@ OFN = "countries/Organization of Free Nations.txt"
 ADN = "countries/Andean Pact.txt"
 CME = "countries/COMECON.txt"
 ZZZ = "countries/anarchy.txt" #ANARCHY SHOULD BE THE LAST TAG
+
+###TNO REDUX###
+DDR = "countries/Red Germany.txt"

@@ -1,0 +1,32 @@
+ideas = {
+	hidden_ideas = {
+		# Rot Front
+		RotFront_Leader = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RotFront_Leader"}
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = RotFront_Leader
+		}
+		
+		RotFront_Observer = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea Rotfront_Observer"}
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = RotFront_Observer
+		}
+		
+		RotFront_Member = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RotFront_Member"}
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = RotFront_Member
+		}
+		
+		RotFront_Satellite = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RotFront_Satellite"}
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = RotFront_Satellite
+		}
+	}
+}

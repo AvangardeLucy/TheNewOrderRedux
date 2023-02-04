@@ -1,0 +1,903 @@
+##dont forget to use dead_stasis_counter and dead_nazis_counter when determine stats for the final battle.
+
+##base_supply, base_morale and base_corruption are used for effect buffs in events and focuses
+##base_nazi_supply, base_nazi_morale and base_nazi_corruption
+TRM_DDR_nazi_hunt_custom_setup = { 
+###i just thought of doing stats through arrays for easier access but im too lazy to rewrite 6 lines of code i already done just with vars
+###so fuck it
+
+###2 months later: I should've rewritten the code with arrays.
+
+	##remove flags
+	clr_country_flag = nazi_hunt_has_first_character
+	clr_country_flag = nazi_hunt_has_second_character
+	clr_country_flag = nazi_hunt_has_third_character
+	clr_country_flag = nazi_hunt_nazi_has_first_character
+	clr_country_flag = nazi_hunt_nazi_has_second_character
+	
+	clr_country_flag = nazi_hunt_nazi_has_first_character_eliminated
+	clr_country_flag = nazi_hunt_nazi_has_second_character_eliminated
+	
+	clr_country_flag = nazi_hunt_has_first_character_failed
+	clr_country_flag = nazi_hunt_has_second_character_failed
+	clr_country_flag = nazi_hunt_has_third_character_failed
+	
+	##standard variables
+	set_variable = { nazi_character_turn = 1 }
+	set_variable = { stasi_character_turn = 1 }
+	set_variable = { chosen_enemy = 1 }
+	set_variable = { one_chosen = 2}
+	set_variable = { two_chosen = 1}
+	
+	set_variable = { stasi_character_one_stats_supply = base_supply}
+	set_variable = { stasi_character_one_stats_morale = base_morale}
+	set_variable = { stasi_character_one_stats_corruption = base_corruption}
+	
+	set_variable = { stasi_character_two_stats_supply = base_supply}
+	set_variable = { stasi_character_two_stats_morale = base_morale}
+	set_variable = { stasi_character_two_stats_corruption = base_corruption}
+	
+	set_variable = { stasi_character_three_stats_supply = base_supply}
+	set_variable = { stasi_character_three_stats_morale = base_morale}
+	set_variable = { stasi_character_three_stats_corruption = base_corruption}
+	
+	set_variable = { nazi_character_one_stats_strength = base_nazi_supply}
+	set_variable = { nazi_character_one_stats_morale = base_nazi_morale}
+	set_variable = { nazi_character_one_stats_infiltration = base_nazi_corruption}
+	
+	set_variable = { nazi_character_two_stats_strength = base_nazi_supply}
+	set_variable = { nazi_character_two_stats_morale = base_nazi_morale}
+	set_variable = { nazi_character_two_stats_infiltration = base_nazi_corruption}
+	set_variable = { commie_hp = 700 }
+	set_variable = { commie_hp_bar = 100 }
+	set_variable = { nazi_hp = 700 }
+	set_variable = { nazi_hp_bar = 100 }
+	set_variable = { total_nazi_damage = 0 }
+	set_variable = { total_commie_damage = 0 }
+}
+
+TRM_DDR_nazi_hunt_setup_prussia = {
+	set_variable = { nazi_hunt_battle_num = 1 }
+	###give stasi all 3 guys
+	set_country_flag = nazi_hunt_has_first_character
+	set_country_flag = nazi_hunt_has_second_character
+	set_country_flag = nazi_hunt_has_third_character
+	
+	###give nazis 2 guys
+	set_country_flag = nazi_hunt_nazi_has_first_character
+	set_country_flag = nazi_hunt_nazi_has_second_character
+	
+	
+	
+}
+
+TRM_DDR_nazi_hunt_setup_saxony = {
+	set_variable = { nazi_hunt_battle_num = 2 }
+	###give stasi all 3 guys
+	set_country_flag = nazi_hunt_has_first_character
+	set_country_flag = nazi_hunt_has_second_character
+	set_country_flag = nazi_hunt_has_third_character
+	
+	###give nazis 2 guys
+	set_country_flag = nazi_hunt_nazi_has_first_character
+	set_country_flag = nazi_hunt_nazi_has_second_character
+	
+	
+}
+
+TRM_DDR_nazi_hunt_setup_low_saxony = {
+	set_variable = { nazi_hunt_battle_num = 3 }
+	###give stasi 1 guys
+	set_country_flag = nazi_hunt_has_first_character
+	
+	###give nazis 1 guys
+	set_country_flag = nazi_hunt_nazi_has_first_character
+	
+	
+}
+
+
+TRM_DDR_nazi_hunt_setup_finale = {
+	set_variable = { nazi_hunt_battle_num = 4 }
+	###give stasi 1 guys
+	set_country_flag = nazi_hunt_has_first_character
+	
+	set_variable = { stasi_character_one_stats_supply = 4900}
+	set_variable = { stasi_character_one_stats_morale = 4900}
+	set_variable = { stasi_character_one_stats_corruption = 100}
+	
+	if = {
+		limit = {
+			check_variable = { dead_stasis_counter > 0 }
+		}
+		divide_variable = { stasi_character_one_stats_supply = dead_stasis_counter }
+		divide_variable = { stasi_character_one_stats_morale = dead_stasis_counter }
+	}
+	
+	
+	
+	###give nazis 1 guys
+	set_country_flag = nazi_hunt_nazi_has_first_character
+	
+	set_variable = { nazi_character_one_stats_strength = 3500}
+	set_variable = { nazi_character_one_stats_morale = 3500}
+	set_variable = { nazi_character_one_stats_infiltration = 100}
+	
+	if = {
+		limit = {
+			check_variable = { dead_stasis_counter > 0 }
+		}
+		divide_variable = { stasi_character_one_stats_supply = dead_stasis_counter }
+		divide_variable = { stasi_character_one_stats_morale = dead_stasis_counter }
+	}
+	
+}
+
+TRM_DDR_nazi_hunt_check_character_health = {
+	log = "healthcheck"
+#if morale gets to 0 no supplies regenerate. So if supplies get to 0 as well the character
+#cannot act anymore (knock out)
+#also nullify negative numbers
+##check stasis
+	if = { 
+		limit = {
+			has_country_flag = nazi_hunt_has_first_character
+			NOT = { has_country_flag = nazi_hunt_has_first_character_failed } 
+		}
+		clamp_variable = {
+			var = stasi_character_one_stats_morale
+			min = 0
+			max = base_morale
+		}
+		clamp_variable = {
+			var = stasi_character_one_stats_supply
+			min = 0
+			max = base_supply
+		}
+		if = { 
+			limit = { 
+				check_variable = { stasi_character_one_stats_supply < 5 }
+			}
+			if = { 
+				limit = { 
+					check_variable = { stasi_character_one_stats_supply < 5 }
+				}
+				add_to_variable = { dead_stasis_counter = 1 }
+				set_country_flag = nazi_hunt_has_first_character_failed
+				if = {
+					limit = {
+						OR = {
+							has_country_flag = nazi_hunt_has_second_character_failed
+							NOT = { has_country_flag = nazi_hunt_has_second_character }
+						}
+						OR = {
+							has_country_flag = nazi_hunt_has_third_character_failed
+							NOT = { has_country_flag = nazi_hunt_has_third_character }
+						}
+					}
+					TRM_DDR_nazi_hunt_nazi_turn = yes
+				}
+				
+			}
+			
+		}
+	}
+	if = { 
+		limit = {
+			has_country_flag = nazi_hunt_has_second_character
+			NOT = { has_country_flag = nazi_hunt_has_second_character_failed } 
+		}
+		clamp_variable = {
+			var = stasi_character_two_stats_morale
+			min = 0
+			max = base_morale
+		}
+		clamp_variable = {
+			var = stasi_character_two_stats_supply
+			min = 0
+			max = base_supply
+		}
+		if = { 
+			limit = { 
+				check_variable = { stasi_character_two_stats_supply < 5 }
+			}
+			if = { 
+				limit = { 
+					check_variable = { stasi_character_two_stats_supply < 5 }
+				}
+				add_to_variable = { dead_stasis_counter = 1 }
+				set_country_flag = nazi_hunt_has_second_character_failed
+				if = {
+					limit = {
+						OR = {
+							has_country_flag = nazi_hunt_has_first_character_failed
+							NOT = { has_country_flag = nazi_hunt_has_first_character }
+						}
+						OR = {
+							has_country_flag = nazi_hunt_has_third_character_failed
+							NOT = { has_country_flag = nazi_hunt_has_third_character }
+						}
+					}
+					TRM_DDR_nazi_hunt_nazi_turn = yes
+				}
+				
+			}
+			
+		}
+	}
+	if = { 
+		limit = {
+			has_country_flag = nazi_hunt_has_third_character
+			NOT = { has_country_flag = nazi_hunt_has_third_character_failed } 
+		}
+		clamp_variable = {
+			var = stasi_character_three_stats_morale
+			min = 0
+			max = base_morale
+		}
+		clamp_variable = {
+			var = stasi_character_three_stats_supply
+			min = 0
+			max = base_supply
+		}
+		if = { 
+			limit = { 
+				check_variable = { stasi_character_three_stats_supply < 5 }
+			}
+			if = { 
+				limit = { 
+					check_variable = { stasi_character_three_stats_supply < 5 }
+				}
+				add_to_variable = { dead_stasis_counter = 1 }
+				set_country_flag = nazi_hunt_has_third_character_failed
+				if = {
+					limit = {
+						OR = {
+							has_country_flag = nazi_hunt_has_first_character_failed
+							NOT = { has_country_flag = nazi_hunt_has_first_character }
+						}
+						OR = {
+							has_country_flag = nazi_hunt_has_second_character_failed
+							NOT = { has_country_flag = nazi_hunt_has_second_character }
+						}
+					}
+					TRM_DDR_nazi_hunt_nazi_turn = yes
+				}
+				
+			}
+			
+		}
+	}
+	if = { 
+		limit = {
+			has_country_flag = nazi_hunt_nazi_has_first_character
+			NOT = { has_country_flag = nazi_hunt_nazi_has_first_character_eliminated } 
+		}
+		clamp_variable = {
+			var = nazi_character_one_stats_morale
+			min = 0
+			max = base_morale
+		}
+		clamp_variable = {
+			var = nazi_character_one_stats_strength
+			min = 0
+			max = base_nazi_supply
+		}
+		if = { 
+			limit = { 
+				check_variable = { nazi_character_one_stats_strength < 5 }
+			}
+			log = "first no morale"
+			if = { 
+				limit = { 
+					check_variable = { nazi_character_one_stats_strength < 5 }
+				}
+				set_country_flag = nazi_hunt_nazi_has_first_character_eliminated
+				log = "first ded"
+				add_to_variable = { dead_nazis_counter = 1 }
+				if = { 
+					limit = { 
+						NOT = { has_country_flag = nazi_hunt_nazi_has_second_character_eliminated }
+					} 
+					set_variable = { chosen_enemy = 2 }
+					set_variable = { one_chosen = 1}
+					set_variable = { two_chosen = 2}
+				}
+				else = {
+					TRM_DDR_nazi_hunt_nazi_turn = yes
+				}
+				log = "first eliminated"
+				
+			}
+			
+		}
+	}
+	if = { 
+		limit = {
+			has_country_flag = nazi_hunt_nazi_has_second_character
+			NOT = { has_country_flag = nazi_hunt_nazi_has_second_character_eliminated } 
+		}
+		clamp_variable = {
+			var = nazi_character_two_stats_morale
+			min = 0
+			max = base_morale
+		}
+		clamp_variable = {
+			var = nazi_character_two_stats_strength
+			min = 0
+			max = base_nazi_supply
+		}
+		if = { 
+			limit = { 
+				check_variable = { nazi_character_two_stats_strength < 5 }
+			}
+			if = { 
+				limit = { 
+					check_variable = { nazi_character_two_stats_strength < 5 }
+				}
+				add_to_variable = { dead_nazis_counter = 1 }
+				set_country_flag = nazi_hunt_nazi_has_second_character_eliminated
+				if = { 
+					limit = { 
+						NOT = { has_country_flag = nazi_hunt_nazi_has_first_character_eliminated }
+					} 
+					set_variable = { chosen_enemy = 1}
+					set_variable = { two_chosen = 1}
+					set_variable = { one_chosen = 2}
+				}
+				else = {
+					TRM_DDR_nazi_hunt_nazi_turn = yes
+				}
+				
+			}
+			
+		}
+	}
+	
+	
+	###now i realise that rewriting code with arrays earlier would've saved code space. Dayum.
+
+	###here hp bars are handled. What a lazy coding mind comes up with.
+	set_variable = { nazi_hp = 700 }
+	set_variable = { commie_hp = 700 }
+	set_variable = { total_nazi_damage_temp = total_nazi_damage }
+	set_variable = { total_commie_damage_temp = total_commie_damage }
+	divide_variable = { total_nazi_damage_temp = 2 }
+	
+	if = {
+		limit = {
+			check_variable = { total_nazi_damage_temp > 0 }
+		}
+		set_variable = { total_nazi_damage_temp = -total_nazi_damage_temp }
+	}
+	if = {
+		limit = {
+			check_variable = { total_commie_damage_temp > 0 }
+		}
+		set_variable = { total_commie_damage_temp = -total_commie_damage_temp }
+	}
+	
+	add_to_variable = { nazi_hp = total_nazi_damage_temp }
+
+	divide_variable = { total_commie_damage_temp = 2.5 }
+	add_to_variable = { commie_hp = total_commie_damage_temp }
+	
+	set_variable = { commie_hp_bar = commie_hp }
+	divide_variable = { commie_hp_bar = 7 }
+	
+	set_variable = { nazi_hp_bar = nazi_hp }
+	divide_variable = { nazi_hp_bar = 7 }
+	
+	log = " temp nazi damage [?total_nazi_damage_temp] and stasi [?total_commie_damage_temp]"
+	log = " nz hp [?nazi_hp] and st hp [?commie_hp]"
+}
+
+#TRM_DDR_nazi_hunt_stasi_turn = {
+#	if = { limit = { check_variable = { stasi_character_turn = 1 } } 
+#		if = { 
+#			limit = { 
+#				AND = {
+#					check_variable = { attack_type = 1 } 
+#					check_variable = { stasi_character_one_stats_supply > 19 } 
+#				}
+#			}
+#			add_to_variable = { stasi_character_one_stats_supply = -20 }
+#			TRM_DDR_nazi_hunt_nazi_turn = yes
+#		}
+#		else_if = {
+#			limit = { 
+#				AND = {
+#					check_variable = { attack_type = 2 } 
+#					check_variable = { stasi_character_one_stats_supply > 39 } 
+#				}
+#			}
+#			add_to_variable = { stasi_character_one_stats_supply = -40 }
+#			TRM_DDR_nazi_hunt_nazi_turn = yes
+#		}
+#	}
+#	if = { limit = { check_variable = { stasi_character_turn = 2 } } 
+#		if = { 
+#			limit = { 
+#				AND = {
+#					check_variable = { attack_type = 1 } 
+#					check_variable = { stasi_character_two_stats_supply > 19 } 
+#				}
+#			}
+#			add_to_variable = { stasi_character_two_stats_supply = -20 }
+#			TRM_DDR_nazi_hunt_nazi_turn = yes
+#		}
+#		else_if = {
+#			limit = { 
+#				AND = {
+#					check_variable = { attack_type = 2 } 
+#					check_variable = { stasi_character_two_stats_supply > 39 } 
+#				}
+#			}
+#			add_to_variable = { stasi_character_two_stats_supply = -40 }
+#			TRM_DDR_nazi_hunt_nazi_turn = yes
+#		}
+#	}
+#	if = { limit = { check_variable = { stasi_character_turn = 3 } } 
+#		if = { 
+#			limit = { 
+#				AND = {
+#					check_variable = { attack_type = 1 } 
+#					check_variable = { stasi_character_three_stats_supply > 19 } 
+#				}
+#			}
+#			add_to_variable = { stasi_character_three_stats_supply = -20 }
+#			TRM_DDR_nazi_hunt_nazi_turn = yes
+#		}
+#		else_if = {
+#			limit = { 
+#				AND = {
+#					check_variable = { attack_type = 2 } 
+#					check_variable = { stasi_character_three_stats_supply > 39 } 
+#				}
+#			}
+#			add_to_variable = { stasi_character_three_stats_supply = -40 }
+#			TRM_DDR_nazi_hunt_nazi_turn = yes
+#		}
+#	}
+#}
+
+TRM_DDR_nazi_hunt_nazi_turn = {
+	log = "nazi turn"
+	TRM_DDR_nazi_hunt_check_character_health = yes
+	if = {
+		limit = { check_variable = { nazi_character_turn = 1 } }
+		add_to_variable = { nazi_character_one_stats_strength = -20 }
+		if = { limit = { NOT = {  has_country_flag = nazi_hunt_nazi_has_second_character_eliminated } } 
+			set_variable = { nazi_character_turn = 2 }
+		}
+	}
+	else_if = {
+		limit = { check_variable = { nazi_character_turn = 2 } }
+		add_to_variable = { nazi_character_one_stats_strength = -20 }
+		set_variable = { nazi_character_turn = 1 }
+	}
+	TRM_DDR_nazi_hunt_nazi_dumb_ai = yes
+	
+	if = { limit = { check_variable = { stasi_character_turn = 1 } }
+		if = { limit = { NOT = { has_country_flag = nazi_hunt_has_second_character_failed } } 
+			set_variable = { stasi_character_turn = 2 }
+		}
+		else_if = { limit = { NOT = { has_country_flag = nazi_hunt_has_third_character_failed } }
+			set_variable = { stasi_character_turn = 3 }
+		}
+	}
+	if = { limit = { check_variable = { stasi_character_turn = 2 } }
+		if = { limit = { NOT = { has_country_flag = nazi_hunt_has_third_character_failed } } 
+			set_variable = { stasi_character_turn = 3 }
+		}
+		else_if = { limit = { NOT = { has_country_flag = nazi_hunt_has_first_character_failed } } 
+			set_variable = { stasi_character_turn = 1 }
+		}
+	}
+	if = { limit = { check_variable = { stasi_character_turn = 3 } }
+		if = { limit = { NOT = { has_country_flag = nazi_hunt_has_first_character_failed } } 
+			set_variable = { stasi_character_turn = 1 }
+		}
+		else_if = { limit = { NOT = { has_country_flag = nazi_hunt_has_second_character_failed } } 
+			set_variable = { stasi_character_turn = 2 }
+		}
+	}
+	TRM_DDR_nazi_hunt_check_character_health = yes
+	TRM_DDR_nazi_hunt_morale_supply = yes
+	TRM_DDR_nazi_hunt_count_damage_multiplyer = yes
+	
+	log = "win condition check"
+	log = "win condition check [?nazi_hp]"
+	#win/lose conditions check
+	if = { 
+		limit = {
+			OR = { 
+				check_variable = { nazi_hp < 10 }
+				AND = {
+					has_country_flag = nazi_hunt_nazi_has_first_character_eliminated
+					OR = {
+						NOT = { has_country_flag = nazi_hunt_nazi_has_second_character }
+						has_country_flag = nazi_hunt_nazi_has_second_character_eliminated
+					}
+				}
+			}
+		}
+		###WIN EVENT
+		log = "call win event"
+		set_variable = { finale_state = 1 }
+		country_event = ddr_nazis.100
+		
+	}
+	
+	if = { 
+		limit = {
+			OR = { 
+				check_variable = { commie_hp < 10 }
+				AND = {
+					has_country_flag = nazi_hunt_has_first_character_failed
+					OR = {
+						NOT = { has_country_flag = nazi_hunt_has_second_character }
+						has_country_flag = nazi_hunt_has_second_character_failed
+					}
+					OR = {
+						NOT = { has_country_flag = nazi_hunt_has_third_character }
+						has_country_flag = nazi_hunt_has_third_character_failed
+					}
+				}
+			}
+		}
+		###LOSE EVENT
+		set_variable = { finale_state = 2 }
+		country_event = ddr_nazis.100
+	}
+	
+}
+
+
+
+#gain supply based on morale.
+TRM_DDR_nazi_hunt_morale_supply = {
+	set_variable = { base_gain = 15 }
+	if = {
+		limit = {
+			NOT = { has_country_flag = nazi_hunt_nazi_has_first_character_eliminated }
+			has_country_flag = nazi_hunt_nazi_has_first_character
+		}
+		set_variable = { nazi_character_one_stats_morale_temp = nazi_character_one_stats_morale }
+		divide_variable = { nazi_character_one_stats_morale_temp = 100 }
+		multiply_variable = { base_gain = nazi_character_one_stats_morale_temp }
+		add_to_variable = {nazi_character_one_stats_strength = base_gain }
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = nazi_hunt_nazi_has_second_character_eliminated }
+			has_country_flag = nazi_hunt_nazi_has_second_character
+		}
+		set_variable = { base_gain = 15 }
+		set_variable = { nazi_character_two_stats_morale_temp = nazi_character_two_stats_morale }
+		divide_variable = { nazi_character_two_stats_morale_temp = 100 }
+		multiply_variable = { base_gain = nazi_character_two_stats_morale_temp }
+		add_to_variable = { nazi_character_two_stats_strength = base_gain }
+	}
+	
+	if = {
+		limit = {
+			NOT = { has_country_flag = nazi_hunt_has_first_character_failed }
+			has_country_flag = nazi_hunt_has_first_character
+		}
+		set_variable = { base_gain = 15 }
+		set_variable = { stasi_character_one_stats_morale_temp = stasi_character_one_stats_morale }
+		divide_variable = { stasi_character_one_stats_morale_temp = 100 }
+		multiply_variable = { base_gain = stasi_character_one_stats_morale_temp }
+		add_to_variable = { stasi_character_one_stats_supply = base_gain }
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = nazi_hunt_has_second_character_failed }
+			has_country_flag = nazi_hunt_has_second_character
+		}
+		set_variable = { base_gain = 15 }
+		set_variable = { stasi_character_two_stats_morale_temp = stasi_character_two_stats_morale }
+		divide_variable = { stasi_character_two_stats_morale_temp = 100 }
+		multiply_variable = { base_gain = stasi_character_two_stats_morale_temp }
+		add_to_variable = { stasi_character_two_stats_supply = base_gain }
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = nazi_hunt_has_third_character_failed }
+			has_country_flag = nazi_hunt_has_third_character
+		}
+		set_variable = { base_gain = 15 }
+		set_variable = { stasi_character_three_stats_morale_temp = stasi_character_three_stats_morale }
+		divide_variable = { stasi_character_three_stats_morale_temp = 100 }
+		multiply_variable = { base_gain = stasi_character_three_stats_morale_temp }
+		add_to_variable = { stasi_character_three_stats_supply = base_gain }
+	}
+}
+
+
+TRM_DDR_nazi_hunt_count_damage_multiplyer = { 
+###intricate maths to increase damage depending on corruption/infiltration level
+###also because im a lazy bum i will just make corruption influence all characters
+	set_variable = { stasi_character_corruption_temp = 125 }
+	set_variable = { nazi_character_infiltration_temp = 125 }
+	
+	add_to_variable = { stasi_character_corruption_temp = stasi_character_one_stats_corruption }
+	add_to_variable = { stasi_character_corruption_temp = stasi_character_two_stats_corruption }
+	add_to_variable = { stasi_character_corruption_temp = stasi_character_three_stats_corruption }
+
+	add_to_variable = { nazi_character_infiltration_temp = nazi_character_one_stats_infiltration }
+	add_to_variable = { nazi_character_infiltration_temp = nazi_character_two_stats_infiltration }
+	
+	divide_variable = { stasi_character_corruption_temp = 125 } ##why that number? idk
+	divide_variable = { nazi_character_infiltration_temp = 125 }	
+}
+##stasi abilities
+TRM_DDR_nazi_hunt_skip_turn = {
+	TRM_DDR_nazi_hunt_nazi_turn = yes
+}
+TRM_DDR_nazi_hunt_police_raid = {
+
+	set_variable = { attack_type = 2 }
+	set_variable = { damage = -5 }
+	multiply_variable = { damage = nazi_character_infiltration_temp }
+	if = {
+		limit = {
+			nazi_hunt_check_supply = yes
+		}
+		if = {
+			limit = { check_variable = { chosen_enemy = 1 } }
+				add_to_variable = { nazi_character_one_stats_strength = damage }
+				add_to_variable = { nazi_character_one_stats_morale = damage }
+			}
+		else_if = {
+			limit = { check_variable = { chosen_enemy = 2 } }
+			add_to_variable = { nazi_character_two_stats_strength = damage }
+			add_to_variable = { nazi_character_two_stats_morale = damage }
+		}
+		log = "[?damage]"
+		add_to_variable = { total_nazi_damage = damage}
+		TRM_DDR_nazi_hunt_nazi_turn = yes
+	}
+}
+
+TRM_DDR_nazi_hunt_targeted_arrest = {
+	set_variable = { attack_type = 1 }
+	set_variable = { damage = -2 }
+	multiply_variable = { damage = nazi_character_infiltration_temp }
+	
+	if = {
+		limit = {
+			nazi_hunt_check_supply = yes
+		}
+		if = {
+			limit = { check_variable = { chosen_enemy = 1 } }
+			add_to_variable = { nazi_character_one_stats_strength = damage }
+			add_to_variable = { damage = -3 }
+			add_to_variable = { nazi_character_one_stats_morale = damage }
+			
+		}
+		else_if = {
+			limit = { check_variable = { chosen_enemy = 2 } }
+			
+			add_to_variable = { nazi_character_two_stats_strength = damage }
+			add_to_variable = { damage = -3 }
+			add_to_variable = { nazi_character_two_stats_morale = damage }
+		}
+		log = "[?damage]"
+		add_to_variable = { total_nazi_damage = damage}
+		TRM_DDR_nazi_hunt_nazi_turn = yes
+		
+	}
+}
+
+TRM_DDR_nazi_hunt_antinazi_propaganda = {
+	set_variable = { attack_type = 1 }
+	set_variable = { damage = -5 }
+	multiply_variable = { damage = nazi_character_infiltration_temp }
+	if = {
+		limit = {
+			nazi_hunt_check_supply = yes
+		}
+		add_to_variable = { nazi_character_one_stats_morale = damage }
+		add_to_variable = { nazi_character_two_stats_morale = damage }
+		add_to_variable = { total_nazi_damage = damage}
+		log = "[?damage]"
+		TRM_DDR_nazi_hunt_nazi_turn = yes
+		
+	}
+	
+}
+
+TRM_DDR_nazi_hunt_infiltrate_nazis = {
+	set_variable = { attack_type = 1 }
+	set_variable = { damage = 25 }
+
+	if = {
+		limit = {
+			nazi_hunt_check_supply = yes
+		}
+		add_to_variable = { nazi_character_one_stats_infiltration = damage }
+		add_to_variable = { nazi_character_two_stats_infiltration = damage }
+		TRM_DDR_nazi_hunt_nazi_turn = yes
+	}
+}
+
+TRM_DDR_nazi_hunt_exalt_kpd = {
+	set_variable = { attack_type = 2 }
+	set_variable = { damage = 25 }
+
+	if = {
+		limit = {
+			nazi_hunt_check_supply = yes
+		}
+		log = "Add morale"
+		add_to_variable = { stasi_character_one_stats_morale = damage }
+		add_to_variable = { stasi_character_two_stats_morale = damage }
+		add_to_variable = { stasi_character_three_stats_morale = damage }
+		TRM_DDR_nazi_hunt_nazi_turn = yes
+	}
+}
+TRM_DDR_nazi_hunt_request_support = {
+	set_variable = { attack_type = 2 }
+	set_variable = { damage = 25 }
+	
+	if = {
+		limit = {
+			nazi_hunt_check_supply = yes
+		}
+		add_to_variable = { stasi_character_one_stats_supply = damage }
+		add_to_variable = { stasi_character_two_stats_supply = damage }
+		add_to_variable = { stasi_character_three_stats_supply = damage }
+		TRM_DDR_nazi_hunt_nazi_turn = yes
+	}
+}
+
+#nazis abilities
+TRM_DDR_nazi_hunt_nazi_dumb_ai = {
+	set_variable = { total_stasi_morale = stasi_character_one_stats_morale }
+	add_to_variable = { total_stasi_morale = stasi_character_two_stats_morale }
+	add_to_variable = { total_stasi_morale = stasi_character_three_stats_morale }
+	
+	set_variable = { total_nazi_supply = nazi_character_one_stats_strength }
+	add_to_variable = { total_nazi_supply = nazi_character_two_stats_strength }
+	
+	#total morale handler
+	set_variable = { total_nazi_morale = nazi_character_one_stats_morale }
+	add_to_variable = { total_nazi_morale = nazi_character_two_stats_morale }
+	
+	set_variable = { nazi_stasi_morale_difference = total_stasi_morale  }
+	subtract_from_variable = { nazi_stasi_morale_difference = total_nazi_morale }
+	
+	if = {
+		limit = { check_variable = { nazi_stasi_morale_difference < 0 } }
+		set_variable = { nazi_stasi_morale_difference = 0  }
+	}
+	
+	random_list = {
+		100 = {
+			TRM_DDR_nazi_hunt_local_bombing = yes
+		}
+		100 = {
+			TRM_DDR_nazi_hunt_officer_assassination = yes
+		}
+		nazi_stasi_morale_difference = {
+			modifier = {
+				factor = 0
+				check_variable = { total_stasi_morale < 0 }
+			}
+			TRM_DDR_nazi_hunt_anticommunist_propaganda = yes
+		}
+		100 = {
+			modifier = {
+				factor = 0.1
+				check_variable = { nazi_stasi_morale_difference > 300 }
+			}
+			TRM_DDR_nazi_hunt_bribes = yes
+		}
+		nazi_stasi_morale_difference = {
+			TRM_DDR_nazi_hunt_glorify_past = yes
+		}
+		10 = {
+			modifier = {
+				factor = 100
+				check_variable = { total_nazi_supply < 100 }
+				
+			}
+			TRM_DDR_nazi_hunt_smuggle_equipment = yes
+		}
+	}
+}
+TRM_DDR_nazi_hunt_local_bombing = {
+	set_variable = { what_action_was = 1 }
+	set_variable = { damage = -7 }
+	
+	multiply_variable = { damage = stasi_character_corruption_temp }
+	set_variable = { remember_damage = damage }
+
+	add_to_variable = { stasi_character_one_stats_supply = damage }
+	add_to_variable = { stasi_character_one_stats_morale = damage }
+
+	add_to_variable = { stasi_character_two_stats_supply = damage }
+	add_to_variable = { stasi_character_two_stats_morale = damage }
+
+	add_to_variable = { stasi_character_three_stats_supply = damage }
+	add_to_variable = { stasi_character_three_stats_morale = damage }
+	
+	add_to_variable = { total_commie_damage = damage}
+}
+
+TRM_DDR_nazi_hunt_officer_assassination = {
+	set_variable = { what_action_was = 2 }
+	set_variable = { damage = -10 }
+	set_variable = { morale_damage = -15 }
+	
+	multiply_variable = { damage = stasi_character_corruption_temp }
+	multiply_variable = { morale_damage = stasi_character_corruption_temp }
+	
+	set_variable = { remember_damage = damage }
+	set_variable = { remember_damage_morale = morale_damage }
+	random_list = {
+		10 = {
+			add_to_variable = { stasi_character_one_stats_supply = damage }
+			add_to_variable = { stasi_character_one_stats_morale = morale_damage }
+		}
+		10 = {
+			add_to_variable = { stasi_character_two_stats_supply = damage }
+			add_to_variable = { stasi_character_two_stats_morale = morale_damage }
+		}
+		10 = {
+			add_to_variable = { stasi_character_three_stats_supply = damage }
+			add_to_variable = { stasi_character_three_stats_morale = morale_damage }
+		}
+	}
+	add_to_variable = { total_commie_damage = damage}
+}
+
+TRM_DDR_nazi_hunt_anticommunist_propaganda = {
+	set_variable = { what_action_was = 3 }
+	set_variable = { morale_damage = -8 }
+	multiply_variable = { morale_damage = stasi_character_corruption_temp }
+	set_variable = { remember_damage_morale = morale_damage }
+	
+	add_to_variable = { stasi_character_one_stats_morale = morale_damage }
+	add_to_variable = { stasi_character_two_stats_morale = morale_damage }
+	add_to_variable = { stasi_character_three_stats_morale = morale_damage }
+	add_to_variable = { total_commie_damage = damage}
+}
+
+TRM_DDR_nazi_hunt_bribes = {
+	set_variable = { what_action_was = 4 }
+	set_variable = { damage = 30 }
+	set_variable = { remember_damage_corruption = damage }
+	
+	random_list = {
+		10 = {
+			add_to_variable = { stasi_character_one_stats_corruption = damage }
+		}
+		10 = {
+			add_to_variable = { stasi_character_two_stats_corruption = damage }
+		}
+		10 = {
+			add_to_variable = { stasi_character_three_stats_corruption = damage }
+		}
+	}
+}
+
+TRM_DDR_nazi_hunt_glorify_past = {
+	set_variable = { what_action_was = 5 }
+	set_variable = { damage = 40 }
+	set_variable = { remember_damage_morale = damage }
+	
+	add_to_variable = { nazi_character_one_stats_morale = damage }
+	add_to_variable = { nazi_character_two_stats_morale = damage }
+}
+
+TRM_DDR_nazi_hunt_smuggle_equipment = {
+	set_variable = { what_action_was = 6 }
+	set_variable = { damage = 40 }
+	set_variable = { remember_damage = damage }
+	
+	add_to_variable = { nazi_character_one_stats_strength = damage }
+	add_to_variable = { nazi_character_two_stats_strength = damage }
+}

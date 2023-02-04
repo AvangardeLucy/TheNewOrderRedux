@@ -2344,3 +2344,8 @@ POP = {
 	color = rgb { 100 0 0 }
 	color_ui = rgb { 100 0 0 }
 }
+# TNO Redux
+DDR = {
+	color = rgb { 148 16 16 } 
+	color_ui = rgb { 148 16 16 }
+}

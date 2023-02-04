@@ -1,0 +1,29 @@
+﻿air_wings = {	
+	28 = {
+		jet_interceptor_equipment_1 = {		
+			owner = "GER" 
+			amount = 150
+		}
+		name = "1. Abfangjäger"
+		jet_fighter_equipment_1 = {		
+			owner = "GER" 
+			amount = 100
+		}
+		name = "1. Kampfjets"
+	}
+	137 = { 		
+		name = "4. Abfangjäger"	
+		jet_tac_bomber_equipment_2 = {		
+			owner = "GER" 
+			amount = 50
+		}
+		name = "1. Bombergeschwaders"
+	}
+	5 = {
+		jet_strat_bomber_equipment_2 = {
+			owner = "GER"
+			amount = 50
+		}
+		name = "Fernkampfgeschwader 49"
+	}
+}

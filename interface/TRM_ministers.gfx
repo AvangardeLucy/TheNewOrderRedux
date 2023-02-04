@@ -1,0 +1,60 @@
+spriteTypes = {
+	#GER
+	spriteType = {
+		name = "GFX_portrait_tresckow_old"
+		texturefile = "gfx\leaders\GER\Portrait_Germany_Henning_von_Tresckow_old.dds"
+	}
+	
+	### DDR ###
+	spriteType = {
+		name = "GFX_idea_DDR_minister_max_reimann"
+		texturefile = "gfx/interface/ideas/ministers/DDR/DDR_Minister_Max_Reihmann.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DDR_minister_Lothar_Bolz"
+		texturefile = "gfx/interface/ideas/ministers/DDR/DDR_Minister_Lothar_Bolz.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DDR_minister_gerhard_shurer"
+		texturefile = "gfx/interface/ideas/ministers/DDR/DDR_Minister_Gerhard_Shurer.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DDR_minister_erich_mielke"
+		texturefile = "gfx/interface/ideas/ministers/DDR/DDR_Minister_Erich_Mielke.dds"
+	}
+	#POL
+	spriteType = {
+		name = "GFX_idea_POL_minister_leon_kasman"
+		texturefile = "gfx/interface/ideas/ministers/POL/POL_minister_leon_kasman.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_minister_mieczyslaw_moczar"
+		texturefile = "gfx/interface/ideas/ministers/POL/POL_minister_mieczyslaw_moczar.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_minister_oskar_lange"
+		texturefile = "gfx/interface/ideas/ministers/POL/POL_minister_oskar_lange.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_minister_wladyslaw_bienkowski"
+		texturefile = "gfx/interface/ideas/ministers/POL/POL_minister_wladyslaw_bienkowski.dds"
+	}
+	
+	#HOL
+	spriteType = {
+		name = "GFX_idea_HOL_minister_daan_monje"
+		texturefile = "gfx/interface/ideas/ministers/HOL/HOL_minister_daan_monje.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_minister_fred_schoonenberg"
+		texturefile = "gfx/interface/ideas/ministers/HOL/HOL_minister_fred_schoonenberg.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_minister_nico_schrevel"
+		texturefile = "gfx/interface/ideas/ministers/HOL/HOL_minister_nico_schrevel.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_minister_marcus_bakker"
+		texturefile = "gfx/interface/ideas/ministers/HOL/HOL_minister_marcus_bakker.dds"
+	}
+}

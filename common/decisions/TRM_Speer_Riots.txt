@@ -1,0 +1,247 @@
+TRM_SPR_nationwide_riots_category = {
+	GER_riots_speer_move = {
+		icon = GFX_decision_generic_political_action
+		allowed = { tag = GER }
+		fixed_random_seed = no
+		activation = { 
+			has_country_flag = SPR_riots_phase 
+		}
+		available = { always = no }
+		days_mission_timeout = 10
+		days_remove = 1
+		timeout_effect = {
+			randomize_temp_variable = {
+				var = random_state
+				distribution = uniform
+				min = 1
+				max = 17
+			}
+			randomize_temp_variable = {
+				var = random_state_stab_mod
+				distribution = uniform
+				min = 0
+				max = 10
+			}
+			randomize_temp_variable = {
+				var = random_state_speer_pop_mod
+				distribution = uniform
+				min = 0
+				max = 10
+			}
+			randomize_temp_variable = {
+				var = random_state_commie_pop_mod
+				distribution = uniform
+				min = -10
+				max = 0
+			}
+			set_variable = { stability_mod = region_stability_@var:random_state_one }
+			divide_variable = { stability_mod = 100 }
+			
+			multiply_variable = { random_state_two_commie_pop_mod = stability_mod }
+			round_variable = random_state_two_commie_pop_mod
+			
+			multiply_variable = { random_state_speer_pop_mod = stability_mod }
+			round_variable = random_state_speer_pop_mod
+			
+			multiply_variable = { random_state_stab_mod = stability_mod }
+			round_variable = random_state_stab_mod
+			
+			add_to_variable = { commie_support_@var:random_state_one = random_state_two_commie_pop_mod }
+			subtract_from_variable = { undecided_support_@var:random_state_one = random_state_two_commie_pop_mod }
+			add_to_variable = { commie_support_@var:random_state_one = random_state_two_commie_pop_mod }
+			add_to_variable = { speer_support_@var:random_state_one = random_state_two_speer_pop_mod }
+			add_to_variable = { region_stability_@var:random_state_one = random_state_stab_mod }
+		}
+	}
+	GER_riots_political_campaign = {
+        
+		icon = GFX_decision_generic_political_action
+
+        allowed = {
+            tag = GER
+        }
+
+        cost = 5
+		days_remove = 10
+
+        complete_effect = {
+			add_to_variable = { commie_support_@var:chosen_state = 10 }
+			add_to_variable = { undecided_support_@var:chosen_state = 10 }
+			add_to_variable = { region_stability_@var:chosen_state = -5 }
+			TRM_SPR_nationwide_riots_update_chosen_state = yes
+			custom_effect_tooltip = GER_riots_political_campaign_cost_tt
+		}
+	}
+	GER_riots_establish_outpost = {
+        
+		icon = GFX_decision_generic_building_army_base
+
+        allowed = {
+            tag = GER
+        }
+
+        cost = 7
+		days_remove = 10
+
+        complete_effect = {
+			add_to_variable = { commie_support_@var:chosen_state = 5 }
+			add_to_variable = { undecided_support_@var:chosen_state = -5 }
+			add_to_variable = { speer_support_@var:chosen_state = -5 }
+			add_to_variable = { region_stability_@var:chosen_state = 5 }
+			TRM_SPR_nationwide_riots_update_chosen_state = yes
+			custom_effect_tooltip = GER_riots_establish_outpost_cost_tt
+		}
+	}
+	GER_riots_guerilla_warfare = {
+        
+		icon = GFX_decision_generic_ignite_civil_war
+
+        allowed = {
+            tag = GER
+        }
+
+        cost = 7
+		days_remove = 10
+
+        complete_effect = {
+			add_to_variable = { speer_support_@var:chosen_state = -15 }
+			add_to_variable = { region_stability_@var:chosen_state = -10 }
+			TRM_SPR_nationwide_riots_update_chosen_state = yes
+			custom_effect_tooltip = GER_riots_guerilla_warfare_cost_tt
+		}
+	}
+	GER_riots_reinforce_outpost = {
+        
+		icon = GFX_decision_document_building
+
+        allowed = {
+            tag = GER
+        }
+
+        cost = 10
+		days_remove = 10
+
+        complete_effect = {
+			add_to_variable = { commie_support_@var:chosen_state = 5 }
+			add_to_variable = { undecided_support_@var:chosen_state = 5 }
+			add_to_variable = { speer_support_@var:chosen_state = -10 }
+			add_to_variable = { region_stability_@var:chosen_state = -10 }
+			TRM_SPR_nationwide_riots_update_chosen_state = yes
+			custom_effect_tooltip = GER_riots_reinforce_outpost_cost_tt
+		}
+	}
+	GER_riots_infiltrate_luftwaffe = {
+        
+		icon = GFX_decision_generic_money
+
+        allowed = {
+            tag = GER
+        }
+		visible = {
+               NOT = { has_country_flag = infiltrated_luftwaffe }
+        }
+		available = {
+			check_variable = {
+				var = spartacist_regions_count
+				value = 5
+				compare = greater_than_or_equals
+			}
+        }
+        cost = 20
+		days_remove = 10
+
+        complete_effect = {
+			TRM_SPR_nationwide_riots_give_random_commie_support = yes
+			set_country_flag = infiltrated_luftwaffe
+			country_event = {
+				id = speer_rm.17
+			}
+		}
+	}
+	GER_riots_infiltrate_wehrmacht = {
+        
+		icon = GFX_decision_generic_money
+
+        allowed = {
+            tag = GER
+        }
+		visible = {
+            has_country_flag = infiltrated_luftwaffe
+			NOT = { has_country_flag = infiltrated_wehrmacht }
+        }
+		available = {
+			check_variable = {
+				var = spartacist_regions_count
+				value = 7
+				compare = greater_than_or_equals
+			}
+        }
+        cost = 20
+		days_remove = 10
+
+        complete_effect = {
+			TRM_SPR_nationwide_riots_give_random_commie_support = yes
+			set_country_flag = infiltrated_wehrmacht
+			country_event = {
+				id = speer_rm.18
+			}
+		}
+	}
+	GER_riots_infiltrate_kriegsmarine = {
+        
+		icon = GFX_decision_generic_money
+
+        allowed = {
+            tag = GER
+        }
+		visible = {
+            has_country_flag = infiltrated_wehrmacht
+			NOT = { has_country_flag = infiltrated_kriegsmarine }
+        }
+		available = {
+			check_variable = {
+				var = spartacist_regions_count
+				value = 9
+				compare = greater_than_or_equals
+			}
+        }
+        cost = 20
+		days_remove = 10
+
+        complete_effect = {
+			TRM_SPR_nationwide_riots_give_random_commie_support = yes
+			set_country_flag = infiltrated_kriegsmarine
+			country_event = {
+				id = speer_rm.19
+			}
+		}
+	}
+	GER_riots_assassinate_speer = {
+        
+		icon = GFX_decision_generic_money
+
+        allowed = {
+            tag = GER
+        }
+		visible = {
+               has_country_flag = infiltrated_kriegsmarine
+        }
+		available = {
+			check_variable = {
+				var = spartacist_regions_count
+				value = 11
+				compare = greater_than_or_equals
+			}
+        }
+        cost = 20
+		days_remove = 10
+
+        complete_effect = {
+			clr_country_flag = SPR_riots_phase 
+			country_event = {
+				id = speer_rm.20
+			}
+		}
+	}
+	
+}

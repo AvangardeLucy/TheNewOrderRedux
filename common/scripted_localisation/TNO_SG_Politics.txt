@@ -48,11 +48,7 @@ defined_text = {
 		trigger = { has_government = national_socialism }
 		localization_key = "[GetSubIdeologyLocNationalSocialism]"
 	}
-	text = {
-		trigger = { has_government = esoteric_nazism }
-		localization_key = "[GetSubIdeologyLocEsotericNazism]"
-	}
-	text = { localization_key = "[GetSubIdeologyLocAccelerationism]" }
+	text = { localization_key = "[GetSubIdeologyLocEsotericNazism]" }
 }
 defined_text = {
 	name = GetSubIdeologyLocAnarchism
@@ -125,6 +121,10 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = communist_autarkic_marxism_subtype }
 		localization_key = communist_autarkic_marxism_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = communist_spartacism_subtype }
+		localization_key = communist_spartacism_subtype
 	}
 	text = {
 		localization_key = communist
@@ -735,30 +735,6 @@ defined_text = {
 	text = {
 		localization_key = esoteric_nazism
 	}
-}
-defined_text = {
-	name = GetSubIdeologyLocAccelerationism
-	text = {
-		trigger = { has_country_leader_ideology = accelerationism_left_accelerationism_subtype }
-		localization_key = accelerationism_left_accelerationism_subtype
-	}
-	text = {
-		trigger = { has_country_leader_ideology = accelerationism_ordoaccelerationism_subtype }
-		localization_key = accelerationism_ordoaccelerationism_subtype
-	}
-	text = {
-		trigger = { has_country_leader_ideology = accelerationism_right_accelerationism_subtype }
-		localization_key = accelerationism_right_accelerationism_subtype
-	}
-	text = {
-		trigger = { has_country_leader_ideology = accelerationism_unconditional_accelerationism_subtype }
-		localization_key = accelerationism_unconditional_accelerationism_subtype
-	}
-	text = {
-		trigger = { has_country_leader_ideology = accelerationism_vanguard_accelerationism_subtype }
-		localization_key = accelerationism_vanguard_accelerationism_subtype
-	}
-	text = { localization_key = accelerationism_subtype }
 }
 defined_text = {
 	name = GetFactionLeaderMember

@@ -104,7 +104,20 @@ characters = {
 			}
 			ledger = civilian
 			cost = -1
-			can_be_fired = no
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = GER_Kurt_Georg_Kiesinger_hog_tresckow
+			allowed = { original_tag = GER }
+			traits = {
+				head_of_government
+				hog_silver_tongue
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
 			ai_will_do = { factor = 0 }
 		}
 	}
@@ -208,6 +221,13 @@ characters = {
 				small = "GFX_idea_GER_Henning_von_Tresckow"
 			}
 		}
+		country_leader = {
+			desc = "POLITICS_HENNING_VON_TRESCKOW_DESC"
+			ideology = despotism_military_junta_subtype
+			traits = {}
+			expire = 1999.1.1.1
+			id = -1
+		}
 		field_marshal = {
 			traits = { old_guard infantry_officer politically_connected organizer thorough_planner }
 			skill = 4
@@ -222,12 +242,12 @@ characters = {
 			idea_token = GER_Henning_von_Tresckow_sec
 			allowed = { original_tag = GER }
 			traits = {
-				security_minister
+				security_minister 
 				sec_old_prussian
 			}
 			ledger = civilian
 			cost = -1
-			can_be_fired = no
+			removal_cost = -1
 			ai_will_do = { factor = 0 }
 		}
 		advisor = {
@@ -239,7 +259,7 @@ characters = {
 			}
 			ledger = army
 			cost = -1
-			can_be_fired = no
+			removal_cost = -1
 			ai_will_do = { factor = 0 }
 		}
 	}

@@ -1,0 +1,45 @@
+nazi_hunt_check_supply = {
+	log = "supply check"
+	if = {
+		limit = {
+			check_variable = { stasi_character_turn = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = { attack_type = 1 }
+			}
+			check_variable = { stasi_character_one_stats_supply > 19 }
+		}
+		else = {
+			check_variable = { stasi_character_one_stats_supply > 39 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { stasi_character_turn = 2 }
+		}
+		if = {
+			limit = {
+				check_variable = { attack_type = 1 }
+			}
+			check_variable = { stasi_character_two_stats_supply > 19 }
+		}
+		else = {
+			check_variable = { stasi_character_two_stats_supply > 39 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { stasi_character_turn = 3 }
+		}
+		if = {
+			limit = {
+				check_variable = { attack_type = 1 }
+			}
+			check_variable = { stasi_character_three_stats_supply > 19 }
+		}
+		else = {
+			check_variable = { stasi_character_three_stats_supply > 39 }
+		}
+	}
+}

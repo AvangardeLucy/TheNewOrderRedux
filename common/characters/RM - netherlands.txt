@@ -1,0 +1,133 @@
+characters = {
+	HOL_paul_de_groot_rm = {
+		name = HOL_paul_de_groot_rm
+		portraits = { civilian = { large = "gfx/leaders/HOL/HOL_paul_de_groot.dds" } }
+		country_leader = {
+			#desc = "POLITICS_POL_wladyslaw_gomulka_DESC"
+			ideology = communist_stalinism_subtype
+			expire = "1999.1.1.1"
+			id = -1
+		}
+	}
+
+	# Ministers
+
+	HOL_daan_monje = {
+		name = HOL_daan_monje
+		portraits = {
+			civilian { small = "GFX_idea_HOL_minister_daan_monje" }
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = HOL_daan_monje_hog
+			allowed = { original_tag = HOL }
+			traits = {
+				head_of_government
+				hog_ambitious_union_boss
+				hog_political_protege
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	HOL_marcus_bakker = {
+		name = HOL_marcus_bakker
+		portraits = {
+			civilian { small = "GFX_idea_HOL_minister_marcus_bakker" }
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = HOL_marcus_bakker_sec
+			allowed = { original_tag = HOL }
+			traits = {
+				security_minister
+				sec_resistance_hero
+				sec_back_stabber
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	HOL_nico_schrevel = {
+		name = HOL_nico_schrevel
+		portraits = { 
+			civilian = { small = "GFX_idea_HOL_minister_nico_schrevel" } 
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = HOL_nico_schrevel_eco
+			allowed = { original_tag = HOL }
+			traits = {
+				economy_minister
+				eco_political_appointment
+				eco_planned_economy_proponent
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	HOL_fred_schoonenberg = {
+		name = HOL_fred_schoonenberg
+		portraits = { 
+			civilian = { small = "GFX_idea_HOL_minister_fred_schoonenberg" } 
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = HOL_fred_schoonenberg_for
+			allowed = { original_tag = HOL }
+			traits = {
+				foreign_minister
+				for_fierce_negotiator
+				for_ideological_crusader
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	# Generals and Marshals
+
+	HOL_daan_goulooze = {
+        name = HOL_daan_goulooze
+        portraits = {
+            army = {
+                large = "gfx/leaders/HOL/HOL_daan_goulooze.dds"
+            }
+        }
+		field_marshal = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+    }
+
+	HOL_gerben_wageenar = {
+		name = HOL_gerben_wageenar
+		portraits = {
+			army = {
+				large = "gfx/leaders/HOL/HOL_gerben_wageenar.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+}

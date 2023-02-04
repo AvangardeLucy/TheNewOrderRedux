@@ -1,0 +1,226 @@
+SPR_debug_category = {	
+	GER_speer_show_demob = {
+		priority = 202
+
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			AND = {
+				NOT = { has_country_flag = SPR_demobilisation_phase }
+				is_debug = yes
+			}
+		}
+
+		cost = 0
+
+		complete_effect = {
+			custom_effect_tooltip = "Start demobilisation thing"
+			set_country_flag = SPR_demobilisation_phase
+		}
+	}
+	GER_speer_show_riots = {
+		priority = 202
+
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			AND = {
+				NOT = { has_country_flag = SPR_riots_phase }
+				is_debug = yes
+			}
+		}
+
+		cost = 0
+
+		complete_effect = {
+			custom_effect_tooltip = "Start riots thing"
+			TRM_SPR_nationwide_riots_init = yes
+			TRM_SPR_nationwide_riots_update_everything = yes
+			set_country_flag = SPR_riots_phase
+		}
+	}
+}
+
+TRM_DDR_Demobilization_category = {
+    GER_demobilizing_the_militas = {
+        
+		icon = GFX_decision_generic_money
+
+        allowed = {
+            tag = GER
+        }
+
+        available = {
+			check_variable = {
+				var = global.partisan_demobilization
+				value = 100
+				compare = greater_than_or_equals
+			}
+        }
+		selectable_mission = yes 
+        cost = 40
+
+        ai_will_do = {
+            factor = 20
+        }
+		activation = {
+			has_country_flag = SPR_demobilisation_phase
+		}
+        days_mission_timeout = 100
+        timeout_effect = {
+            country_event = speer_rm.8
+        }
+
+        complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GER_demobilizing_the_militas"
+			clr_country_flag = SPR_demobilisation_phase
+			country_event = speer_rm.7
+			
+		}
+	}
+
+    GER_offer_economic_incentives = {
+        
+		icon = GFX_decision_generic_money
+
+        allowed = {
+            tag = GER
+        }
+
+        cost = 20
+
+        ai_will_do = {
+            factor = 20
+        }
+
+
+        complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GER_offer_economic_incentives"
+            add_to_variable = { global.partisan_demobilization = 5 }
+			add_to_variable = { GER.national_debt = 0.2 }
+			custom_effect_tooltip = GER_offer_economic_incentives_cost_tt
+			custom_effect_tooltip = GER_5_percent_demob_tt
+			hidden_effect = { country_event = speer_rm.2 }
+		}
+	}
+
+    GER_targeted_raids = {
+        
+		icon = GFX_decision_generic_assault
+
+        allowed = {
+            tag = GER
+        }
+
+        custom_cost_trigger = { command_power > 9.99 }
+		custom_cost_text = decision_cost_10_cp
+
+        ai_will_do = {
+            factor = 20
+        }
+
+
+        complete_effect = {
+			if = {
+				limit = { check_variable = { global.partisan_demobilization > 29 } }
+				log = "[GetDateText]: [Root.GetName]: Decision GER_targeted_raids"
+				add_to_variable = { global.partisan_demobilization = 10 }
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -100
+					producer = GER
+				}
+				custom_effect_tooltip = GER_10_percent_demob_tt
+				hidden_effect = {country_event = speer_rm.3}
+			}
+			else = {
+				hidden_effect = {country_event = speer_rm.4}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -100
+					producer = GER
+				}
+				add_to_variable = { global.partisan_demobilization = -5 }
+			}
+		}
+	}
+
+    GER_secure_bueraucratic_jobs = {
+        
+		icon = GFX_decision_category_generic_political_actions
+
+        allowed = {
+            tag = GER
+        }
+
+        cost = 40
+
+        ai_will_do = {
+            factor = 20
+        }
+
+
+        complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GER_secure_bueraucratic_jobs"
+            add_to_variable = { global.partisan_demobilization = 5 }
+			custom_effect_tooltip = GER_5_percent_demob_tt
+		}
+	}
+
+    GER_gun_confistications = {
+        
+		icon = GFX_decision_black_market_shut_down
+
+        allowed = {
+            tag = GER
+        }
+
+        custom_cost_trigger = { command_power > 19.99 }
+		custom_cost_text = decision_cost_20_cp
+
+        ai_will_do = {
+            factor = 20
+        }
+
+        complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GER_gun_confistications"
+			custom_effect_tooltip = GER_10_percent_demob_tt
+			if = {
+				limit = { check_variable = { global.partisan_demobilization > 29 } }
+				log = "[GetDateText]: [Root.GetName]: Decision GER_targeted_raids"
+				add_to_variable = { global.partisan_demobilization = 10 }
+				hidden_effect = {country_event = speer_rm.5}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 100
+					producer = GER
+				}
+			}
+			else = {
+				hidden_effect = {country_event = speer_rm.6}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 100
+					producer = GER
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,13 @@
+TRM_fire_super_event = {
+	hidden_effect = {
+		if = {
+			limit = { NOT = { has_global_flag = TNO_my_world_is_on_fire_how_about_yours } }
+			set_variable = { TRM_super_event = TRM_temp_super_event }
+			if = {
+				limit = { check_variable = { TRM_temp_super_event = 10001 } }
+				scoped_sound_effect = "trm_se_german_revolution"
+				if = { limit = { has_global_flag = silence_on_SE } scoped_play_song = "silence_45" }
+			}
+		}
+	}
+}

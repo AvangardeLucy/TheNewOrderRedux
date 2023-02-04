@@ -2633,3 +2633,8 @@ CAM_PRK = {
 	color = rgb { 222 37 31 }
 	color_ui = rgb { 222 37 31 }
 }
+# TNO Redux
+HOL_DDR = {
+	color = rgb { 148 16 16 }
+	color_ui = rgb { 148 16 16 }
+}

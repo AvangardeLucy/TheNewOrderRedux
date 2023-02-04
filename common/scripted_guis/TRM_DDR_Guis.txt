@@ -1,0 +1,281 @@
+scripted_gui = {
+    TRM_DDR_Demobilization_GUI = {
+        context_type = decision_category
+        window_name = "TRM_DDR_Demobilization"
+
+        visible = {
+           has_country_flag = SPR_demobilisation_phase
+        }
+
+        triggers = {
+
+        }
+
+        effects = {
+			
+        }
+
+        properties = {
+            DDR_Partisan_Bar = {
+                frame = global.partisan_demobilization
+            }
+        }
+    }
+    TRM_DDR_Riots_GUI = {
+        context_type = decision_category
+        window_name = "TRM_SPR_nationwide_riots_window"
+
+        visible = {
+           has_country_flag = SPR_riots_phase 
+        }
+
+        triggers = {
+			DDR_riots_moravia_selected_visible = {
+				check_variable = { chosen_state = 1 }
+			}
+			DDR_riots_prussia_selected_visible = {
+				check_variable = { chosen_state = 2 }
+			}
+			DDR_riots_bohemia_selected_visible = {
+				check_variable = { chosen_state = 3 }
+			}
+			DDR_riots_saxony_selected_visible = {
+				check_variable = { chosen_state = 4 }
+			}
+			DDR_riots_brandenburg_selected_visible = {
+				check_variable = { chosen_state = 5 }
+			}
+			DDR_riots_pomerania_selected_visible = {
+				check_variable = { chosen_state = 6 }
+			}
+			DDR_riots_schleswig_selected_visible = {
+				check_variable = { chosen_state = 7 }
+			}
+			DDR_riots_westphalia_selected_visible = {
+				check_variable = { chosen_state = 8 }
+			}
+			DDR_riots_lower_saxony_selected_visible = {
+				check_variable = { chosen_state = 9 }
+			}
+			DDR_riots_elsas_lothringen_selected_visible = {
+				check_variable = { chosen_state = 10 }
+			}
+			DDR_riots_baden_selected_visible = {
+				check_variable = { chosen_state = 11 }
+			}
+			DDR_riots_bavaria_selected_visible = {
+				check_variable = { chosen_state = 12 }
+			}
+			DDR_riots_austria_selected_visible = {
+				check_variable = { chosen_state = 13 }
+			}
+			DDR_riots_tyrol_selected_visible = {
+				check_variable = { chosen_state = 14 }
+			}
+			DDR_riots_carinthia_selected_visible = {
+				check_variable = { chosen_state = 15 }
+			}
+			DDR_riots_posen_selected_visible = {
+				check_variable = { chosen_state = 16 }
+			}
+			DDR_riots_silesia_selected_visible = {
+				check_variable = { chosen_state = 17 }
+			}
+        }
+
+        effects = {
+			DDR_riots_moravia_click = {
+				set_variable = { chosen_state = 1 }
+				TRM_SPR_nationwide_riots_get_state_bars = yes
+			}
+			DDR_riots_prussia_click = {
+				set_variable = { chosen_state = 2 }
+				TRM_SPR_nationwide_riots_get_state_bars = yes
+			}
+			DDR_riots_bohemia_click = {
+				set_variable = { chosen_state = 3 }
+				TRM_SPR_nationwide_riots_get_state_bars = yes
+			}
+			DDR_riots_saxony_click = {
+				set_variable = { chosen_state = 4 }
+				TRM_SPR_nationwide_riots_get_state_bars = yes
+			}
+			DDR_riots_brandenburg_click = {
+				set_variable = { chosen_state = 5 }
+				TRM_SPR_nationwide_riots_get_state_bars = yes
+			}
+			DDR_riots_pomerania_click = {
+				set_variable = { chosen_state = 6 }
+				TRM_SPR_nationwide_riots_get_state_bars = yes
+			}
+			DDR_riots_schleswig_click = {
+				set_variable = { chosen_state = 7 }
+				TRM_SPR_nationwide_riots_get_state_bars = yes
+			}
+			DDR_riots_westphalia_click = {
+				set_variable = { chosen_state = 8 }
+				TRM_SPR_nationwide_riots_get_state_bars = yes
+			}
+			DDR_riots_lower_saxony_click = {
+				set_variable = { chosen_state = 9 }
+				TRM_SPR_nationwide_riots_get_state_bars = yes
+			}
+			DDR_riots_elsas_lothringen_click = {
+				set_variable = { chosen_state = 10 }
+				TRM_SPR_nationwide_riots_get_state_bars = yes
+			}
+			DDR_riots_baden_click = {
+				set_variable = { chosen_state = 11 }
+				TRM_SPR_nationwide_riots_get_state_bars = yes
+			}
+			DDR_riots_bavaria_click = {
+				set_variable = { chosen_state = 12 }
+				TRM_SPR_nationwide_riots_get_state_bars = yes
+			}
+			DDR_riots_austria_click = {
+				set_variable = { chosen_state = 13 }
+				TRM_SPR_nationwide_riots_get_state_bars = yes
+			}
+			DDR_riots_tyrol_click = {
+				set_variable = { chosen_state = 14 }
+				TRM_SPR_nationwide_riots_get_state_bars = yes
+			}
+			DDR_riots_carinthia_click = {
+				set_variable = { chosen_state = 15 }
+				TRM_SPR_nationwide_riots_get_state_bars = yes
+			}
+			DDR_riots_posen_click = {
+				set_variable = { chosen_state = 16 }
+				TRM_SPR_nationwide_riots_get_state_bars = yes
+			}
+			DDR_riots_silesia_click = {
+				set_variable = { chosen_state = 17 }
+				TRM_SPR_nationwide_riots_get_state_bars = yes
+			}
+        }
+
+        properties = {
+		    DDR_political_outlook_bar_commie_part = {
+                frame = global.DDR_political_outlook_commie
+            }
+			DDR_political_outlook_bar_speer_part = {
+                frame = global.DDR_political_outlook_speer
+            }
+			DDR_stability_bar = {
+                frame = global.DDR_stability
+            }
+			###region frames
+		    DDR_riots_moravia = {
+                frame = picture_state_@1
+            }
+			DDR_riots_prussia = {
+                frame = picture_state_@2
+            }
+			DDR_riots_bohemia = {
+                frame = picture_state_@3
+            }
+			DDR_riots_saxony = {
+                frame = picture_state_@4
+            }
+			DDR_riots_brandenburg = {
+                frame = picture_state_@5
+            }
+			DDR_riots_pomerania = {
+                frame = picture_state_@6
+            }
+			DDR_riots_schleswig = {
+                frame = picture_state_@7
+            }
+			DDR_riots_westphalia = {
+                frame = picture_state_@8
+            }
+			DDR_riots_lower_saxony = {
+                frame = picture_state_@9
+            }
+			DDR_riots_elsas_lothringen = {
+                frame = picture_state_@10
+            }
+			DDR_riots_baden = {
+                frame = picture_state_@11
+            }
+			DDR_riots_bavaria = {
+                frame = picture_state_@12
+            }
+			DDR_riots_austria = {
+                frame = picture_state_@13
+            }
+			DDR_riots_tyrol = {
+                frame = picture_state_@14
+            }
+			DDR_riots_carinthia = {
+                frame = picture_state_@15
+            }
+			DDR_riots_posen = {
+                frame = picture_state_@16
+            }
+			DDR_riots_silesia = {
+                frame = picture_state_@17
+            }
+        }
+    }
+	
+	DDR_army_and_party_GUI = {
+        context_type = decision_category
+        window_name = "DDR_army_and_party_party"
+
+        visible = {
+           has_country_flag = DDR_army_and_party_party
+        }
+
+        triggers = {
+
+        }
+
+        effects = {
+			army_button_click = {
+				clr_country_flag = DDR_army_and_party_party
+				set_country_flag = DDR_army_and_party_army
+			}
+        }
+
+        properties = {
+            DDR_unity_bar = {
+                frame = DDR_unity
+            }
+			DDR_stability_bar = {
+                frame = stability_frame
+            }
+			DDR_congress_hammer = {
+				frame = congress_hammer
+			}
+        }
+    }
+	DDR_army_and_party_army_GUI = {
+        context_type = decision_category
+        window_name = "DDR_army_and_party_army"
+
+        visible = {
+           has_country_flag = DDR_army_and_party_army
+        }
+
+        triggers = {
+
+        }
+
+        effects = {
+			party_button_click = {
+				clr_country_flag = DDR_army_and_party_army
+				set_country_flag = DDR_army_and_party_party
+			}
+        }
+
+        properties = {
+            DDR_organisation_bar = {
+                frame = DDR_organisation
+            }
+			DDR_war_support_bar = {
+                frame = war_support_frame
+            }
+        }
+    }
+}

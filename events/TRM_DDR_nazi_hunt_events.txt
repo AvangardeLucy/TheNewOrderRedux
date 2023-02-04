@@ -1,0 +1,121 @@
+add_namespace = ddr_nazis
+
+country_event = { #Setup prussia
+	id = ddr_nazis.1
+	title = ddr_nazis.1.t
+	desc = ddr_nazis.1.d
+	
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ddr_nazis.1.a
+		TRM_DDR_nazi_hunt_custom_setup = yes
+		TRM_DDR_nazi_hunt_setup_prussia = yes
+		set_country_flag = DDR_nazi_hunt_gui_open
+	}
+}
+country_event = { #Setup saxony
+	id = ddr_nazis.2
+	title = ddr_nazis.2.t
+	desc = ddr_nazis.2.d
+	
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ddr_nazis.2.a
+		TRM_DDR_nazi_hunt_custom_setup = yes
+		TRM_DDR_nazi_hunt_setup_saxony = yes
+		set_country_flag = DDR_nazi_hunt_gui_open
+	}
+}
+country_event = { #Setup low saxony
+	id = ddr_nazis.3
+	title = ddr_nazis.3.t
+	desc = ddr_nazis.3.d
+	
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ddr_nazis.3.a
+		TRM_DDR_nazi_hunt_custom_setup = yes
+		TRM_DDR_nazi_hunt_setup_low_saxony = yes
+		set_country_flag = DDR_nazi_hunt_gui_open
+	}
+}
+
+country_event = { #Setup the finale
+	id = ddr_nazis.4
+	title = ddr_nazis.4.t
+	desc = ddr_nazis.4.d
+	
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ddr_nazis.4.a
+		TRM_DDR_nazi_hunt_custom_setup = yes
+		TRM_DDR_nazi_hunt_setup_finale = yes
+		set_country_flag = DDR_nazi_hunt_gui_open
+	}
+}
+
+country_event = { #clear
+	id = ddr_nazis.100
+	title = ddr_nazis.100.t
+	desc = ddr_nazis.100.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ddr_nazis.100.a
+		clr_country_flag = DDR_nazi_hunt_gui_open
+		
+		if = {
+			limit = {
+				check_variable = { nazi_hunt_battle_num = 1 }
+			}
+			country_event = ddr_risen.3
+		}
+		else_if = {
+			limit = {
+				check_variable = { nazi_hunt_battle_num = 2 }
+			}
+			country_event = ddr_risen.4 
+		}
+		else_if = {
+			limit = {
+				check_variable = { nazi_hunt_battle_num = 3 }
+			}
+			country_event = ddr_risen.5
+			set_country_flag = did_three_battles
+		}
+		else_if = {
+			limit = {
+				check_variable = { nazi_hunt_battle_num = 4 }
+			}
+			if = {
+				limit = {
+					check_variable = { finale_state = 1 }
+					
+				}
+				country_event = ddr_risen.201
+				log = "win event"
+			}
+			else_if = {
+				limit = {
+					check_variable = { finale_state = 2 }
+				}
+				log = "loss event"
+				country_event = ddr_risen.202
+			}
+		}
+		TRM_DDR_nazi_hunt_custom_setup = yes
+	}
+}

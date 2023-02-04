@@ -1,0 +1,423 @@
+ideas = {
+    country = {
+		###Speer/tresckow###################################################################################################################
+		GER_armed_militias = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: GER_armed_militias "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = GER_armed_militias
+
+			removal_cost = -1
+
+			modifier = {
+                conscription_factor = -0.25
+				stability_factor = -0.15
+			}
+		}
+		GER_organised_armed_militias = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: GER_organised_armed_militias "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = GER_armed_militias
+
+			removal_cost = -1
+
+			modifier = {
+                conscription_factor = -0.5
+				stability_factor = -0.4
+			}
+		}
+		GER_slave_strikes = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: GER_slave_strikes "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = GER_slave_strikes
+
+			removal_cost = -1
+
+			modifier = {
+                production_speed_buildings_factor = -0.3
+				line_change_production_efficiency_factor = -0.2
+				industrial_capacity_factory = -0.3
+			}
+		}
+		GER_student_resistance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: GER_student_resistance "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = GER_student_resistance
+
+			removal_cost = -1
+
+			modifier = {
+                conscription_factor = -0.25
+				research_speed_factor = -0.3
+			}
+		}
+		GER_reichsbanner_resistance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: GER_reichsbanner_resistance "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = GER_reichsbanner_resistance
+
+			removal_cost = -1
+
+			modifier = {
+                line_change_production_efficiency_factor = -0.2
+				stability_factor = -0.3
+			}
+		}
+		GER_student_negotiations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: GER_student_negotiations "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = GER_student_negotiations
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.1
+                political_power_factor = -0.2
+				stability_factor = -0.15
+			}
+		}
+		GER_willys_negotiations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: GER_willys_negotiations "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = GER_willys_negotiations
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+                political_power_factor = -0.2
+				stability_factor = -0.15
+			}
+		}
+		GER_union_negotiations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: GER_union_negotiations "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = GER_union_negotiations
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.1
+				industrial_capacity_factory = 0.1
+                political_power_factor = -0.2
+				stability_factor = -0.15
+			}
+		}
+		GER_six_concessions = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: GER_six_concessions "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = GER_six_concessions
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.15
+			}
+		}
+		GER_brandenburg_massacre = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: GER_brandenburg_massacre "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = GER_brandenburg_massacre
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.2
+				stability_factor = -0.15
+			}
+		}
+		GER_nationwide_uprisings = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: GER_nationwide_uprisings "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = GER_nationwide_uprisings
+
+			removal_cost = -1
+
+			modifier = {
+				fascism_drift = -0.1
+				stability_factor = -0.2
+			}
+		}
+		GER_general_strikes = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: GER_general_strikes "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = GER_general_strikes
+
+			removal_cost = -1
+
+			modifier = {
+				line_change_production_efficiency_factor = -0.4
+				industrial_capacity_factory = -0.5
+			}
+		}
+		GER_nationwide_protests = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: GER_nationwide_protests "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = GER_nationwide_protests
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+		GER_rhine_riots = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: GER_rhine_riots "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = GER_rhine_riots
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = -0.2
+			}
+		}
+		###RED POLAND################################################################################################################################
+		POL_not_yet_lost = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: POL_not_yet_lost "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = POL_not_yet_lost
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		
+		POL_chaos_in_warsaw = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: POL_chaos_in_warsaw "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = POL_chaos_in_warsaw
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.15
+			}
+		}
+		
+		###RED NETHERLANDS################################################################################################################################
+		HOL_exiled_dilemma = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: HOL_exiled_dilemma "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = HOL_exiled_dilemma
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.025
+				political_power_gain = -0.25
+			}
+		}
+		HOL_longest_hours = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: HOL_longest_hours "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = HOL_longest_hours
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+		
+		###DDR GERMANY################################################################################################################################
+        DDR_the_great_revolution = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: DDR_the_great_revolution "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = DDR_The_Great_Revolution
+
+			removal_cost = -1
+
+			modifier = {
+                monthly_population = 0.25
+				stability_weekly = 0.075
+				war_support_weekly = 0.10
+			}
+		}
+
+        DDR_sins_of_the_fatherland = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: DDR_sins_of_the_fatherland "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = DDR_Sins_Of_The_Fatherland
+
+			removal_cost = -1
+
+			modifier = {
+                stability_weekly = -0.05
+				political_power_gain = -0.10
+			}
+		}
+
+        DDR_remnants = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: DDR_remnants "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = DDR_Remnants
+
+			removal_cost = -1
+
+			modifier = {
+                production_speed_buildings_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.15
+				political_power_gain = -0.1
+				conscription = -0.01
+			}
+		}
+
+        DDR_great_break = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: DDR_great_break "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = DDR_Great_Break
+
+			removal_cost = -1
+
+			modifier = {
+				annual_gdp_growth_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.075
+			}
+		}
+
+		DDR_state_security_service = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: DDR_state_security_service "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = DDR_state_security_service
+
+			removal_cost = -1
+
+			modifier = {
+				agency_upgrade_time = 0.95
+				operative_slot = 1
+				own_operative_detection_chance_factor = 0.95
+				own_operative_capture_chance_factor = 0.95
+			}
+		}
+		DDR_entkorporatisierung = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: DDR_entkorporatisierung "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = DDR_entkorporatisierung
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				monthly_population = 0.15
+				local_resources_factor = 0.1
+			}
+		}
+		DDR_verfassung = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: DDR_entkorporatisierung "}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = DDR_verfassung
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = 0.05
+			}
+		}
+}   }

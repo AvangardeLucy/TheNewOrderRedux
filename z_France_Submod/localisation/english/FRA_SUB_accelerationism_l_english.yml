@@ -1,0 +1,19 @@
+﻿l_english:
+ accelerationism: "Accelerationism"
+ accelerationism_noun: "Accelerationism"
+ accelerationism_desc: "Accelerationism"
+ accelerationism_subtype: "Accelerationism is a political and social theory stating that the current capitalist system should be expanded to produce fundamental social change. Some modern accelerationist philosophies aim to identify and radicalize the power of deterritorialization, with the goal of overcoming conflicting tendencies that curb the potential for widespread social change."
+ accelerationism_acceptance:0 "Acceptance of Accelerationist Diplomacy"
+
+#Subideologies
+ accelerationism_left_accelerationism_subtype:0 "Left Accelerationism"
+ accelerationism_ordoaccelerationism_subtype:0 "Ordoaccelerationism"
+ accelerationism_right_accelerationism_subtype:0 "Right Accelerationism"
+ accelerationism_unconditional_accelerationism_subtype:0 "Unconditional Accelerationism"
+ accelerationism_vanguard_accelerationism_subtype:0 "Vanguard Accelerationism"
+
+ accelerationism_left_accelerationism_subtype_desc:0 "Left Accelerationism is a system of thought that is concerned with 'capitalist realism', the inability to imagine what happens after the collapse of capitalism, and seeks beyond the technological singularity to what will liberate humanity from alienation. It generally emphasises the development of technology and its sharing."
+ accelerationism_ordoaccelerationism_subtype_desc:0 "Ordoaccelerationism is an ideology that combines nationalist elements with accelerationism, which aims for a singularity by pushing the process of de-territorialisation of capitalism. In general, leaders are often trying to get their people to adopt a eugenic ideology, and are willing to use perversion of science and technology and misuse of evolutionary theory as support to achieve this."
+ accelerationism_right_accelerationism_subtype_desc:0 "Right Accelerationism is a system of thought that aims to push the process of de-territorialisation of capitalism to the limit and reach a singularity. It generally dislikes big government as an obstacle to the progress of the process, and favours small government with minimal state intervention."
+ accelerationism_unconditional_accelerationism_subtype_desc:0 "Unconditional Accelerationism is an ideological system that dislikes anything too politicised, right-wing or left-wing, and seeks to return to its original accelerationist roots. It can be described as an ideology with strong philosophical overtones, although it is unclear what it would look like in practice."
+ accelerationism_vanguard_accelerationism_subtype_desc:0 "Vanguard Accelerationism is a system of thought in which the state, or leader, leads the people to reach a singularity. It is in direct opposition to right-wing accelerationism, which wants small government. In general, it risks becoming a repressive system that denies individual freedom or becomes a collective delusion."

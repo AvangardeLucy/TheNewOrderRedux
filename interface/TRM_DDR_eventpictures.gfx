@@ -1,0 +1,181 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_report_event_epic"
+		texturefile = "gfx/event_pictures/epic.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_epic2"
+		texturefile = "gfx/event_pictures/epic2.dds"
+	}
+	spriteType = {
+		name = "GFX_news_report_event_germania_tank"
+		texturefile = "gfx/event_pictures/news_report_event_germania_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_bloody_noon"
+		texturefile = "gfx/event_pictures/report_event_bloody_noon.dds"
+	}
+	spriteType = {
+		name = "GFX_news_report_event_bloody_noon"
+		texturefile = "gfx/event_pictures/news_report_event_bloody_noon.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_dortmund"
+		texturefile = "gfx/event_pictures/report_event_dortmund.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_germania_battle"
+		texturefile = "gfx/event_pictures/report_event_germania_battle.dds"
+	}
+	spriteType = {
+		name = "GFX_news_report_event_german_revolution"
+		texturefile = "gfx/event_pictures/news_report_event_german_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_news_report_event_polish_revolution"
+		texturefile = "gfx/event_pictures/GFX_polish_revolution_news.dds"
+	}
+	#####
+	spriteType = {
+		name = "GFX_report_event_unterwegs"
+		texturefile = "gfx/event_pictures/report_event_unterwegs.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_rote_flieger"
+		texturefile = "gfx/event_pictures/report_event_rote_flieger.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_breath_of_fresh_air"
+		texturefile = "gfx/event_pictures/report_event_breath_of_fresh_air.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_wolf_and_party"
+		texturefile = "gfx/event_pictures/report_event_wolf_and_party.dds"
+	}
+	spriteType = {
+		name = "GFX_TNO_roter_nachmittag"
+		texturefile = "gfx/event_pictures/TNO_roter_nachmittag.dds"
+	}
+
+	#FT Wolf 1 Events
+	spriteType = {
+		name = "GFX_report_event_facing_the_future"
+		texturefile = "gfx/event_pictures/report_event_facing_the_future.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_firm_declaration"
+		texturefile = "gfx/event_pictures/report_event_firm_declaration.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_pigs_to_the_slaughter"
+		texturefile = "gfx/event_pictures/report_event_pigs_to_the_slaughter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_siege"
+		texturefile = "gfx/event_pictures/report_event_siege.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_guilt_and_growth"
+		texturefile = "gfx/event_pictures/report_event_guilt_and_growth.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_the_brown_book"
+		texturefile = "gfx/event_pictures/report_event_the_brown_book.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_justice_by_blood"
+		texturefile = "gfx/event_pictures/report_event_justice_by_blood.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_vereinigungsparteitag"
+		texturefile = "gfx/event_pictures/report_event_vereinigungsparteitag.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_i_can_vote"
+		texturefile = "gfx/event_pictures/report_event_i_can_vote.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_jeder_reservist"
+		texturefile = "gfx/event_pictures/report_event_jeder_reservist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_bills_and_bricks"
+		texturefile = "gfx/event_pictures/report_event_bills_and_bricks.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_a_tycoons_blunder"
+		texturefile = "gfx/event_pictures/report_event_a_tycoons_blunder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_flotter_osten"
+		texturefile = "gfx/event_pictures/report_event_flotter_osten.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_observers"
+		texturefile = "gfx/event_pictures/report_event_observers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_neubaugebiet"
+		texturefile = "gfx/event_pictures/report_event_neubaugebiet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_always_vigilant"
+		texturefile = "gfx/event_pictures/report_event_always_vigilant.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_invisible_front"
+		texturefile = "gfx/event_pictures/report_event_invisible_front.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_kybernetische_okonomie"
+		texturefile = "gfx/event_pictures/report_event_kybernetische_okonomie.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_tractors_harvest"
+		texturefile = "gfx/event_pictures/report_event_tractors_harvest.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_principles_of_anti_fascism"
+		texturefile = "gfx/event_pictures/report_event_principles_of_anti_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_lied_vom_vaterland"
+		texturefile = "gfx/event_pictures/report_event_lied_vom_vaterland.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_in_sheeps_skin"
+		texturefile = "gfx/event_pictures/TNO_report_event_in_sheeps_skin.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_victorious_feast"
+		texturefile = "gfx/event_pictures/TNO_report_event_victorious_feast.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_where_the_red_rhine_flows"
+		texturefile = "gfx/event_pictures/TNO_report_event_where_the_red_rhine_flows.dds"
+	}
+	spriteType = {
+		name = "GFX_report_news_event_DVR_invades_dutch"
+		texturefile = "gfx/event_pictures/news_event_DVR_invades_dutch.dds"
+	}
+}

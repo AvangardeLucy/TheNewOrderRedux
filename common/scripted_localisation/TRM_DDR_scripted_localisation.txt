@@ -1,0 +1,270 @@
+defined_text = {
+    name = get_state_name
+    text = {
+        trigger = {
+            check_variable = { chosen_state = 1 }
+        }
+        localization_key = TRM_chosen_moravia
+    }
+    text = {
+        trigger = {
+            check_variable = { chosen_state = 2 }
+        }
+        localization_key = TRM_chosen_prussia
+    }
+	text = {
+        trigger = {
+            check_variable = { chosen_state = 3 }
+        }
+        localization_key = TRM_chosen_bohemia
+    }
+	text = {
+        trigger = {
+            check_variable = { chosen_state = 4 }
+        }
+        localization_key = TRM_chosen_saxony
+    }
+	text = {
+        trigger = {
+            check_variable = { chosen_state = 5 }
+        }
+        localization_key = TRM_chosen_brandenburg
+    }
+    text = {
+        trigger = {
+            check_variable = { chosen_state = 6 }
+        }
+        localization_key =TRM_chosen_pomerania
+    }
+	text = {
+        trigger = {
+            check_variable = { chosen_state = 7 }
+        }
+        localization_key = TRM_chosen_schleswig
+    }
+	text = {
+        trigger = {
+            check_variable = { chosen_state = 8 }
+        }
+        localization_key = TRM_chosen_westphalia
+	}
+	text = {
+        trigger = {
+            check_variable = { chosen_state = 9 }
+        }
+        localization_key = TRM_chosen_lower_saxony
+    }
+    text = {
+        trigger = {
+            check_variable = { chosen_state = 10 }
+        }
+        localization_key = TRM_chosen_elsas_lothringen
+    }
+	text = {
+        trigger = {
+            check_variable = { chosen_state = 11 }
+        }
+        localization_key = TRM_chosen_baden
+    }
+	text = {
+        trigger = {
+            check_variable = { chosen_state = 12 }
+        }
+        localization_key = TRM_chosen_bavaria
+    }
+	text = {
+        trigger = {
+            check_variable = { chosen_state = 13 }
+        }
+        localization_key = TRM_chosen_austria
+    }
+    text = {
+        trigger = {
+            check_variable = { chosen_state = 14 }
+        }
+        localization_key = TRM_chosen_tyrol
+    }
+	text = {
+        trigger = {
+            check_variable = { chosen_state = 15 }
+        }
+        localization_key = TRM_chosen_carinthia
+    }
+	text = {
+        trigger = {
+            check_variable = { chosen_state = 16 }
+        }
+        localization_key = TRM_chosen_posen
+    }
+	text = {
+        trigger = {
+            check_variable = { chosen_state = 17 }
+        }
+        localization_key = TRM_chosen_silesia
+    }
+}
+
+
+###superevent things###
+defined_text = {
+	name = TRMGetSuperEventImage
+	text = {
+		trigger = { check_variable = { TRM_super_event = 10001 } }
+		localization_key = "GFX_superevent_german_revolution"
+	}
+}
+defined_text = {
+	name = TRMGetSuperEventTitle
+	text = {
+		trigger = { check_variable = { TRM_super_event = 10001 } }
+		localization_key = SE_GERMAN_REVOLUTION_T
+	}
+}
+defined_text = {
+	name = TRMGetSuperEventDesc
+	text = {
+		trigger = { check_variable = { TRM_super_event = 10001 } }
+		localization_key = SE_GERMAN_REVOLUTION_D
+	}
+}
+defined_text = {
+	name = TRMGetSuperEventOption
+	text = {
+		trigger = { check_variable = { TRM_super_event = 10001 } }
+		localization_key = SE_GERMAN_REVOLUTION_A
+	}
+}
+
+##army and party
+defined_text = {
+    name = get_hardliner_relation
+    text = {
+        trigger = {
+            check_variable = { hardliner_relation > 10}
+        }
+        localization_key = DDR_party_rel_happy
+    }
+    text = {
+        trigger = {
+            check_variable = { hardliner_relation > 5 }
+        }
+        localization_key = DDR_party_rel_content
+    }
+	text = {
+        localization_key = DDR_party_rel_discontent
+    }
+	
+}
+defined_text = {
+    name = get_militarist_relation
+    text = {
+        trigger = {
+            check_variable = { militarist_relation > 10}
+        }
+        localization_key = DDR_party_rel_happy
+    }
+    text = {
+        trigger = {
+            check_variable = { militarist_relation > 5 }
+        }
+        localization_key = DDR_party_rel_content
+    }
+	text = {
+        localization_key = DDR_party_rel_discontent
+    }
+	
+}
+defined_text = {
+    name = get_reformist_relation
+    text = {
+        trigger = {
+            check_variable = { reformist_relation > 10}
+        }
+        localization_key = DDR_party_rel_happy
+    }
+    text = {
+        trigger = {
+            check_variable = { reformist_relation > 5 }
+        }
+        localization_key = DDR_party_rel_content
+    }
+	text = {
+        localization_key = DDR_party_rel_discontent
+    }
+	
+}
+
+defined_text = {
+    name = get_landstreitkrafte_relation
+    text = {
+        trigger = {
+            check_variable = { landstreitkrafte_relation > 10}
+        }
+        localization_key = DDR_army_rel_happy
+    }
+    text = {
+        trigger = {
+            check_variable = { landstreitkrafte_relation > 5 }
+        }
+        localization_key = DDR_army_rel_content
+    }
+	text = {
+        localization_key = DDR_army_rel_discontent
+    }
+	
+}
+defined_text = {
+    name = get_volksmarine_relation
+    text = {
+        trigger = {
+            check_variable = { volksmarine_relation > 10}
+        }
+        localization_key = DDR_army_rel_happy
+    }
+    text = {
+        trigger = {
+            check_variable = { volksmarine_relation > 5 }
+        }
+        localization_key = DDR_army_rel_content
+    }
+	text = {
+        localization_key = DDR_army_rel_discontent
+    }
+	
+}
+defined_text = {
+    name = get_volksfliegerkorps_relation
+    text = {
+        trigger = {
+            check_variable = { volksfliegerkorps_relation > 10}
+        }
+        localization_key = DDR_army_rel_happy
+    }
+    text = {
+        trigger = {
+            check_variable = { volksfliegerkorps_relation > 5 }
+        }
+        localization_key = DDR_army_rel_content
+    }
+	text = {
+        localization_key = DDR_army_rel_discontent
+    }
+}
+defined_text = {
+    name = get_army_relation
+    text = {
+        trigger = {
+            check_variable = { army_relation > 30}
+        }
+        localization_key = DDR_army_rel_happy
+    }
+    text = {
+        trigger = {
+            check_variable = { army_relation > 15 }
+        }
+        localization_key = DDR_army_rel_content
+    }
+	text = {
+        localization_key = DDR_army_rel_discontent
+    }
+}

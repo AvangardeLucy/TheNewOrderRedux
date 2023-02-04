@@ -1,0 +1,212 @@
+TRM_DDR_Demobilization_GUI_setup = {
+    set_variable = {global.partisan_demobilization = 60}
+    clamp_variable = {
+        var = global.partisan_demobilization
+        min = 0
+        max = 100
+    }
+}
+
+#riots stuff
+### I'm using these states to store variables for each region
+### 13 - Austria
+### 5 - Brandenburg
+TRM_SPR_nationwide_riots_init = { ### Creating an array with all the state numbers for calculations
+	set_variable = { chosen_state = 5 }
+	add_to_array = { riots_states_array = 1} 
+	add_to_array = { riots_states_array = 2} 
+	add_to_array = { riots_states_array = 3} 
+	add_to_array = { riots_states_array = 4}
+	add_to_array = { riots_states_array = 5}
+	add_to_array = { riots_states_array = 6}
+	add_to_array = { riots_states_array = 7}
+	add_to_array = { riots_states_array = 8}
+	add_to_array = { riots_states_array = 9}
+	add_to_array = { riots_states_array = 10}
+	add_to_array = { riots_states_array = 11}
+	add_to_array = { riots_states_array = 12}
+	add_to_array = { riots_states_array = 13}
+	add_to_array = { riots_states_array = 14}
+	add_to_array = { riots_states_array = 15}
+	add_to_array = { riots_states_array = 16}
+	add_to_array = { riots_states_array = 17}
+	set_variable = { commie_support_@1 = 19 } ###moravia
+	set_variable = { commie_support_@2 = 9 } ###prussia
+	set_variable = { commie_support_@3 = 55 } ###bohemia
+	set_variable = { commie_support_@4 = 16 } ###saxony
+	set_variable = { commie_support_@5 = 49 } ###brandenburg
+	set_variable = { commie_support_@6 = 22 } ###pomerania
+	set_variable = { commie_support_@7 = 47 } ###schleswig
+	set_variable = { commie_support_@8 = 87 } ###westphalia
+	set_variable = { commie_support_@9 = 13 } ###lower saxony
+	set_variable = { commie_support_@10 = 57 } ###elsas
+	set_variable = { commie_support_@11 = 16 } ###baden
+	set_variable = { commie_support_@12 = 18 } ###bavaria
+	set_variable = { commie_support_@13 = 94 } ###austria
+	set_variable = { commie_support_@14 = 18 } ###tyrol
+	set_variable = { commie_support_@15 = 15 } ###carinthia
+	set_variable = { commie_support_@16 = 23 } ###posen
+	set_variable = { commie_support_@17 = 25 } ###silesia (no gfx yet)
+	set_variable = { speer_support_@1 = 66 } ###moravia
+	set_variable = { speer_support_@2 = 63 } ###prussia
+	set_variable = { speer_support_@3 = 56 } ###bohemia
+	set_variable = { speer_support_@4 = 60 } ###saxony
+	set_variable = { speer_support_@5 = 52 } ###brandenburg
+	set_variable = { speer_support_@6 = 58 } ###pomerania
+	set_variable = { speer_support_@7 = 53 } ###schleswig
+	set_variable = { speer_support_@8 = 15 } ###westphalia
+	set_variable = { speer_support_@9 = 70 } ###lower saxony
+	set_variable = { speer_support_@10 = 45 } ###elsas
+	set_variable = { speer_support_@11 = 69 } ###baden
+	set_variable = { speer_support_@12 = 72 } ###bavaria
+	set_variable = { speer_support_@13 = 18 } ###austria
+	set_variable = { speer_support_@14 = 61 } ###tyrol
+	set_variable = { speer_support_@15 = 70 } ###carinthia
+	set_variable = { speer_support_@16 = 60 } ###posen
+	set_variable = { speer_support_@17 = 65 } ###silesia (no gfx yet)
+	for_each_loop = {
+		array = riots_states_array
+		value = v
+		index = i
+		set_variable = { undecided_support_@var:v = 300 }
+		randomize_temp_variable = {
+			var = region_stability
+			distribution = uniform
+			min = 80
+			max = 100
+		}
+		set_variable = { region_stability_@var:v = region_stability }
+	}
+}
+
+### Undecided count as not politically active or neutral mass that waits who will win. 
+### Wolf and Speer will fight to gain neutrals on their side through decisions.
+### It will be very costly to turn enemy supporters back to neutrals. Might add so that a decision that
+### does it can fail and turn your own supporters away from you. 
+TRM_SPR_nationwide_riots_update_everything = {
+	set_variable = { spartacist_regions_count = 0 }
+	for_each_loop = {
+		array = riots_states_array
+		value = v
+		index = i
+
+		###calc difference
+		set_variable = { speer_commie_difference = commie_support_@var:v }
+		subtract_from_variable = { speer_commie_difference = speer_support_@var:v }
+		if = {
+			limit = {
+				check_variable = { speer_commie_difference < 0  }
+			}
+			multiply_variable = { speer_commie_difference = -1}
+		}
+		if = { ###set brown region color
+			limit = {
+				check_variable = { commie_support_@var:v < speer_support_@var:v }
+				check_variable = { speer_commie_difference > 29 }
+			}
+			set_variable = { picture_state_@var:v = 2 }
+		}
+		else_if = { ###set commie region color
+			limit = {
+				check_variable = { commie_support_@var:v > speer_support_@var:v }
+				check_variable = { speer_commie_difference > 29 }
+			}
+			set_variable = { picture_state_@var:v = 3 }
+			add_to_variable = { spartacist_regions_count = 1 }
+		}
+		else = { ###set anarchy region color
+			set_variable = { picture_state_@var:v = 1 }
+			
+		}
+	}
+	TRM_SPR_nationwide_riots_get_state_bars = yes
+}
+TRM_SPR_nationwide_riots_give_random_commie_support = {
+	for_each_loop = {
+		array = riots_states_array
+		value = v
+		index = i
+		
+		randomize_temp_variable = {
+			var = decision_temp_var
+			distribution = uniform
+			min = 0
+			max = 100
+		}
+		randomize_temp_variable = {
+			var = stability_temp_mod
+			distribution = uniform
+			min = -5
+			max = 5
+		}
+		add_to_variable = { region_stability_@var:chosen_state = stability_temp_mod }
+		if = { 
+			limit = {
+				check_variable = { decision_temp_var < 20 }
+			}
+			
+			add_to_variable = { commie_support_@var:v = 10 }
+			add_to_variable = { speer_support_@var:v = -10 }
+			add_to_variable = { undecided_support_@var:v = -10 }
+		}
+		else_if = { 
+			limit = {
+				check_variable = { decision_temp_var < 60 }
+			}
+			add_to_variable = { commie_support_@var:v = 5 }
+			add_to_variable = { speer_support_@var:v = -5 }
+			add_to_variable = { undecided_support_@var:v = -5 }
+		}
+		TRM_SPR_nationwide_riots_update_everything = yes
+	}
+}
+TRM_SPR_nationwide_riots_update_chosen_state = {
+	set_variable = { speer_commie_difference = commie_support_@var:chosen_state }
+	subtract_from_variable = { speer_commie_difference = speer_support_@var:chosen_state }
+	if = {
+		limit = {
+			check_variable = { speer_commie_difference < 0  }
+		}
+		multiply_variable = { speer_commie_difference = -1}
+	}
+	if = { ###set brown region color
+		limit = {
+			check_variable = { commie_support_@var:chosen_state < speer_support_@var:chosen_state }
+			check_variable = { speer_commie_difference > 19 }
+		}
+		set_variable = { picture_state_@var:v = 2 }
+	}
+	else_if = { ###set commie region color
+		limit = {
+			check_variable = { commie_support_@var:chosen_state > speer_support_@var:chosen_state }
+			check_variable = { speer_commie_difference > 19 }
+		}
+		set_variable = { picture_state_@var:chosen_state = 3 }
+		add_to_variable = { spartacist_regions_count = 1 }
+	}
+	else = { ###set anarchy region color
+		set_variable = { picture_state_@var:chosen_state = 1 }
+	}
+	TRM_SPR_nationwide_riots_get_state_bars = yes
+}
+TRM_SPR_nationwide_riots_get_state_bars = {
+	set_variable = { total_supporters = commie_support_@var:chosen_state }
+	add_to_variable = { total_supporters = speer_support_@var:chosen_state }
+	add_to_variable = { total_supporters = undecided_support_@var:chosen_state }
+	divide_variable = { total_supporters = 100 }
+	###what fraction of all supporters are fascies
+	set_variable = { global.DDR_political_outlook_speer = speer_support_@var:chosen_state }
+	divide_variable = { global.DDR_political_outlook_speer = total_supporters }
+	round_variable = global.DDR_political_outlook_speer
+	###what fraction of all supporters are commies
+	set_variable = { global.DDR_political_outlook_commie = undecided_support_@var:chosen_state}
+	divide_variable = { global.DDR_political_outlook_commie = total_supporters }
+	round_variable = global.DDR_political_outlook_commie
+	
+	add_to_variable = { global.DDR_political_outlook_commie = global.DDR_political_outlook_speer } ### this is so progress bars work properly
+	set_variable = { global.DDR_stability = region_stability_@var:chosen_state }
+	
+}
+TRM_SPR_nationwide_riots_increase_state_commie_support_50 = {
+	add_to_variable = { commie_support_@var:chosen_state = 30 }
+}

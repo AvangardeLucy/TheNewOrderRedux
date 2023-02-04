@@ -1,0 +1,319 @@
+DDR_army_and_party_category = {
+    DDR_reimanns_call_for_unity = {
+        
+		icon = GFX_decision_generic_propaganda_off
+
+        cost = 15
+		days_remove = 10
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = completed_embolden_party_center_tt		
+				NOT = { has_country_flag = completed_embolden_party_center }
+			}
+		}
+		fire_only_once = yes
+        ai_will_do = {
+            factor = 20
+        }
+		complete_effect = {
+			set_country_flag = completed_reimanns_call_for_unity
+		}
+        remove_effect = {
+			custom_effect_tooltip = DDR_reimanns_call_for_unity_tt
+            add_to_variable = { DDR_unity = 25 }
+			add_to_variable = { hardliner_relation = 5 }
+			add_to_variable = { militarist_relation = 5 }
+			add_to_variable = { reformist_relation = 6 }
+			
+        }
+	}
+	DDR_embolden_party_center = {
+        
+		icon = GFX_decision_category_generic_communism
+
+        cost = 10
+		days_remove = 10
+		
+        available = {
+			custom_trigger_tooltip = {
+				tooltip = completed_reimanns_call_for_unity_tt		
+				NOT = { has_country_flag = completed_reimanns_call_for_unity }
+			}
+		}
+		fire_only_once = yes
+        ai_will_do = {
+            factor = 20
+        }
+		complete_effect = {
+			set_country_flag = completed_embolden_party_center
+		}
+        remove_effect = {
+			custom_effect_tooltip = DDR_embolden_party_center_tt
+            add_to_variable = { DDR_unity = 20 }
+			add_to_variable = { hardliner_relation = 6 }
+			
+        }
+	}
+	DDR_promises_of_freedom = {
+        
+		icon = GFX_decision_category_generic_political_actions
+
+        cost = 25
+		days_remove = 10
+
+        available = {
+			custom_trigger_tooltip = {
+				tooltip = completed_our_way_or_highway_tt		
+				NOT = {  has_country_flag = completed_our_way_or_highway }
+			}
+		}
+		fire_only_once = yes
+        ai_will_do = {
+            factor = 20
+        }
+		complete_effect = {
+			set_country_flag = completed_promises_of_freedom
+		}
+        remove_effect = {
+			custom_effect_tooltip = DDR_promises_of_freedom_tt
+            add_to_variable = { DDR_unity = 20 }
+			add_to_variable = { reformist_relation = 6 }
+			
+        }
+	}
+	DDR_our_way_or_highway = {
+        
+		icon = GFX_decision_generic_workers
+
+        cost = 15
+		days_remove = 10
+
+        available = {
+			custom_trigger_tooltip = {
+				tooltip = completed_promises_of_freedom_tt		
+				NOT = {  has_country_flag = completed_promises_of_freedom }
+			}
+		}
+		fire_only_once = yes
+        ai_will_do = {
+            factor = 20
+        }
+		complete_effect = {
+			set_country_flag = completed_our_way_or_highway
+		}
+        remove_effect = {
+			custom_effect_tooltip = DDR_our_way_or_highway_tt
+            add_to_variable = { DDR_unity = 20 }
+			add_to_variable = { hardliner_relation = 6 }
+        }
+	}
+	DDR_peace_land_bread = {
+        
+		icon = GFX_decision_generic_consumer_goods
+
+        cost = 25
+		days_remove = 10
+
+        available = {
+			custom_trigger_tooltip = {
+				tooltip = completed_sacred_war_tt		
+				NOT = {  has_country_flag = completed_sacred_war }
+			}
+		}
+		fire_only_once = yes
+        ai_will_do = {
+            factor = 20
+        }
+		complete_effect = {
+			set_country_flag = completed_peace_land_bread
+		}
+        remove_effect = {
+			custom_effect_tooltip = DDR_peace_land_bread_tt
+            add_to_variable = { DDR_unity = 20 }
+			add_to_variable = { reformist_relation = 6 }
+			
+        }
+	}
+	DDR_sacred_war = {
+        
+		icon = GFX_decision_generic_military_parade
+
+        cost = 15
+		days_remove = 10
+
+        available = {
+			custom_trigger_tooltip = {
+				tooltip = completed_peace_land_bread_tt		
+				NOT = {  has_country_flag = completed_peace_land_bread }
+			}
+		}
+		fire_only_once = yes
+        ai_will_do = {
+            factor = 20
+        }
+		
+		complete_effect = {
+			set_country_flag = completed_sacred_war
+		}
+        remove_effect = {
+			custom_effect_tooltip = DDR_sacred_war_tt
+            add_to_variable = { DDR_unity = 20 }
+			add_to_variable = { militarist_relation = 6 }
+			
+        }
+	}
+}
+DDR_army_and_party_army_category = {
+    DDR_tutor_sailors = {
+        
+		icon = GFX_decision_shipyard
+
+        custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = decision_cost_15_cp
+		
+        ai_will_do = {
+            factor = 20
+        }
+		days_remove = 10
+		fire_only_once = yes
+        remove_effect = {
+			custom_effect_tooltip = DDR_tutor_sailors_tt
+            add_to_variable = { DDR_organisation = 20 }
+			add_to_variable = { volksmarine_relation = 6 }
+			set_country_flag = completed_tutor_sailors
+        }
+	}
+	DDR_reorganise_air = {
+        
+		icon = GFX_decision_generic_fighter_plane
+
+        custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = decision_cost_15_cp
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = completed_reorganise_air_tt		
+				has_country_flag = completed_tutor_sailors
+			}
+		}
+        ai_will_do = {
+            factor = 20
+        }
+		days_remove = 10
+		fire_only_once = yes
+        remove_effect = {
+			custom_effect_tooltip = DDR_reorganise_air_tt
+            add_to_variable = { DDR_organisation = 20 }
+			add_to_variable = { volksfliegerkorps_relation = 6 }
+			set_country_flag = completed_reorganise_air
+        }
+	}
+	DDR_promote_new_officers = {
+        
+		icon =  decision_category_military_operation
+
+        custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = decision_cost_15_cp
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = completed_promote_new_officers_tt		
+				has_country_flag = completed_reorganise_air
+			}
+		}
+        ai_will_do = {
+            factor = 20
+        }
+		days_remove = 10
+		fire_only_once = yes
+        remove_effect = {
+			custom_effect_tooltip = DDR_promote_new_officers_tt
+            add_to_variable = { DDR_organisation = 20 }
+			add_to_variable = { army_relation = 6 }
+			set_country_flag = completed_promote_new_officers
+        }
+	}
+	DDR_increase_propaganda = {
+        
+		icon = GFX_decision_category_generic_propaganda
+
+        custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = decision_cost_15_cp
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = completed_increase_propaganda_tt		
+				has_country_flag = completed_promote_new_officers
+			}
+		}
+        ai_will_do = {
+            factor = 20
+        }
+		days_remove = 10
+		fire_only_once = yes
+        remove_effect = {
+			custom_effect_tooltip = DDR_increase_propaganda_tt
+            add_to_variable = { DDR_organisation = 10 }
+			set_country_flag = completed_increase_propaganda
+        }
+	}
+	DDR_begin_recruitment = {
+        
+		icon = GFX_decision_generic_military_hat
+
+        custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = decision_cost_15_cp
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = completed_begin_recruitment_tt		
+				has_country_flag = completed_increase_propaganda
+			}
+		}
+        ai_will_do = {
+            factor = 20
+        }
+		days_remove = 10
+		fire_only_once = yes
+        remove_effect = {
+			custom_effect_tooltip = DDR_begin_recruitment_tt
+            add_to_variable = { DDR_organisation = 10 }
+			set_country_flag = completed_begin_recruitment
+        }
+	}
+	DDR_operation_schaft = {
+        
+		icon = GFX_decision_generic_border_war
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = operation_schaft_trigger_tt		
+				check_variable = { DDR_organisation > 79 }
+			}
+		}
+			
+        custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = decision_cost_15_cp
+	
+        ai_will_do = {
+            factor = 20
+        }
+		days_remove = 10
+		fire_only_once = yes
+        remove_effect = {
+			declare_war_on = {
+				target = HOL
+				type = annex_everything
+			}
+        }
+	}
+}

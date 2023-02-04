@@ -1,0 +1,112 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_GER_armed_militias"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GER_armed_militias.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_slave_strikes"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GER_slave_strikes.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_student_resistance"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GER_student_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_reichsbanner_resistance"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GER_reichsbanner_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_nationwide_uprisings"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GER_nationwide_uprisings.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_student_negotiations"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GER_student_negotiations.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_willys_negotiations"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GER_willys_negotiations.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_union_negotiations"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GER_union_negotiations.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_six_concessions"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GER_six_concessions.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_brandenburg_massacre"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GER_brandenburg_massacre.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_general_strikes"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GER_general_strikes.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_nationwide_protests"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GER_nationwide_protests.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_rhine_riots"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GER_rhine_riots.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_idea_DDR_Sins_Of_The_Fatherland"
+		texturefile = "gfx/interface/ideas/national_spirits/DDR/DDR_Sins_Of_The_Fatherland.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_DDR_Great_Break"
+		texturefile = "gfx/interface/ideas/national_spirits/DDR/DDR_Great_Break.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_DDR_The_Great_Revolution"
+		texturefile = "gfx/interface/ideas/national_spirits/DDR/DDR_The_Great_Revolution.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_DDR_Remnants"
+		texturefile = "gfx/interface/ideas/national_spirits/DDR/DDR_Remnants.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Rotfront_Leader"
+		texturefile = "gfx/interface/factions/status/GFX_Rotfront_Leader.dds"
+	}
+	spriteType = {
+		name = "GFX_Rotfront_Observer"
+		texturefile = "gfx/interface/factions/status/GFX_Rotfront_Observer.dds"
+	}
+	spriteType = {
+		name = "GFX_Rotfront_Member"
+		texturefile = "gfx/interface/factions/status/GFX_Rotfront_Member.dds"
+	}
+	spriteType = {
+		name = "GFX_RotFront_Satellite"
+		texturefile = "gfx/interface/factions/status/GFX_Rotfront_Satellite.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_not_yet_lost"
+		texturefile = "gfx/interface/ideas/national_spirits/POL/POL_not_yet_lost.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_chaos_in_warsaw"
+		texturefile = "gfx/interface/ideas/national_spirits/POL/POL_chaos_in_warsaw.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_idea_HOL_exiled_dilemma"
+		texturefile = "gfx/interface/ideas/national_spirits/HOL/HOL_exiled_dilemma.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_longest_hours"
+		texturefile = "gfx/interface/ideas/national_spirits/HOL/HOL_longest_hours.dds"
+	}
+}

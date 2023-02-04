@@ -1,12 +1,19 @@
 capital = 10
 
+recruit_character = POL_wladyslaw_gomulka
+      
+recruit_character = POL_leon_kasman
+recruit_character = POL_mieczyslaw_moczar
+recruit_character = POL_oskar_lange
+recruit_character = POL_wladyslaw_bienkowski
+recruit_character = POL_stefan_michnik
+recruit_character = POL_wojciech_jaruzelski
 recruit_character = POL_Emil_Fieldorf
 
 recruit_character = POL_Werner_Schrader
 recruit_character = POL_Stanislaw_Wachowiak
 recruit_character = POL_Adam_Baworowski
 
-recruit_character = POL_Wladyslaw_Gomulka
 recruit_character = POL_Antoni_Pajak
 recruit_character = POL_Stanislaw_Banczyk
 recruit_character = POL_Zygmunt_Muchniewski

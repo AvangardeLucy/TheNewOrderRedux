@@ -1,0 +1,292 @@
+characters = {
+	DDR_markus_wolf = {
+		name = DDR_markus_wolf
+		portraits = { civilian = { large = "gfx/leaders/DDR/Portrait_DDR_Markus_Wolf.dds" } }
+		country_leader = {
+			desc = "POLITICS_DDR_MARKUS_WOLF_DESC"
+			ideology = communist_spartacism_subtype
+			expire = "1999.1.1.1"
+			id = -1
+		}
+	}
+
+	DDR_hans_modrow = {
+		name = DDR_hans_modrow
+		portraits = { civilian = { large = "gfx/leaders/DDR/Portrait_DDR_Hans_Modrow.dds" } }
+		country_leader = {
+			desc = "POLITICS_DDR_HANS_MODROW_DESC"
+			ideology = socialist_revolutionary_frontism_subtype
+			expire = "1999.1.1.1"
+			id = -1
+		}
+	}
+
+	# Ministers
+
+	DDR_lothar_bolz = {
+		name = DDR_lothar_bolz
+		portraits = {
+			civilian { small = "GFX_idea_DDR_minister_Lothar_Bolz" }
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = DDR_lothar_bolz_for
+			allowed = { original_tag = DDR }
+			traits = {
+				foreign_minister
+				for_great_compromiser
+				for_well_connected
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	DDR_erich_mielke = {
+		name = DDR_erich_mielke
+		portraits = {
+			civilian { small = "GFX_idea_DDR_minister_erich_mielke" }
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = DDR_erich_mielke_sec
+			allowed = { original_tag = DDR }
+			traits = {
+				security_minister
+				sec_prince_of_terror
+				sec_crime_fighter
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	DDR_gerhard_shurer = {
+		name = DDR_gerhard_shurer
+		portraits = { 
+			civilian = { small = "GFX_idea_DDR_minister_gerhard_shurer" } 
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = DDR_gerhard_shurer_eco
+			allowed = { original_tag = DDR }
+			traits = {
+				economy_minister
+				eco_planned_economy_proponent
+				eco_industrialiser
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	DDR_max_reimann = {
+		name = DDR_max_reimann
+		portraits = { 
+			civilian = { small = "GFX_idea_DDR_minister_max_reimann" } 
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = DDR_max_reimann_hog
+			allowed = { original_tag = DDR }
+			traits = {
+				head_of_government
+				hog_native_optimist
+				hog_pragmatic_statesman
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	# Generals and Marshals
+
+	DDR_ulrike_meinhof = {
+        name = DDR_ulrike_meinhof
+        portraits = {
+            army = {
+                large = "gfx/leaders/DDR/DDR_ulrike_meinhof.dds"
+            }
+        }
+		corps_commander = {
+			traits = { guerilla_fighter politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 3720
+		}
+    }
+
+	DDR_sigfrid_riedel = {
+        name = DDR_sigfrid_riedel
+        portraits = {
+            army = {
+                large = "gfx/leaders/DDR/DDR_Sigfrid_Riedel.dds"
+            }
+        }
+		corps_commander = {
+			traits = { panzer_expert winter_specialist }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 3721
+		}
+    }
+
+	DDR_horst_brunner = {
+        name = DDR_horst_brunner
+        portraits = {
+            army = {
+                large = "gfx/leaders/DDR/DDR_horst_brunner.dds"
+            }
+        }
+		corps_commander = {
+			traits = { inflexible_strategist trait_reckless trickster }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 3722
+		}
+    }
+
+	DDR_horst_stechbarth = {
+        name = DDR_horst_stechbarth
+        portraits = {
+            army = {
+                large = "gfx/leaders/DDR/DDR_horst_stechbarth.dds"
+            }
+        }
+		corps_commander = {
+			traits = { inflexible_strategist trait_reckless trickster }
+			skill = 2
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = 3723
+		}
+    }
+
+	DDR_heinz_hoffman = {
+        name = DDR_heinz_hoffman
+        portraits = {
+            army = {
+                large = "gfx/leaders/DDR/DDR_Heinz_Hoffman.dds"
+            }
+        }
+		corps_commander = {
+			traits = { skilled_staffer panzer_expert expert_improviser }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 37124
+		}
+    }
+
+	DDR_fritz_streletz = {
+        name = DDR_fritz_streletz
+        portraits = {
+            army = {
+                large = "gfx/leaders/DDR/DDR_Fritz_Streletz.dds"
+            }
+        }
+		corps_commander = {
+			traits = {fortress_buster urban_assault_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 37124
+		}
+    }
+
+	DDR_friedrich_dickel = {
+        name = DDR_friedrich_dickel
+        portraits = {
+            army = {
+                large = "gfx/leaders/DDR/DDR_Friedrich_Dickel.dds"
+            }
+        }
+		corps_commander = {
+			traits = { politically_connected urban_assault_specialist }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 37125
+		}
+    }		
+
+	DDR_willi_stoph = {
+		name = DDR_willi_stoph
+		portraits = {
+			army = {
+				large = "gfx/leaders/DDR/DDR_Willy_Stoph.dds"
+			}
+		}
+		field_marshal = {
+			traits = { thorough_planner politically_connected jungle_rat }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 3726
+		}
+	}
+
+	DDR_heinz_kessler = {
+		name = DDR_heinz_kessler
+		portraits = {
+			army = {
+				large = "gfx/leaders/DDR/DDR_Heinz_Kessler.dds"
+			}
+		}
+		field_marshal = {
+			traits = { fast_planner offensive_doctrine aggressive_assaulter }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 3728
+		}
+	}
+
+
+	DDR_erich_mielke_army = {
+		name = DDR_erich_mielke_army
+		portraits = {
+			army = {
+				large = "gfx/leaders/DDR/DDR_Erich_Mielke_Army.dds"
+			}
+		}
+		field_marshal = {
+			traits = { war_hero inspirational_leader offensive_doctrine }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 3727
+		}
+	}
+}
