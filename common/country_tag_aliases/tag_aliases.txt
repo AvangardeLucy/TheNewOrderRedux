@@ -50,31 +50,11 @@ OSL = { #Ostland
 	#fallback = OST
 }
 
-FRA = { #France
-	targets = { FRS FRD FRM FRV FMM FGR FIT }
-
-	#fallback = FRS
+FRA = { # France
+	has_full_control_of_state = 786
+	targets = { FFR FGR FIT FMM FRD FRM FRS FRV PIC RPY }
+	fallback = FRS
 }
-
-#FRA = { # France
-#	country_score = {
-#		base = 1
-#		modifier = {
-#			add = 1
-#			AND = {
-#				tag = FRS
-#				exists = yes
-#			}
-#		}
-#		modifier = {
-#			add = 100
-#			AND = {
-#				has_cosmetic_tag = FRA_postCW
-#				exists = yes
-#			}
-#		}
-#	}
-#}
 
 # note: MOS not existing was adding errors to the log
 MOS = { #Moskowien
