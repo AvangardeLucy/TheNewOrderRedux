@@ -733,10 +733,10 @@ country_event = { # HEA failure, cabinet reshuffle
 		hidden_effect = {
 			remove_all_ministers = yes
 			add_ideas = { 
-				JAP_Aoki_Kazuo_hog
+				JAP_kazuo_aoki_hog
 				JAP_Fukuda_Takeo_eco
-				JAP_Ushiba_Nobuhiko_for
-				JAP_Funada_Naka_sec
+				JAP_nobuhiko_ushiba_for
+				JAP_naka_funada_sec
 			}
 		}
 		set_temp_variable = { temp_government_stability = -10 }
@@ -2475,7 +2475,7 @@ country_event = { # Fukuda's Ascent
 		ai_chance = { factor = 1 }
 		set_country_flag = JAP_fukuda_successor
 		retire_country_leader = yes
-		promote_character = JAP_fukuda_takeo
+		promote_character = JAP_takeo_fukuda
 		hidden_effect = {
 			set_politics = { ruling_party = paternalism }
 			JAP_Fukuda_PM_initalize = yes
@@ -2531,7 +2531,7 @@ country_event = { # Shiina's Ascent
 		ai_chance = { factor = 1 }
 		set_country_flag = JAP_shiina_successor
 		retire_country_leader = yes
-		promote_character = JAP_shiina_etsusaburo
+		promote_character = JAP_etsusaburo_shiina
 		hidden_effect = {
 			set_politics = { ruling_party = fascism }
 			JAP_Shiina_PM_initalize = yes

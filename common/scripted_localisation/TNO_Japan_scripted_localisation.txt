@@ -1308,8 +1308,8 @@ defined_text = {
 defined_text = {
 	name = GetJapHoG
 	text = {
-		trigger = {	has_idea = JAP_Aoki_Kazuo_hog }
-		localization_key = JAP_Aoki_Kazuo_hog
+		trigger = {	has_idea = JAP_kazuo_aoki_hog }
+		localization_key = JAP_kazuo_aoki_hog
 	}
 	text = {
 		trigger = {	has_idea = JAP_Shiina_Etsusaburo_hog }
@@ -1320,16 +1320,16 @@ defined_text = {
 defined_text = {
 	name = GetJapSecMin
 	text = {
-		trigger = {	has_idea = JAP_Funada_Naka_sec }
-		localization_key = JAP_Funada_Naka_sec
+		trigger = {	has_idea = JAP_naka_funada_sec }
+		localization_key = JAP_naka_funada_sec
 	}
 	text = {
-		trigger = {	has_idea = JAP_Kawashima_Shojiro_sec }
-		localization_key = JAP_Kawashima_Shojiro_sec
+		trigger = {	has_idea = JAP_shojiro_kawashima_sec }
+		localization_key = JAP_shojiro_kawashima_sec
 	}
 	text = {
-		trigger = {	has_idea = JAP_Tadanori_Nagayama_sec }
-		localization_key = JAP_Tadanori_Nagayama_sec
+		trigger = {	has_idea = JAP_tadanori_nagayama_sec }
+		localization_key = JAP_tadanori_nagayama_sec
 	}
 }
 
@@ -1348,12 +1348,12 @@ defined_text = {
 defined_text = {
 	name = GetJapForMin
 	text = {
-		trigger = {	has_idea = JAP_Suzuki_Teiichi_for }
-		localization_key = JAP_Suzuki_Teiichi_for
+		trigger = {	has_idea = JAP_teiichi_suzuki_for }
+		localization_key = JAP_teiichi_suzuki_for
 	}
 	text = {
-		trigger = {	has_idea = JAP_Ushiba_Nobuhiko_for }
-		localization_key = JAP_Ushiba_Nobuhiko_for
+		trigger = {	has_idea = JAP_nobuhiko_ushiba_for }
+		localization_key = JAP_nobuhiko_ushiba_for
 	}
 }
 

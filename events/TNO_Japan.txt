@@ -4478,9 +4478,9 @@ country_event = { # Prime Minister Takagi
 			remove_all_ministers = yes
 			add_ideas = {
 				JAP_Kouichi_Kido_dep
-				JAP_Kuranari_Tadashi_for
-				JAP_Nakasone_Yasuhiro_eco
-				JAP_Horikiri_Zenjiro_sec
+				JAP_tadashi_kuranari_for
+				JAP_yasuhiro_nakasone_eco
+				JAP_zenjiro_horikiri_sec
 			}
 			hidden_effect = {
 				every_country = { news_event = WORLD.2067 }
@@ -4519,7 +4519,7 @@ country_event = { # Prime Minister Ikeda
 		name = japresignation.18.a
 		ai_chance = { factor = 1 }
 		set_variable = { JAP_resigning_pm = 0 }
-		promote_character = JAP_ikeda_masanosuke
+		promote_character = JAP_masanosuke_ikeda
 		set_politics = { ruling_party = fascism }
 		JAP_clear_PM_flags = yes
 		set_country_flag = JAP_Ikeda_Prime_Minister
@@ -4534,10 +4534,10 @@ country_event = { # Prime Minister Ikeda
 			complete_national_focus = JAP_prime_minister_ikeda
 			remove_all_ministers = yes
 			add_ideas = {
-				JAP_Hatoyama_Ichiro_dep
-				JAP_Sakurauchi_Yoshio_for
-				JAP_Sato_Eisaku_eco
-				JAP_Ezaki_Masumi_sec
+				JAP_ichiro_hatoyama_dep
+				JAP_yoshio_sakurauchi_for
+				JAP_eisaku_sato_eco
+				JAP_masumi_ezaki_sec
 			}
 			hidden_effect = {
 				GNG = {
@@ -4566,7 +4566,7 @@ country_event = { # Prime Minister Kaya
 		name = japresignation.19.a
 		ai_chance = { factor = 1 }
 		set_variable = { JAP_resigning_pm = 0 }
-		promote_character = JAP_kaya_okinori
+		promote_character = JAP_okinori_kaya
 		set_politics = { ruling_party = despotism }
 		JAP_clear_PM_flags = yes
 		set_country_flag = JAP_Kaya_Prime_Minister
@@ -4577,7 +4577,7 @@ country_event = { # Prime Minister Kaya
 			JAP_tree_swap = yes
 			remove_all_ministers = yes
 			add_ideas = {
-				JAP_Aoki_Kazuo_hog
+				JAP_kazuo_aoki_hog
 			}
 			clr_country_flag = JAP_in_interregnum
 			clr_country_flag = JAP_interregnum_final_stage

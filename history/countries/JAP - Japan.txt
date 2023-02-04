@@ -4,79 +4,79 @@ capital = 282
 recruit_character = JAP_Generic_Vacant
 
 # Starting Country Leaders
-recruit_character = JAP_ino_hiroya
-recruit_character = JAP_kido_kouichi
-recruit_character = JAP_takagi_soukichi
-recruit_character = JAP_kaya_okinori
+recruit_character = JAP_hiroya_ino
+recruit_character = JAP_koichi_kido
+recruit_character = JAP_sokichi_takagi
+recruit_character = JAP_okinori_kaya
 recruit_character = JAP_no_leader
 
 # Country Leaders
-recruit_character = JAP_ikeda_masanosuke
-recruit_character = JAP_kishi_nobusuke
-recruit_character = JAP_higashikuni_naruhiko
+recruit_character = JAP_masanosuke_ikeda
+recruit_character = JAP_nobusuke_kishi
+recruit_character = JAP_naruhiko_higashikuni
 recruit_character = JAP_hirohito
-recruit_character = JAP_aichi_kiichi
-recruit_character = JAP_fukuda_takeo
-recruit_character = JAP_shiina_etsusaburo
+recruit_character = JAP_kiichi_aichi
+recruit_character = JAP_takeo_fukuda
+recruit_character = JAP_etsusaburo_shiina
 
 # Ministers
-recruit_character = JAP_Ikeda_Hayato
-recruit_character = JAP_Fujiyama_Aiichiro
-recruit_character = JAP_Kanemaru_Shin
+recruit_character = JAP_hayato_ikeda
+recruit_character = JAP_aiichiro_fujiyama
+recruit_character = JAP_shin_kanemaru
 
-recruit_character = JAP_Hatoyama_Ichiro
-recruit_character = JAP_Sakurauchi_Yoshio
-recruit_character = JAP_Sato_Eisaku
-recruit_character = JAP_Ezaki_Masumi
+recruit_character = JAP_ichiro_hatoyama
+recruit_character = JAP_yoshio_sakurauchi
+recruit_character = JAP_eisaku_sato
+recruit_character = JAP_masumi_ezaki
 
-recruit_character = JAP_Kuranari_Tadashi
-recruit_character = JAP_Nakasone_Yasuhiro
-recruit_character = JAP_Horikiri_Zenjiro
+recruit_character = JAP_tadashi_kuranari
+recruit_character = JAP_yasuhiro_nakasone
+recruit_character = JAP_zenjiro_horikiri
 
-recruit_character = JAP_Aoki_Kazuo
-recruit_character = JAP_Ushiba_Nobuhiko
-recruit_character = JAP_Funada_Naka
-recruit_character = JAP_Kawashima_Shojiro
-recruit_character = JAP_Suzuki_Teiichi
-recruit_character = JAP_Tadanori_Nagayama
+recruit_character = JAP_kazuo_aoki
+recruit_character = JAP_nobuhiko_ushiba
+recruit_character = JAP_naka_funada
+recruit_character = JAP_shojiro_kawashima
+recruit_character = JAP_teiichi_suzuki
+recruit_character = JAP_tadanori_nagayama
 
-recruit_character = JAP_Yoshino_Shinji
-recruit_character = JAP_Mizuta_Mikio
-recruit_character = JAP_Ichimada_Hisado
-recruit_character = JAP_Ueki_Koshiro
+recruit_character = JAP_shinji_yoshino
+recruit_character = JAP_mikio_mizuta
+recruit_character = JAP_hisato_ichimada
+recruit_character = JAP_koshiro_ueki
 
-recruit_character = JAP_Sugita_Ichiji
-recruit_character = JAP_Yamigawa_Masamichi
-recruit_character = JAP_Saito_Noboru
+recruit_character = JAP_ichiji_sugita
+recruit_character = JAP_masamichi_yamagiwa
+recruit_character = JAP_noboru_saito
 
-recruit_character = JAP_Sato_Kenryo
-recruit_character = JAP_Iwakuro_Hideo
-recruit_character = JAP_Hattori_Takushiro
+recruit_character = JAP_kenryo_sato
+recruit_character = JAP_hideo_iwakuro
+recruit_character = JAP_takushiro_hattori
 
 # Military Leaders
-recruit_character = JAP_ayabe_kitsuju
-recruit_character = JAP_muto_akira
-recruit_character = JAP_anami_korechika
-recruit_character = JAP_ushijima_mitsuru
-recruit_character = JAP_tatsui_eiichi
-recruit_character = JAP_mori_takeshi
-recruit_character = JAP_homma_masaharu
-recruit_character = JAP_tanaka_ryukichi
-recruit_character = JAP_takeda_tsuneyoshi
-recruit_character = JAP_cho_isamu
-recruit_character = JAP_arao_okikatsu
-recruit_character = JAP_yahara_hiromichi
-recruit_character = JAP_nishi_takeichi
-recruit_character = JAP_fujiwara_iwaichi
-recruit_character = JAP_tanaka_raizo
-recruit_character = JAP_kajioka_sadamichi
-recruit_character = JAP_ito_seiichi
-recruit_character = JAP_tohmatsu_nobuzo
-recruit_character = JAP_matsuo_keiu
-recruit_character = JAP_tomioka_sadatoshi
-recruit_character = JAP_kurita_takeo
+recruit_character = JAP_kitsuju_ayabe
+recruit_character = JAP_akira_muto
+recruit_character = JAP_korechika_anami
+recruit_character = JAP_mitsuru_ushijima
+recruit_character = JAP_eiichi_tatsui
+recruit_character = JAP_takeshi_mori
+recruit_character = JAP_masaharu_homma
+recruit_character = JAP_ryukichi_tanaka
+recruit_character = JAP_tsuneyoshi_takeda
+recruit_character = JAP_isamu_cho
+recruit_character = JAP_okikatsu_arao
+recruit_character = JAP_hiromichi_yahara
+recruit_character = JAP_takeichi_nishi
+recruit_character = JAP_iwaichi_fujiwara
+recruit_character = JAP_raizo_tanaka
+recruit_character = JAP_sadamichi_kajioka
+recruit_character = JAP_seiichi_ito
+recruit_character = JAP_nobuzo_tomatsu
+recruit_character = JAP_keiu_matsuo
+recruit_character = JAP_sadatoshi_tomioka
+recruit_character = JAP_takeo_kurita
 recruit_character = JAP_taichi_imanishi
-recruit_character = JAP_kusaka_ryunosuke
+recruit_character = JAP_ryunosuke_kusaka
 
 
 if = {
@@ -613,18 +613,18 @@ add_ideas = {
 	tno_minorities_oppression
 
 	#Ministers#
-	JAP_Ikeda_Hayato_dep
-	JAP_Fujiyama_Aiichiro_for
-	JAP_Kanemaru_Shin_eco
+	JAP_hayato_ikeda_dep
+	JAP_aiichiro_fujiyama_for
+	JAP_shin_kanemaru_eco
 	JAP_Masanosuke_Ikeda_sec
 
 	# Officer Corps
-	JAP_ayabe_kitsuju_army_chief
-	JAP_muto_akira_high_command
-	JAP_anami_korechika_high_command
-	JAP_takeda_tsuneyoshi_theorist
-	JAP_homma_masaharu_high_command
-	JAP_tanaka_raizo_navy_chief
+	JAP_kitsuju_ayabe_army_chief
+	JAP_akira_muto_high_command
+	JAP_korechika_anami_high_command
+	JAP_tsuneyoshi_takeda_theorist
+	JAP_masaharu_homma_high_command
+	JAP_raizo_tanaka_navy_chief
 }
 
 add_dynamic_modifier = { modifier = JAP_military_extra_funding }

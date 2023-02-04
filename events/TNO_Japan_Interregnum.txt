@@ -263,13 +263,13 @@ country_event = {
 		name = jap_interregnum.14.a
 		retire_country_leader = yes
 		set_politics = { ruling_party = fascism }
-		promote_character = JAP_aichi_kiichi
+		promote_character = JAP_kiichi_aichi
 		remove_all_ministers = yes
 		add_ideas = {
-			JAP_Yoshino_Shinji_dep
-			JAP_Mizuta_Mikio_for
-			JAP_Ichimada_Hisado_eco
-			JAP_Ueki_Koshiro_sec
+			JAP_shinji_yoshino_dep
+			JAP_mikio_mizuta_for
+			JAP_hisato_ichimada_eco
+			JAP_koshiro_ueki_sec
 		}
 		country_event = { id = jap_interregnum.15 days = 4}
 		country_event = { id = japyasuda.1 days = 28}
@@ -1359,7 +1359,7 @@ country_event = {
 	option = {
 		name = jap_interregnum.70.a
 		retire_country_leader = yes
-		promote_character = JAP_ikeda_masanosuke
+		promote_character = JAP_masanosuke_ikeda
 		set_politics = { ruling_party = fascism }
 		JAP_clear_PM_flags = yes
 		set_country_flag = JAP_Ikeda_Prime_Minister
@@ -1375,10 +1375,10 @@ country_event = {
 			complete_national_focus = JAP_prime_minister_ikeda
 			remove_all_ministers = yes
 			add_ideas = {
-				JAP_Hatoyama_Ichiro_dep
-				JAP_Sakurauchi_Yoshio_for
-				JAP_Sato_Eisaku_eco
-				JAP_Ezaki_Masumi_sec
+				JAP_ichiro_hatoyama_dep
+				JAP_yoshio_sakurauchi_for
+				JAP_eisaku_sato_eco
+				JAP_masumi_ezaki_sec
 			}
 		}
 		hidden_effect = {
@@ -1555,19 +1555,19 @@ country_event = {
 			remove_ideas = JAP_anti_corruption_protests
 		}
 		retire_country_leader = yes
-		promote_character = JAP_kaya_okinori
+		promote_character = JAP_okinori_kaya
 		set_politics = { ruling_party = despotism }
 		JAP_clear_PM_flags = yes
 		set_country_flag = JAP_Kaya_Prime_Minister
 		JAP_Kaya_PM_initialize = yes
 		JAP_set_base_faction_approval = yes
 		hidden_effect = {
-			promote_character = JAP_ikeda_masanosuke
+			promote_character = JAP_masanosuke_ikeda
 			#load_focus_tree = { tree = japan_kaya_inital_tree keep_completed = yes }
 			JAP_tree_swap = yes
 			remove_all_ministers = yes
 			add_ideas = {
-				JAP_Aoki_Kazuo_hog
+				JAP_kazuo_aoki_hog
 				JAP_Generic_Vacant_eco
 				JAP_Generic_Vacant_for
 				JAP_Generic_Vacant_sec
@@ -1663,7 +1663,7 @@ country_event = {
 						option = JAP_PM_ROUTE_KAYA_DESPOTISM
 					}
 				}
-				promote_character = JAP_ikeda_masanosuke
+				promote_character = JAP_masanosuke_ikeda
 				set_politics = { ruling_party = fascism }
 				JAP_clear_PM_flags = yes
 				set_country_flag = JAP_Ikeda_Prime_Minister
@@ -1674,10 +1674,10 @@ country_event = {
 					complete_national_focus = JAP_prime_minister_ikeda
 					remove_all_ministers = yes
 					add_ideas = {
-						JAP_Hatoyama_Ichiro_dep
-						JAP_Sakurauchi_Yoshio_for
-						JAP_Sato_Eisaku_eco
-						JAP_Ezaki_Masumi_sec
+						JAP_ichiro_hatoyama_dep
+						JAP_yoshio_sakurauchi_for
+						JAP_eisaku_sato_eco
+						JAP_masumi_ezaki_sec
 					}
 					clr_country_flag = JAP_in_interregnum
 					clr_country_flag = JAP_interregnum_final_stage
@@ -1707,19 +1707,19 @@ country_event = {
 					}
 					remove_ideas = JAP_anti_corruption_protests
 				}
-				promote_character = JAP_kaya_okinori
+				promote_character = JAP_okinori_kaya
 				set_politics = { ruling_party = despotism }
 				JAP_clear_PM_flags = yes
 				set_country_flag = JAP_Kaya_Prime_Minister
 				JAP_Kaya_PM_initialize = yes
 				JAP_set_base_faction_approval = yes
 				hidden_effect = {
-					promote_character = JAP_ikeda_masanosuke
+					promote_character = JAP_masanosuke_ikeda
 					#load_focus_tree = { tree = japan_kaya_inital_tree keep_completed = yes }
 					JAP_tree_swap = yes
 					remove_all_ministers = yes
 					add_ideas = {
-						JAP_Aoki_Kazuo_hog
+						JAP_kazuo_aoki_hog
 						JAP_Generic_Vacant_eco
 						JAP_Generic_Vacant_for
 						JAP_Generic_Vacant_sec
@@ -2000,17 +2000,17 @@ country_event = {
 			remove_ideas = JAP_anti_corruption_protests
 		}
 		retire_country_leader = yes
-		promote_character = JAP_takagi_soukichi
+		promote_character = JAP_sokichi_takagi
 		set_politics = { ruling_party = conservatism }
 		JAP_clear_PM_flags = yes
 		hidden_effect = {
-			promote_character = JAP_ikeda_masanosuke
+			promote_character = JAP_masanosuke_ikeda
 			remove_all_ministers = yes
 			add_ideas = {
 				JAP_Kouichi_Kido_dep
-				JAP_Kuranari_Tadashi_for
-				JAP_Nakasone_Yasuhiro_eco
-				JAP_Horikiri_Zenjiro_sec
+				JAP_tadashi_kuranari_for
+				JAP_yasuhiro_nakasone_eco
+				JAP_zenjiro_horikiri_sec
 			}
 			hidden_effect = {
 				every_country = { news_event = WORLD.2067 }
@@ -2055,19 +2055,19 @@ country_event = {
 			remove_ideas = JAP_anti_corruption_protests
 		}
 		retire_country_leader = yes
-		promote_character = JAP_kaya_okinori
+		promote_character = JAP_okinori_kaya
 		set_politics = { ruling_party = despotism }
 		JAP_clear_PM_flags = yes
 		set_country_flag = JAP_Kaya_Prime_Minister
 		JAP_Kaya_PM_initialize = yes
 		JAP_set_base_faction_approval = yes
 		hidden_effect = {
-			promote_character = JAP_ikeda_masanosuke
+			promote_character = JAP_masanosuke_ikeda
 			#load_focus_tree = { tree = japan_kaya_inital_tree keep_completed = yes }
 			JAP_tree_swap = yes
 			remove_all_ministers = yes
 			add_ideas = {
-				JAP_Aoki_Kazuo_hog
+				JAP_kazuo_aoki_hog
 				JAP_Generic_Vacant_eco
 				JAP_Generic_Vacant_for
 				JAP_Generic_Vacant_sec
@@ -2712,7 +2712,7 @@ country_event = {
 	option = {
 		name = jap_interregnum.113.a
 		retire_country_leader = yes
-		promote_character = JAP_ikeda_masanosuke
+		promote_character = JAP_masanosuke_ikeda
 		set_politics = { ruling_party = fascism }
 		JAP_clear_PM_flags = yes
 		set_country_flag = JAP_Ikeda_Prime_Minister
@@ -2726,10 +2726,10 @@ country_event = {
 			complete_national_focus = JAP_prime_minister_ikeda
 			remove_all_ministers = yes
 			add_ideas = {
-				JAP_Hatoyama_Ichiro_dep
-				JAP_Sakurauchi_Yoshio_for
-				JAP_Sato_Eisaku_eco
-				JAP_Ezaki_Masumi_sec
+				JAP_ichiro_hatoyama_dep
+				JAP_yoshio_sakurauchi_for
+				JAP_eisaku_sato_eco
+				JAP_masumi_ezaki_sec
 			}
 			GNG = {
 				country_event = {
@@ -2767,22 +2767,22 @@ country_event = {
 			remove_ideas = JAP_anti_corruption_protests
 		}
 		retire_country_leader = yes
-		promote_character = JAP_takagi_soukichi
+		promote_character = JAP_sokichi_takagi
 		set_politics = { ruling_party = conservatism }
 		JAP_clear_PM_flags = yes
 		set_country_flag = JAP_Takagi_Prime_Minister
 		JAP_Takagi_PM_initialize = yes
 		JAP_set_base_faction_approval = yes
 		hidden_effect = {
-			promote_character = JAP_ikeda_masanosuke
+			promote_character = JAP_masanosuke_ikeda
 			#load_focus_tree = { tree = japan_takagi_5_years keep_completed = yes }
 			JAP_tree_swap = yes
 			remove_all_ministers = yes
 			add_ideas = {
 				JAP_Kouichi_Kido_dep
-				JAP_Kuranari_Tadashi_for
-				JAP_Nakasone_Yasuhiro_eco
-				JAP_Horikiri_Zenjiro_sec
+				JAP_tadashi_kuranari_for
+				JAP_yasuhiro_nakasone_eco
+				JAP_zenjiro_horikiri_sec
 			}
 			clr_country_flag = JAP_in_interregnum
 			clr_country_flag = JAP_interregnum_final_stage

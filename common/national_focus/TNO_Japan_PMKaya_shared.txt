@@ -63,10 +63,10 @@ shared_focus = {
 		set_temp_variable = { temp_hl_approval_change = 0.1 }
 		JAP_change_hardliner_approval = yes
 		hidden_effect = {
-			remove_ideas = JAP_Aoki_Kazuo_hog
+			remove_ideas = JAP_kazuo_aoki_hog
 			add_ideas = JAP_Shiina_Etsusaburo_hog
 			remove_ideas = JAP_Generic_Vacant_sec
-			add_ideas = JAP_Tadanori_Nagayama_sec
+			add_ideas = JAP_tadanori_nagayama_sec
 		}
 		custom_effect_tooltip = JAP_add_shiina_etsusaburo_tt
 		custom_effect_tooltip = JAP_add_tadanori_nagayama_tt
@@ -126,7 +126,7 @@ shared_focus = { #Kishi #Suzuki joins the cabinent as economy minster, give a sl
 		log = "[GetDateText]: [Root.GetName]: Decision JAP_a_new_face"
 		hidden_effect = {
 			remove_ideas = JAP_Generic_Vacant_for
-			add_ideas = JAP_Suzuki_Teiichi_for
+			add_ideas = JAP_teiichi_suzuki_for
 		}
 		set_temp_variable = { temp_hl_approval_change = 0.05 }
 		JAP_change_hardliner_approval = yes
@@ -196,8 +196,8 @@ shared_focus = {
 			remove_ideas = JAP_Generic_Vacant_for
 			remove_ideas = JAP_Generic_Vacant_sec
 			add_ideas = JAP_Fukuda_Takeo_eco
-			add_ideas = JAP_Ushiba_Nobuhiko_for
-			add_ideas = JAP_Funada_Naka_sec
+			add_ideas = JAP_nobuhiko_ushiba_for
+			add_ideas = JAP_naka_funada_sec
 		}
 		country_event = { id = japkaya_tree_one.7 }
 	}
@@ -322,8 +322,8 @@ shared_focus = {
 			remove_ideas = JAP_Generic_Vacant_for
 			remove_ideas = JAP_Generic_Vacant_sec
 			add_ideas = JAP_Fukuda_Takeo_eco
-			add_ideas = JAP_Ushiba_Nobuhiko_for
-			add_ideas = JAP_Kawashima_Shojiro_sec
+			add_ideas = JAP_nobuhiko_ushiba_for
+			add_ideas = JAP_shojiro_kawashima_sec
 		}
 		country_event = { id = japkaya_tree_one.13 }
 	}

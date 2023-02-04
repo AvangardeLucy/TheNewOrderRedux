@@ -7069,7 +7069,7 @@ news_event = { #Western Insurrection
 		trigger = {
 			AND = {
 				original_tag = JAP
-				NOT = { has_country_leader = { character = JAP_kaya_okinori ruling_only = yes } }
+				NOT = { has_country_leader = { character = JAP_okinori_kaya ruling_only = yes } }
 			}
 		}
 	}
@@ -7078,7 +7078,7 @@ news_event = { #Western Insurrection
 		trigger = {
 			AND = {
 				original_tag = JAP
-				has_country_leader = { character = JAP_kaya_okinori ruling_only = yes } 
+				has_country_leader = { character = JAP_okinori_kaya ruling_only = yes } 
 			}
 		}
 	}

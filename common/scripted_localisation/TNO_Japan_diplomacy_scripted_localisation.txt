@@ -597,35 +597,35 @@ defined_text = {
 defined_text = {
 	name = GetJAPforeignminister
 	text = {
-		trigger = { JAP = { has_idea = JAP_Fujiyama_Aiichiro_for } }
-		localization_key = JAP_Fujiyama_Aiichiro_for
+		trigger = { JAP = { has_idea = JAP_aiichiro_fujiyama_for } }
+		localization_key = JAP_aiichiro_fujiyama_for
 	}
 	text = {
-		trigger = { JAP = { has_idea = JAP_Sakurauchi_Yoshio_for } }
-		localization_key = JAP_Sakurauchi_Yoshio_for
+		trigger = { JAP = { has_idea = JAP_yoshio_sakurauchi_for } }
+		localization_key = JAP_yoshio_sakurauchi_for
 	}
 	text = {
-		trigger = { JAP = { has_idea = JAP_Kuranari_Tadashi_for } }
-		localization_key = JAP_Kuranari_Tadashi_for
+		trigger = { JAP = { has_idea = JAP_tadashi_kuranari_for } }
+		localization_key = JAP_tadashi_kuranari_for
 	}
 	text = {
-		trigger = { JAP = { has_idea = JAP_Ushiba_Nobuhiko_for } }
-		localization_key = JAP_Ushiba_Nobuhiko_for
+		trigger = { JAP = { has_idea = JAP_nobuhiko_ushiba_for } }
+		localization_key = JAP_nobuhiko_ushiba_for
 	}
 	text = {
-		trigger = { JAP = { has_idea = JAP_Suzuki_Teiichi_for } }
-		localization_key = JAP_Suzuki_Teiichi_for
+		trigger = { JAP = { has_idea = JAP_teiichi_suzuki_for } }
+		localization_key = JAP_teiichi_suzuki_for
 	}
 	text = {
-		trigger = { JAP = { has_idea = JAP_Mizuta_Mikio_for } }
-		localization_key = JAP_Mizuta_Mikio_for
+		trigger = { JAP = { has_idea = JAP_mikio_mizuta_for } }
+		localization_key = JAP_mikio_mizuta_for
 	}
 	text = {
-		trigger = { JAP = { has_idea = JAP_Sugita_Ichiji_for } }
+		trigger = { JAP = { has_idea = JAP_ichiji_sugita_for } }
 		localization_key = JAP_Sugita_Ichiji_for
 	}
 	text = {
-		trigger = { JAP = { has_idea = JAP_Iwakuro_Hideo_for } }
-		localization_key = JAP_Iwakuro_Hideo_for
+		trigger = { JAP = { has_idea = JAP_hideo_iwakuro_for } }
+		localization_key = JAP_hideo_iwakuro_for
 	}
 }

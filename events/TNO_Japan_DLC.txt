@@ -3424,15 +3424,15 @@ country_event = { # Jushin Coup
 		ai_chance = { factor = 1 }
 		set_country_flag = JAP_dlc_failed
 		hidden_effect = {
-			promote_character = JAP_higashikuni_naruhiko
+			promote_character = JAP_naruhiko_higashikuni
 			set_politics = { ruling_party = despotism }
 			JAP_clear_PM_flags = yes
 			remove_all_ministers = yes
 			add_ideas = {
 				JAP_Kouichi_Kido_hog
-				JAP_Sugita_Ichiji_for
-				JAP_Yamigawa_Masamichi_eco
-				JAP_Saito_Noboru_sec
+				JAP_ichiji_sugita_for
+				JAP_masamichi_yamagiwa_eco
+				JAP_noboru_saito_sec
 			}
 			remove_ideas = {
 				JAP_Dai_Li_conspiracy
@@ -3597,15 +3597,15 @@ country_event = { # Muto Coup
 		ai_chance = { factor = 1 }
 		set_country_flag = JAP_dlc_failed
 		hidden_effect = {
-			promote_character = JAP_muto_akira
+			promote_character = JAP_akira_muto
 			set_politics = { ruling_party = fascism }
 			JAP_clear_PM_flags = yes
 			remove_all_ministers = yes
 			add_ideas = {
-				JAP_Sato_Kenryo_hog
-				JAP_Iwakuro_Hideo_for
+				JAP_kenryo_sato_hog
+				JAP_hideo_iwakuro_for
 				JAP_Kishi_Nobusuke_eco
-				JAP_Hattori_Takushiro_sec
+				JAP_takushiro_hattori_sec
 			}
 			remove_ideas = {
 				JAP_Dai_Li_conspiracy
