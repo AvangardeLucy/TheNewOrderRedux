@@ -1,0 +1,36 @@
+
+state={ #Population Done
+	id=216
+	name="STATE_216"
+
+	history={
+		owner = FIN
+		victory_points = { 11159 10 } #Aanislima 80k
+		victory_points = { 155 1 } #Segee 20k 
+		buildings = {
+			infrastructure = 3
+			radar_station = 2
+			air_base = 3
+			anti_air_building = 2
+			barracks = 2
+			hospitals = 1
+			thermoelectric_plant = 1
+			offices = 1
+			schools = 1
+		}
+		
+		add_core_of = FIN
+
+	}
+
+	resources={
+		uranium = 4
+	}
+
+	provinces={
+		40 60 90 92 155 157 2356 2994 2998 3033 3071 3078 3084 3142 3144 6057 6070 6090 6094 6106 6159 6169 6172 9045 9055 9078 9082 9118 9190 9231 11092 11094 11150 11153 11159 11212 13130 13194 13198 13340 
+	}
+	manpower=339564
+	buildings_max_level_factor=1.000
+	state_category=town
+}

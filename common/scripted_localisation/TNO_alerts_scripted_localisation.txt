@@ -1,0 +1,607 @@
+# █████╗ ██╗     ███████╗██████╗ ████████╗███████╗#
+#██╔══██╗██║     ██╔════╝██╔══██╗╚══██╔══╝██╔════╝#
+#███████║██║     █████╗  ██████╔╝   ██║   ███████╗#
+#██╔══██║██║     ██╔══╝  ██╔══██╗   ██║   ╚════██║#
+#██║  ██║███████╗███████╗██║  ██║   ██║   ███████║#
+#╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝#
+#Scripted Localisation
+
+#################################################
+##=|  TNO Alert System Scripted Localisation |=##
+##======================| |====================##
+#################################################
+
+## Lamounier: HERE'S HOW THIS WORKS NOW:
+# I'm tired of having to deal with merge conflicts from this ever-expanding list, so now:
+# - We're gonna be splitting the scripted loc from alerts directly to regions
+# - So an alert fired through a Reich mechanic would first go through Get_TNO_alert_name, *then* Get_TNO_Reich_alert_name
+# - Region IDs remain the same, just the way they're called is changed to help cause less conflicts
+
+#Index; Search for these names using ctrl+f and you'll find the section they entitle.
+#	Get_TNO_alert_name
+#		Get_TNO_General_alert_name (0-999)
+#		Get_TNO_Reich_alert_name (1000-1999)
+#		Get_TNO_OFN_alert_name (2000-2999)
+#		Get_TNO_Asia_alert_name (3000-3999)
+#		Get_TNO_Triumvirate_alert_name (4000-4999)
+#		Get_TNO_Russia_alert_name (5000-5999)
+#		Get_TNO_LatAm_alert_name (6000-6999)
+#		Get_TNO_Africa_alert_name (7000-7999)
+#
+#	Get_TNO_alert_description
+#		Get_TNO_General_alert_description (0-999)
+#		Get_TNO_Reich_alert_description (1000-1999)
+#		Get_TNO_OFN_alert_description (2000-2999)
+#		Get_TNO_Asia_alert_description (3000-3999)
+#		Get_TNO_Triumvirate_alert_description (4000-4999)
+#		Get_TNO_Russia_alert_description (5000-5999)
+#		Get_TNO_LatAm_alert_description (6000-6999)
+#		Get_TNO_Africa_alert_description (7000-7999)
+#
+#	Get_TNO_alert_GFX
+#		Get_TNO_General_alert_GFX (0-999)
+#		Get_TNO_Reich_alert_GFX (1000-1999)
+#		Get_TNO_OFN_alert_GFX (2000-2999)
+#		Get_TNO_Asia_alert_GFX (3000-3999)
+#		Get_TNO_Triumvirate_alert_GFX (4000-4999)
+#		Get_TNO_Russia_alert_GFX (5000-5999)
+#		Get_TNO_LatAm_alert_GFX (6000-6999)
+#		Get_TNO_Africa_alert_GFX (7000-7999)
+
+#################################################
+#                  Alert Names                  #
+#################################################
+defined_text = {
+	name = Get_TNO_alert_name
+	text = { ## General alerts (0-999)
+		trigger = { check_variable = { alert_id < 1000 } }
+		localization_key = "[Get_TNO_General_alert_name]"
+	}
+	text = { ## Reich alerts (1000-1999)
+		trigger = { check_variable = { alert_id < 2000 } }
+		localization_key = "[Get_TNO_Reich_alert_name]"
+	}
+	text = { ## OFN alerts (2000-2999)
+		trigger = { check_variable = { alert_id < 3000 } }
+		localization_key = "[Get_TNO_OFN_alert_name]"
+	}
+	text = { ## Asia alerts (3000-3999)
+		trigger = { check_variable = { alert_id < 4000 } }
+		localization_key = "[Get_TNO_Asia_alert_name]"
+	}
+	text = { ## Triumvirate alerts (4000-4999)
+		trigger = { check_variable = { alert_id < 5000 } }
+		localization_key = "[Get_TNO_Triumvirate_alert_name]"
+	}
+	text = { ## Russia alerts (5000-5999)
+		trigger = { check_variable = { alert_id < 6000 } }
+		localization_key = "[Get_TNO_Russia_alert_name]"
+	}
+	text = { ## LatAm alerts (6000-6999)
+		trigger = { check_variable = { alert_id < 7000 } }
+		localization_key = "[Get_TNO_LatAm_alert_name]"
+	}
+	text = { ## Africa alerts (7000-7999)
+		trigger = { check_variable = { alert_id < 8000 } }
+		localization_key = "[Get_TNO_Africa_alert_name]"
+	}
+	text = { localization_key = TNO_alert_name_missing }
+}
+
+## General alerts (0-999)
+defined_text = {
+	name = Get_TNO_General_alert_name
+	text = {
+		trigger = { check_variable = { alert_id = 1 } }
+		localization_key = TNO_alert_name_fiscal_crisis
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 2 } }
+		localization_key = TNO_alert_name_high_tension
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 3 } }
+		localization_key = TNO_alert_name_consumer_goods_looming_shortage
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 4 } }
+		localization_key = TNO_alert_name_consumer_goods_empty
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 5 } }
+		localization_key = TNO_alert_name_unallocated_pu
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 6 } }
+		localization_key = TNO_alert_name_lost_pu
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 7 } }
+		localization_key = TNO_alert_name_senado_voting
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 8 } }
+		localization_key = TNO_alert_name_pres_voting
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 9 } }
+		localization_key = TNO_alert_name_pl_voting_begun
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 10 } }
+		localization_key = TNO_alert_name_development
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 11 } }
+		localization_key = TNO_alert_name_credit_rating_improved
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 12 } }
+		localization_key = TNO_alert_name_credit_rating_degraded
+	}
+}
+
+## Reich alerts (1000-1999)
+defined_text = {
+	name = Get_TNO_Reich_alert_name
+	text = {
+		trigger = { check_variable = { alert_id = 1000 } }
+		localization_key = TNO_alert_name_kartenhaus_action_available
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 1001 } }
+		localization_key = TNO_alert_name_armed_forces_paranoia
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 1002 } }
+		localization_key = TNO_alert_name_great_game
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 1003 } }
+		localization_key = TNO_alert_name_eng_election
+	}
+}
+
+## OFN alerts (2000-2999)
+defined_text = {
+	name = Get_TNO_OFN_alert_name
+	text = {
+		trigger = { check_variable = { alert_id = 2001 } }
+		localization_key = TNO_alert_name_US_election
+	}
+}
+
+## Asia alerts (3000-3999)
+defined_text = {
+	name = Get_TNO_Asia_alert_name
+	text = { 
+		trigger = { check_variable = { alert_id = 3000 } }
+		localization_key = TNO_alert_name_gng_legco_bill_active
+	}
+	text = { 
+		trigger = { check_variable = { alert_id = 3001 } }
+		localization_key = TNO_alert_name_gng_product_cycle_active
+	}
+	text = { 
+		trigger = { check_variable = { alert_id = 3002 } }
+		localization_key = TNO_alert_name_gng_economy_check_soon
+	}
+	text = { 
+		trigger = { check_variable = { alert_id = 3003 } }
+		localization_key = TNO_alert_name_gng_PTRG_active
+	}
+}
+
+## Triumvirate alerts (4000-4999)
+defined_text = {
+	name = Get_TNO_Triumvirate_alert_name
+	text = {
+		trigger = { check_variable = { alert_id = 4004 } }
+		localization_key = TNO_alert_name_aas_resources
+	}
+}
+
+## Russia alerts (5000-5999)
+defined_text = {
+	name = Get_TNO_Russia_alert_name
+	text = {
+		trigger = { check_variable = { alert_id = 5000 } }
+		localization_key = TNO_alert_name_RUS_smuta_chaos
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 5001 } }
+		localization_key = TNO_alert_name_RUS_smuta_supplies
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 5002 } }
+		localization_key = TNO_alert_name_RUS_smuta_war
+	}
+}
+
+## LatAm alerts (6000-6999)
+defined_text = {
+	name = Get_TNO_LatAm_alert_name
+	text = { # Placeholder so the scripted loc isn't just left empty
+		localization_key = TNO_alert_name_missing
+	}
+}
+
+## Africa alerts (7000-7999)
+defined_text = {
+	name = Get_TNO_Africa_alert_name
+	text = { # Placeholder so the scripted loc isn't just left empty
+		localization_key = TNO_alert_name_missing
+	}
+}
+
+#################################################
+#              Alert Descriptions               #
+#################################################
+defined_text = {
+	name = Get_TNO_alert_description
+	text = { ## General alerts (0-999)
+		trigger = { check_variable = { alert_id < 1000 } }
+		localization_key = "[Get_TNO_General_alert_description]"
+	}
+	text = { ## Reich alerts (1000-1999)
+		trigger = { check_variable = { alert_id < 2000 } }
+		localization_key = "[Get_TNO_Reich_alert_description]"
+	}
+	text = { ## OFN alerts (2000-2999)
+		trigger = { check_variable = { alert_id < 3000 } }
+		localization_key = "[Get_TNO_OFN_alert_description]"
+	}
+	text = { ## Asia alerts (3000-3999)
+		trigger = { check_variable = { alert_id < 4000 } }
+		localization_key = "[Get_TNO_Asia_alert_description]"
+	}
+	text = { ## Triumvirate alerts (4000-4999)
+		trigger = { check_variable = { alert_id < 5000 } }
+		localization_key = "[Get_TNO_Triumvirate_alert_description]"
+	}
+	text = { ## Russia alerts (5000-5999)
+		trigger = { check_variable = { alert_id < 6000 } }
+		localization_key = "[Get_TNO_Russia_alert_description]"
+	}
+	text = { ## LatAm alerts (6000-6999)
+		trigger = { check_variable = { alert_id < 7000 } }
+		localization_key = "[Get_TNO_LatAm_alert_description]"
+	}
+	text = { ## Africa alerts (7000-7999)
+		trigger = { check_variable = { alert_id < 8000 } }
+		localization_key = "[Get_TNO_Africa_alert_description]"
+	}
+	text = { localization_key = TNO_alert_desc_missing }
+}
+
+## General alerts (0-999)
+defined_text = {
+	name = Get_TNO_General_alert_description
+	text = {
+		trigger = { check_variable = { alert_id = 1 } }
+		localization_key = TNO_alert_desc_fiscal_crisis
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 2 } }
+		localization_key = TNO_alert_desc_high_tension
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 3 } }
+		localization_key = TNO_alert_desc_consumer_goods_looming_shortage
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 4 } }
+		localization_key = TNO_alert_desc_consumer_goods_empty
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 5 } }
+		localization_key = TNO_alert_desc_unallocated_pu
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 6 } }
+		localization_key = TNO_alert_desc_lost_pu
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 7 } }
+		localization_key = TNO_alert_desc_senado_voting
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 8 } }
+		localization_key = TNO_alert_desc_pres_voting
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 9 } }
+		localization_key = TNO_alert_desc_pl_voting_begun
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 10 } }
+		localization_key = TNO_alert_desc_development
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 11 } }
+		localization_key = TNO_alert_desc_credit_rating_improved
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 12 } }
+		localization_key = TNO_alert_desc_credit_rating_degraded
+	}
+}
+
+## Reich alerts (1000-1999)
+defined_text = {
+	name = Get_TNO_Reich_alert_description
+	text = {
+		trigger = { check_variable = { alert_id = 1000 } }
+		localization_key = TNO_alert_desc_kartenhaus_action_available
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 1001 } }
+		localization_key = TNO_alert_desc_armed_forces_paranoia
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 1002 } }
+		localization_key = TNO_alert_desc_great_game
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 1003 } }
+		localization_key = TNO_alert_desc_eng_election
+	}
+}
+
+## OFN alerts (2000-2999)
+defined_text = {
+	name = Get_TNO_OFN_alert_description
+	text = {
+		trigger = { check_variable = { alert_id = 2001 } }
+		localization_key = TNO_alert_desc_US_election
+	}
+}
+
+## Asia alerts (3000-3999)
+defined_text = {
+	name = Get_TNO_Asia_alert_description
+	text = { 
+		trigger = { check_variable = { alert_id = 3000 } }
+		localization_key = TNO_alert_desc_gng_legco_bill_active
+	}
+	text = { 
+		trigger = { check_variable = { alert_id = 3001 } }
+		localization_key = TNO_alert_desc_gng_product_cycle_active
+	}
+	text = { 
+		trigger = { check_variable = { alert_id = 3002 } }
+		localization_key = TNO_alert_desc_gng_economy_check_soon
+	}
+	text = { 
+		trigger = { check_variable = { alert_id = 3003 } }
+		localization_key = TNO_alert_desc_gng_PTRG_active
+	}
+}
+
+## Triumvirate alerts (4000-4999)
+defined_text = {
+	name = Get_TNO_Triumvirate_alert_description
+	text = {
+		trigger = { check_variable = { alert_id = 4004 } }
+		localization_key = TNO_alert_desc_aas_resources
+	}
+}
+
+## Russia alerts (5000-5999)
+defined_text = {
+	name = Get_TNO_Russia_alert_description
+	text = {
+		trigger = { check_variable = { alert_id = 5000 } }
+		localization_key = TNO_alert_desc_RUS_smuta_chaos
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 5001 } }
+		localization_key = TNO_alert_desc_RUS_smuta_supplies
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 5002 } }
+		localization_key = TNO_alert_desc_RUS_smuta_war
+	}
+}
+
+## LatAm alerts (6000-6999)
+defined_text = {
+	name = Get_TNO_LatAm_alert_description
+	text = { # Placeholder so the scripted loc isn't just left empty
+		localization_key = TNO_alert_desc_missing
+	}
+}
+
+## Africa alerts (7000-7999)
+defined_text = {
+	name = Get_TNO_Africa_alert_description
+	text = { # Placeholder so the scripted loc isn't just left empty
+		localization_key = TNO_alert_desc_missing
+	}
+}
+
+#################################################
+#                   Alert GFX                   #
+#################################################
+defined_text = {
+	name = Get_TNO_alert_GFX
+	text = { ## General alerts (0-999)
+		trigger = { check_variable = { alert_id < 1000 } }
+		localization_key = "[Get_TNO_General_alert_GFX]"
+	}
+	text = { ## Reich alerts (1000-1999)
+		trigger = { check_variable = { alert_id < 2000 } }
+		localization_key = "[Get_TNO_Reich_alert_GFX]"
+	}
+	text = { ## OFN alerts (2000-2999)
+		trigger = { check_variable = { alert_id < 3000 } }
+		localization_key = "[Get_TNO_OFN_alert_GFX]"
+	}
+	text = { ## Asia alerts (3000-3999)
+		trigger = { check_variable = { alert_id < 4000 } }
+		localization_key = "[Get_TNO_Asia_alert_GFX]"
+	}
+	text = { ## Triumvirate alerts (4000-4999)
+		trigger = { check_variable = { alert_id < 5000 } }
+		localization_key = "[Get_TNO_Triumvirate_alert_GFX]"
+	}
+	text = { ## Russia alerts (5000-5999)
+		trigger = { check_variable = { alert_id < 6000 } }
+		localization_key = "[Get_TNO_Russia_alert_GFX]"
+	}
+	text = { ## LatAm alerts (6000-6999)
+		trigger = { check_variable = { alert_id < 7000 } }
+		localization_key = "[Get_TNO_LatAm_alert_GFX]"
+	}
+	text = { ## Africa alerts (7000-7999)
+		trigger = { check_variable = { alert_id < 8000 } }
+		localization_key = "[Get_TNO_Africa_alert_GFX]"
+	}
+	text = { localization_key = "GFX_TNO_custom_alert_missing" }
+}
+
+## General alerts (0-999)
+defined_text = {
+	name = Get_TNO_General_alert_GFX
+	text = {
+		trigger = { check_variable = { alert_id = 1 } }
+		localization_key = "GFX_TNO_custom_alert_fiscal_crisis"
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 2 } }
+		localization_key = "GFX_TNO_custom_alert_high_tension"
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 3 } }
+		localization_key = "GFX_TNO_custom_alert_consumer_goods_empty"
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 4 } }
+		localization_key = "GFX_TNO_custom_alert_consumer_goods_empty"
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 5 } }
+		localization_key = "GFX_TNO_custom_alert_unallocated_pu"
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 6 } }
+		localization_key = "GFX_TNO_custom_alert_lost_pu"
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 7 } }
+		localization_key = "GFX_TNO_BRA_custom_alert_senado_voting"
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 8 } }
+		localization_key = "GFX_TNO_BRA_custom_alert_pres_voting"
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 9 } }
+		localization_key = "GFX_TNO_BRA_custom_alert_pl_voting_begun"
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 10 } }
+		localization_key = "GFX_TNO_BRA_custom_alert_development"
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 11 } }
+		localization_key = "GFX_TNO_custom_alert_credit_rating_improved"
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 12 } }
+		localization_key = "GFX_TNO_custom_alert_credit_rating_degraded"
+	}
+}
+
+## Reich alerts (1000-1999)
+defined_text = {
+	name = Get_TNO_Reich_alert_GFX
+	text = {
+		trigger = { check_variable = { alert_id = 1000 } }
+		localization_key = "GFX_TNO_GER_BOR_custom_alert_kartenhaus_action_available"
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 1001 } }
+		localization_key = "GFX_TNO_SCO_armed_forces_paranoia"
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 1002 } }
+		localization_key = "GFX_TNO_custom_alert_great_game"
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 1003 } }
+		localization_key = "GFX_TNO_custom_alert_eng_election"
+	}
+}
+
+## OFN alerts (2000-2999)
+defined_text = {
+	name = Get_TNO_OFN_alert_GFX
+	text = {
+		trigger = { check_variable = { alert_id = 2001 } }
+		localization_key = "GFX_TNO_custom_alert_us_elections"
+	}
+}
+
+## Asia alerts (3000-3999)
+defined_text = {
+	name = Get_TNO_Asia_alert_GFX
+	text = { 
+		trigger = { check_variable = { alert_id = 3000 } }
+		localization_key = "GFX_TNO_custom_alert_GNG_LegCo"
+	}
+	text = { 
+		trigger = { check_variable = { alert_id = 3001 } }
+		localization_key = "GFX_TNO_custom_alert_GNG_Product_Cycle"
+	}
+	text = { 
+		trigger = { check_variable = { alert_id = 3002 } }
+		localization_key = "GFX_TNO_custom_alert_GNG_Economy"
+	}
+	text = { 
+		trigger = { check_variable = { alert_id = 3003 } }
+		localization_key = "GFX_TNO_custom_alert_GNG_PTRG"
+	}
+}
+
+## Triumvirate alerts (4000-4999)
+defined_text = {
+	name = Get_TNO_Triumvirate_alert_GFX
+	text = {
+		trigger = { check_variable = { alert_id = 4004 } }
+		localization_key = "GFX_TNO_custom_alert_aas_resources"
+	}
+}
+
+## Russia alerts (5000-5999)
+defined_text = {
+	name = Get_TNO_Russia_alert_GFX
+	text = {
+		trigger = { check_variable = { alert_id = 5000 } }
+		localization_key = "GFX_TNO_custom_alert_RUS_smuta_chaos"
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 5001 } }
+		localization_key = "GFX_TNO_custom_alert_RUS_smuta_supplies"
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 5002 } }
+		localization_key = "GFX_TNO_custom_alert_RUS_smuta_war"
+	}
+}
+
+## LatAm alerts (6000-6999)
+defined_text = {
+	name = Get_TNO_LatAm_alert_GFX
+	text = { # Placeholder so the scripted loc isn't just left empty
+		localization_key = "GFX_TNO_custom_alert_missing"
+	}
+}
+
+## Africa alerts (7000-7999)
+defined_text = {
+	name = Get_TNO_Africa_alert_GFX
+	text = { # Placeholder so the scripted loc isn't just left empty
+		localization_key = "GFX_TNO_custom_alert_missing"
+	}
+}

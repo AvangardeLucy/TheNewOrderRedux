@@ -1,0 +1,399 @@
+##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
+TNO_fire_super_event = {
+	hidden_effect = {
+		if = {
+			limit = { check_variable = { TNO_temp_super_event = 1 } }
+			ZZZ = {
+				set_variable = { TNO_super_event = TNO_temp_super_event }
+				sound_effect = "tno_se_nuclear_war"
+			}
+		}
+		else_if = {
+			limit = { NOT = { has_global_flag = TNO_my_world_is_on_fire_how_about_yours } }
+			set_variable = { TNO_super_event = TNO_temp_super_event }
+			if = {
+				limit = { check_variable = { TNO_temp_super_event = 2 } }
+				scoped_play_song = "tno_se_german_civil_war"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 3 } }
+				scoped_play_song = "tno_se_ww3"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 4 } NOT = { tag = BRA } }
+				scoped_play_song = "tno_se_south_african_war"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 4 } tag = BRA }
+				scoped_play_song = "tno_se_south_african_war_brazil"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 5 } }
+				scoped_play_song = "tno_se_japanese_economic_war"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 6 } }
+				scoped_play_song = "tno_se_shoot_them_down"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 7 } }
+				scoped_play_song = "tno_se_the_yockey_presidency"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 8 } }
+				scoped_play_song = "tno_se_mars_landing"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 9 } }
+				scoped_play_song = "tno_se_indonesian_war"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 10 } check_variable = { YUN.YUN_legitimacy_cap > 99 } }
+				random_list = {
+					80 = { scoped_play_song = "tno_se_great_asian_war" }
+					20 = { scoped_play_song = "tno_se_great_asian_war_3" }
+				}
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 10 }  }
+				scoped_play_song = "tno_se_great_asian_war_2"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 11 } }
+				scoped_play_song = "tno_se_italy_pf"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 12 } }
+				scoped_play_song = "tno_se_german_italian_invasion"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 13 } }
+				scoped_play_song = "tno_se_iberian_wars"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 14 } }
+				scoped_play_song = "tno_se_oil_crisis"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 15 } }
+				scoped_play_song = "tno_se_order_44"
+			}
+			#else_if = {
+				#limit = { check_variable = { TNO_temp_super_event = 16 } }
+				## Blank, manually reuse this for other super later
+			#}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 17 } }
+				scoped_play_song = "tno_se_slave_revolt"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 18 } }
+				scoped_play_song = "tno_se_june_of_deceit"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 19 } }
+				scoped_play_song = "tno_se_june_of_deceit"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 20 } }
+				scoped_play_song = "tno_se_russian_unification_sverdlovsk_batov"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 21 } }
+				scoped_play_song = "tno_se_russian_unification_wrrf_thuka"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 22 } }
+				scoped_play_song = "tno_se_russian_unification_chita_shepunov"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 23 } }
+				scoped_play_song = "tno_se_russian_unification_amur"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 24 } }
+				scoped_play_song = "tno_se_russian_unification_magadan_matkovsky"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 25 } }
+				scoped_play_song = "tno_se_russian_unification_magadan_petlin"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 26 } }
+				scoped_play_song = "tno_se_russian_unification_chita_mikhail"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 27 } }
+				scoped_play_song = "tno_british_reunification"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 28 } }
+				scoped_play_song = "tno_se_russian_unification_wrrf_zhukov"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 29 } }
+				scoped_play_song = "tno_se_russian_unification_komi_tabby"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 30 } }
+				scoped_play_song = "tno_se_russian_unification_vyatka_gul"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 31 } }
+				scoped_play_song = "tno_se_russian_unification_vyatka_shulgin"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 32 } }
+				scoped_play_song = "tno_se_russian_unification_vyatka_solzh"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 33 } }
+				scoped_play_song = "tno_se_russian_unification_ab_vagner"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 34 } }
+				scoped_play_song = "tno_se_russian_unification_ab_yemelyanov"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 35 } }
+				scoped_play_song = "tno_se_russian_unification_samara_zykov"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 36 } }
+				scoped_play_song = "tno_se_russian_unification_samara_bunya"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 37 } }
+				scoped_play_song = "tno_se_russian_unification_samara_oktan"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 38 } }
+				scoped_play_song = "tno_se_russian_unification_father"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 39 } }
+				scoped_play_song = "tno_se_russian_unification_buryatia_libsoc"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 40 } }
+				scoped_play_song = "tno_se_russian_unification_buryatia_authsoc"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 41 } }
+				scoped_play_song = "tno_se_russian_unification_yagoda_party"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 42 } }
+				scoped_play_song = "tno_se_russian_unification_yagoda_state"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 43 } }
+				scoped_play_song = "tno_se_russian_unification_omsk"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 44 } }
+				scoped_play_song = "tno_se_russian_unification_tomsk_humanists"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 45 } }
+				scoped_play_song = "tno_se_russian_unification_kemerovo"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 46 } }
+				scoped_play_song = "tno_se_russian_unification_kemerovo"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 47 } }
+				scoped_play_song = "tno_se_russian_unification_sba_despot"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 48 } }
+				scoped_play_song = "tno_se_russian_unification_sba_libsoc"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 49 } }
+				scoped_play_song = "tno_se_russian_unification_tyumen_kaganovich"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 50 } }
+				scoped_play_song = "tno_se_russian_unification_tyumen_khrushchev"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 51 } }
+				scoped_play_song = "tno_se_russian_unification_komi_zhdanov"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 52 } }
+				scoped_play_song = "tno_se_russian_unification_komi_stalina"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 53 } }
+				scoped_play_song = "tno_se_russian_unification_komi_bukharina"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 54 } }
+				scoped_play_song = "tno_se_russian_unification_komi_gumilyov"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 55 } }
+				scoped_play_song = "tno_se_russian_unification_komi_shafa"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 56 } }
+				scoped_play_song = "tno_se_russian_unification_komi_serov"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 57 } }
+				scoped_play_song = "tno_se_russian_unification_komi_suslov"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 58 } }
+				scoped_play_song = "tno_se_russian_unification_komi_democratic"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 59 } }
+				scoped_play_song = "tno_se_russian_unification_sverdlovsk_yeltsin"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 60 } }
+				scoped_play_song = "tno_se_russian_unification_tomsk_bastillards"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 61 } }
+				scoped_play_song = "tno_se_russian_unification_tomsk_modernists"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 62 } }
+				scoped_play_song = "tno_se_russian_unification_tomsk_decembrists"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 63 } }
+				scoped_play_song = "tno_se_german_warlord_era"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 64 } }
+				scoped_play_song = "tno_se_fallrockwell"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 65 } }
+				scoped_play_song = "tno_se_fallschwarz"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 66 } }
+				scoped_play_song = "tno_se_huttig_collapse"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 67 } }
+				scoped_play_song = "tno_se_fallrot"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 68 } }
+				scoped_play_song = "tno_se_falldammerung"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 69 } }
+				scoped_play_song = "tno_se_british_reunification_thatcher"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 70 } }
+				scoped_play_song = "tno_se_british_reunification_supermac"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 71 } }
+				scoped_play_song = "tno_se_british_reunification_maudling"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 72 } }
+				scoped_play_song = "tno_se_british_reunification_chesterton"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 73 } }
+				scoped_play_song = "tno_se_british_reunification_wilson"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 74 } }
+				scoped_play_song = "tno_se_british_reunification_birch"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 75 } }
+				scoped_play_song = "tno_se_british_reunification_jellicoe"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 76 } }
+				scoped_play_song = "tno_se_british_reunification_stirling"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 77 } }
+				scoped_play_song = "tno_se_russian_unification_novosibirsk_pokryshkin"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 78 } }
+				scoped_play_song = "tno_se_russian_unification_novosibirsk_shukshin"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 79 } }
+				scoped_play_song = "tno_se_russian_unification_prc"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 80 } }
+				scoped_play_song = "tno_se_russian_unification_magadan_werbell"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 81 } }
+				scoped_play_song = "tno_se_the_african_devastation"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 82 } }
+				scoped_play_song = "tno_se_african_crisis"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 83 } }
+				scoped_play_song = "tno_se_burgundian_spring"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 84 } has_global_flag = WAC_scenario_1 }
+				scoped_play_song = "tno_se_west_african_war_1"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 84 } has_global_flag = WAC_scenario_2 }
+				scoped_play_song = "tno_se_west_african_war_2"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 84 } has_global_flag = WAC_scenario_3 }
+				scoped_play_song = "tno_se_west_african_war_3"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 85 } }
+				scoped_play_song = "tno_se_jushin_coup"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 86 } }
+				scoped_play_song = "tno_se_mutos_coup"
+			}
+			else_if = {
+				limit = {
+					check_variable = { TNO_temp_super_event = 87 }
+					OMO = { has_country_flag = OMO_2022_sunset_superevent }
+				}
+				scoped_play_song = "tno_se_russian_unification_pony_bukharin_sunset"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 87 } }
+				scoped_play_song = "tno_se_russian_unification_pony_bukharin"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 88 } }
+				scoped_play_song = "tno_se_french_reclamation"
+			}
+			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = 89 } }
+				scoped_play_song = "tno_se_french_reconciliation"
+			}
+		}
+	}
+}
+
+d_fire_super_event = {
+	set_temp_variable = { TNO_temp_super_event = args^0 }
+	TNO_fire_super_event = yes
+}

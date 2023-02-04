@@ -1,0 +1,154 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Top_Window"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Top_Window.dds"
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Tab"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Tab.dds"
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Rankings_Border"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Rankings_Border.dds"
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Rankings_Line"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Rankings_Line.dds"
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_World_Tension_Map"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_World_Tension_Map.dds"
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Crises_Border"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Crises_Border.dds"
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Crises_Line"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Crises_Line.dds"
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Crises_Big_Buttons"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Crises_Big_Buttons.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Crises_Small_Buttons"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Crises_Small_Buttons.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_DEFCON_Rim"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_DEFCON_Rim.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Top_Window_DEFCON1"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Top_Window_DEFCON1.dds"
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Top_Window_DEFCON2"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Top_Window_DEFCON2.dds"
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Top_Window_DEFCON3"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Top_Window_DEFCON3.dds"
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Top_Window_DEFCON4"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Top_Window_DEFCON4.dds"
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Top_Window_DEFCON5"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Top_Window_DEFCON5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Top_Window_DEFCON1_Marker"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Top_Window_DEFCON1_Marker.dds"
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Top_Window_DEFCON2_Marker"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Top_Window_DEFCON2_Marker.dds"
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Top_Window_DEFCON3_Marker"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Top_Window_DEFCON3_Marker.dds"
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Top_Window_DEFCON4_Marker"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Top_Window_DEFCON4_Marker.dds"
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Top_Window_DEFCON5_Marker"
+		textureFile = "gfx/interface/cold_war_gui_old/Cold_War_GUI_Top_Window_DEFCON5_Marker.dds"
+	}
+
+	# Below is old
+	
+	spriteType = {
+		name = "GFX_world_tension_background"
+		textureFile = "gfx/interface/cold_war_gui_old/world_tension_background.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_diplomaticcrises_button"
+		textureFile = "gfx/interface/cold_war_gui_old/diplomaticcrises_button.dds"
+		noOfFrames = 2
+	}
+	
+	#spriteType = {
+	#	name = "GFX_diplomaticcrises_severity_button"
+	#	textureFile = "gfx/interface/cold_war_gui_old/diplomaticcrises_severity_button.dds"
+	#	noOfFrames = 2
+	#}
+	
+	#spriteType = {
+	#	name = "GFX_diplomaticcrises_date_button"
+	#	textureFile = "gfx/interface/cold_war_gui_old/diplomaticcrises_date_button.dds"
+	#	noOfFrames = 2
+	#}
+	
+	#spriteType = {
+	#	name = "GFX_ongoingconflicts_button"
+	#	textureFile = "gfx/interface/cold_war_gui_old/ongoingconflicts_button.dds"
+	#	noOfFrames = 2
+	#}
+	
+	spriteType = {
+		name = "GFX_world_tension_entry_bg"
+		textureFile = "gfx/interface/cold_war_gui_old/world_tension_entry_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_conflict_marker"
+		textureFile = "gfx/interface/cold_war_gui_old/conflict_marker_direct.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_conflict_marker_proxy"
+		textureFile = "gfx/interface/cold_war_gui_old/conflict_marker_proxy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_world_tension_defcon_5"
+		textureFile = "gfx/interface/cold_war_gui_old/world_tension_defcon_5.dds"
+	}
+	spriteType = {
+		name = "GFX_world_tension_defcon_4"
+		textureFile = "gfx/interface/cold_war_gui_old/world_tension_defcon_4.dds"
+	}
+	spriteType = {
+		name = "GFX_world_tension_defcon_3"
+		textureFile = "gfx/interface/cold_war_gui_old/world_tension_defcon_3.dds"
+	}
+	spriteType = {
+		name = "GFX_world_tension_defcon_2"
+		textureFile = "gfx/interface/cold_war_gui_old/world_tension_defcon_2.dds"
+	}
+	spriteType = {
+		name = "GFX_world_tension_defcon_1"
+		textureFile = "gfx/interface/cold_war_gui_old/world_tension_defcon_1.dds"
+	}
+}

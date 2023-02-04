@@ -1,0 +1,1432 @@
+guiTypes = {
+	
+	extendedScrollbarType = {
+		name = "bottom_horizontal_slider_superpower_rankings"
+		position = { x = 0 y = 18 }
+		size = { width = 18 height = 18 }
+		tileSize = { width = 12 height = 12}
+		maxValue = 1
+		minValue = 0
+		stepSize = 0.01
+		startValue = 0
+		horizontal = yes
+		orientation = lower_left
+		origo = lower_left
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_scrollbar_horisontal_bg"
+		}
+
+		slider = {
+			name = "Slider"
+			quadTextureSprite = "GFX_scroll_drager"
+			position = { x=0 y = -2 }
+		}
+
+		track = {
+			name = "Track"
+			quadTextureSprite = "GFX_scroll_track_horisontal"
+			position = { x=0 y = 3 }
+			alwaystransparent = yes
+		}
+
+		decreaseButton = {
+			name = "Decrease"
+			quadTextureSprite = "GFX_scroll_left"
+			position = { x=3 y = 1 }
+		}
+
+		increaseButton = {
+			name = "Increase"
+			quadTextureSprite = "GFX_scroll_right"
+			position = { x=-19 y = -17 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "TNO_Cold_War_GUI_World_Tension_Tab"
+		position = { x = 0 y = 159 }
+		size = { width = 1197 height = 646 }
+		clipping = no
+		
+		background = {
+			name = "TNO_Cold_War_GUI_World_Tension_Tab_Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "TNO_Cold_War_GUI_World_Tension_Tab_DEFCON_Rim"
+			spriteType = "GFX_Cold_War_GUI_DEFCON_Rim"
+			position = { x = -34 y = -179 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "TNO_Cold_War_GUI_World_Tension_Tab_Map"
+			spriteType = "GFX_Cold_War_GUI_World_Tension_Map"
+			position = { x = 7 y = 7 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "TNO_Cold_War_GUI_Crises_Tab"
+		position = { x = 0 y = 159 }
+		size = { width = 1197 height = 646 }
+		
+		background = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Border"
+			spriteType = "GFX_Cold_War_GUI_Crises_Border"
+			position = { x = 3 y = 3 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_DEFCON_Rim"
+			spriteType = "GFX_Cold_War_GUI_DEFCON_Rim"
+			position = { x = -34 y = -179 }
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Name"
+			position = { x = 0 y = 32 }
+			font = "aldrich_48_outline"
+			text = "Crisis Name"
+			format = center
+			maxWidth = 1197
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Country_Flag_Left"
+			quadTextureSprite = "GFX_flag_medium_plain"
+			position = { x = 116 y = 36 }
+		}
+		
+		iconType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Country_Flag_Frame_Left"
+			spriteType = "GFX_large_flag_frame_menu"
+			position = { x = 70 y = 8 }
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Country_Left"
+			position = { x = 10 y = 72 }
+			font = "aldrich_32_outline"
+			text = "Name 1"
+			format = center
+			maxWidth = 210
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Country_Flag_Right"
+			quadTextureSprite = "GFX_flag_medium_plain"
+			position = { x = 1081 y = 36 }
+		}
+		
+		iconType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Country_Flag_Frame_Right"
+			spriteType = "GFX_large_flag_frame_menu"
+			position = { x = 1035 y = 8 }
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Country_Right"
+			position = { x = 976 y = 72 }
+			font = "aldrich_32_outline"
+			text = "Name 2"
+			format = center
+			maxWidth = 210
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Percents"
+			position = { x = 10 y = 118 }
+			font = "aldrich_36_outline"
+			text = "Winning, %%%"
+			format = center
+			maxWidth = 585
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Tension"
+			position = { x = 601 y = 118 }
+			font = "aldrich_36_outline"
+			text = "Tension Contrib, %%%"
+			format = center
+			maxWidth = 585
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Lines"
+			spriteType = "GFX_Cold_War_GUI_Crises_Line"
+			position = { x = 7 y = 164 }
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_1"
+			position = { x = 7 y = 166 }
+			font = "aldrich_32_outline"
+			text = "Title 1"
+			format = center
+			maxWidth = 394
+			maxHeight = 72
+			fixedsize = yes
+			#alwaystransparent = yes
+		}
+		
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_1_Info"
+			quadTextureSprite = "GFX_Generic_Global"
+			position = { x = 379 y = 168 }
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_2"
+			position = { x = 401 y = 166 }
+			font = "aldrich_32_outline"
+			text = "Title 2"
+			format = center
+			maxWidth = 394
+			maxHeight = 72
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_2_Info"
+			quadTextureSprite = "GFX_Generic_Global"
+			position = { x = 771 y = 168 }
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_3"
+			position = { x = 795 y = 166 }
+			font = "aldrich_32_outline"
+			text = "Title 3"
+			format = center
+			maxWidth = 394
+			maxHeight = 72
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_3_Info"
+			quadTextureSprite = "GFX_Generic_Global"
+			position = { x = 1167 y = 168 }
+		}
+		
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_1_Large_Button"
+			quadTextureSprite = "GFX_Cold_War_GUI_Crises_Big_Buttons"
+			position = { x = 66 y = 428 }
+			frame = 2
+			buttonFont = "aldrich_36_outline"
+			text = "Support"
+		}
+		
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_2_Large_Button"
+			quadTextureSprite = "GFX_Cold_War_GUI_Crises_Big_Buttons"
+			position = { x = 460 y = 428 }
+			frame = 2
+			buttonFont = "aldrich_36_outline"
+			text = "Support"
+		}
+		
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_3_Large_Button"
+			quadTextureSprite = "GFX_Cold_War_GUI_Crises_Big_Buttons"
+			position = { x = 854 y = 428 }
+			frame = 2
+			buttonFont = "aldrich_36_outline"
+			text = "Support"
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_1_Small"
+			position = { x = 12 y = 494 }
+			font = "aldrich_32_outline"
+			text = "Escalation"
+			format = center
+			maxWidth = 386
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_1_Small_Button_1"
+			quadTextureSprite = "GFX_Cold_War_GUI_Crises_Small_Buttons"
+			position = { x = 61 y = 531 }
+			frame = 1
+			buttonFont = "aldrich_24_outline"
+			text = "Option 1"
+		}
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_1_Small_Button_2"
+			quadTextureSprite = "GFX_Cold_War_GUI_Crises_Small_Buttons"
+			position = { x = 61 y = 561 }
+			frame = 1
+			buttonFont = "aldrich_24_outline"
+			text = "Option 2"
+		}
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_1_Small_Button_3"
+			quadTextureSprite = "GFX_Cold_War_GUI_Crises_Small_Buttons"
+			position = { x = 61 y = 591 }
+			frame = 1
+			buttonFont = "aldrich_24_outline"
+			text = "Option 2"
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_2_Small"
+			position = { x = 405 y = 494 }
+			font = "aldrich_32_outline"
+			text = "Deescalation"
+			format = center
+			maxWidth = 386
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_2_Small_Button_1"
+			quadTextureSprite = "GFX_Cold_War_GUI_Crises_Small_Buttons"
+			position = { x = 454 y = 531 }
+			frame = 1
+			buttonFont = "aldrich_24_outline"
+			text = "Option 1"
+		}
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_2_Small_Button_2"
+			quadTextureSprite = "GFX_Cold_War_GUI_Crises_Small_Buttons"
+			position = { x = 454 y = 561 }
+			frame = 1
+			buttonFont = "aldrich_24_outline"
+			text = "Option 2"
+		}
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_2_Small_Button_3"
+			quadTextureSprite = "GFX_Cold_War_GUI_Crises_Small_Buttons"
+			position = { x = 454 y = 591 }
+			frame = 1
+			buttonFont = "aldrich_24_outline"
+			text = "Option 2"
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_3_Small"
+			position = { x = 798 y = 494 }
+			font = "aldrich_32_outline"
+			text = "Support"
+			format = center
+			maxWidth = 386
+			#alwaystransparent = yes
+		}
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_3_Small_Button_1"
+			quadTextureSprite = "GFX_Cold_War_GUI_Crises_Small_Buttons"
+			position = { x = 847 y = 531 }
+			frame = 1
+			buttonFont = "aldrich_24_outline"
+			text = "Option 1"
+		}
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_3_Small_Button_2"
+			quadTextureSprite = "GFX_Cold_War_GUI_Crises_Small_Buttons"
+			position = { x = 847 y = 561 }
+			frame = 1
+			buttonFont = "aldrich_24_outline"
+			text = "Option 2"
+		}
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_3_Small_Button_3"
+			quadTextureSprite = "GFX_Cold_War_GUI_Crises_Small_Buttons"
+			position = { x = 847 y = 591 }
+			frame = 1
+			buttonFont = "aldrich_24_outline"
+			text = "Option 2"
+		}
+		
+		gridboxtype = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_1_Large_Flag"
+			position = { x = -118 y = 220 }
+			size = { width = 375 height = 200 }
+			slotsize = { width = 86 height = 60 }
+			add_horizontal = yes
+			max_slots_vertical = 2
+			max_slots_horizontal = 4
+		}
+		gridboxtype = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_1_Small_Flag"
+			position = { x = -134 y = 360 }
+			size = { width = 375 height = 200 }
+			slotsize = { width = 45 height = 32 }
+			add_horizontal = yes
+			max_slots_vertical = 2
+			max_slots_horizontal = 8
+		}
+		
+		gridboxtype = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_2_Large_Flag"
+			position = { x = 278 y = 220 }
+			size = { width = 375 height = 200 }
+			slotsize = { width = 86 height = 60 }
+			add_horizontal = yes
+			max_slots_vertical = 2
+			max_slots_horizontal = 4
+		}
+		gridboxtype = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_2_Small_Flag"
+			position = { x = 262 y = 360 }
+			size = { width = 375 height = 200 }
+			slotsize = { width = 45 height = 32 }
+			add_horizontal = yes
+			max_slots_vertical = 2
+			max_slots_horizontal = 8
+		}
+		
+		gridboxtype = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_3_Large_Flag"
+			position = { x = 672 y = 220 }
+			size = { width = 375 height = 200 }
+			slotsize = { width = 86 height = 60 }
+			add_horizontal = yes
+			max_slots_vertical = 2
+			max_slots_horizontal = 4
+		}
+		gridboxtype = {
+			name = "TNO_Cold_War_GUI_Crises_Tab_Crisis_Title_3_Small_Flag"
+			position = { x = 656 y = 360 }
+			size = { width = 375 height = 200 }
+			slotsize = { width = 45 height = 32 }
+			add_horizontal = yes
+			max_slots_vertical = 2
+			max_slots_horizontal = 8
+		}
+	}
+	
+	containerWindowType = {
+		name = "TNO_Cold_War_GUI_Crises_Tab_Flag_Entry_Large"
+		position = { x = 0 y = 0 }
+		size = { width = 86 height = 56 }
+	
+		iconType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Large_Entry_Flag"
+			quadTextureSprite = "GFX_flag_medium_plain"
+			position = { x = 49 y = 35 }
+		}
+		
+		iconType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Large_Entry_Flag_Cover"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_flag_frame_warscreen"
+			alwaystransparent = yes
+			scale = 2.0
+		}
+	}
+	
+	containerWindowType = {
+		name = "TNO_Cold_War_GUI_Crises_Tab_Flag_Entry_Small"
+		position = { x = 0 y = 0 }
+		size = { width = 41 height = 36 }
+	
+		iconType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Small_Entry_Flag"
+			quadTextureSprite = "GFX_flag_small2_plain"
+			position = { x = 24 y = 17 }
+		}
+		
+		iconType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Small_Entry_Flag_Cover"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_flag_frame_warscreen"
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "TNO_Cold_War_GUI_Rankings_Tab"
+		position = { x = 0 y = 159 }
+		size = { width = 1197 height = 646 }
+		
+		background = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Border"
+			spriteType = "GFX_Cold_War_GUI_Rankings_Border"
+			position = { x = 3 y = 3 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_DEFCON_Rim"
+			spriteType = "GFX_Cold_War_GUI_DEFCON_Rim"
+			position = { x = -34 y = -179 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Line"
+			spriteType = "GFX_Cold_War_GUI_Rankings_Line"
+			position = { x = 7 y = 165 }
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Title"
+			position = { x = 0 y = 144 }
+			font = "aldrich_24_outline"
+			text = "S U P E R P O W E R S"
+			format = center
+			maxWidth = 1197
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Score_Title"
+			position = { x = 0 y = 173 }
+			font = "Bomb_36"
+			text = "Score:"
+			format = center
+			maxWidth = 895
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Score_Amount"
+			position = { x = 0 y = 170 }
+			font = "aldrich_48_outline"
+			text = "[?Cold_War_GUI_Selected_Superpower.TotalScore]"
+			format = center
+			maxWidth = 1197
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Mil_Title"
+			position = { x = 7 y = 220 }
+			font = "Bomb_36"
+			text = "Military"
+			format = center
+			maxWidth = 294
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Econ_Title"
+			position = { x = 303 y = 220 }
+			font = "Bomb_36"
+			text = "Economy"
+			format = center
+			maxWidth = 294
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Diplo_Title"
+			position = { x = 599 y = 220 }
+			font = "Bomb_36"
+			text = "Diplomacy"
+			format = center
+			maxWidth = 294
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Vic_Title"
+			position = { x = 895 y = 220 }
+			font = "Bomb_36"
+			text = "Victories"
+			format = center
+			maxWidth = 294
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Vic_add_remove"
+			position = { x = 1115 y = 229 }
+			spriteType = "GFX_add_one"
+			pdx_tooltip = "TNO_Cold_War_GUI_Victories_Gridbox_DBG_tt"
+		}
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Vic_sample_logs"
+			position = { x = 1140 y = 229 }
+			spriteType = "GFX_add_one"
+			pdx_tooltip = "TNO_Cold_War_GUI_Victories_Sample_DBG_tt"
+		}
+		
+		containerWindowType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Large_Entries"
+			size = { width = 1145 height = 120 }
+			position = { x = 26 y = 11 }
+			horizontalScrollbar = "bottom_horizontal_slider_superpower_rankings"
+			clipping = yes
+			
+			background = {
+				name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Entries_Background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+			
+			gridboxtype = {
+				name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Large_Entries_List"
+				position = { x = 0 y = 0 }
+				size = { width = 320 height = 120 }
+				slotsize = { width = 320 height = 120 }
+				add_horizontal = yes
+				max_slots_vertical = 1
+			}
+		}
+		
+		containerWindowType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entries"
+			size = { width = 1197 height = 377 }
+			position = { x = 0 y = 270 }
+			
+			background = {
+				name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entries_Background"
+				alwaystransparent = yes
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			containerWindowType = {
+				name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Military"
+				position = { x = 0 y = 0 }
+
+				instantTextboxType = {
+					name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Military_Name"
+					position = { x = 10 y = 0 }
+					font = "aldrich_16_outline"
+					text = "TNO_Cold_War_GUI_Rankings_Military_Categories"
+					maxWidth = 250
+					maxHeight = 365
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				
+				instantTextboxType = {
+					name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Military_Points"
+					position = { x = 25 y = 0 }
+					font = "aldrich_16_outline"
+					text = "TNO_Cold_War_GUI_Rankings_Military_Points"
+					maxWidth = 275
+					maxHeight = 365
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+				}
+
+				instantTextboxType = {
+					name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Military_Total"
+					position = { x = 10 y = 351 }
+					font = "aldrich_18_outline"
+					text = "TNO_Cold_War_GUI_Rankings_Total_Score"
+					maxWidth = 250
+					maxHeight = 365
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				
+				instantTextboxType = {
+					name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Military_Points_Total"
+					position = { x = 25 y = 351 }
+					font = "aldrich_18_outline"
+					text = "[?Cold_War_GUI_Selected_Superpower.Score_Military^0]"
+					maxWidth = 275
+					maxHeight = 365
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Economy"
+				position = { x = 296 y = 0 }
+
+				instantTextboxType = {
+					name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Economy_Name"
+					position = { x = 10 y = 0 }
+					font = "aldrich_16_outline"
+					text = "TNO_Cold_War_GUI_Rankings_Economy_Categories"
+					maxWidth = 250
+					maxHeight = 365
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				
+				instantTextboxType = {
+					name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Economy_Points"
+					position = { x = 25 y = 0 }
+					font = "aldrich_16_outline"
+					text = "TNO_Cold_War_GUI_Rankings_Economy_Points"
+					maxWidth = 275
+					maxHeight = 365
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+				}
+
+				instantTextboxType = {
+					name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Economy_Total"
+					position = { x = 10 y = 351 }
+					font = "aldrich_18_outline"
+					text = "TNO_Cold_War_GUI_Rankings_Total_Score"
+					maxWidth = 250
+					maxHeight = 365
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				
+				instantTextboxType = {
+					name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Economy_Points_Total"
+					position = { x = 25 y = 351 }
+					font = "aldrich_18_outline"
+					text = "[?Cold_War_GUI_Selected_Superpower.Score_Economy^0]"
+					maxWidth = 275
+					maxHeight = 365
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+				}
+			}
+			
+			containerWindowType = {
+				name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Diplomacy"
+				position = { x = 592 y = 0 }
+
+				instantTextboxType = {
+					name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Diplomacy_Name"
+					position = { x = 10 y = 0 }
+					font = "aldrich_16_outline"
+					text = "TNO_Cold_War_GUI_Rankings_Diplomacy_Categories"
+					maxWidth = 250
+					maxHeight = 365
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				
+				instantTextboxType = {
+					name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Diplomacy_FactionName"
+					position = { x = 150 y = 0 }
+					font = "aldrich_16_outline"
+					text = "[Cold_War_GUI_Selected_Superpower.GetFactionName]"
+					maxWidth = 150
+					maxHeight = 15
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+				}
+				
+				instantTextboxType = {
+					name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Diplomacy_Points"
+					position = { x = 25 y = 16 }
+					font = "aldrich_16_outline"
+					text = "TNO_Cold_War_GUI_Rankings_Diplomacy_Points"
+					maxWidth = 275
+					maxHeight = 365
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+				}
+
+				instantTextboxType = {
+					name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Diplomacy_Total"
+					position = { x = 10 y = 351 }
+					font = "aldrich_18_outline"
+					text = "TNO_Cold_War_GUI_Rankings_Total_Score"
+					maxWidth = 250
+					maxHeight = 365
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				
+				instantTextboxType = {
+					name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Diplomacy_Points_Total"
+					position = { x = 25 y = 351 }
+					font = "aldrich_18_outline"
+					text = "[?Cold_War_GUI_Selected_Superpower.Score_Diplomacy^0]"
+					maxWidth = 275
+					maxHeight = 365
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Victory"
+				position = { x = 888 y = 0 }
+
+				containerWindowType = {
+					name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Victory_List"
+					position = { x = 0 y = 2 }
+					size = { width = 305 height = 345 }
+
+					verticalScrollbar = "right_vertical_slider"
+
+					background = {
+						name = "Background"
+						quadTextureSprite = "Kartenhaus_Log_Scrollbar_Background"
+					}
+
+					gridboxtype = {
+						name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Victory_List_Gridbox"
+						position = { x = 0 y = 0 }
+						size = { width = 300 height = 345 }
+						slotsize = { width = 300 height = 48 }
+						add_horizontal = no
+						max_slots_horizontal = 1
+					}
+				}
+
+				instantTextboxType = {
+					name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Victory_Total"
+					position = { x = 10 y = 351 }
+					font = "aldrich_18_outline"
+					text = "TNO_Cold_War_GUI_Rankings_Total_Score"
+					maxWidth = 250
+					maxHeight = 365
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				
+				instantTextboxType = {
+					name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry_Victory_Points_Total"
+					position = { x = 25 y = 351 }
+					font = "aldrich_18_outline"
+					text = "[?Cold_War_GUI_Selected_Superpower.Score_Victories]"
+					maxWidth = 275
+					maxHeight = 365
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+				}
+			}
+		}
+	}
+	
+	containerWindowType = {
+		name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entry"
+		position = { x = 0 y = 0 }
+		size = { width = 300 height = 36 }
+	
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entries_Name"
+			position = { x = 10 y = 0 }
+			font = "aldrich_18_outline"
+			text = "TNO_Cold_War_GUI_Rankings_Victory_Entry_Name"
+			maxWidth = 250
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Info_Entries_Status_and_Points"
+			position = { x = 10 y = 17 }
+			font = "aldrich_18_outline"
+			text = "TNO_Cold_War_GUI_Rankings_Victory_Entry_Status_and_Points"
+			maxWidth = 250
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Large_Entry"
+		position = { x = 0 y = 0 }
+		size = { width = 310 height = 120 }
+	
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Large_Entry_Background"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_Cold_War_GUI_Rankings_Entry"
+		}
+		
+		iconType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Large_Entry_Flag"
+			quadTextureSprite = "GFX_flag_medium_plain"
+			position = { x = 46 y = 30 }
+		}
+		
+		iconType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Large_Entry_Flag_Cover"
+			position = { x = -3 y = -5 }
+			spriteType = "GFX_flag_frame_warscreen"
+			alwaystransparent = yes
+			scale = 2.0
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Large_Entry_Country_Name"
+			position = { x = 94 y = 2 }
+			font = "aldrich_20_outline"
+			text = "[THIS.GetName]"
+			maxWidth = 212
+			maxHeight = 40
+			fixedsize = yes
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Large_Entry_Score"
+			position = { x = 92 y = 36 }
+			font = "aldrich_24_outline"
+			text = "Score: [?TotalScore]"
+			maxWidth = 215
+			maxHeight = 20
+			fixedsize = yes
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Large_Entry_Mil_Score"
+			position = { x = 6 y = 62 }
+			font = "aldrich_18_outline"
+			text = "Military: [?Score_Military^0]"
+			maxWidth = 208
+			format = left
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Large_Entry_Econ_Score"
+			position = { x = 6 y = 77 }
+			font = "aldrich_18_outline"
+			text = "Economy: [?Score_Economy^0]"
+			maxWidth = 208
+			format = left
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Large_Entry_Vic_Score"
+			position = { x = 98 y = 62 }
+			font = "aldrich_18_outline"
+			text = "Victories: [?Score_Victories]"
+			maxWidth = 208
+			format = right
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Large_Entry_Diplo_Score"
+			position = { x = 98 y = 77 }
+			font = "aldrich_18_outline"
+			text = "Diplomacy: [?Score_Diplomacy^0]"
+			maxWidth = 208
+			format = right
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TNO_Cold_War_GUI_Rankings_Tab_Superpower_Large_Entry_Click_Notif"
+			position = { x = 0 y = 97 }
+			font = "aldrich_24_outline"
+			text = "C L I C K  T O  V I E W"
+			maxWidth = 310
+			format = center
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "TNO_Cold_War_GUI_Main"
+		position = { x = 200 y = 200 }
+		size = { width = 1197 height = 805 }
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name = "TNO_Cold_War_GUI_Main_Background"
+			quadTextureSprite = "GFX_tiled_window_transparent"
+		}
+		
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Tab_World_Tension"
+			quadTextureSprite = "GFX_Cold_War_GUI_Tab"
+			position = { x = 135 y = -25 }
+			buttonFont = "Bomb_20"
+			text = "World Tension"
+		}
+		
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Tab_Crises"
+			quadTextureSprite = "GFX_Cold_War_GUI_Tab"
+			position = { x = 487 y = -25 }
+			buttonFont = "Bomb_20"
+			text = "Crises and Conferences"
+		}
+		
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Tab_Rankings"
+			quadTextureSprite = "GFX_Cold_War_GUI_Tab"
+			position = { x = 839 y = -25 }
+			buttonFont = "Bomb_20"
+			text = "Cold War Rankings"
+		}
+		
+		containerWindowType = {
+			name = "TNO_Cold_War_GUI_Top"
+			position = { x = -1 y = -1 }
+			size = { width = 0 height = 0 }
+			
+			iconType = {
+				name = "Cold_War_GUI_Top_Window_bg"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_Cold_War_GUI_Top_Window"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "TNO_Cold_War_GUI_Top_Window_DEFCON_Title"
+				position = { x = 1008 y = 22 }
+				font = "aldrich_30_outline"
+				text = "D E F C O N"
+			}
+			instantTextboxType = {
+				name = "TNO_Cold_War_GUI_Top_Window_DEFCON_Title_Level"
+				position = { x = 1064 y = 30 }
+				font = "vt323_72_WT_outline"
+				text = "[get_TNO_Cold_War_GUI_Top_Window_DEFCON_Title_Level]"
+			}
+			
+			iconType = {
+				name = "TNO_Cold_War_GUI_Top_Window_DEFCON_Ticker"
+				position = { x = 159 y = 15 }
+			}
+			
+			instantTextboxType = {
+				name = "TNO_Cold_War_GUI_Top_Ticker_Text"
+				position = { x = 0 y = 142 }
+				font = "aldrich_22_outline"
+				text = "TICKER TEXT HERE"
+				format = center
+				maxWidth = 1197
+			}
+		}
+		
+		containerWindowType = {
+			name = "TNO_Cold_War_GUI_Top_Tension_Marker"
+			position = { x = -33 y = -19 }
+			size = { width = 188 height = 188 }
+			
+			background = {
+				name = "TNO_Cold_War_GUI_Top_Tension_Marker_Background"
+				quadTextureSprite ="GFX_tiled_window_thin_border2"
+			}
+			
+			iconType = {
+				name = "TNO_Cold_War_GUI_Top_Tension_DEFCON_Marker"
+				position = { x = 9 y = 9 }
+			}
+		}
+		
+		buttonType = {
+			name = "TNO_Cold_War_GUI_Main_close_button"
+			position = { x = 119 y = -2 }
+			quadTextureSprite ="GFX_crt_closebutton"
+			shortcut = "ESCAPE"
+			Orientation = upper_left
+			clicksound = click_close
+		}
+	}
+	
+	containerWindowType = {
+		name = "TNO_world_tension_topbar_marker"
+		position = { x = 0 y = 0 }
+		size = { width = 200 height = 200 }
+		orientation = upper_right
+		
+		iconType = {
+			name = "TNO_threat_display"
+			position = { x = -96 y = 20 }
+			alwaystransparent = yes # to access the old Cold War GUI, comment this out
+		}
+	}
+
+	# Below is old
+
+	containerWindowType = {
+		name = "TNO_world_tension_conflict_markers"
+		position = { x = 0 y = 0 }
+		size = { width = 1197 height = 805 }
+		orientation = upper_left
+		
+		instantTextboxType = {
+			name = "TNO_World_Tension_title"
+			position = { x = 680 y = 75 }
+			font = "aldrich_36_outline"
+			text = "World Tension"
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "TNO_World_Tension_number"
+			position = { x = 681 y = 130 }
+			font = "vt323_72_WT_outline"
+			text = "[?global.TNO_World_Tension]%"
+			maxWidth = 200
+			maxHeight = 50
+			format = center
+		}
+		
+		iconType = {
+			name = "TNO_World_Tension_DEFCON_Meter"
+			position = { x = 905 y = 9 }
+			orientation = upper_left
+		}
+
+		iconType = {
+			name = "conflict_marker_Germany_Italy"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 314 y = 68 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Germany_Italy_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 314 y = 68 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Balkans"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 332 y = 82 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Balkans_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 332 y = 82 }
+		}
+
+		iconType = {
+			name = "conflict_marker_France_Burgundy_Iberia"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 296 y = 80 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_France_Burgundy_Iberia_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 296 y = 80 }
+		}
+
+		iconType = {
+			name = "conflict_marker_Ostland_Moscow"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 354 y = 60 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Ostland_Moscow_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 354 y = 60 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_West_Russia"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 392 y = 48 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_West_Russia_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 392 y = 48 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Central_Asia"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 410 y = 80 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Central_Asia_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 410 y = 80 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Central_Siberia"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 466 y = 44 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Central_Siberia_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 466 y = 44 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Far_Eastern_Russia"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 540 y = 40 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Far_Eastern_Russia_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 540 y = 40 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Scandinavia"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 320 y = 40 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Scandinavia_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 320 y = 40 }
+		}
+
+		iconType = {
+			name = "conflict_marker_Madagascar"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 374 y = 200 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Madagascar_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 374 y = 200 }
+		}
+
+		iconType = {
+			name = "conflict_marker_England"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 292 y = 60 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_England_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 292 y = 60 }
+		}
+
+		iconType = {
+			name = "conflict_marker_North_SAM"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 176 y = 168 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_North_SAM_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 176 y = 168 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_South_SAM"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 202 y = 200 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_South_SAM_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 202 y = 200 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Caribbean"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 168 y = 124 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Caribbean_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 168 y = 124 }
+		}
+
+		iconType = {
+			name = "conflict_marker_Indonesia"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 536 y = 174 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Indonesia_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 536 y = 174 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Australia"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 524 y = 210 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Australia_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 524 y = 210 }
+		}
+
+		iconType = {
+			name = "conflict_marker_USA_Canada"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 126 y = 86 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_USA_Canada_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 126 y = 86 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Mexico_Central"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 122 y = 120 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Mexico_Central_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 122 y = 120 }
+		}
+
+		iconType = {
+			name = "conflict_marker_South_East_Asia"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 469 y = 130 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_South_East_Asia_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 469 y = 130 }
+		}
+
+		iconType = {
+			name = "conflict_marker_China"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 470 y = 94 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_China_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 470 y = 94 }
+		}
+
+		iconType = {
+			name = "conflict_marker_India"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 430 y = 116 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_India_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 430 y = 116 }
+		}
+
+		iconType = {
+			name = "conflict_marker_Egypt"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 346 y = 118 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Egypt_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 346 y = 118 }
+		}
+
+		iconType = {
+			name = "conflict_marker_North_Africa"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 308 y = 116 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_North_Africa_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 308 y = 116 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_West_Africa"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 290 y = 142 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_West_Africa_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 290 y = 142 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_East_Africa"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 358 y = 150 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_East_Africa_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 358 y = 150 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_South_Africa"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 338 y = 206 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_South_Africa_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 338 y = 206 }
+		}
+
+		iconType = {
+			name = "conflict_marker_Middle_East"
+			spriteType = "GFX_conflict_marker"
+			position = { x = 366 y = 104 }
+		}
+		
+		iconType = {
+			name = "conflict_marker_Middle_East_proxy"
+			spriteType = "GFX_conflict_marker_proxy"
+			position = { x = 366 y = 104 }
+		}
+	}
+}

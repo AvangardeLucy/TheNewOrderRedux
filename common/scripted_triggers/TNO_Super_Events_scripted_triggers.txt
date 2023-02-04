@@ -1,0 +1,48 @@
+
+check_for_superevent_option_endscreen = {
+	OR = {
+		AND = {
+			OR = {
+				check_variable = { TNO_super_event = 87 }
+				check_variable = { TNO_super_event = 38 }
+			}
+			original_tag = OMO
+		}
+		AND = {
+			OR = {
+				check_variable = { TNO_super_event = 30 }
+				check_variable = { TNO_super_event = 31 }
+				check_variable = { TNO_super_event = 32 }
+			}
+			original_tag = VYT
+		}
+		AND = {
+			check_variable = { TNO_super_event = 33 }
+			original_tag = PRM
+		}
+		AND = {
+			OR = {
+				check_variable = { TNO_super_event = 58 }
+				check_variable = { TNO_super_event = 52 }
+				check_variable = { TNO_super_event = 57 }
+				check_variable = { TNO_super_event = 53 }
+				check_variable = { TNO_super_event = 54 }
+				check_variable = { TNO_super_event = 55 }
+				check_variable = { TNO_super_event = 56 }
+			}
+			original_tag = KOM
+		}
+		AND = {
+			check_variable = { TNO_super_event = 60 }
+			original_tag = TOM
+		}
+		AND = {
+			check_variable = { TNO_super_event = 41 }
+			original_tag = IRK
+		}
+		AND = {
+			check_variable = { TNO_super_event = 79 }
+			original_tag = PRC
+		}
+	}
+}

@@ -1,0 +1,394 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ability_list_begin"
+		texturefile = "gfx/interface/abilitylist/TNO_bg_begin.png"
+	}
+
+	spriteType = {
+		name = "GFX_ability_list_mid"
+		texturefile = "gfx/interface/abilitylist/TNO_bg_mid.png"
+	}
+
+	spriteType = {
+		name = "GFX_ability_list_end"
+		texturefile = "gfx/interface/abilitylist/TNO_bg_end.png"
+	}
+
+
+	progressbartype = {
+		name = "GFX_ability_active_bg"
+		textureFile1 = "gfx/interface/abilitylist/TNO_ability_active_bg_full.png"
+		textureFile2 = "gfx/interface/abilitylist/TNO_ability_active_bg.png"
+		size = {x=33 y=33}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+
+	progressbartype = {
+		name = "GFX_ability_cooldown_bg"
+		textureFile1 = "gfx/interface/abilitylist/TNO_ability_cooldown_bg_full.png"
+		textureFile2 = "gfx/interface/abilitylist/TNO_ability_cooldown_bg.png"
+		size = {x=33 y=33}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+
+	spriteType = {
+		name = "GFX_ability_icon_default"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_default.png"
+	}
+
+	spriteType = {
+		name = "GFX_ability_force_attack"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_force_attack.png"
+	}
+
+	spriteType = {
+		name = "GFX_ability_siege_artillery"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_siege_artillery.png"
+	}
+
+	spriteType = {
+		name = "GFX_ability_glider_planes"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_glider_planes.png"
+	}
+
+	spriteType = {
+		name = "GFX_ability_extra_suplies"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_extra_supplies.png"
+	}
+
+	spriteType = {
+		name = "GFX_ability_faster_naval_invasion_planning"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_naval_assault_plan.png"
+	}
+
+	spriteType = {
+		name = "GFX_ability_requisition_winter_gear"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_requisition_winter_gear.png"
+	}
+
+	spriteType = {
+		name = "GFX_ability_probing_attack"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_probing_attack.png"
+	}
+
+	spriteType = {
+		name = "GFX_ability_chi_force_attack"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_chi_force_attack.png"
+	}
+
+	spriteType = {
+		name = "GFX_ability_last_stand"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_last_stand.png"
+	}
+
+	spriteType = {
+		name = "GFX_ability_jap_last_stand"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_jap_last_stand.png"
+	}
+
+	spriteType = {
+		name = "GFX_ability_staff_office_plan"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_staff_office_plan.png"
+	}
+
+	spriteType = {
+		name = "GFX_ability_makeshift_bridges"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_makeshift_bridges.png"
+	}
+
+	spriteType = {
+		name = "GFX_ability_laser"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_force_attack.png"
+	}
+
+	SpriteType = {
+		name = "GFX_ability_force_attack_animated"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_force_attack.png"
+		#effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/abilitylist/TNO_ability_force_attack.png"
+			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			#animationframes = {1 2 3 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ability_siege_artillery_animated"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_siege_artillery.png"
+		#effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/abilitylist/TNO_ability_siege_artillery.png"
+			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			#animationframes = {1 2 3 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ability_glider_planes_animated"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_glider_planes.png"
+		#effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/abilitylist/TNO_ability_glider_planes.png"
+			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			#animationframes = {1 2 3 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ability_extra_supplies_animated"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_extra_supplies.png"
+		#effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/abilitylist/TNO_ability_extra_supplies.png"
+			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			#animationframes = {1 2 3 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ability_naval_assault_plan_animated"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_naval_assault_plan.png"
+		#effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/abilitylist/TNO_ability_naval_assault_plan.png"
+			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			#animationframes = {1 2 3 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ability_requisition_winter_gear_animated"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_requisition_winter_gear.png"
+		#effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/abilitylist/TNO_ability_requisition_winter_gear.png"
+			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			#animationframes = {1 2 3 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ability_probing_attack_animated"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_probing_attack.png"
+		#effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/abilitylist/TNO_ability_probing_attack.png"
+			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			#animationframes = {1 2 3 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ability_chi_force_attack_animated"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_chi_force_attack.png"
+		#effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/abilitylist/TNO_ability_chi_force_attack.png"
+			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			#animationframes = {1 2 3 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ability_last_stand_animated"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_last_stand.png"
+		#effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/abilitylist/TNO_ability_last_stand.png"
+			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			#animationframes = {1 2 3 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ability_jap_last_stand_animated"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_jap_last_stand.png"
+		#effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/abilitylist/TNO_ability_last_stand.png"
+			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			#animationframes = {1 2 3 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ability_staff_office_plan_animated"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_staff_office_plan.png"
+		#effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/abilitylist/TNO_ability_staff_office_plan.png"
+			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			#animationframes = {1 2 3 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ability_makeshift_bridges_animated"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_makeshift_bridges.png"
+		#effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/abilitylist/TNO_ability_makeshift_bridges.png"
+			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			#animationframes = {1 2 3 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ability_laser_animated"
+		texturefile = "gfx/interface/abilitylist/TNO_ability_force_attack.png"
+		#effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/abilitylist/TNO_ability_force_attack.png"
+			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			#animationframes = {1 2 3 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+
+}

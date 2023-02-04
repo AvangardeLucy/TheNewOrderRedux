@@ -1,0 +1,467 @@
+music = {
+	name = "tno_se_german_civil_war"
+	file = "tno_se_german_civil_war.ogg"
+}
+
+music = {
+	name = "tno_se_south_african_war"
+	file = "tno_se_south_african_war.ogg"
+}
+
+music = {
+	name = "tno_se_south_african_war_brazil"
+	file = "tno_se_south_african_war_brazil.ogg"
+}
+
+music = {
+	name = "tno_se_nuclear_war"
+	file = "tno_se_nuclear_war.ogg"
+}
+
+music = {
+	name = "tno_se_japanese_economic_war"
+	file = "tno_se_japanese_economic_war.ogg"
+}
+
+music = {
+	name = "tno_se_indonesian_war"
+	file = "tno_se_indonesian_war.ogg"
+}
+
+music = {
+	name = "tno_se_great_asian_war"
+	file = "tno_se_great_asian_war.ogg"
+}
+
+music = {
+	name = "tno_se_great_asian_war_2"
+	file = "tno_se_great_asian_war_2.ogg"
+}
+
+music = {
+	name = "tno_se_great_asian_war_3"
+	file = "tno_se_great_asian_war_3.ogg"
+}
+
+music = {
+	name = "tno_se_italy_pf"
+	file = "tno_se_italy_pf.ogg"
+}
+
+music = {
+	name = "tno_se_german_italian_invasion"
+	file = "tno_se_german_italian_invasion.ogg"
+}
+
+music = {
+	name = "tno_se_the_yockey_presidency"
+	file = "tno_se_the_yockey_presidency.ogg"
+}
+
+music = {
+	name = "tno_se_mars_landing"
+	file = "tno_se_mars_landing.ogg"
+}
+
+music = {
+	name = "tno_se_shoot_them_down"
+	file = "tno_se_shoot_them_down.ogg"
+}
+
+music = {
+	name = "tno_se_iberian_wars"
+	file = "tno_se_iberian_wars.ogg"
+}
+
+music = {
+	name = "tno_se_oil_crisis"
+	file = "tno_se_oil_crisis.ogg"
+}
+
+music = {
+	name = "tno_se_slave_revolt"
+	file = "tno_se_slave_revolt.ogg"
+}
+
+music = {
+	name = "tno_british_reunification"
+	file = "tno_british_reunification.ogg"
+}
+
+music = {
+	name = "tno_se_zweite_nacht_der_langen_messer"
+	file = "tno_se_june_of_deceit.ogg"
+}
+
+music = {
+	name = "tno_se_june_of_deceit"
+	file = "tno_se_june_of_deceit.ogg"
+}
+
+music = {
+	name = "tno_se_order_44"
+	file = "tno_se_order_44.ogg"
+}
+
+music = {
+	name = "tno_se_german_warlord_era"
+	file = "tno_se_german_warlord_era.ogg"
+}
+
+music = {
+	name = "tno_se_ww3"
+	file = "tno_se_ww3.ogg"
+}
+
+music = {
+	name = "tno_se_huttig_collapse"
+	file = "tno_se_huttig_collapse.ogg"
+}
+
+# Göring supers
+music = {
+	name = "tno_se_falldammerung"
+	file = "tno_se_falldammerung.ogg"
+}
+
+music = {
+	name = "tno_se_fallrockwell"
+	file = "tno_se_fallrockwell.ogg"
+}
+
+music = {
+	name = "tno_se_fallrot"
+	file = "tno_se_fallrot.ogg"
+}
+
+music = {
+	name = "tno_se_fallschwarz"
+	file = "tno_se_fallschwarz.ogg"
+}
+
+# British Reunification supers
+music = {
+	name = "tno_se_british_reunification_birch"
+	file = "tno_se_british_reunification_birch.ogg"
+}
+
+music = {
+	name = "tno_se_british_reunification_chesterton"
+	file = "tno_se_british_reunification_chesterton.ogg"
+}
+
+music = {
+	name = "tno_se_british_reunification_jellicoe"
+	file = "tno_se_british_reunification_jellicoe.ogg"
+}
+
+music = {
+	name = "tno_se_british_reunification_maudling"
+	file = "tno_se_british_reunification_maudling.ogg"
+}
+
+music = {
+	name = "tno_se_british_reunification_stirling"
+	file = "tno_se_british_reunification_stirling.ogg"
+}
+
+music = {
+	name = "tno_se_british_reunification_supermac"
+	file = "tno_se_british_reunification_supermac.ogg"
+}
+
+music = {
+	name = "tno_se_british_reunification_thatcher"
+	file = "tno_se_british_reunification_thatcher.ogg"
+}
+
+music = {
+	name = "tno_se_british_reunification_wilson"
+	file = "tno_se_british_reunification_wilson.ogg"
+}
+
+# Russian Reunification supers
+music = {
+	name = "tno_se_russian_unification_ab_vagner"
+	file = "tno_se_russian_unification_ab_vagner.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_ab_yemelyanov"
+	file = "tno_se_russian_unification_ab_yemelyanov.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_amur"
+	file = "tno_se_russian_unification_amur.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_buryatia_authsoc"
+	file = "tno_se_russian_unification_buryatia_authsoc.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_buryatia_libsoc"
+	file = "tno_se_russian_unification_buryatia_libsoc.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_chita_mikhail"
+	file = "tno_se_russian_unification_chita_mikhail.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_chita_shepunov"
+	file = "tno_se_russian_unification_chita_shepunov.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_father"
+	file = "tno_se_russian_unification_father.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_kemerovo"
+	file = "tno_se_russian_unification_kemerovo.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_komi_bukharina"
+	file = "tno_se_russian_unification_komi_bukharina.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_komi_democratic"
+	file = "tno_se_russian_unification_komi_democratic.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_komi_gumilyov"
+	file = "tno_se_russian_unification_komi_gumilyov.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_komi_serov"
+	file = "tno_se_russian_unification_komi_serov.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_komi_shafa"
+	file = "tno_se_russian_unification_komi_shafa.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_komi_stalina"
+	file = "tno_se_russian_unification_komi_stalina.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_komi_suslov"
+	file = "tno_se_russian_unification_komi_suslov.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_komi_tabby"
+	file = "tno_se_russian_unification_komi_tabby.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_komi_zhdanov"
+	file = "tno_se_russian_unification_komi_zhdanov.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_magadan_matkovsky"
+	file = "tno_se_russian_unification_magadan_matkovsky.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_magadan_petlin"
+	file = "tno_se_russian_unification_magadan_petlin.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_magadan_werbell"
+	file = "tno_se_russian_unification_magadan_werbell.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_novosibirsk_pokryshkin"
+	file = "tno_se_russian_unification_novosibirsk_pokryshkin.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_novosibirsk_shukshin"
+	file = "tno_se_russian_unification_novosibirsk_shukshin.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_omsk"
+	file = "tno_se_russian_unification_omsk.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_prc"
+	file = "tno_se_russian_unification_prc.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_samara_bunya"
+	file = "tno_se_russian_unification_samara_bunya.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_samara_oktan"
+	file = "tno_se_russian_unification_samara_oktan.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_samara_zykov"
+	file = "tno_se_russian_unification_samara_zykov.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_sba_despot"
+	file = "tno_se_russian_unification_sba_despot.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_sba_libsoc"
+	file = "tno_se_russian_unification_sba_libsoc.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_sverdlovsk_batov"
+	file = "tno_se_russian_unification_sverdlovsk_batov.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_sverdlovsk_yeltsin"
+	file = "tno_se_russian_unification_sverdlovsk_yeltsin.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_tomsk_bastillards"
+	file = "tno_se_russian_unification_tomsk_bastillards.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_tomsk_decembrists"
+	file = "tno_se_russian_unification_tomsk_decembrists.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_tomsk_humanists"
+	file = "tno_se_russian_unification_tomsk_humanists.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_tomsk_modernists"
+	file = "tno_se_russian_unification_tomsk_modernists.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_tyumen_kaganovich"
+	file = "tno_se_russian_unification_tyumen_kaganovich.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_tyumen_khrushchev"
+	file = "tno_se_russian_unification_tyumen_khrushchev.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_vyatka_gul"
+	file = "tno_se_russian_unification_vyatka_gul.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_vyatka_shulgin"
+	file = "tno_se_russian_unification_vyatka_shulgin.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_vyatka_solzh"
+	file = "tno_se_russian_unification_vyatka_solzh.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_wrrf_thuka"
+	file = "tno_se_russian_unification_wrrf_thuka.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_wrrf_zhukov"
+	file = "tno_se_russian_unification_wrrf_zhukov.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_yagoda_party"
+	file = "tno_se_russian_unification_yagoda_party.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_yagoda_state"
+	file = "tno_se_russian_unification_yagoda_state.ogg"
+}
+
+music = {
+	name = "tno_se_the_african_devastation"
+	file = "tno_se_the_african_devastation.ogg"
+}
+
+music = {
+	name = "tno_se_african_crisis"
+	file = "tno_se_african_crisis.ogg"
+}
+
+music = {
+	name = "tno_se_west_african_war_1"
+	file = "tno_se_west_african_war_1.ogg"
+}
+
+music = {
+	name = "tno_se_west_african_war_2"
+	file = "tno_se_west_african_war_2.ogg"
+}
+
+music = {
+	name = "tno_se_west_african_war_3"
+	file = "tno_se_west_african_war_3.ogg"
+}
+
+music = {
+	name = "tno_se_jushin_coup"
+	file = "tno_se_jushin_coup.ogg"
+}
+
+music = {
+	name = "tno_se_mutos_coup"
+	file = "tno_se_mutos_coup.ogg"
+}
+
+music = {
+	name = "tno_se_burgundian_spring"
+	file = "tno_se_burgundian_spring.ogg"
+}
+
+music = {	
+	name = "tno_se_french_reclamation"
+	file = "tno_se_french_reclamation.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_pony_bukharin"
+	file = "tno_se_russian_unification_pony_bukharin.ogg"
+}
+
+music = {
+	name = "tno_se_french_reconciliation"
+	file = "tno_se_french_reconciliation.ogg"
+}
+
+music = {
+	name = "tno_se_russian_unification_pony_bukharin_sunset"
+	file = "tno_se_russian_unification_pony_bukharin_sunset.ogg"
+}

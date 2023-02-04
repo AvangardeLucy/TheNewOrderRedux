@@ -1,0 +1,652 @@
+music_station = "tno_superevents"
+
+music = {
+	song = "tno_se_german_civil_war"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_south_african_war"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_south_african_war_brazil"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_nuclear_war"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_japanese_economic_war"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_indonesian_war"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_great_asian_war"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_great_asian_war_2"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_great_asian_war_3"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_italy_pf"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_german_italian_invasion"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_the_yockey_presidency"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_mars_landing"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_shoot_them_down"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_iberian_wars"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_oil_crisis"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_slave_revolt"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_british_reunification"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_zweite_nacht_der_langen_messer"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_june_of_deceit"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_order_44"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_german_warlord_era"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_ww3"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_huttig_collapse"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_falldammerung"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_fallrockwell"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_fallrot"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_fallschwarz"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_british_reunification_birch"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_british_reunification_chesterton"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_british_reunification_jellicoe"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_british_reunification_maudling"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_british_reunification_stirling"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_british_reunification_supermac"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_british_reunification_thatcher"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_british_reunification_wilson"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_ab_vagner"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_ab_yemelyanov"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_amur"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_buryatia_authsoc"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_buryatia_libsoc"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_chita_mikhail"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_chita_shepunov"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_father"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_kemerovo"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_komi_bukharina"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_komi_democratic"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_komi_gumilyov"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_komi_serov"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_komi_shafa"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_komi_stalina"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_komi_suslov"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_komi_tabby"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_komi_zhdanov"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_magadan_matkovsky"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_magadan_petlin"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_magadan_werbell"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_novosibirsk_pokryshkin"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_novosibirsk_shukshin"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_omsk"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_prc"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_samara_bunya"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_samara_oktan"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_samara_zykov"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_sba_despot"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_sba_libsoc"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_sverdlovsk_batov"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_sverdlovsk_yeltsin"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_tomsk_bastillards"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_tomsk_decembrists"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_tomsk_humanists"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_tomsk_modernists"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_tyumen_kaganovich"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_tyumen_khrushchev"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_vyatka_gul"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_vyatka_shulgin"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_vyatka_solzh"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_wrrf_thuka"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_wrrf_zhukov"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_yagoda_party"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_yagoda_state"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_the_african_devastation"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_african_crisis"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_west_african_war_1"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_west_african_war_2"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_west_african_war_3"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_jushin_coup"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_mutos_coup"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_burgundian_spring"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_french_reclamation"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_pony_bukharin"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_french_reconciliation"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "tno_se_russian_unification_pony_bukharin_sunset"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
