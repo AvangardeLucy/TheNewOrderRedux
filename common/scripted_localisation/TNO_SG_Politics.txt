@@ -584,6 +584,10 @@ defined_text = {
 		localization_key = fascism_corporatism_subtype
 	}
 	text = {
+		trigger = { has_country_leader_ideology = fascism_clerical_fascism_subtype }
+		localization_key = fascism_clerical_fascism_subtype
+	}
+	text = {
 		trigger = { has_country_leader_ideology = fascism_sansepolcrismo_subtype }
 		localization_key = fascism_sansepolcrismo_subtype
 	}
@@ -684,10 +688,6 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = national_socialism_idiosyncratic_nazism_subtype }
 		localization_key = national_socialism_idiosyncratic_nazism_subtype
-	}
-	text = {
-		trigger = { has_country_leader_ideology = national_socialism_clerical_fascism_subtype }
-		localization_key = national_socialism_clerical_fascism_subtype
 	}
 	text = {
 		trigger = { has_country_leader_ideology = national_socialism_stratocratic_nazism_subtype }

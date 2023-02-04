@@ -186,8 +186,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/esoteric_nazism_imperial_cult_subtype.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_national_socialism_clerical_fascism_subtype"
-		texturefile = "gfx/interface/ideologies/national_socialism_clerical_fascism_subtype.png"
+		name = "GFX_ideology_fascism_clerical_fascism_subtype"
+		texturefile = "gfx/interface/ideologies/fascism_clerical_fascism_subtype.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_esoteric_nazism_agrarian_spartanism_subtype"

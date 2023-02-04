@@ -9,7 +9,7 @@ characters = {
 		}
 		country_leader= {
 			desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
-			ideology = national_socialism_clerical_fascism_subtype
+			ideology = fascism_clerical_fascism_subtype
 			traits = { the_vozhd_of_the_russians }
 			expire ="1999.1.1.1"
 			id = -1

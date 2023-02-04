@@ -1314,7 +1314,7 @@ characters = {
 		}
 		country_leader = {
 			expire = "1965.7.13"
-			ideology = national_socialism_clerical_fascism_subtype
+			ideology = fascism_clerical_fascism_subtype
 			traits = { }
 			id = -1
 		}

@@ -19,7 +19,7 @@ country_event = { #Tiso dies during the GCW, Štefan takes over
 		retire_character = SLO_Jozef_Tiso
 		SLO_Stefan_Tiso = {
 			promote_character = {
-				ideology = national_socialism_clerical_fascism_subtype
+				ideology = fascism_clerical_fascism_subtype
 			}
 		}
 		remove_ideas = SLO_Stefan_Tiso_hog

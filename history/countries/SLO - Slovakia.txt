@@ -249,7 +249,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = national_socialism
+	ruling_party = fascism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -264,8 +264,8 @@ set_popularities = {
 	conservatism = 4
 	paternalism = 11
 	despotism = 0
-	fascism = 27
-	national_socialism = 51
+	fascism = 78
+	national_socialism = 0
 	ultranationalism = 0
 	
 }

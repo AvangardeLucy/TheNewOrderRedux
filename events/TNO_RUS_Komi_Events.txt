@@ -10772,7 +10772,7 @@ country_event = {
 		}
 		promote_character = {
 			character = KOM_Sergey_Taboritsky
-			ideology = national_socialism_clerical_fascism_subtype
+			ideology = fascism_clerical_fascism_subtype
 		}
 		RUS_Smuta_Disable = yes
 	}

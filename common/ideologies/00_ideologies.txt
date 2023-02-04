@@ -360,6 +360,7 @@ ideologies = {
 			fascism_reformed_national_socialism_subtype = { can_be_randomly_selected = no }
 			fascism_corporatism_subtype = { can_be_randomly_selected = no }
 			fascism_corporate_statism_subtype = { can_be_randomly_selected = no }
+			fascism_clerical_fascism_subtype = { can_be_randomly_selected = no }
 			fascism_sansepolcrismo_subtype = { can_be_randomly_selected = no }
 			fascism_fascist_mysticism_subtype = { can_be_randomly_selected = no }
 			fascism_national_syndicalism_subtype = { can_be_randomly_selected = no }
@@ -399,7 +400,6 @@ ideologies = {
 
 			national_socialism_ariocriollismo_subtype = { can_be_randomly_selected = no }
 			national_socialism_idiosyncratic_nazism_subtype = { can_be_randomly_selected = no }
-			national_socialism_clerical_fascism_subtype = { can_be_randomly_selected = no }
 			national_socialism_stratocratic_nazism_subtype = { can_be_randomly_selected = no }
 			national_socialism_technocratic_nazism_subtype = { can_be_randomly_selected = no }
 			national_socialism_stratocratic_corporatism_subtype = { can_be_randomly_selected = no }

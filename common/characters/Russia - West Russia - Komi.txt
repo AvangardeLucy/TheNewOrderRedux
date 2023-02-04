@@ -340,7 +340,7 @@ characters = {
 		country_leader = {
 			desc = "POLITICS_SERGEY_TABORITSKY_DESC"
 			expire = "1999.1.1"
-			ideology = national_socialism_clerical_fascism_subtype
+			ideology = fascism_clerical_fascism_subtype
 			traits = { black_regent }
 			id = -1
 		}

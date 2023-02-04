@@ -1002,12 +1002,12 @@ country_event = { # Qing
 				country_leader = {
 					desc = "POLITICS_PUJI_1644_DESC"
 					expire = "1999.1.1"
-					ideology = national_socialism_clerical_fascism_subtype
+					ideology = fascism_clerical_fascism_subtype
 					traits = { }
 					id = -1
 				}
 			}
-			promote_character = national_socialism_clerical_fascism_subtype
+			promote_character = fascism_clerical_fascism_subtype
 			add_country_leader_role = {
 				country_leader = {
 					desc = "POLITICS_PUJI_1644_DESC"

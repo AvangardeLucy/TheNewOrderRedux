@@ -9,7 +9,7 @@ characters = {
 		}
 		country_leader = {
 			desc = "POLITICS_JOZEF_TISO_DESC"
-			ideology = national_socialism_clerical_fascism_subtype
+			ideology = fascism_clerical_fascism_subtype
 			traits = { }
 			expire = "1990.1.1.1"
 			id = -1
@@ -25,7 +25,7 @@ characters = {
 		}
 		country_leader = {
 			desc = "POLITICS_STEFAN_TISO_DESC"
-			ideology = national_socialism_clerical_fascism_subtype
+			ideology = fascism_clerical_fascism_subtype
 			traits = { }
 			expire = "1990.1.1.1"
 			id = -1

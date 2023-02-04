@@ -21,7 +21,7 @@ country_event = { # Ljotic dies
 				character = SER_Collapsed_Authority
 				country_leader = {
 					expire = "1999.1.1.1"
-					ideology = national_socialism_clerical_fascism_subtype
+					ideology = fascism_clerical_fascism_subtype
 					traits = { }
 				}
 				promote_leader = yes

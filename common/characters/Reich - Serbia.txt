@@ -9,7 +9,7 @@ characters = {
 		}
 		country_leader = {
 			desc = "POLITICS_DIMITRIJE_LJOTIC_DESC"
-			ideology = national_socialism_clerical_fascism_subtype
+			ideology = fascism_clerical_fascism_subtype
 			traits = { }
 			expire = "1990.1.1.1"
 			id = -1
@@ -133,7 +133,7 @@ characters = {
 		}
 		country_leader = {
 			desc = "POLITICS_KONSTANTIN_MUSICKI_DESC"
-			ideology = national_socialism_clerical_fascism_subtype
+			ideology = fascism_clerical_fascism_subtype
 			traits = { }
 			expire = "1990.1.1.1"
 			id = -1

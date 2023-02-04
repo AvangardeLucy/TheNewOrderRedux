@@ -85,7 +85,7 @@ country_event = { # The ustase win
 			promote_leader = yes
 			country_leader = {
 				expire = "1999.1.1"
-				ideology = national_socialism_clerical_fascism_subtype
+				ideology = fascism_clerical_fascism_subtype
 				id = -1
 			}
 		}
