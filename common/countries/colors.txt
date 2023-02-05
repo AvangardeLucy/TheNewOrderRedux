@@ -2288,6 +2288,10 @@ DDR = {
 	color = rgb { 148 16 16 } 
 	color_ui = rgb { 148 16 16 }
 }
+MPF = {
+	color = rgb { 62 120 160 }
+	color_ui = rgb { 62 120 160 }
+}
 # Dynamic Tags
 C00 = {
 	color = rgb { 0 0 0 }

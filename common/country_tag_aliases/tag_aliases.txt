@@ -62,3 +62,8 @@ MOS = { #Moskowien
 
 	#fallback = MCW
 }
+
+BSB = { #Bogi Smerti
+	original_tag = MCW
+	has_cosmetic_tag = MCW_bogi_smerti
+}

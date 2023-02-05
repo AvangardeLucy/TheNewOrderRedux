@@ -1228,7 +1228,7 @@ country_event = { #Correct Misguided Teachings
 			popularity = -0.075
 		}
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.03
 		}
 		if = {
@@ -1266,7 +1266,7 @@ country_event = { #Cast Down Social Injustice
 		clr_country_flag = SBA_resolution2_unavailable
 		add_stability = -0.05
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = -0.02
 		}
 		add_popularity = {
@@ -1321,7 +1321,7 @@ country_event = { #Enshrine Material Rights
 		ai_chance = { factor = 2 }
 		TNO_improve_poverty_low = yes
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.025
 		}
 	}
@@ -1378,7 +1378,7 @@ country_event = { #Rural-Urban Split
 		ai_chance = { factor = 2 }
 		add_stability = -0.05
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.05
 		}
 	}
@@ -1416,7 +1416,7 @@ country_event = { #Honors for Humanity
 		add_political_power = -20
 		TNO_improve_religious_rights_policy_effectiveness_med = yes
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.05
 		}
 	}
@@ -1446,7 +1446,7 @@ country_event = { #Present the Cure
 		ai_chance = { factor = 1 }
 		add_ideas = SBA_present_the_cure_low
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.03
 		}
 	}
@@ -1501,7 +1501,7 @@ country_event = { #Encourage the Kostinsty
 		TNO_worsen_max_workhours_policy_effectiveness_high = yes
 		TNO_improve_max_workhours_policy_effectiveness_monthly_med = yes
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.05
 		}
 	}
@@ -1611,7 +1611,7 @@ country_event = { #Inspire Progressive Thought
 		name = SBA.69.a
 		ai_chance = { factor = 1 }
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.025
 		}
 	}
@@ -1984,7 +1984,7 @@ country_event = { #Kostinsty Demands
 		multiply_variable = { RUS_siberian_plan_resources = 0.75 }
 		multiply_variable = { RUS_siberian_plan_efficiency_gain = 0.8 }
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.05
 		}
 		if = {
@@ -2002,7 +2002,7 @@ country_event = { #Kostinsty Demands
 		add_political_power = 50
 		add_stability = -0.05
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = -0.1
 		}
 		if = {
@@ -2034,7 +2034,7 @@ country_event = { #Novosibirsk secedes
 		name = SBA.94.a
 		ai_chance = { factor = 1 }
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = -0.05
 		}
 		hidden_effect = {
@@ -2107,7 +2107,7 @@ country_event = { #oh god oh fuck
 		ai_chance = { factor = 1 }
 		custom_effect_tooltip = SBA_stepanov_babyrage_tt
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.05
 		}
 		activate_mission = SBA_stepanov_invasion
@@ -2128,7 +2128,7 @@ country_event = { #Tomsk secedes
 		name = SBA.96.a
 		ai_chance = { factor = 1 }
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = -0.05
 		}
 		hidden_effect = {
@@ -2200,7 +2200,7 @@ country_event = { #oh god oh fuck #2
 		ai_chance = { factor = 1 }
 		custom_effect_tooltip = SBA_stepanov_babyrage_tt
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.05
 		}
 		activate_mission = SBA_stepanov_invasion
@@ -2767,7 +2767,7 @@ country_event = { #stepanov fucks off
 					name = SBA_despotism_party
 				}
 				set_party_name = {
-					ideology = socialist
+					ideology = anarchism
 					long_name = SBA_socialist_party_long
 					name = SBA_socialist_party
 				}
@@ -2905,7 +2905,7 @@ country_event = { #siuda fucks off
 					name = SBA_despotism_party
 				}
 				set_party_name = {
-					ideology = socialist
+					ideology = anarchism
 					long_name = SBA_socialist_party_long
 					name = SBA_socialist_party
 				}
@@ -3592,7 +3592,7 @@ country_event = { #
 		name = SBA_PowerStruggle.10.a
 		ai_chance = { factor = 1 }
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.02
 		}
 		hidden_effect = { country_event = { id = SBA_PowerStruggle.11 days = 9 } }
@@ -4149,7 +4149,7 @@ country_event = { #
 		name = SBA_PowerStruggle.32.a
 		ai_chance = { factor = 1 }
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = -0.03
 		}
 		hidden_effect = { country_event = { id = SBA_PowerStruggle.33 days = 9 } }
@@ -4669,7 +4669,7 @@ country_event = { #
 		add_ideas = SBA_Ivan_Stepanov_hog
 		set_country_flag = SBA_STEPANOV_COUP
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = -0.2
 		}
 		add_stability = 0.2
@@ -4743,7 +4743,7 @@ country_event = { #
 		ai_chance = { factor = 1 }
 		add_stability = 0.05
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.1
 		}
 	}
@@ -4894,7 +4894,7 @@ country_event = { #As You Command
 		TNO_improve_agriculture_med = yes
 		add_ideas = SBA_earning_their_liberation
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = -0.1
 		}
 		add_stability = -0.1
@@ -5201,7 +5201,7 @@ country_event = { #Norilsk
 		add_to_variable = { SBANukesStupidity = 1 }
 		add_political_power = 100
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.025
 		}
 	}
@@ -5269,7 +5269,7 @@ country_event = { #Yakutsk
 		add_to_variable = { SBANukesStupidity = -3 }
 		add_political_power = -25
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.025
 		}
 	}
@@ -5358,7 +5358,7 @@ country_event = { #Novosibirsk
 		add_to_variable = { SBANukesCourage = -1 }
 		add_to_variable = { SBANukesStupidity = -2 }
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.025
 		}
 	}
@@ -5485,7 +5485,7 @@ country_event = { #Successful(ish) nuke test
 		add_political_power = 100
 		add_stability = 0.05
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.1
 		}
 	}
@@ -5602,7 +5602,7 @@ country_event = { #
 		ai_chance = { factor = 1 }
 		add_stability = -0.1
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = -0.1
 		}
 		add_war_support = 0.1
@@ -5628,7 +5628,7 @@ country_event = { #
 		ai_chance = { factor = 1 }
 		add_stability = 0.2
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.25
 		}
 	}
@@ -5637,7 +5637,7 @@ country_event = { #
 		ai_chance = { factor = 1 }
 		add_stability = 0.1
 		add_popularity = {
-			ideology = socialist
+			ideology = anarchism
 			popularity = 0.15
 		}
 	}

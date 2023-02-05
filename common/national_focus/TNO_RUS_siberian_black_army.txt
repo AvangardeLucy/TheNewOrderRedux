@@ -322,7 +322,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SBA_second_incentivize_qualified_personnel"
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.03
 			}
 			TNO_improve_industrial_expertise_low = yes
@@ -382,7 +382,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SBA_second_assist_village_schools"
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.03
 			}
 			TNO_improve_academic_base_low = yes
@@ -865,7 +865,7 @@ focus_tree = {
 			set_temp_variable = { Y = -25 }
 			RUS_Smuta_Chaos_Add_Y = yes
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.03
 			}
 			set_temp_variable = {econ_centralization_temp = -2}
@@ -947,7 +947,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SBA_second_roads_for_grain"
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.03
 			}
 			random_owned_controlled_state = {
@@ -1014,7 +1014,7 @@ focus_tree = {
 			set_temp_variable = { Y = -25 }
 			RUS_Smuta_Chaos_Add_Y = yes
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.03
 			}
 			TNO_improve_industrial_expertise_low = yes
@@ -1351,7 +1351,7 @@ focus_tree = {
 				days = 1
 			}
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.075
 			}
 			add_stability = 0.10
@@ -1518,7 +1518,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SBA_regional_faith_in_the_newly_integrated"
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.03
 			}
 			add_popularity = {
@@ -2236,7 +2236,7 @@ focus_tree = {
 			add_political_power = 25
 			TNO_improve_academic_base_med = yes
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.03
 			}
 		}
@@ -2459,7 +2459,7 @@ focus_tree = {
 			add_to_variable = { SBA_IA_5 = -1 }
 			add_to_variable = { SBA_IA_6 = -1 }
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.075
 			}
 			TNO_improve_agriculture_low = yes
@@ -2529,7 +2529,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SBA_regional_maintain_the_flawless_legacy"
 			add_stability = 0.075
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.05
 			}
 			country_event = {
@@ -2557,7 +2557,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SBA_regional_welcome_the_rehabilitated"
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = -0.05
 			}
 			TNO_improve_army_professionalism_med = yes
@@ -2825,7 +2825,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SBA_regional_military_egalitarianism"
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.05
 			}
 			country_event = {
@@ -2935,7 +2935,7 @@ focus_tree = {
 			add_to_variable = { SBA_MP_1 = -1 }
 			add_to_variable = { SBA_MP_5 = -1 }
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.075
 			}
 			swap_ideas = {
@@ -3103,7 +3103,7 @@ focus_tree = {
 				}
 			}
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.03
 			}
 		}
@@ -3172,7 +3172,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SBA_power_struggle_siuda_winning_a_game_i_was_never_playing"
 			add_stability = -0.05
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.03
 			}
 			custom_effect_tooltip = SBA_power_struggle_siuda_winning_a_game_i_was_never_playing_tt
@@ -3382,7 +3382,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SBA_power_struggle_siuda_is_there_anything_she_cant_do"
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.03
 			}
 			country_event = { id = SBA_PowerStruggle.24 }
@@ -3484,7 +3484,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SBA_power_struggle_stepanov_the_imperial_realm"
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = -0.05
 			}
 			country_event = { id = SBA_PowerStruggle.40 }
@@ -3704,7 +3704,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SBA_power_struggle_stepanov_cut_the_head_off_the_snake"
 			add_stability = -0.025
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = -0.05
 			}
 			country_event = { id = SBA_PowerStruggle.48 }
@@ -3865,7 +3865,7 @@ focus_tree = {
 				}
 			}
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.05
 			}
 			country_event = {
@@ -3907,7 +3907,7 @@ focus_tree = {
 			}
 			add_stability = 0.05
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = -0.05
 			}
 			country_event = {
@@ -3965,7 +3965,7 @@ focus_tree = {
 			add_to_variable = { SBA_CI_11 = -1 }
 			add_stability = 0.1
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.1
 			}
 			add_ideas = SBA_decentralisation
@@ -4004,7 +4004,7 @@ focus_tree = {
 			add_to_variable = { SBA_CI_14 = 1 }
 			add_stability = 0.15
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = -0.1
 			}
 			set_temp_variable = {econ_centralization_temp = -5}
@@ -4090,7 +4090,7 @@ focus_tree = {
 				add_idea = SBA_black_army_in_shambles
 			}
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.1
 			}
 			country_event = {
@@ -4202,7 +4202,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SBA_superregional_libsoc_empower_the_general_assembly"
 			TNO_improve_army_professionalism_med = yes
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.05
 			}
 			add_stability = 0.05
@@ -4551,7 +4551,7 @@ focus_tree = {
 			set_variable = { SBANukesCourage = 0 }
 			set_variable = { SBANukesStupidity = 0 }
 			add_popularity = {
-				ideology = socialist
+				ideology = anarchism
 				popularity = 0.05
 			}
 			country_event = {

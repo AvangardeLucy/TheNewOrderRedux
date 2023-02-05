@@ -149,63 +149,62 @@ division_template = {
 units = {
   division = {
     name = "1. Tankoviy Batalion"
-    location = "11236"
-    division_template = "Tankoviy Batalion"
+    location = 9345"Tankoviy Batalion"
     start_experience_factor = 0.3
     start_equipment_factor = 1
   }
   division = {
     name = "1. Militsia"
-    location = "366"
+    location = 3077
     division_template = "Militsia"
     start_experience_factor = 0.7
     start_equipment_factor = 1
   }
   division = {
     name = "2. Militsia"
-    location = 6414
+    location = "6022"
     division_template = "Militsia"
     start_experience_factor = 0.7
     start_equipment_factor = 1
   }
   division = {
     name = "3. Militsia"
-    location = "6380"
+    location = 6356
     division_template = "Militsia"
     start_experience_factor = 0.7
     start_equipment_factor = 1
   }
   division = {
     name = "1. Pehotniy Polk"
-    location = 301
+    location = "6245"
     division_template = "Pehotniy Polk"
     start_experience_factor = 0.3
     start_equipment_factor = 1
   }
   division = {
     name = "1. Artdivizion"
-    location = 9278
+    location = "231"
     division_template = "Artdivizion"
     start_experience_factor = 0.5
     start_equipment_factor = 1
   }
   division = {
     name = "1. Batalion Okhrany"
-    location = "9278"
+    location = 6358
     division_template = "Batalion Okhrany"
     start_experience_factor = 0.5
     start_equipment_factor = 1
   }
   division = {
     name = "2. Batalion Okhrany"
-    location = "3358"
+    location = 9046
     division_template = "Batalion Okhrany"
     start_experience_factor = 0.5
     start_equipment_factor = 1
   }
   division = {
     name = "3. Batalion Okhrany"
-    location = 344
+    location = 11039
     division_template = "Batalion Okhrany"
     start_experience_factor = 0.5
     start_equipment_factor = 1

@@ -582,3 +582,4 @@ ZZZ = "countries/anarchy.txt" #ANARCHY SHOULD BE THE LAST TAG
 
 ###TNO REDUX###
 DDR = "countries/Red Germany.txt"
+MPF = "countries/continents/Asia.txt"

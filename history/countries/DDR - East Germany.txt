@@ -3,7 +3,7 @@
 oob = "DDR_1962"
 
 # Vacant
-#recruit_character = GER_Generic_Vacant
+recruit_character = DDR_Generic_Vacant
 
 # Leaders
 recruit_character = DDR_markus_wolf

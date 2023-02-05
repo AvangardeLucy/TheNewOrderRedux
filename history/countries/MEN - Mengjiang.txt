@@ -473,3 +473,7 @@ set_variable = { tno_military_supervision_effectiveness = 37 }
 set_variable = { tno_training_effectiveness = 57 }
 set_variable = { tno_draft_exemptions_effectiveness = 34 }
 
+declare_war_on = {
+	target = MPF
+	type = annex_everything
+}

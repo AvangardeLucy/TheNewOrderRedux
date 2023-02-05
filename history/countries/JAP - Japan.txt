@@ -1197,3 +1197,7 @@ if = {
 		producer = JAP
 	}
 }
+
+set_temp_variable = { target = MEN }
+set_temp_variable = { number = 2 }
+TNO_set_num_volunteers = yes

@@ -569,5 +569,16 @@ characters = {
 			logistics_skill = 2
 		}
 	}
+#Dynamic Countries
+	BSB_antikhrist = {
+		name = BSB_antikhrist
+		portraits = { civilian = { large = "gfx/leaders/moskowien/Portrait_BSB_Antikhrist1.dds" } }
+		country_leader = {
+			desc = "POLITICS_ANTIKRHIST_DESC"
+			ideology = ultranationalism_fundamentalism_subtype
+			expire = "1989.1.1.1"
+			id = -1
+		}
+	}
 
 }

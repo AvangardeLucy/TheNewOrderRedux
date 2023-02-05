@@ -2638,3 +2638,7 @@ HOL_DDR = {
 	color = rgb { 148 16 16 }
 	color_ui = rgb { 148 16 16 }
 }
+MCW_bogi_smerti = {
+	color = rgb { 42 43 66 }
+	color_ui = rgb { 42 43 66 }
+}
