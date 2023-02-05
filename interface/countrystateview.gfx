@@ -175,49 +175,49 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_building_cover"
-		textureFile = "gfx/interface/buildings/building_cover.dds"
+		textureFile = "gfx/interface/buildings/replace/building_cover.png"
 	}
 	spriteType = {
 		name = "GFX_building_cover_bottom"
-		textureFile = "gfx/interface/buildings/building_cover_bottom.dds"
+		textureFile = "gfx/interface/buildings/replace/building_cover_bottom.png"
 	}
 	spriteType = {
 		name = "GFX_buildings_strip_crt"
-		textureFile = "gfx/interface/buildings/building_icon_strip_crt.dds"
+		textureFile = "gfx/interface/buildings/replace/building_icon_strip_crt.png"
 		noOfFrames = 23
 	}
 
 	spriteType = {
 		name = "GFX_buildings_strip_metal"
-		textureFile = "gfx/interface/buildings/building_icon_strip_metal.dds"
+		textureFile = "gfx/interface/buildings/replace/building_icon_strip_metal.png"
 		noOfFrames = 23
 	}
 
 	spriteType = {
 		name = "GFX_buildings_strip"
-		textureFile = "gfx/interface/buildings/building_icon_strip_metal.dds"
+		textureFile = "gfx/interface/buildings/replace/building_icon_strip_metal.png"
 		noOfFrames = 23
 	}
 
 	spriteType = {
 		name = "GFX_build_slot_bg"
-		textureFile = "gfx/interface/buildings/build_slot_bg.dds"
+		textureFile = "gfx/interface/buildings/replace/build_slot_bg.png"
 	}
 
 	spriteType = {
 		name = "GFX_no_building"
-		textureFile = "gfx/interface/buildings/building_no_building.dds"
+		textureFile = "gfx/interface/buildings/replace/building_no_building.png"
 		noOfFrames = 2
 	}
 
 	spriteType = {
 		name = "GFX_building_intel_icon"
-		textureFile = "gfx/interface/buildings/building_intel_icon.dds"
+		textureFile = "gfx/interface/buildings/replace/building_intel_icon.png"
 	}
 
 	spriteType = {
 		name = "GFX_building_status_overlay"
-		textureFile = "gfx/interface/buildings/building_status_overlay.dds"
+		textureFile = "gfx/interface/buildings/replace/building_status_overlay.png"
 		noOfFrames = 3
 	}
 

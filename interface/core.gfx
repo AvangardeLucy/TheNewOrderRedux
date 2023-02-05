@@ -655,24 +655,24 @@ spriteTypes = {
 ## DO ONES BELOW
 	spriteType = {
 		name = "GFX_icon_button_46x46"
-		texturefile = "gfx/interface/buttons/icon_button_46x46.dds"
+		texturefile = "gfx/interface/buttons/TNO_icon_button_46x46.png"
 		noOfFrames = 2
 	}
 	
 	spriteType = {
 		name = "GFX_icon_button_32x32"
-		texturefile = "gfx/interface/buttons/icon_button_32x32.dds"
+		texturefile = "gfx/interface/buttons/TNO_icon_button_32x32.png"
 		noOfFrames = 2
 	}	
 
 	spriteType = {
 		name = "GFX_edit_shortcuts_button"
-		texturefile = "gfx/interface/buttons/edit_shortcuts_button.dds"
+		texturefile = "gfx/interface/buttons/TNO_edit_shortcuts_button.png"
 	}	
 
 	spriteType = {
 		name = "GFX_quick_add_button"
-		texturefile = "gfx/interface/buttons/quick_add_button.dds"
+		texturefile = "gfx/interface/buttons/TNO_quick_add_button.png"
 	}
 }
 

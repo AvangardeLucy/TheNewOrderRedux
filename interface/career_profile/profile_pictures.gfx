@@ -1,296 +1,296 @@
 spriteTypes = {
 	SpriteType = {
 		name = "GFX_profile_picture_goal_continuous_armor_production"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/goal_continuous_armor_production.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/goal_continuous_armor_production.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_goal_continuous_air_production"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/goal_continuous_air_production.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/goal_continuous_air_production.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_goal_generic_air_bomber"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/goal_generic_air_bomber.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/goal_generic_air_bomber.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_eng_special_air_service"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_eng_special_air_service.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_eng_special_air_service.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_usa_tank_destroyer_doctrine"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_usa_tank_destroyer_doctrine.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_usa_tank_destroyer_doctrine.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_GRE_hellenic_armed_forces"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_GRE_hellenic_armed_forces.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_GRE_hellenic_armed_forces.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_BUL_bulgarian_administration_of_the_balkans"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_BUL_bulgarian_administration_of_the_balkans.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_BUL_bulgarian_administration_of_the_balkans.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_goal_generic_air_fighter"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/goal_generic_air_fighter.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/goal_generic_air_fighter.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_chi_flying_tigers"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_chi_flying_tigers.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_chi_flying_tigers.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_GRE_a_long_and_proud_tradition"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_GRE_a_long_and_proud_tradition.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_GRE_a_long_and_proud_tradition.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_chi_legislative_yuan"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_chi_legislative_yuan.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_chi_legislative_yuan.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_GRE_reviving_the_spartan_warrior_spirit"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_GRE_reviving_the_spartan_warrior_spirit.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_GRE_reviving_the_spartan_warrior_spirit.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_eng_imperial_federation"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_eng_imperial_federation.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_eng_imperial_federation.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_usa_recruit_the_free_corps"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_usa_recruit_the_free_corps.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_usa_recruit_the_free_corps.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_CZE_military_aeronautical_institute"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_cze_military_aeronautical_institute.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_cze_military_aeronautical_institute.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_eng_concessions_to_the_trade_unions"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_eng_concessions_to_the_trade_unions.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_eng_concessions_to_the_trade_unions.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_YUG_banovina_of_croatia"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_yug_banovina_of_croatia.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_yug_banovina_of_croatia.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_jap_zero"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_jap_zero.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_jap_zero.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_chi_whampoa_military_academy"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_chi_whampoa_military_academy.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_chi_whampoa_military_academy.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_GRE_an_orthodox_state"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_GRE_an_orthodox_state.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_GRE_an_orthodox_state.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_mex_soldaderas"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_mex_soldaderas.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_mex_soldaderas.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_por_the_fifth_empire"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_por_the_fifth_empire.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_por_the_fifth_empire.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_usa_escort_fighters"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_usa_escort_fighters.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_usa_escort_fighters.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_focus_fra_national_resistance_council"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_focus_fra_national_resistance_council.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_focus_fra_national_resistance_council.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_SOV_the_road_of_life"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_SOV_the_road_of_life.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_SOV_the_road_of_life.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_hol_daf"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_hol_daf.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_hol_daf.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_RAJ_indian_gurkhas"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_RAJ_indian_gurkhas.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_RAJ_indian_gurkhas.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_ger_great_red_menace"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_ger_great_red_menace.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_ger_great_red_menace.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_mex_caudillo_private_armies"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_mex_caudillo_private_armies.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_mex_caudillo_private_armies.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_focus_fra_orleans_restoration"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_focus_fra_orleans_restoration.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_focus_fra_orleans_restoration.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_ger_return_of_the_kaiser"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_ger_return_of_the_kaiser.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_ger_return_of_the_kaiser.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_fra_regiment_normandie"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_fra_regiment_normandie.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_fra_regiment_normandie.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_focus_fra_liberte_egalite_solidarite"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_focus_fra_liberte_egalite_solidarite.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_focus_fra_liberte_egalite_solidarite.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_LIT_restore_order"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_LIT_restore_order.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_LIT_restore_order.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_GRE_a_land_of_mountains"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_GRE_a_land_of_mountains.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_GRE_a_land_of_mountains.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_RAJ_lions_of_the_great_war"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_RAJ_lions_of_the_great_war.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_RAJ_lions_of_the_great_war.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_LIT_claim_livonia"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_LIT_claim_livonia.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_LIT_claim_livonia.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_hol_continue_the_war_in_batavia"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_hol_continue_the_war_in_batavia.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_hol_continue_the_war_in_batavia.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_SOV_proclaim_soviet_hegemony"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_SOV_proclaim_soviet_hegemony.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_SOV_proclaim_soviet_hegemony.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_SOV_mobilization_plan"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_SOV_mobilization_plan.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_SOV_mobilization_plan.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_POL_nationalist_education"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_POL_nationalist_education.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_POL_nationalist_education.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_ger_revive_kaiserreich"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_ger_revive_kaiserreich.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_ger_revive_kaiserreich.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_usa_reestablish_the_gold_standard"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_usa_reestablish_the_gold_standard.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_usa_reestablish_the_gold_standard.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_mex_privatisation"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_mex_privatisation.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_mex_privatisation.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_SOV_patriarch_of_all_russia"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_SOV_patriarch_of_all_russia.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_SOV_patriarch_of_all_russia.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_POL_belarus_army"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_POL_belarus_army.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_POL_belarus_army.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_SOV_rebuild_the_savior_cathedral"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_SOV_rebuild_the_savior_cathedral.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_SOV_rebuild_the_savior_cathedral.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_spa_save_the_alcazar"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_spa_save_the_alcazar.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_spa_save_the_alcazar.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_usa_build_the_pentagon"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_usa_build_the_pentagon.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_usa_build_the_pentagon.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_SOV_my_brothers_keeper"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_SOV_my_brothers_keeper.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_SOV_my_brothers_keeper.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_hol_united_netherlands"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_hol_united_netherlands.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_hol_united_netherlands.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_eng_god_save_the_king"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_eng_god_save_the_king.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_eng_god_save_the_king.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_BUL_consolidate_the_third_bulgarian_state"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_BUL_consolidate_the_third_bulgarian_state.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_BUL_consolidate_the_third_bulgarian_state.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_SOV_builder_of_the_red_army"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_SOV_builder_of_the_red_army.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_SOV_builder_of_the_red_army.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_jap_pacific_guardian"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_jap_pacific_guardian.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_jap_pacific_guardian.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_EST_national_pride_in_finland"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_EST_national_pride_in_finland.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_EST_national_pride_in_finland.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_SOV_the_glory_of_the_red_army_communism"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_SOV_the_glory_of_the_red_army_communism.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_SOV_the_glory_of_the_red_army_communism.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_eng_the_sun_never_sets"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_eng_the_sun_never_sets.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_eng_the_sun_never_sets.png"
 	}
 
 	SpriteType = {
 		name = "GFX_profile_picture_focus_SOV_international_union_of_soviet_republics"
-		texturefile = "gfx/interface/career_profile/profile_pictures/goals/focus_SOV_international_union_of_soviet_republics.dds"
+		texturefile = "gfx/interface/career_profile/replace/profile_pictures/goals/focus_SOV_international_union_of_soviet_republics.png"
 	}
 }

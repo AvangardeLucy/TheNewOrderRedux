@@ -12,8 +12,8 @@ spriteTypes = {
 		name = "GFX_subject_progressbar_long"
 		color = { 1.0 1.0 1.0 }
 		colortwo = { 1.0 1.0 1.0 }
-		textureFile1 = "gfx/interface/autonomy/subject_progress_bar_long.dds"
-		textureFile2 = "gfx/interface/autonomy/subject_progress_bar_long_bg.dds"
+		textureFile1 = "gfx/interface/autonomy/replace/subject_progress_bar_long.png"
+		textureFile2 = "gfx/interface/autonomy/replace/subject_progress_bar_long_bg.png"
 		size = { x = 181 y = 16 }
 		effectFile = "gfx/FX/progress.lua"
 	}
@@ -22,8 +22,8 @@ spriteTypes = {
 		name = "GFX_subject_progressbar"
 		color = { 1.0 1.0 1.0 }
 		colortwo = { 1.0 1.0 1.0 }
-		textureFile1 = "gfx/interface/autonomy/subject_progress_bar.dds"
-		textureFile2 = "gfx/interface/autonomy/subject_progress_bar_bg.dds"
+		textureFile1 = "gfx/interface/autonomy/replace/subject_progress_bar.png"
+		textureFile2 = "gfx/interface/autonomy/replace/subject_progress_bar_bg.png"
 		size = { x = 93 y = 16 }
 		effectFile = "gfx/FX/progress.lua"
 	}
@@ -60,148 +60,148 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_subjects_entry_bg"
-		textureFile = "gfx/interface/autonomy/subjects_entry_bg.dds"
+		textureFile = "gfx/interface/autonomy/replace/subjects_entry_bg.png"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_unknown_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_unknown_icon.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_unknown_icon.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_free_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_freedom_icon.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_freedom_icon.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_annex_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_annex_icon.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_annex_icon.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_dominion_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_dominion_icon.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_dominion_icon.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_colony_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_colony_icon.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_colony_icon.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_puppet_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_puppet_icon.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_puppet_icon.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_integrated_puppet_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_integrated_puppet_icon.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_integrated_puppet_icon.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_level_button"
-		textureFile = "gfx/interface/autonomy/autonomy_level_button.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_level_button.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_reichskommissariat_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_reichskommissariat_icon.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_reichskommissariat_icon.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_reichsprotectorate_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_reichsprotektorat.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_reichsprotektorat.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_satellite_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_satellite.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_satellite.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_integrated_reichskommissariat_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_integrated_reichskommissariat.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_integrated_reichskommissariat.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_autonomy_autonomous_reichskommissariat_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_autonomous_reichskommissariat.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_autonomous_reichskommissariat.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_liberated_government_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_liberated_government.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_liberated_government.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_client_state_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_client_state.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_client_state.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_military_government_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_military_government.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_military_government.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_military_district_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_military_district.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_military_district.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_italy_associate_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_italy_associate.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_italy_associate.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_italy_hefty_influence_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_italy_hefty_influence.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_italy_hefty_influence.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_italy_governate_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_italy_governate.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_italy_governate.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_italy_reliant_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_italy_reliant.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_italy_reliant.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_italy_antiimperialist_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_italy_antiimperialist.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_italy_antiimperialist.png"
 	}
 	
 	spriteType = {
 		name = "GFX_autonomy_ulster_breakaway_state_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_breakaway_state.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_breakaway_state.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_occupied_territory_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_autonomous_reichskommissariat.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_autonomous_reichskommissariat.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_collaborator_puppet_state_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_integrated_reichskommissariat.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_integrated_reichskommissariat.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_autonomous_reichskommissariat_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_integrated_reichskommissariat.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_integrated_reichskommissariat.png"
 	}
 
 	spriteType = {
 		name = "GFX_autonomy_reichsprotektorat_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_reichsprotektorat.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_reichsprotektorat.png"
 	}
 	
 	spriteType = {
 		name = "GFX_autonomy_china_warlord_regime_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_warlord_regime.dds"
+		textureFile = "gfx/interface/autonomy/replace/autonomy_warlord_regime.png"
 	}
 
 	#-------------

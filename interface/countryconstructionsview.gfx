@@ -212,12 +212,12 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_production_line_minim_max_bg"
-		textureFile = "gfx/interface/buildings/building_minimize_maximize_bg.dds"
+		textureFile = "gfx/interface/buildings/replace/building_minimize_maximize_bg.png"
 	}
 
 	spriteType = {
 		name = "GFX_production_line_minim_max_bg_crt"
-		textureFile = "gfx/interface/buildings/building_minimize_maximize_bg_crt.dds"
+		textureFile = "gfx/interface/buildings/replace/building_minimize_maximize_bg_crt.png"
 	}
 
 	spriteType = {

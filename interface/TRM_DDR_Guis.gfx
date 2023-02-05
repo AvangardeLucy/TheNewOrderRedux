@@ -1,20 +1,20 @@
 spriteTypes = {
 	SpriteType = {
 		name = "GFX_DDR_Demobpicture"
-		texturefile = "gfx/interface/DDR_GUIS/Demobilization_Gui/DDR_Demobpicture.dds"
+		texturefile = "gfx/interface/DDR_GUIS/Demobilization_Gui/DDR_Demobpicture.png"
 	}
     SpriteType = {
 		name = "GFX_DDR_doubleframe_box"
-		texturefile = "gfx/interface/DDR_GUIS/Demobilization_Gui/DDR_doubleframe_box.dds"
+		texturefile = "gfx/interface/DDR_GUIS/Demobilization_Gui/DDR_doubleframe_box.png"
 	}
     SpriteType = {
 		name = "GFX_DDR_progress_box_frame"
-		texturefile = "gfx/interface/DDR_GUIS/Demobilization_Gui/DDR_progress_box_frame.dds"
+		texturefile = "gfx/interface/DDR_GUIS/Demobilization_Gui/DDR_progress_box_frame.png"
 	}
     progressbartype = {
 		name = "GFX_DDR_Partisan_Bar"
-		textureFile1 = "gfx/interface/DDR_GUIS/Demobilization_Gui/DDR_full_partisan_bar.dds"
-		textureFile2 = "gfx/interface/DDR_GUIS/Demobilization_Gui/DDR_empty_partisan_bar.dds"
+		textureFile1 = "gfx/interface/DDR_GUIS/Demobilization_Gui/DDR_full_partisan_bar.png"
+		textureFile2 = "gfx/interface/DDR_GUIS/Demobilization_Gui/DDR_empty_partisan_bar.png"
 		color = { 0.0 0.0 0.0 }
 		colortwo = { 0.0 0.0 0.0 }
 		size = { 
@@ -27,25 +27,25 @@ spriteTypes = {
 	### Nationwide Riots ###
 	SpriteType = {
 		name = "GFX_SGR_Riot_Banner"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/SGR_Riot_Banner.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/SGR_Riot_Banner.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_big_map_box"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/big_map_box.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/big_map_box.png"
 	}
 	SpriteType = {
 		name = "GFX_germany_map_outline"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/germany_map_outline.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/germany_map_outline.png"
 	}
 	SpriteType = {
 		name = "GFX_pol_sta_progress_box"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/pol_sta_progress_box.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/pol_sta_progress_box.png"
 	}
 	progressbartype = {
 		name = "GFX_DDR_anarcho_commie_bar"
-		textureFile1 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/anarchism_bar.dds"
-		textureFile2 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/communism_bar.dds"
+		textureFile1 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/anarchism_bar.png"
+		textureFile2 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/communism_bar.png"
 		color = { 0.0 0.0 0.0 }
 		colortwo = { 0.0 0.0 0.0 }
 		size = { 
@@ -56,8 +56,8 @@ spriteTypes = {
 	}
 	progressbartype = {
 		name = "GFX_DDR_speer_empty_bar"
-		textureFile1 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/fascism_bar.dds"
-		textureFile2 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/pol_sta_progress_box_empty.dds"
+		textureFile1 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/fascism_bar.png"
+		textureFile2 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/pol_sta_progress_box_empty.png"
 		color = { 0.0 0.0 0.0 }
 		colortwo = { 0.0 0.0 0.0 }
 		size = { 
@@ -68,8 +68,8 @@ spriteTypes = {
 	}
 	progressbartype = {
 		name = "GFX_DDR_stability_bar"
-		textureFile1 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/stability_bar.dds"
-		textureFile2 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/pol_sta_progress_box_empty.dds"
+		textureFile1 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/stability_bar.png"
+		textureFile2 = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/pol_sta_progress_box_empty.png"
 		color = { 0.0 0.0 0.0 }
 		colortwo = { 0.0 0.0 0.0 }
 		size = { 
@@ -80,231 +80,231 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_pol_sta_progress_box"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/pol_sta_progress_box.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/pol_sta_progress_box.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_ideologies_box"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/ideologies_box.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/ideologies_box.png"
 	}
 	SpriteType = {
 		name = "GFX_ideology_anarchism"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/ideology_anarchism.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/ideology_anarchism.png"
 	}
 	SpriteType = {
 		name = "GFX_ideology_communism"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/ideology_communism.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/ideology_communism.png"
 	}
 	SpriteType = {
 		name = "GFX_ideology_fascism"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/ideology_fascism.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/ideology_fascism.png"
 	}
 	SpriteType = {
 		name = "GFX_pol_sta_big_box"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/pol_sta_big_box.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/pol_sta_big_box.png"
 	}
 	SpriteType = {
 		name = "GFX_region_1"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_1.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_1.png"
 		noOfFrames = 3
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_1_selected"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_1_selected.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_1_selected.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_2"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_2.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_2.png"
 		noOfFrames = 3
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_2_selected"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_2_selected.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_2_selected.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_3"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_3.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_3.png"
 		noOfFrames = 3
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_3_selected"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_3_selected.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_3_selected.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_4"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_4.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_4.png"
 		noOfFrames = 3
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_4_selected"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_4_selected.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_4_selected.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_5"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_5.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_5.png"
 		noOfFrames = 3
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_5_selected"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_5_selected.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_5_selected.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_6"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_6.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_6.png"
 		noOfFrames = 3
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_6_selected"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_6_selected.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_6_selected.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_7"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_7.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_7.png"
 		noOfFrames = 3
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_7_selected"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_7_selected.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_7_selected.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_8"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_8.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_8.png"
 		noOfFrames = 3
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_8_selected"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_8_selected.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_8_selected.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_9"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_9.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_9.png"
 		noOfFrames = 3
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_9_selected"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_9_selected.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_9_selected.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_10"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_10.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_10.png"
 		noOfFrames = 3
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_10_selected"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_10_selected.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_10_selected.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_11"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_11.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_11.png"
 		noOfFrames = 3
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_11_selected"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_11_selected.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_11_selected.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_12"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_12.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_12.png"
 		noOfFrames = 3
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_12_selected"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_12_selected.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_12_selected.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_13"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_13.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_13.png"
 		noOfFrames = 3
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_13_selected"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_13_selected.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_13_selected.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_14"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_14.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_14.png"
 		transparencecheck = yes
 		noOfFrames = 3
 	}
 	SpriteType = {
 		name = "GFX_region_14_selected"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_14_selected.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_14_selected.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_15"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_15.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_15.png"
 		noOfFrames = 3
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_15_selected"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_15_selected.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_15_selected.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_16"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_16.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_16.png"
 		noOfFrames = 3
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_16_selected"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_16_selected.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_16_selected.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_17"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_17.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_17.png"
 		noOfFrames = 3
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_region_17_selected"
-		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_17_selected.dds"
+		texturefile = "gfx/interface/DDR_GUIS/nationwide_riots_gui_two/region_17_selected.png"
 		transparencecheck = yes
 	}
 	###army_and_party
 	SpriteType = {
 		name = "GFX_parties_background"
-		texturefile = "gfx/interface/army_and_party/parties_background.dds"
+		texturefile = "gfx/interface/army_and_party/parties_background.png"
 		transparencecheck = yes
 	}
 	SpriteType = {
 		name = "GFX_army_background"
-		texturefile = "gfx/interface/army_and_party/army_background.dds"
+		texturefile = "gfx/interface/army_and_party/army_background.png"
 		transparencecheck = yes
 	}
 	progressbartype = {
 		name = "GFX_DDR_stability_bar"
-		textureFile1 = "gfx/interface/army_and_party/stability_bar.dds"
-		textureFile2 = "gfx/interface/army_and_party/empty_bar.dds"
+		textureFile1 = "gfx/interface/army_and_party/stability_bar.png"
+		textureFile2 = "gfx/interface/army_and_party/empty_bar.png"
 		color = { 0.0 0.0 0.0 }
 		colortwo = { 0.0 0.0 0.0 }
 		size = { 
@@ -315,8 +315,8 @@ spriteTypes = {
 	}
 	progressbartype = {
 		name = "GFX_DDR_unity_bar"
-		textureFile1 = "gfx/interface/army_and_party/unity_bar.dds"
-		textureFile2 = "gfx/interface/army_and_party/empty_bar.dds"
+		textureFile1 = "gfx/interface/army_and_party/unity_bar.png"
+		textureFile2 = "gfx/interface/army_and_party/empty_bar.png"
 		color = { 0.0 0.0 0.0 }
 		colortwo = { 0.0 0.0 0.0 }
 		size = { 
@@ -327,8 +327,8 @@ spriteTypes = {
 	}
 	progressbartype = {
 		name = "GFX_DDR_congress_hammer"
-		textureFile1 = "gfx/interface/army_and_party/congress_hammer_full.dds"
-		textureFile2 = "gfx/interface/army_and_party/congress_hammer_empty.dds"
+		textureFile1 = "gfx/interface/army_and_party/congress_hammer_full.png"
+		textureFile2 = "gfx/interface/army_and_party/congress_hammer_empty.png"
 		color = { 0.0 0.0 0.0 }
 		colortwo = { 0.0 0.0 0.0 }
 		size = { 
@@ -340,10 +340,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_army_button"
-		texturefile = "gfx/interface/army_and_party/army_button.dds"
+		texturefile = "gfx/interface/army_and_party/army_button.png"
 	}
 	SpriteType = {
 		name = "GFX_party_button"
-		texturefile = "gfx/interface/army_and_party/party_button.dds"
+		texturefile = "gfx/interface/army_and_party/party_button.png"
 	}
 }
