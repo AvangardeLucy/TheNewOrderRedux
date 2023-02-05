@@ -29,8 +29,8 @@ recruit_character = DDR_willi_stoph
 recruit_character = DDR_erich_mielke_army
 
 # Admirals
-recruit_character = DDR_waldemar_verner 
-recruit_character = DDR_heinz_neukirchen
+# recruit_character = DDR_waldemar_verner 
+# recruit_character = DDR_heinz_neukirchen
 
 # Playable
 set_country_flag = tno_playable_country

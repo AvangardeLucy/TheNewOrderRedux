@@ -1,20 +1,30 @@
-SBA_mili = {
-	name = "Anarchist Militia"
-
-	for_countries = { SBA }
-
-	can_use = { always = yes }
-
-	division_types = { "marine" "air_assault" "mountaineers" "infantry" "motorized" "APC" "IFV" "MBT" "light_infantry" "elite_infantry" }
-
-	fallback_name = "Militsiya"
-
-	# Names with numbers (only one number per entry).
-	# It's okay to have gaps in numbering.
-	ordered = {
-		1 = { "Militsiya" }
-		2 = { "Militsiya" }
-	}
+﻿SBA_mili = {
+  name = "無政府主義民兵"  # Anarchist Militia
+  for_countries = {
+    SBA
+  }
+  can_use = {
+    always = yes
+  }
+  division_types = {
+    "marine"
+    "air_assault"
+    "mountaineers"
+    "infantry"
+    "motorized"
+    "APC"
+    "IFV"
+    "MBT"
+    "light_infantry"
+    "elite_infantry"
+  }
+  fallback_name = "民兵"  # Militsiya
+  ordered = {
+    1 = {
+      "民兵"  # Militsiya
+    }
+    2 = {
+      "民兵"  # Militsiya
+    }
+  }
 }
-
-###Are organised division names not fascist, comrade?

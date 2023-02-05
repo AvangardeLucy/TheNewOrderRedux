@@ -77,7 +77,7 @@ country_event = { #Spawn red poland
 				add_to_faction = POL
 			}
 			POL = {
-				remove_idea = Pakt_Marionettenstaat
+				remove_ideas = Pakt_Marionettenstaat
 				econ_leave_sphere = yes
 				add_ideas = {
 					Rotfront_Member

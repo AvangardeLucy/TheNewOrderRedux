@@ -1,21 +1,16 @@
-# // INDEX // #
-#
-# /// Units /// #
-
-# /// Units /// #
-units = {
-	division = {
-		name = "2ya Motostrelkovaya Gruppa"
-		location = "11351"
-		division_template = "Motostrelkovaya Gruppa"
-		start_experience_factor = 0.7
-		start_equipment_factor = 1
-	}
-	division = {
-		name = "3ya Motostrelkovaya Gruppa"
-		location = "3360"
-		division_template = "Pehotnaya Gruppa"
-		start_experience_factor = 0.7
-		start_equipment_factor = 1
-	}
+﻿units = {
+  division = {
+    name = "2ya Motostrelkovaya Gruppa"
+    location = "11351"
+    division_template = "Motostrelkovaya Gruppa"
+    start_experience_factor = 0.7
+    start_equipment_factor = 1
+  }
+  division = {
+    name = "3ya Motostrelkovaya Gruppa"
+    location = "3360"
+    division_template = "Pehotnaya Gruppa"
+    start_experience_factor = 0.7
+    start_equipment_factor = 1
+  }
 }

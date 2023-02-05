@@ -622,7 +622,7 @@ defined_text = {
 	}
 	text = {
 		trigger = { JAP = { has_idea = JAP_ichiji_sugita_for } }
-		localization_key = JAP_Sugita_Ichiji_for
+		localization_key = JAP_ichiji_sugita_for
 	}
 	text = {
 		trigger = { JAP = { has_idea = JAP_hideo_iwakuro_for } }

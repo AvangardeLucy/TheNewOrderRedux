@@ -158,18 +158,18 @@ country_event = { #Spawn DDR
 				POL = {
 					has_government = communist
 				}
-				DDR = {
-					add_to_faction = POL
+			}
+			DDR = {
+				add_to_faction = POL
+			}
+			POL = {
+				remove_ideas = Pakt_Marionettenstaat
+				econ_leave_sphere = yes
+				add_ideas = {
+					Rotfront_Member
 				}
-				POL = {
-					remove_idea = Pakt_Marionettenstaat
-					econ_leave_sphere = yes
-					add_ideas = {
-						Rotfront_Member
-					}
-					set_temp_variable = { target = DDR }
-					econ_join_sphere_target = yes
-				}
+				set_temp_variable = { target = DDR }
+				econ_join_sphere_target = yes
 			}
 		}
 	}

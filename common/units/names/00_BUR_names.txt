@@ -1,65 +1,268 @@
 ﻿BUR = {
-	submarine = {
-		prefix = "UBS"
-		generic = { "Submarine" }
-		unique = {
-			"Mayu" "Kyansittha" "Sinbyushin" "Aung Zeya" "Mahar Bandoola" "Mahar Thiha Thura" "Anawratha" "Bayinnaung" "Tabinshwehti" "MaGa" "SaitTra" "DuWa"
-			"HanTha" "BanDa" "Yan Gyi Aung" "Yan Htet Aung" "Yan Nyein Aung" "Yan Khwinn Aung" "Yan Min Aung" "Yan Ye Aung" "Yan Pang Aung" "Yan Win Aung"
-			"Yan Aye Aung" "Yan Zwe Aung" "Indaw" "Inya" "Thutaythi" "Pyi Daw Aye" "Ayidawaya" "ZeyHta"
-		}
-	}
-	destroyer = {
-		prefix = "UBS"
-		generic = { "Destroyer" }
-		unique = {
-			"Mayu" "Kyansittha" "Sinbyushin" "Aung Zeya" "Mahar Bandoola" "Mahar Thiha Thura" "Anawratha" "Bayinnaung" "Tabinshwehti" "MaGa" "SaitTra" "DuWa"
-			"HanTha" "BanDa" "Yan Gyi Aung" "Yan Htet Aung" "Yan Nyein Aung" "Yan Khwinn Aung" "Yan Min Aung" "Yan Ye Aung" "Yan Pang Aung" "Yan Win Aung"
-			"Yan Aye Aung" "Yan Zwe Aung" "Indaw" "Inya" "Thutaythi" "Pyi Daw Aye" "Ayidawaya" "ZeyHta"
-		}
-	}
-	light_cruiser = {
-		prefix = "UBS"
-		generic = { "Light Cruiser" }
-		unique = {
-			"Mayu" "Kyansittha" "Sinbyushin" "Aung Zeya" "Mahar Bandoola" "Mahar Thiha Thura" "Anawratha" "Bayinnaung" "Tabinshwehti" "MaGa" "SaitTra" "DuWa"
-			"HanTha" "BanDa" "Yan Gyi Aung" "Yan Htet Aung" "Yan Nyein Aung" "Yan Khwinn Aung" "Yan Min Aung" "Yan Ye Aung" "Yan Pang Aung" "Yan Win Aung"
-			"Yan Aye Aung" "Yan Zwe Aung" "Indaw" "Inya" "Thutaythi" "Pyi Daw Aye" "Ayidawaya" "ZeyHta"
-		}
-	}
-	heavy_cruiser = {
-		prefix = "UBS"
-		generic = { "Heavy Cruiser" }
-		unique = {
-			"Mayu" "Kyansittha" "Sinbyushin" "Aung Zeya" "Mahar Bandoola" "Mahar Thiha Thura" "Anawratha" "Bayinnaung" "Tabinshwehti" "MaGa" "SaitTra" "DuWa"
-			"HanTha" "BanDa" "Yan Gyi Aung" "Yan Htet Aung" "Yan Nyein Aung" "Yan Khwinn Aung" "Yan Min Aung" "Yan Ye Aung" "Yan Pang Aung" "Yan Win Aung"
-			"Yan Aye Aung" "Yan Zwe Aung" "Indaw" "Inya" "Thutaythi" "Pyi Daw Aye" "Ayidawaya" "ZeyHta"
-		}
-	}
-	battle_cruiser = {
-		prefix = "UBS"
-		generic = { "Battlecruiser" }
-		unique = {
-			"Mayu" "Kyansittha" "Sinbyushin" "Aung Zeya" "Mahar Bandoola" "Mahar Thiha Thura" "Anawratha" "Bayinnaung" "Tabinshwehti" "MaGa" "SaitTra" "DuWa"
-			"HanTha" "BanDa" "Yan Gyi Aung" "Yan Htet Aung" "Yan Nyein Aung" "Yan Khwinn Aung" "Yan Min Aung" "Yan Ye Aung" "Yan Pang Aung" "Yan Win Aung"
-			"Yan Aye Aung" "Yan Zwe Aung" "Indaw" "Inya" "Thutaythi" "Pyi Daw Aye" "Ayidawaya" "ZeyHta"
-		}
-	}
-	battleship = {
-		prefix = "UBS"
-		generic = { "Battleship" }
-		unique = {
-			"Mayu" "Kyansittha" "Sinbyushin" "Aung Zeya" "Mahar Bandoola" "Mahar Thiha Thura" "Anawratha" "Bayinnaung" "Tabinshwehti" "MaGa" "SaitTra" "DuWa"
-			"HanTha" "BanDa" "Yan Gyi Aung" "Yan Htet Aung" "Yan Nyein Aung" "Yan Khwinn Aung" "Yan Min Aung" "Yan Ye Aung" "Yan Pang Aung" "Yan Win Aung"
-			"Yan Aye Aung" "Yan Zwe Aung" "Indaw" "Inya" "Thutaythi" "Pyi Daw Aye" "Ayidawaya" "ZeyHta"
-		}
-	}
-	carrier = {
-		prefix = "UBS"
-		generic = { "Aircraft Carrier" }
-		unique = {
-			"Mayu" "Kyansittha" "Sinbyushin" "Aung Zeya" "Mahar Bandoola" "Mahar Thiha Thura" "Anawratha" "Bayinnaung" "Tabinshwehti" "MaGa" "SaitTra" "DuWa"
-			"HanTha" "BanDa" "Yan Gyi Aung" "Yan Htet Aung" "Yan Nyein Aung" "Yan Khwinn Aung" "Yan Min Aung" "Yan Ye Aung" "Yan Pang Aung" "Yan Win Aung"
-			"Yan Aye Aung" "Yan Zwe Aung" "Indaw" "Inya" "Thutaythi" "Pyi Daw Aye" "Ayidawaya" "ZeyHta"
-		}
-	}
+  submarine = {
+    prefix = "UBS"
+    generic = {
+      "潜水艦"  # Submarine
+    }
+    unique = {
+      "マユ"  # Mayu
+      "チャンシッター"  # Kyansittha
+      "シンビューシン"  # Sinbyushin
+      "アウンゼーヤ"  # Aung Zeya
+      "マハーバンドーラ"  # Mahar Bandoola
+      "マハーシハースーラ"  # Mahar Thiha Thura
+      "アノーヤター"  # Anawratha
+      "バインナウン"  # Bayinnaung
+      "タビンシュエーティー"  # Tabinshwehti
+      "マガ"  # MaGa
+      "サーットラ"  # SaitTra
+      "デュワ"  # DuWa
+      "HanTha"
+      "BanDa"
+      "Yan Gyi Aung"
+      "Yan Htet Aung"
+      "Yan Nyein Aung"
+      "Yan Khwinn Aung"
+      "Yan Min Aung"
+      "Yan Ye Aung"
+      "Yan Pang Aung"
+      "Yan Win Aung"
+      "Yan Aye Aung"
+      "Yan Zwe Aung"
+      "Indaw"
+      "Inya"
+      "Thutaythi"
+      "Pyi Daw Aye"
+      "Ayidawaya"
+      "ZeyHta"
+    }
+  }
+  destroyer = {
+    prefix = "UBS"
+    generic = {
+      "Destroyer"
+    }
+    unique = {
+      "マユ"  # Mayu
+      "チャンシッター"  # Kyansittha
+      "シンビューシン"  # Sinbyushin
+      "アウンゼーヤ"  # Aung Zeya
+      "マハーバンドーラ"  # Mahar Bandoola
+      "マハーシハースーラ"  # Mahar Thiha Thura
+      "アノーヤター"  # Anawratha
+      "バインナウン"  # Bayinnaung
+      "タビンシュエーティー"  # Tabinshwehti
+      "マガ"  # MaGa
+      "サーットラ"  # SaitTra
+      "DuWa"
+      "HanTha"
+      "BanDa"
+      "Yan Gyi Aung"
+      "Yan Htet Aung"
+      "Yan Nyein Aung"
+      "Yan Khwinn Aung"
+      "Yan Min Aung"
+      "Yan Ye Aung"
+      "Yan Pang Aung"
+      "Yan Win Aung"
+      "Yan Aye Aung"
+      "Yan Zwe Aung"
+      "Indaw"
+      "Inya"
+      "Thutaythi"
+      "Pyi Daw Aye"
+      "Ayidawaya"
+      "ZeyHta"
+    }
+  }
+  light_cruiser = {
+    prefix = "UBS"
+    generic = {
+      "Light Cruiser"
+    }
+    unique = {
+      "Mayu"
+      "Kyansittha"
+      "Sinbyushin"
+      "Aung Zeya"
+      "Mahar Bandoola"
+      "Mahar Thiha Thura"
+      "Anawratha"
+      "Bayinnaung"
+      "Tabinshwehti"
+      "MaGa"
+      "SaitTra"
+      "DuWa"
+      "HanTha"
+      "BanDa"
+      "Yan Gyi Aung"
+      "Yan Htet Aung"
+      "Yan Nyein Aung"
+      "Yan Khwinn Aung"
+      "Yan Min Aung"
+      "Yan Ye Aung"
+      "Yan Pang Aung"
+      "Yan Win Aung"
+      "Yan Aye Aung"
+      "Yan Zwe Aung"
+      "Indaw"
+      "Inya"
+      "Thutaythi"
+      "Pyi Daw Aye"
+      "Ayidawaya"
+      "ZeyHta"
+    }
+  }
+  heavy_cruiser = {
+    prefix = "UBS"
+    generic = {
+      "Heavy Cruiser"
+    }
+    unique = {
+      "Mayu"
+      "Kyansittha"
+      "Sinbyushin"
+      "Aung Zeya"
+      "Mahar Bandoola"
+      "Mahar Thiha Thura"
+      "Anawratha"
+      "Bayinnaung"
+      "Tabinshwehti"
+      "MaGa"
+      "SaitTra"
+      "DuWa"
+      "HanTha"
+      "BanDa"
+      "Yan Gyi Aung"
+      "Yan Htet Aung"
+      "Yan Nyein Aung"
+      "Yan Khwinn Aung"
+      "Yan Min Aung"
+      "Yan Ye Aung"
+      "Yan Pang Aung"
+      "Yan Win Aung"
+      "Yan Aye Aung"
+      "Yan Zwe Aung"
+      "Indaw"
+      "Inya"
+      "Thutaythi"
+      "Pyi Daw Aye"
+      "Ayidawaya"
+      "ZeyHta"
+    }
+  }
+  battle_cruiser = {
+    prefix = "UBS"
+    generic = {
+      "Battlecruiser"
+    }
+    unique = {
+      "Mayu"
+      "Kyansittha"
+      "Sinbyushin"
+      "Aung Zeya"
+      "Mahar Bandoola"
+      "Mahar Thiha Thura"
+      "Anawratha"
+      "Bayinnaung"
+      "Tabinshwehti"
+      "MaGa"
+      "SaitTra"
+      "DuWa"
+      "HanTha"
+      "BanDa"
+      "Yan Gyi Aung"
+      "Yan Htet Aung"
+      "Yan Nyein Aung"
+      "Yan Khwinn Aung"
+      "Yan Min Aung"
+      "Yan Ye Aung"
+      "Yan Pang Aung"
+      "Yan Win Aung"
+      "Yan Aye Aung"
+      "Yan Zwe Aung"
+      "Indaw"
+      "Inya"
+      "Thutaythi"
+      "Pyi Daw Aye"
+      "Ayidawaya"
+      "ZeyHta"
+    }
+  }
+  battleship = {
+    prefix = "UBS"
+    generic = {
+      "Battleship"
+    }
+    unique = {
+      "Mayu"
+      "Kyansittha"
+      "Sinbyushin"
+      "Aung Zeya"
+      "Mahar Bandoola"
+      "Mahar Thiha Thura"
+      "Anawratha"
+      "Bayinnaung"
+      "Tabinshwehti"
+      "MaGa"
+      "SaitTra"
+      "DuWa"
+      "HanTha"
+      "BanDa"
+      "Yan Gyi Aung"
+      "Yan Htet Aung"
+      "Yan Nyein Aung"
+      "Yan Khwinn Aung"
+      "Yan Min Aung"
+      "Yan Ye Aung"
+      "Yan Pang Aung"
+      "Yan Win Aung"
+      "Yan Aye Aung"
+      "Yan Zwe Aung"
+      "Indaw"
+      "Inya"
+      "Thutaythi"
+      "Pyi Daw Aye"
+      "Ayidawaya"
+      "ZeyHta"
+    }
+  }
+  carrier = {
+    prefix = "UBS"
+    generic = {
+      "Aircraft Carrier"
+    }
+    unique = {
+      "Mayu"
+      "Kyansittha"
+      "Sinbyushin"
+      "Aung Zeya"
+      "Mahar Bandoola"
+      "Mahar Thiha Thura"
+      "Anawratha"
+      "Bayinnaung"
+      "Tabinshwehti"
+      "MaGa"
+      "SaitTra"
+      "DuWa"
+      "HanTha"
+      "BanDa"
+      "Yan Gyi Aung"
+      "Yan Htet Aung"
+      "Yan Nyein Aung"
+      "Yan Khwinn Aung"
+      "Yan Min Aung"
+      "Yan Ye Aung"
+      "Yan Pang Aung"
+      "Yan Win Aung"
+      "Yan Aye Aung"
+      "Yan Zwe Aung"
+      "Indaw"
+      "Inya"
+      "Thutaythi"
+      "Pyi Daw Aye"
+      "Ayidawaya"
+      "ZeyHta"
+    }
+  }
 }

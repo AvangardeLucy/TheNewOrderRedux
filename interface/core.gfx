@@ -1466,7 +1466,14 @@ bitmapfonts = {
 
 	bitmapfont = {
 		name = "tahoma_60"
-		path = "gfx/fonts/hoi_mapfont4"
+		fontfiles = {
+		    "gfx/fonts/hoi_mapfont4"
+		    "gfx/fonts/hoi_mapfont4_0"
+		    "gfx/fonts/hoi_mapfont4_1"
+		    "gfx/fonts/hoi_mapfont4_2"
+		    "gfx/fonts/hoi_mapfont4_3"
+		    "gfx/fonts/hoi_mapfont4_4"
+		}
 		color = 0xffffffff
 
 		textcolors = {

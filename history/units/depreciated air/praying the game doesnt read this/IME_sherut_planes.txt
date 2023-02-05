@@ -1,9 +1,9 @@
 ﻿air_wings = {
-	1248 = {
-		fighter_equipment_1 = {
-			owner = "ITA"
-			amount = "36"
-		}
-		name = "Sherut Avir"
-	}
+  1248 = {
+    fighter_equipment_1 = {
+      owner = "ITA"
+      amount = "36"
+    }
+    name = "シェルート・アビア"  # Sherut Avir
+  }
 }

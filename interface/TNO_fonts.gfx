@@ -4,7 +4,14 @@ bitmapfonts = {
 
 	bitmapfont = {
 		name = "vt323_72_WT_outline"
-		path = "gfx/fonts/vt323_72_WT_outline"
+		fontfiles = {
+		       "gfx/fonts/vt323_72_WT_outline"
+		       "gfx/fonts/vt323_72_WT_outline_0"
+			   "gfx/fonts/vt323_72_WT_outline_1"
+			   "gfx/fonts/vt323_72_WT_outline_2"
+			   "gfx/fonts/vt323_72_WT_outline_3"
+			   "gfx/fonts/vt323_72_WT_outline_4"
+		}
 		color = 0xffb2c9c2
 		textcolors = {
 			M = { 35 206 255 }
@@ -66,7 +73,10 @@ bitmapfonts = {
 
 	bitmapfont = {
 		name = "aldrich_36_outline"
-		path = "gfx/fonts/aldrich_36_outline"
+		fontfiles = {
+		       "gfx/fonts/aldrich_36_outline"
+			   "gfx/fonts/aldrich_36_outline_0"
+		}
 		color = 0xffb2c9c2
 		textcolors = {
 			M = { 35 206 255 }
@@ -128,7 +138,11 @@ bitmapfonts = {
 	
 	bitmapfont = {
 		name = "aldrich_48_outline"
-		path = "gfx/fonts/aldrich_48_outline"
+		fontfiles = {
+		       "gfx/fonts/aldrich_48_outline"
+			   "gfx/fonts/aldrich_48_outline_0"
+			   "gfx/fonts/aldrich_48_outline_1"
+		}
 		color = 0xffb2c9c2
 		textcolors = {
 			M = { 35 206 255 }
@@ -890,7 +904,10 @@ bitmapfonts = {
 
 	bitmapfont = {
 		name = "Bomb_24"
-		path = "gfx/fonts/Bomb_24"
+		fontfiles = {
+		       "gfx/fonts/Bomb_24"
+			   "gfx/fonts/Bomb_24_0"
+		}
 		color = 0xffffffff
 		textcolors = {
 			W = { 255 255 255 }
@@ -900,7 +917,10 @@ bitmapfonts = {
 
 	bitmapfont = {
 		name = "Bomb_28"
-		path = "gfx/fonts/Bomb_28"
+		fontfiles = {
+		       "gfx/fonts/Bomb_28"
+			   "gfx/fonts/Bomb_28_0"
+		}
 		color = 0xffffffff
 		textcolors = {
 			W = { 255 255 255 }
@@ -910,7 +930,10 @@ bitmapfonts = {
 
 	bitmapfont = {
 		name = "Bomb_32"
-		path = "gfx/fonts/Bomb_32"
+		fontfiles = {
+		       "gfx/fonts/Bomb_32"
+			   "gfx/fonts/Bomb_32_0"
+		}
 		color = 0xffffffff
 		textcolors = {
 			W = { 255 255 255 }
@@ -920,7 +943,12 @@ bitmapfonts = {
 
 	bitmapfont = {
 		name = "Bomb_36"
-		path = "gfx/fonts/Bomb_36"
+		fontfiles = {
+		       "gfx/fonts/Bomb_36"
+			   "gfx/fonts/Bomb_36_0"
+			   "gfx/fonts/Bomb_36_1"
+			   "gfx/fonts/Bomb_36_2"
+		}
 		color = 0xffffffff
 		textcolors = {
 			W = { 255 255 255 }

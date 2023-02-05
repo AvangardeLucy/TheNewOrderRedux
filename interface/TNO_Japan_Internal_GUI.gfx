@@ -97,7 +97,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_Japan_Internal_GUI_Portrait_Takagi_Soukichi"
-		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Portrait_Japan_Takagi_Soukichi.dds"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Portrait_Japan_Takagi_Soukichi.png"
 	}
 	spriteType = {
 		name = "GFX_Japan_Internal_GUI_Portrait_Japan_No_Leader"

@@ -1,0 +1,96 @@
+﻿l_japanese:
+
+# PARTY NAMES 
+POL_communist:0"Polish People's Republic"
+
+POL_communist_party: "PNPR"
+POL_communist_party_long: "Polska Narodowa Partia Robotnicza"
+
+#DDR_national_socialism_party: "NPD-K"
+#DDR_national_socialism_party_long: "Nationaldemokratische Partei Deutschlands"
+#
+#DDR_fascism_party: "NPD-K"
+#DDR_fascism_party_long: "Nationaldemokratische Partei Deutschlands"
+#
+#DDR_socialist_party: "SED"
+#DDR_socialist_party_long: "Sozialistische Einheitspartei Deutschlands"
+
+# LEADERS AND MINISTERS
+
+POL_wladyslaw_gomulka: "Wladyslaw Gomulka"
+POL_wladislaw_gomulka_desc: "Born in 1905 to a family that lived on the outskirts of Austrian-occupied Krosno, the self-educated and poor Gomulka participated in politics from his youth. Becoming a worker in a local refinery at the age of 17 in the polarizing and radicalizing Poland, he quickly got involved with the radical left labor movements, along with its parties and organizations. After four years of activism, he joined the illegal Communist Party of Poland. \n\nInitially working in Western Ukraine and then drafted for military service in Warsaw, the communists actively promoted the labor movement and assisted various labor unions in Poland, being arrested many times due to his activities. Moving to the Soviet Union in 1932 after an incident, he and other members of the KPP organized there and under Bukharin began preparing a revolution, until Poland was invaded and occupied, which lead Gomulka to focus on forming a resistance movement. \n\nInitially creating what was called the 'Polish Committee of National Liberation', which was directed from Moscow, the group was dissolved as the USSR collapsed to the German invaders. However, Władysław's fight would not end, as he lived in exile in Nowa Polska, cooperating closely with the nationalists and sharing his works covertly. As Germany fell to socialism, the perfect opportunity appeared, as his militas seized power and he triumphantly returned."
+POL_wladyslaw_bienkowski: "Wladyslaw Bienkowski"
+POL_wladyslaw_bienkowski_for_desc: "§YForeign Minister\n$communist_national_communism_subtype$§!\n§F------------§!\n§LA teacher, a worker, and a communist activist, Władysław's interest in Polish history, and culture and his fervent support for the liberation of Poland are shown in every book he has written and read about his country. Living in exile in Nowa Polska, he wrote about science, politics, sociology, and various other topics, with his name as an author being known by the Polish diaspora all across the globe. \n\nHe reached out to other fellow freedom fighters that were or spoke Polish across Europe, spreading his and Gomulka's works, being instrumental in the formation of the PNPR and their rise to power. Now, Bieńkowski wants to put Poland first and assure its existence on equal terms with the German comrades.§!"
+POL_oskar_lange: "Oskar Lange"
+POL_oskar_lange_eco_desc: "§YEconomic Minister\n$communist_bukharinism_subtype$§!\n§F------------§!\n§LA student of law and economics with clear leftist and pro-Soviet sympathies, Oskar Lange initially made his work known in the West as a supporter of Bukharin's NEP and what he called 'market socialism.' In the 1930s, he moved to the Soviet Union and renounced his American citizenship, being invited to assist the planning committee in regions near the Polish Border. \n\nWhen the Germans invaded, Oskar Lange was arrested and sent to a camp in Poland where he was to be executed, but he was freed during Kasman's rebellion, becoming one of his associates and becoming a representative of the intelligentsia within the communist resistance movement. When Kasman allied with Gomulka, so did the economist.§!"
+POL_leon_kasman: "Leon Kasman"
+POL_leon_kasman_hog_desc: "§YHead of Government\n$communist_bukharinism_subtype$§!\n§F------------§!\n§LKnown as the ideological head for years within the ranks of the resistance that was influenced by Gomulka, Kasman's life was always one of fighting against tyranny. He was imprisoned countless times, living in the Soviet Union for some years and becoming an avid follower of Nikolai Bukharin, before coming back and being arrested once again. During the German invasion, he and some of his comrades led a prison rebellion. \n\nAfter reading Gomulka's works, he sympathized with the idea of the creation of a 'national front', even if he was weary of allying with some nationalists due to his Jewish ancestry. Facilitating the cooperation between the partisans, he raised a strong militia, which was able to take over the country after the neighboring German Revolution.§!"
+POL_mieczyslaw_moczar: "Mieczyslaw Moczar"
+POL_mieczyslaw_moczar_sec_desc: "§YSecurity Minister\n$communist_national_communism_subtype$§!\n§F------------§!\n§LWhat drives a revolutionary more? Is it the fight for his ideas or the fight for his country? The man known as the leader of the Polish Partisans, Mieczysław Moczar, would tell you that both are equally relevant fights. Leading the fight against Nazism for most of his life, it was difficult for the member of the Communist Party to organize his troops under one guiding idea. \n\nMany fought for national liberation, others fought for socialist revolution, the only uniting factor was their hatred of the tyrannical oppression coming from the German Reich. And as the Reich faltered, Moczar predicted that disunity could destroy the nation. Being an associate of Gomulka and a key factor in the takeover, Moczar plans to assure Poland remains not only red but proudly Polish.§!"
+
+
+# GENERALS AND MARSHALS
+POL_stefan_michnik: "Stefan Michnik " 
+POL_wojciech_jaruzelski: "Wojciech Jaruzelski"
+#DDR_willi_stoph: "Willi Stoph"
+#DDR_horst_stechbarth: "Horst Stechbarth"
+#DDR_heinz_hoffman: "Heinz Hoffman"
+#DDR_sigfrid_riedel: "Sigfrid Riedel"
+#DDR_friedrich_dickel: "Friedrich Dickel"
+#DDR_erich_mielke_army: "Erich Mielke"
+#DDR_fritz_streletz: "Fritz Streletz"
+#DDR_heinz_kessler: "Heinz Kessler"
+
+# NATIONAL SPIRITS
+POL_chaos_in_warsaw: "Chaos in Warsaw"
+POL_chaos_in_warsaw_desc: "The bloody takeover by the militias was not one that wasn't met with resistance. While the disorganized countryside and other less populated urban areas fell easily, Warsaw's government put up a fight against the PNPR's revolution. \n\nEven as Poland turns Red, many on the far right and in the far left fail to accept the national-communist compromise as a solution for the reconstruction of our nation, and the government's authority is weakened."
+POL_not_yet_lost: "Not Yet Lost"
+POL_not_yet_lost_desc: "Finally, Poland is secure. The German Reich has been buried by our comrades to the west of the border, true independence has been achieved, both from the bourgeoisie traitors and from the occupiers. We will not live in fear anymore! \n\nJeszcze Polska Nie Zginęła!"
+
+#DDR_remnants: "The Remnants"
+#DDR_remnants_desc: "As the triumphant revolutionary army marches through the streets of Hamburg, Münich, Leipzig and many other cities, they are met many times with cheers, but in some occasions, bullets. The NSDAP may not be in power, but they have reorganized themselves, after the remnants of the party declared it's formal dissolution when Albert Speer was assassinated by the revolutionary leaders. Now calling themselves the 'Nationaldemokratische Partei Deutschlands', they gather all forces from reactionary radical conservatives to national-socialists to bring about the restoration of the Reich, usually targeting government officials, activists and socio-ethnic groups deemed as 'enemies of the aryan cause.'\n\n§RWir MÜSSEN alle notwendigen Maßnahmen ergreifen, um ALLE auszurotten.§!"
+#
+#DDR_great_break: "Great Break"
+#DDR_great_break_desc: ""Proletarians of all countries, unite! You have nothing to lose but your chains!" That was the rallying cry heard, that same call Karl Marx wrote in 1848, now said by every radio and television. The factories and farmlands that once were controlled by the the bourgeoisie and the fascist institutions were now controlled by the workers - and the newly born worker's state.\n\nHowever, the transition was more troublesome than it seemed, as resistance was met from the rich, as chaos filled the countryside and factories were disorganized, not following the corporatist model that dominated all associations of the economy for decades."
+#
+#DDR_sins_of_the_fatherland: "Sins of the Fatherland"
+#DDR_sins_of_the_fatherland_desc: "The inhumane atrocities committed in the name of the Führer across all of Europe cannot be measured, the slavery, the deaths of millions, the pillage and mass death brought by the NSDAP and their reign of terror left an open wound in the heart of Germany. Although the old regime has been defeated, there is much to be done. To mend relations after unforgivable actions, to reintegrate groups that were exempt from society for decades and enpower those who were never given an opportunity, will be Germany's true arduous progressive task."
+#
+## FOCUSES
+#
+#DDR_risen_from_the_ruins: "Risen from the Ruins"
+#DDR_the_chair_man_speaks: "The Chairman Speaks"
+#DDR_uniting_the_sed: "Uniting the SED"
+#DDR_finishing_them_off: "Finishing Them Off"
+#DDR_begin_the_long_reconstruction: "Begin the Long Reconstruction"
+#DDR_striking_their_bases: "Striking Their Bases"
+#DDR_smashing_the_swastika: "Smashing the Swastika"
+#DDR_expose_their_crimes: "Expose Their Crimes"
+#DDR_hold_the_hamburg_trials: "Hold the Hamburg Trials"
+#DDR_enact_mass_nationalization: "Enact Mass Nationalization"
+#DDR_form_the_peoples_enterprises: "Form the Peoples Enterprises"
+#DDR_a_house_for_every_german: "A House for Every German"
+#DDR_the_plattenbau_system: "The Plattenbau System"
+#DDR_the_anti_fascist_elections: "The Anti Fascist Elections"
+#DDR_securing_the_revolution: "Securing the Revolution"
+#DDR_found_the_stasi: "Found the Stasi"
+#DDR_rooting_out_the_rats: "Rooting out the Rats"
+#DDR_introduce_centralized_planning: "Introduce Centralized Planning"
+#DDR_organizing_the_land_reform: "Organizing the Land Reform"
+#DDR_and_the_assembly_declares: "And the Assembly Declares..."
+#DDR_the_1966_socialist_constitution: "The 1966 Socialist Constitution"
+#
+####Superevents###
+#
+#SE_GERMAN_REVOLUTION_T: "THE GERMAN REVOLUTION"
+#SE_GERMAN_REVOLUTION_D: "Because things are the way they are, things will not stay the way they are.\n- Bertold Brecht"
+#SE_GERMAN_REVOLUTION_A: "Spartakus Avenged"
+
+###events###
+red_poland.1000.t: "[Get_newspaper_header]The Polish Revolution" 
+red_poland.1000.desc: "Only a month ago, the German Reich, the heartland of international fascism, fell to revolution. After that, the red tide of revolution has only advanced, as reports now suggest the red flag flies over Warsaw. With the collapse of Germany, the already fragile administration in Poland could not continue any longer, it seems, and nothing short of a total government collapse has occurred across the nation. \n\nWith the last remaining reactionary elements purged from Poland, the new Communist government has several issues to deal with. However, after years in exile, various Polish leftists, such as Władysław Gomułka, have returned to the country to lead the people's republic."
+red_poland.1000.a: "The Red Flag marches on."
+
+red_poland.1.t: "[Get_newspaper_header]The Polish Revolution" 
+red_poland.1.desc: "Only a month ago, the German Reich, the heartland of international fascism, fell to revolution. After that, the red tide of revolution has only advanced, as reports now suggest the red flag flies over Warsaw. With the collapse of Germany, the already fragile administration in Poland could not continue any longer, it seems, and nothing short of a total government collapse has occurred across the nation. \n\nWith the last remaining reactionary elements purged from Poland, the new Communist government has several issues to deal with. However, after years in exile, various Polish leftists, such as Władysław Gomułka, have returned to the country to lead the people's republic."
+red_poland.1.a: "The Red Flag marches on."

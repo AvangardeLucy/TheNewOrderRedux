@@ -1,12 +1,34 @@
-units = {
-	fleet = {
-		name = "Kriegsmarine-Division Ukraine"
-		naval_base = 200
-		task_force = {
-			name = "Küstengruppe 18."
-			location = 11700
-			ship = { name = "K107" definition = destroyer start_experience_factor = 0.1 equipment = { destroyer_2 = { amount = 1 owner = UKR version_name = "Rostock-class" } } }
-			ship = { name = "K108" definition = destroyer start_experience_factor = 0.1 equipment = { destroyer_2 = { amount = 1 owner = UKR version_name = "Rostock-class" } } }
-		}
-	}
+﻿units = {
+  fleet = {
+    name = "Kriegsmarine-Division Ukraine"
+    naval_base = 200
+    task_force = {
+      name = "Küstengruppe 18."
+      location = 11700
+      ship = {
+        name = "K107"
+        definition = destroyer
+        start_experience_factor = 0.1
+        equipment = {
+          destroyer_2 = {
+            amount = 1
+            owner = UKR
+            version_name = "Rostock-class"
+          }
+        }
+      }
+      ship = {
+        name = "K108"
+        definition = destroyer
+        start_experience_factor = 0.1
+        equipment = {
+          destroyer_2 = {
+            amount = 1
+            owner = UKR
+            version_name = "Rostock-class"
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,20 +1,26 @@
-division_template = {
-	name = "Peasant Militia"
-	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-		light_infantry = { x = 0 y = 2 }
-	}
-	support = {
-	}
+﻿division_template = {
+  name = "Peasant Militia"
+  regiments = {
+    light_infantry = {
+      x = 0
+      y = 0
+    }
+    light_infantry = {
+      x = 0
+      y = 1
+    }
+    light_infantry = {
+      x = 0
+      y = 2
+    }
+  }
+  support = {}
 }
-
 units = {
-	division = {
-		name = "Rejimen Rakyat Malaya"
-		location = 14693
-		division_template = "Peasant Militia"
-		start_equipment_factor = 0.3
-	}
+  division = {
+    name = "Rejimen Rakyat Malaya"
+    location = 14693
+    division_template = "Peasant Militia"
+    start_equipment_factor = 0.3
+  }
 }
-

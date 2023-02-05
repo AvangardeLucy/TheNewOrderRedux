@@ -686,16 +686,16 @@ characters={
 	}
 
 	#Jushin
-	JAP_Sugita_Ichiji = {
-		name = "JAP_Sugita_Ichiji"
+	JAP_ichiji_sugita = {
+		name = "JAP_ichiji_sugita"
 		portraits={
 			civilian={
-				small="GFX_idea_JAP_Sugita_Ichiji"
+				small="GFX_idea_JAP_ichiji_sugita"
 			}
 		}
 		advisor = {
 			slot = foreign_minister
-			idea_token = JAP_Sugita_Ichiji_for
+			idea_token = JAP_ichiji_sugita_for
 			allowed = { original_tag = JAP }
 			traits = {
 				foreign_minister
@@ -930,8 +930,8 @@ characters={
 			legacy_id=2104
 		}
 	}
-	JAP_eiichi_tatsui={
-		name="JAP_eiichi_tatsui"
+	JAP_eiichi_tatsumi={
+		name="JAP_eiichi_tatsumi"
 		portraits={
 			army={
 				large="gfx/leaders/JAP/Portrait_Japan_Eiichi_Tatsui.dds"

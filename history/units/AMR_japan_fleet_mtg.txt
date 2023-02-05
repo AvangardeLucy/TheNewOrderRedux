@@ -1,15 +1,54 @@
-units = {
-	fleet = {
-		name = "IJN Destroyers"
-		naval_base = "1772"
-		task_force = {
-			name = "IJN Destroyers"
-			location = 1772
-			#Destroyers
-			ship = { name = "Ognevoy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AMR version_name = "Super Akizuki Class Class" } } }
-			ship = { name = "Gnevny" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AMR version_name = "Super Akizuki Class Class" } } }
-			ship = { name = "Grozovoy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AMR version_name = "Super Akizuki Class Class" } } }
-			ship = { name = "Neustrashimy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AMR version_name = "Super Akizuki Class Class" } } }
-		}
-	}
+﻿units = {
+  fleet = {
+    name = "帝国海軍駆逐艦隊"  # IJN Destroyers
+    naval_base = "1772"
+    task_force = {
+      name = "帝国海軍駆逐艦隊"  # IJN Destroyers
+      location = 1772
+      ship = {
+        name = "オグネヴォイ"  # Ognevoy
+        definition = destroyer
+        equipment = {
+          ship_hull_light_1 = {
+            amount = 1
+            owner = AMR
+            version_name = "改秋月型"  # Super Akizuki Class Class
+          }
+        }
+      }
+      ship = {
+        name = "グネフヌイ"  # Gnevny
+        definition = destroyer
+        equipment = {
+          ship_hull_light_1 = {
+            amount = 1
+            owner = AMR
+            version_name = "改秋月型"  # Super Akizuki Class Class
+          }
+        }
+      }
+      ship = {
+        name = "グロゾヴォイ"  # Grozovoy
+        definition = destroyer
+        equipment = {
+          ship_hull_light_1 = {
+            amount = 1
+            owner = AMR
+            version_name = "改秋月型"  # Super Akizuki Class Class
+          }
+        }
+      }
+      ship = {
+        name = "ネウストラシムイ"  # Neustrashimy
+        definition = destroyer
+        equipment = {
+          ship_hull_light_1 = {
+            amount = 1
+            owner = AMR
+            version_name = "改秋月型"  # Super Akizuki Class Class
+          }
+        }
+      }
+    }
+  }
 }

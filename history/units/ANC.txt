@@ -1,157 +1,180 @@
 ﻿division_template = {
-	name = "Infantry Division"
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }
-	}
+  name = "歩兵師団"  # Infantry Division
+  regiments = {
+    infantry = {
+      x = 0
+      y = 0
+    }
+    infantry = {
+      x = 0
+      y = 1
+    }
+    infantry = {
+      x = 0
+      y = 2
+    }
+    infantry = {
+      x = 1
+      y = 0
+    }
+    infantry = {
+      x = 1
+      y = 1
+    }
+  }
+  support = {
+    artillery = {
+      x = 0
+      y = 0
+    }
+  }
 }
 division_template = {
-	name = "African Volunteers"
-	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
-	}
-}
-
-units = {
-	division = {
-		name = "1st Infantry Division"
-		location = 13511
-		division_template = "Infantry Division"
-		start_experience_factor = 0.4
-	}
+  name = "African Volunteers"
+  regiments = {
+    light_infantry = {
+      x = 0
+      y = 0
+    }
+    light_infantry = {
+      x = 0
+      y = 1
+    }
+  }
 }
 units = {
-	division = {
-		name = "2nd Infantry Division"
-		location = 13513
-		division_template = "Infantry Division"
-		start_experience_factor = 0.4
-	}
+  division = {
+    name = "第1歩兵師団"  # 1st Infantry Division
+    location = 13511
+    division_template = "歩兵師団"  # Infantry Division
+    start_experience_factor = 0.4
+  }
 }
 units = {
-	division = {
-		name = "3rd Infantry Division"
-		location = 13641
-		division_template = "Infantry Division"
-		start_experience_factor = 0.4
-	}
+  division = {
+    name = "第2歩兵師団"  # 2nd Infantry Division
+    location = 13513
+    division_template = "歩兵師団"  # Infantry Division
+    start_experience_factor = 0.4
+  }
 }
 units = {
-	division = {
-		name = "4th Infantry Division"
-		location = 7900
-		division_template = "Infantry Division"
-		start_experience_factor = 0.4
-	}
+  division = {
+    name = "第3歩兵師団"  # 3rd Infantry Division
+    location = 13641
+    division_template = "歩兵師団"  # Infantry Division
+    start_experience_factor = 0.4
+  }
 }
 units = {
-	division = {
-		name = "1st Voulenteer Division"
-		location = 13511
-		division_template = "African Volunteers"
-		start_experience_factor = 0.1
-	}
+  division = {
+    name = "第4歩兵師団"  # 4th Infantry Division
+    location = 7900
+    division_template = "歩兵師団"  # Infantry Division
+    start_experience_factor = 0.4
+  }
 }
 units = {
-	division = {
-		name = "2nd Voulenteer Division"
-		location = 13522
-		division_template = "African Volunteers"
-		start_experience_factor = 0.1
-	}
+  division = {
+    name = "第1義勇兵師団"  # 1st Voulenteer Division
+    location = 13511
+    division_template = "African Volunteers"
+    start_experience_factor = 0.1
+  }
 }
 units = {
-	division = {
-		name = "3rd Voulenteer Division"
-		location = 13522
-		division_template = "African Volunteers"
-		start_experience_factor = 0.1
-	}
+  division = {
+    name = "第2義勇兵師団"  # 2nd Voulenteer Division
+    location = 13522
+    division_template = "African Volunteers"
+    start_experience_factor = 0.1
+  }
 }
 units = {
-	division = {
-		name = "4th Voulenteer Division"
-		location = 13522
-		division_template = "African Volunteers"
-		start_experience_factor = 0.1
-	}
+  division = {
+    name = "第3義勇兵師団"  # 3rd Voulenteer Division
+    location = 13522
+    division_template = "African Volunteers"
+    start_experience_factor = 0.1
+  }
 }
 units = {
-	division = {
-		name = "5th Voulenteer Division"
-		location = 13540
-		division_template = "African Volunteers"
-		start_experience_factor = 0.1
-	}
+  division = {
+    name = "第4義勇兵師団"  # 4th Voulenteer Division
+    location = 13522
+    division_template = "African Volunteers"
+    start_experience_factor = 0.1
+  }
 }
 units = {
-	division = {
-		name = "6th Voulenteer Division"
-		location = 13540
-		division_template = "African Volunteers"
-		start_experience_factor = 0.1
-	}
+  division = {
+    name = "第5義勇兵師団"  # 5th Voulenteer Division
+    location = 13540
+    division_template = "African Volunteers"
+    start_experience_factor = 0.1
+  }
 }
 units = {
-	division = {
-		name = "7th Voulenteer Division"
-		location = 13540
-		division_template = "African Volunteers"
-		start_experience_factor = 0.1
-	}
+  division = {
+    name = "第6義勇兵師団"  # 6th Voulenteer Division
+    location = 13540
+    division_template = "African Volunteers"
+    start_experience_factor = 0.1
+  }
 }
 units = {
-	division = {
-		name = "8th Voulenteer Division"
-		location = 13641
-		division_template = "African Volunteers"
-		start_experience_factor = 0.1
-	}
+  division = {
+    name = "第7義勇兵師団"  # 7th Voulenteer Division
+    location = 13540
+    division_template = "African Volunteers"
+    start_experience_factor = 0.1
+  }
 }
 units = {
-	division = {
-		name = "9th Voulenteer Division"
-		location = 13653
-		division_template = "African Volunteers"
-		start_experience_factor = 0.1
-	}
+  division = {
+    name = "第8義勇兵師団"  # 8th Voulenteer Division
+    location = 13641
+    division_template = "African Volunteers"
+    start_experience_factor = 0.1
+  }
 }
 units = {
-	division = {
-		name = "10th Voulenteer Division"
-		location = 1580
-		division_template = "African Volunteers"
-		start_experience_factor = 0.1
-	}
+  division = {
+    name = "第9義勇兵師団"  # 9th Voulenteer Division
+    location = 13653
+    division_template = "African Volunteers"
+    start_experience_factor = 0.1
+  }
 }
 units = {
-	division = {
-		name = "11th Voulenteer Division"
-		location = 7900
-		division_template = "African Volunteers"
-		start_experience_factor = 0.1
-	}
+  division = {
+    name = "第10義勇兵師団"  # 10th Voulenteer Division
+    location = 1580
+    division_template = "African Volunteers"
+    start_experience_factor = 0.1
+  }
 }
 units = {
-	division = {
-		name = "12th Voulenteer Division"
-		location = 13417
-		division_template = "African Volunteers"
-		start_experience_factor = 0.1
-	}
+  division = {
+    name = "第11義勇兵師団"  # 11th Voulenteer Division
+    location = 7900
+    division_template = "African Volunteers"
+    start_experience_factor = 0.1
+  }
 }
 units = {
-	division = {
-		name = "13th Voulenteer Division"
-		location = 13511
-		division_template = "African Volunteers"
-		start_experience_factor = 0.1
-	}
+  division = {
+    name = "第12義勇兵師団"  # 12th Voulenteer Division
+    location = 13417
+    division_template = "African Volunteers"
+    start_experience_factor = 0.1
+  }
+}
+units = {
+  division = {
+    name = "第13義勇兵師団"  # 13th Voulenteer Division
+    location = 13511
+    division_template = "African Volunteers"
+    start_experience_factor = 0.1
+  }
 }

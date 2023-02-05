@@ -1,0 +1,5 @@
+﻿l_japanese:
+ has_nuclear_arsenal_tt: "§Y[THIS.GetNameWithFlag]§!は核貯蔵庫を持っている"
+ is_superpower_tt: "§Y[THIS.GetNameWithFlag]§!は超大国である"
+ is_urban_state_tt:0 "は都市州"
+ is_rural_state_tt:0 "は田舎州"
