@@ -2,24 +2,24 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_naval_equipment_role_icons"
-		texturefile = "gfx/army_icons/naval_equipment_role_icons.dds"
+		texturefile = "gfx/army_icons/replace/naval_equipment_role_icons.png"
 		noOfFrames = 8
 	}
 
 	spriteType = {
 		name = "GFX_naval_equipment_role_icons_selected"
-		texturefile = "gfx/army_icons/naval_equipment_role_icons_selected.dds"
+		texturefile = "gfx/army_icons/replace/naval_equipment_role_icons_selected.png"
 		noOfFrames = 8
 	}
 
 	spriteType = {
 		name = "GFX_naval_equipment_role_icon_any"
-		texturefile = "gfx/army_icons/any_role_icon.dds"
+		texturefile = "gfx/army_icons/replace/any_role_icon.png"
 	}
 
 	spriteType = {
 		name = "GFX_naval_equipment_role_icon_any_selected"
-		texturefile = "gfx/army_icons/any_role_icon_selected.dds"
+		texturefile = "gfx/army_icons/replace/any_role_icon_selected.png"
 	}
 
 	spriteType = {

@@ -4,10 +4,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX__shine"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		texturefile = "gfx/interface/goals/goal_unknown_tno.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/goal_unknown_tno.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -20,7 +20,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/goal_unknown_tno.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1417,10 +1417,10 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_goal_unknown_shine"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		texturefile = "gfx/interface/goals/goal_unknown_tno.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/goal_unknown_tno.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1433,7 +1433,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/goal_unknown_tno.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
