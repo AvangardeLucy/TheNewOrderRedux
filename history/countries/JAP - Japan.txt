@@ -530,7 +530,6 @@ add_to_faction = CAM
 add_to_faction = LAO
 add_to_faction = VIN
 add_to_faction = GAN
-#add_to_faction = MEN
 add_to_faction = MAN
 add_to_faction = SHX
 add_to_faction = YUN
@@ -1197,7 +1196,3 @@ if = {
 		producer = JAP
 	}
 }
-
-set_temp_variable = { target = MEN }
-set_temp_variable = { number = 2 }
-TNO_set_num_volunteers = yes

@@ -592,6 +592,11 @@ on_actions = {
 					}
 				}
 			}
+			#Dynamic Countries
+			every_state = {
+				limit = { is_core_of = BSB }
+				remove_core_of = BSB
+			}
 		}
 	}
 }
