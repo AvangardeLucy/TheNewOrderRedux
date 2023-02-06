@@ -1,16 +1,36 @@
 FIN_initialise_national_popularities = { #Temporary system to be used until full parliament mechanic is created.
+	#各政党の基礎人気度
 	clear_array = FIN_party_pops
-	add_to_array = { FIN_party_pops = 12 } #SDTP
-	add_to_array = { FIN_party_pops = 2 } #PKP
+	add_to_array = { FIN_party_pops = 12 } #SDTP(労働者党)
+	add_to_array = { FIN_party_pops = 2 } #PKP(恐らくSKP(共産党)のことだと思いますが)
 	add_to_array = { FIN_party_pops = 37 } #SDP
-	add_to_array = { FIN_party_pops = 5 } #SKP
+	add_to_array = { FIN_party_pops = 5 } #SKP(たぶんSK(フィンランド人民党のこと))
 	add_to_array = { FIN_party_pops = 31 } #ML
 	add_to_array = { FIN_party_pops = 7 } #RKP
 	add_to_array = { FIN_party_pops = 1 } #AA - Note - not technically used because AA is just hardcoded to always have one seat.
 	add_to_array = { FIN_party_pops = 4 } #SMP
 	add_to_array = { FIN_party_pops = 19 } #Kok.
 	add_to_array = { FIN_party_pops = 6 } #IKL
+	every_owned_state = {
+		FIN = { add_to_array = { FINDomesticGUIStates = PREV } } 
+	}
+	for_each_scope_loop = {
+		array = FINDomesticGUIStates
+		set_variable = { THIS.SDTP_Sup = 12 }
+		set_variable = { THIS.SKP_Sup = 2 }
+		set_variable = { THIS.SDP_Sup = 37 }
+		set_variable = { THIS.SK_Sup = 5 }
+		set_variable = { THIS.ML_Sup = 31 }
+		set_variable = { THIS.RKP_Sup = 7 }
+		set_variable = { THIS.AA_Sup = 1 }
+		set_variable = { THIS.SMP_Sup = 4 }
+		set_variable = { THIS.Kok_Sup = 19 }
+		set_variable = { THIS.IKL_Sup = 6 }
+		set_variable = { THIS.vote_rate = 50 }#投票率
 
+	}
+
+	#各政党の議席数
 	clear_array = FIN_parliament_seats
 	add_to_array = { FIN_parliament_seats = 0 } #SDTP
 	add_to_array = { FIN_parliament_seats = 0 } #PKP
@@ -22,7 +42,7 @@ FIN_initialise_national_popularities = { #Temporary system to be used until full
 	add_to_array = { FIN_parliament_seats = 3 } #SMP
 	add_to_array = { FIN_parliament_seats = 38 } #Kok.
 	add_to_array = { FIN_parliament_seats = 11 } #IKL
-
+	#各政党の合法性
 	clear_array = FIN_party_legality
 	add_to_array = { FIN_party_legality = 0 } #SDTP
 	add_to_array = { FIN_party_legality = 0 } #PKP
@@ -34,7 +54,7 @@ FIN_initialise_national_popularities = { #Temporary system to be used until full
 	add_to_array = { FIN_party_legality = 1 } #SMP
 	add_to_array = { FIN_party_legality = 1 } #Kok.
 	add_to_array = { FIN_party_legality = 1 } #IKL
-
+	#各政党の連立状態
 	clear_array = FIN_coalition
 	add_to_array = { FIN_coalition = 0 } #SDTP
 	add_to_array = { FIN_coalition = 0 } #PKP
@@ -49,7 +69,7 @@ FIN_initialise_national_popularities = { #Temporary system to be used until full
 
 	set_variable = { FIN_temp_parliament_coalition_seats = 109 }
 }
-
+#全政党を合法化する
 FIN_legalise_all_parties = {
 	set_variable = { FIN_party_legality^0 = 1 }
 	set_variable = { FIN_party_legality^1 = 1 }
@@ -57,6 +77,7 @@ FIN_legalise_all_parties = {
 
 FIN_assemble_parliament_backend = {
 	set_temp_variable = { total = 0 }
+	#非合法の政党があるときに、それを除外して人気度を合計100にする
 	for_each_loop = {
 		array = FIN_party_pops
 		if = {
@@ -71,6 +92,7 @@ FIN_assemble_parliament_backend = {
 	add_to_array = { FIN_party_percentages = 0 }
 	add_to_array = { FIN_parliament_seats = 0 }
 	set_variable = { validator = 0 }
+	#議員の数調整
 	for_each_loop = {
 		array = FIN_party_pops
 		if = {

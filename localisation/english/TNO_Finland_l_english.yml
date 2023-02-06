@@ -241,3 +241,5 @@
  FIN_Adolf_Ehrnrooth: "Adolf Ehrnrooth"
  
  #Decisions
+ FIN_Debug_Category: "Finland Debug"
+ FIN_Debug_Category_desc: "SDTP Seats: [?FIN_parliament_seats^0]\nPKP Seats: [?FIN_parliament_seats^1]\nSDP Seats: [?FIN_parliament_seats^2]\nSKP Seats: [?FIN_parliament_seats^3]\nML Seats: [?FIN_parliament_seats^4]\nRKP Seats: [?FIN_parliament_seats^5]\nAA Seats: [?FIN_parliament_seats^6]\nSMP Seats: [?FIN_parliament_seats^7]\nKok. Seats: [?FIN_parliament_seats^8]\nIKL Seats: [?FIN_parliament_seats^9]"

@@ -30,3 +30,12 @@ FIN_winter_war = {
 		}
 	}
 }
+FIN_Debug_Category = {
+	picture = GFX_decision_ENG_decision_rebellion
+	allowed = {
+		tag = FIN
+	}
+	visible = {
+		is_debug = yes
+	}
+}
