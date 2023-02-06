@@ -224,15 +224,16 @@ on_actions = {
 				}
 				else_if = {
 					limit = {
-						country_exists = MEN
+						FROM = { tag = MEN }
 						ROOT = { tag = MPF }
 					}
 					every_state = {
 						limit = { is_core_of = ROOT }
 						remove_core_of = ROOT
-						add_core_of = MEN
+						add_core_of = FROM
 					}
-					MEN = {
+					JAP = { add_to_faction = FROM }
+					FROM = {
 						annex_country = {
 							target = ROOT
 							transfer_troops = no

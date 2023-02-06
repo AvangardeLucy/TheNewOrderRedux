@@ -2443,6 +2443,7 @@ WI_Japan_is_happy = {
 		transfer_state = 1464
 		add_to_faction = CHI
 		add_to_faction = SHX
+		add_to_faction = MEN
 		add_to_faction = GUX
 		add_to_faction = GAN
 		add_to_faction = YUN
@@ -3150,6 +3151,7 @@ WI_Japan_is_angry = {
 		add_to_faction = SIC
 		add_to_faction = GAN
 		add_to_faction = YUN
+		add_to_faction = MEN
 		add_to_faction = GUX
 	}
 }

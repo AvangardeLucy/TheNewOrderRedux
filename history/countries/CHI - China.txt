@@ -407,10 +407,6 @@ set_autonomy = {
 	target = YUN
 	autonomous_state = autonomy_china_warlord_regime
 }
-set_autonomy = {
-	target = MEN
-	autonomous_state = autonomy_china_warlord_regime
-}
 
 
 add_ideas = {
