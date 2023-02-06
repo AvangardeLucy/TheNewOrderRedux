@@ -11,25 +11,26 @@ FIN_initialise_national_popularities = { #Temporary system to be used until full
 	add_to_array = { FIN_party_pops = 4 } #SMP
 	add_to_array = { FIN_party_pops = 19 } #Kok.
 	add_to_array = { FIN_party_pops = 6 } #IKL
+	#州ごとの人気度
 	every_owned_state = {
 		FIN = { add_to_array = { FINDomesticGUIStates = PREV } } 
 	}
 	for_each_scope_loop = {
 		array = FINDomesticGUIStates
-		set_variable = { THIS.SDTP_Sup = 12 }
-		set_variable = { THIS.SKP_Sup = 2 }
-		set_variable = { THIS.SDP_Sup = 37 }
-		set_variable = { THIS.SK_Sup = 5 }
-		set_variable = { THIS.ML_Sup = 31 }
-		set_variable = { THIS.RKP_Sup = 7 }
-		set_variable = { THIS.AA_Sup = 1 }
-		set_variable = { THIS.SMP_Sup = 4 }
-		set_variable = { THIS.Kok_Sup = 19 }
-		set_variable = { THIS.IKL_Sup = 6 }
+		add_to_array = { THIS.party_pops = 12 }
+		add_to_array = { THIS.party_pops = 2 }
+		add_to_array = { THIS.party_pops = 37 }
+		add_to_array = { THIS.party_pops = 5 }
+		add_to_array = { THIS.party_pops = 31 }
+		add_to_array = { THIS.party_pops = 7 }
+		add_to_array = { THIS.party_pops = 1 }
+		add_to_array = { THIS.party_pops = 4 }
+		add_to_array = { THIS.party_pops = 19 }
+		add_to_array = { THIS.party_pops = 6 }
 		set_variable = { THIS.vote_rate = 50 }#投票率
 
 	}
-
+	#地域ごとの人気度
 	#各政党の議席数
 	clear_array = FIN_parliament_seats
 	add_to_array = { FIN_parliament_seats = 0 } #SDTP
