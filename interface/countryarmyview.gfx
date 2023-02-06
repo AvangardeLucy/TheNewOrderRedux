@@ -2,7 +2,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_air_overview_carrier_base"
-		texturefile = "gfx/interface/navalcombat/ships/carrier.dds"
+		texturefile = "gfx/interface/navalcombat/replace/ships/carrier.png"
 		noofframes = 2
 	}
 

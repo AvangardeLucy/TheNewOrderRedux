@@ -151,7 +151,7 @@ spriteTypes = {
 
 	spriteType = { 
 		name = "GFX_unit_category_unknown"
-		textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds"
+		textureFile = "gfx/interface/counters/replace/divisions_large/unit_infantry_icon.png"
 		noOfFrames = 2
 	}
 }

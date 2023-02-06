@@ -54,16 +54,16 @@ spriteTypes = {
 
 	progressbartype = {
 		name = "GFX_navalcombat_bar_str"
-		textureFile1 = "gfx/interface/navalcombat/ship_bar_str.dds"
-		textureFile2 = "gfx/interface/navalcombat/ship_bar_bg.dds"
+		textureFile1 = "gfx/interface/navalcombat/replace/ship_bar_str.png"
+		textureFile2 = "gfx/interface/navalcombat/replace/ship_bar_bg.png"
 		size = {x=17 y=6}
 		effectFile = "gfx/FX/progress.lua"
 		horizontal = yes
 	}
 	progressbartype = {
 		name = "GFX_navalcombat_bar_org"
-		textureFile1 = "gfx/interface/navalcombat/ship_bar_org.dds"
-		textureFile2 = "gfx/interface/navalcombat/ship_bar_bg.dds"
+		textureFile1 = "gfx/interface/navalcombat/replace/ship_bar_org.png"
+		textureFile2 = "gfx/interface/navalcombat/replace/ship_bar_bg.png"
 		size = {x=17 y=6}
 		effectFile = "gfx/FX/progress.lua"
 		horizontal = yes

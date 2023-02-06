@@ -654,7 +654,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_crypto_on_map_bg"
-		texturefile = "gfx/interface/crypto/cracking_bg.dds"
+		texturefile = "gfx/interface/crypto/replace/cracking_bg.png"
 	}
 
 #--- CIRCULAR PROGRESS BAR ON MAP ---

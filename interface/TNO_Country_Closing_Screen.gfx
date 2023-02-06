@@ -5,28 +5,28 @@ spriteTypes = {
 	###########################
 	spriteType = {
 		name = "GFX_CountryClosing_picture_frame"
-		texturefile = "gfx/interface/country_closing_screen/picture_frame.dds"
+		texturefile = "gfx/interface/country_closing_screen/picture_frame.png"
 	}
 	spriteType = {
 		name = "GFX_CountryClosing_picture_frame_dark"
-		texturefile = "gfx/interface/country_closing_screen/picture_frame_dark.dds"
+		texturefile = "gfx/interface/country_closing_screen/picture_frame_dark.png"
 	}
 	spriteType = {
 		name = "GFX_CountryClosing_select_btn"
-		texturefile = "gfx/interface/country_closing_screen/select_btn.dds"
+		texturefile = "gfx/interface/country_closing_screen/select_btn.png"
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_CountryClosing_close_btn"
-		texturefile = "gfx/interface/country_closing_screen/close_btn.dds"
+		texturefile = "gfx/interface/country_closing_screen/close_btn.png"
 	}
 	spriteType = {
 		name = "GFX_CountryClosing_divider"
-		texturefile = "gfx/interface/country_closing_screen/divider.dds"
+		texturefile = "gfx/interface/country_closing_screen/divider.png"
 	}
 	spriteType = {
 		name = "GFX_CountryClosing_page_btn"
-		texturefile = "gfx/interface/country_closing_screen/page_btn.dds"
+		texturefile = "gfx/interface/country_closing_screen/page_btn.png"
 		noOfFrames = 2
 	}
 
