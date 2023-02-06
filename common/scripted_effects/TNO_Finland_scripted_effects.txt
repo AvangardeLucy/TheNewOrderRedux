@@ -1,33 +1,52 @@
 FIN_initialise_national_popularities = { #Temporary system to be used until full parliament mechanic is created.
-	#各政党の基礎人気度
-	clear_array = FIN_party_pops
-	add_to_array = { FIN_party_pops = 12 } #SDTP(労働者党)
-	add_to_array = { FIN_party_pops = 2 } #PKP(恐らくSKP(共産党)のことだと思いますが)
-	add_to_array = { FIN_party_pops = 37 } #SDP
-	add_to_array = { FIN_party_pops = 5 } #SKP(たぶんSK(フィンランド人民党のこと))
-	add_to_array = { FIN_party_pops = 31 } #ML
-	add_to_array = { FIN_party_pops = 7 } #RKP
-	add_to_array = { FIN_party_pops = 1 } #AA - Note - not technically used because AA is just hardcoded to always have one seat.
-	add_to_array = { FIN_party_pops = 4 } #SMP
-	add_to_array = { FIN_party_pops = 19 } #Kok.
-	add_to_array = { FIN_party_pops = 6 } #IKL
 	#州ごとの人気度
-	every_owned_state = {
-		FIN = { add_to_array = { FINDomesticGUIStates = PREV } } 
-	}
+	every_owned_state={FIN={add_to_array = { FINDomesticGUIStates = PREV }} } 
 	for_each_scope_loop = {
 		array = FINDomesticGUIStates
-		add_to_array = { THIS.party_pops = 12 }#労働者党=0
-		add_to_array = { THIS.party_pops = 2 } #共産党=1
-		add_to_array = { THIS.party_pops = 37 } #社会民主党=2
-		add_to_array = { THIS.party_pops = 5 } #フィンランド人民党=3
-		add_to_array = { THIS.party_pops = 31 } #農民連合=4
-		add_to_array = { THIS.party_pops = 7 } #スウェーデン人民党=5
+		add_to_array = { THIS.party_pops = 1200 }#労働者党=0
+		add_to_array = { THIS.party_pops = 200 } #共産党=1
+		add_to_array = { THIS.party_pops = 3700 } #社会民主党=2
+		add_to_array = { THIS.party_pops = 500 } #フィンランド人民党=3
+		add_to_array = { THIS.party_pops = 3100 } #農民連合=4
+		add_to_array = { THIS.party_pops = 700 } #スウェーデン人民党=5
 		add_to_array = { THIS.party_pops = 1 } #AA- Note - not technically used because AA is just hardcoded to always have one seat.
-		add_to_array = { THIS.party_pops = 4 } #田園党=7
-		add_to_array = { THIS.party_pops = 19 } #国民連合党=8
-		add_to_array = { THIS.party_pops = 6 } #愛国者国民運動=9
+		add_to_array = { THIS.party_pops = 400 } #田園党=7
+		add_to_array = { THIS.party_pops = 1900 } #国民連合党=8
+		add_to_array = { THIS.party_pops = 600 } #愛国者国民運動=9
 		set_variable = { THIS.vote_rate = 50 }#投票率
+		#人気が上がる確率
+		add_to_array = { THIS.pops_up_rate =0.1} #労働者党=0
+		add_to_array = { THIS.pops_up_rate =0.1} #共産党=1
+		add_to_array = { THIS.pops_up_rate =0.1} #社会民主党=2
+		add_to_array = { THIS.pops_up_rate =0.1} #フィンランド人民党=3
+		add_to_array = { THIS.pops_up_rate =0.1} #農民連合=4
+		add_to_array = { THIS.pops_up_rate =0.1} #スウェーデン人民党=5
+		add_to_array = { THIS.pops_up_rate =0}
+		add_to_array = { THIS.pops_up_rate =0.1} #田園党=7
+		add_to_array = { THIS.pops_up_rate =0.1} #国民連合党=8
+		add_to_array = { THIS.pops_up_rate =0.1} #愛国者国民運動=9
+		#人気が下がる確率
+		add_to_array = { THIS.pops_down_rate =0.1} #労働者党=0
+		add_to_array = { THIS.pops_down_rate =0.1} #共産党=1
+		add_to_array = { THIS.pops_down_rate =0.1} #社会民主党=2
+		add_to_array = { THIS.pops_down_rate =0.1} #フィンランド人民党=3
+		add_to_array = { THIS.pops_down_rate =0.1} #農民連合=4
+		add_to_array = { THIS.pops_down_rate =0.1} #スウェーデン人民党=5
+		add_to_array = { THIS.pops_down_rate =0}
+		add_to_array = { THIS.pops_down_rate =0.1} #田園党=7
+		add_to_array = { THIS.pops_down_rate =0.1} #国民連合党=8
+		add_to_array = { THIS.pops_down_rate =0.1} #愛国者国民運動=9
+		#人気の増減率
+		add_to_array = { THIS.pops_change =1} #労働者党=0
+		add_to_array = { THIS.pops_change =1} #共産党=1
+		add_to_array = { THIS.pops_change =1} #社会民主党=2
+		add_to_array = { THIS.pops_change =1} #フィンランド人民党=3
+		add_to_array = { THIS.pops_change =1} #農民連合=4
+		add_to_array = { THIS.pops_change =1} #スウェーデン人民党=5
+		add_to_array = { THIS.pops_change =0}
+		add_to_array = { THIS.pops_change =1} #田園党=7
+		add_to_array = { THIS.pops_change =1} #国民連合党=8
+		add_to_array = { THIS.pops_change =1} #愛国者国民運動=9
 
 	}
 	#地域ごとの人気度(4地域だけ州跨ぐため)
@@ -57,9 +76,32 @@ FIN_initialise_national_popularities = { #Temporary system to be used until full
 		round_variable = kaakkois_party_pops^i
 		round_variable = karjala_party_pops^i
 
-
-		
-		
+	}
+	#全体での人気度
+	clear_array = FIN_party_pops
+	set_variable = { party_pops_all_sum = 0 }
+	for_loop_effect = {
+		start = 0
+		end = 10
+		value = j
+		add = 1
+		add_to_array = { FIN_party_pops = 0 }
+		for_each_scope_loop = {
+			array=FINDomesticGUIStates
+			FIN={
+				add_to_variable={ THIS.FIN_party_pops^j = PREV.party_pops^j }
+				add_to_variable={ THIS.party_pops_all_sum = PREV.party_pops^j }
+			}
+		}
+	}
+	for_loop_effect = {
+		start = 0
+		end = 10
+		value = j
+		add = 1
+		divide_variable={FIN_party_pops^j=party_pops_all_sum}
+		multiply_variable = {FIN_party_pops^j=100}
+		round_variable=FIN_party_pops^j
 	}
 	#各政党の議席数
 	clear_array = FIN_parliament_seats
@@ -107,7 +149,9 @@ FIN_legalise_all_parties = {
 }
 
 FIN_assemble_parliament_backend = {
-	set_temp_variable = { total = 0 }
+	set_temp_variable = { total_but = 0 } #非合法の政党の人気度を除外
+	set_temp_variable = { total = 0 }#人気度合計
+
 	#非合法の政党があるときに、それを除外して人気度を合計100にする
 	for_each_loop = {
 		array = FIN_party_pops
@@ -115,11 +159,12 @@ FIN_assemble_parliament_backend = {
 			limit = {
 				check_variable = { FIN_party_legality^i = 1 }
 			}
-			add_to_temp_variable = { total = FIN_party_pops^i }
+			add_to_temp_variable = { total_but = FIN_party_pops^i }
 		}
+		add_to_temp_variable = { total = FIN_party_pops^i }
 	}
-	set_temp_variable = { percent_modifier = 100 }
-	divide_temp_variable = { percent_modifier = total }
+	set_temp_variable = { percent_modifier = total }
+	divide_temp_variable = { percent_modifier = total_but }
 	add_to_array = { FIN_party_percentages = 0 }
 	add_to_array = { FIN_parliament_seats = 0 }
 	set_variable = { validator = 0 }
@@ -166,7 +211,64 @@ FIN_assemble_parliament_backend = {
 	log = "Kok. Seats: [?FIN_parliament_seats^8]"
 	log = "IKL Seats: [?FIN_parliament_seats^9]"
 }
+FIN_Monthly_pops_change={
+	for_each_scope_loop = {
+		array = FINDomesticGUIStates
+		for_loop_effect = {
+			start = 0
+			end = 10
+			value = i
+			add = 1
+			set_temp_variable={ change_n=100 }
+			multiply_temp_variable={ change_n=THIS.pops_change^i}
+			
+			randomize_temp_variable = {
+				var = FIN_rates
+				distribution = uniform
+				min = 0
+				max = 1
+			}
+			set_temp_variable={ FIN_up=1 }
+			subtract_from_temp_variable={FIN_up=THIS.pops_down_rate^i}
+			if = {
+				limit={check_variable ={FIN_rates<THIS.pops_up_rate^i}}
+				add_to_variable={ THIS.party_pops^i=change_n}
+			}
+			if = {
+				limit={check_variable ={FIN_rates>FIN_up}}
+				subtract_from_variable={ THIS.party_pops^i=change_n}
+			}
+			
 
+		}
+	}
+	for_loop_effect ={
+		start = 0
+		end = 10
+		value = i
+		add = 1
+		set_variable={vaasa_party_pops^i=0}
+		set_variable={savo_party_pops^i=0}
+		set_variable={kaakkois_party_pops^i=0}
+		set_variable={karjala_party_pops^i=0}
+		add_to_variable={vaasa_party_pops^i = 149.party_pops^i}
+		add_to_variable={vaasa_party_pops^i = 1716.party_pops^i}
+		add_to_variable={savo_party_pops^i = 1721.party_pops^i}
+		add_to_variable={savo_party_pops^i = 1722.party_pops^i}
+		add_to_variable={kaakkois_party_pops^i = 1723.party_pops^i}
+		add_to_variable={kaakkois_party_pops^i = 1713.party_pops^i}
+		add_to_variable={karjala_party_pops^i = 1712.party_pops^i}
+		add_to_variable={karjala_party_pops^i = 146.party_pops^i}
+		divide_variable={vaasa_party_pops^i=2}
+		divide_variable={savo_party_pops^i=2}
+		divide_variable={kaakkois_party_pops^i=2}
+		divide_variable={karjala_party_pops^i=2}
+		round_variable = vaasa_party_pops^i
+		round_variable = savo_party_pops^i
+		round_variable = kaakkois_party_pops^i
+		round_variable = karjala_party_pops^i
+	}
+}
 FIN_parliament_coalition_calculations = {
 	clear_array = FIN_coalition_scoring
 	clear_array = coalition_seat_percents

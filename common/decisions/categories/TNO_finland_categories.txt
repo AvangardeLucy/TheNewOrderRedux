@@ -36,6 +36,6 @@ FIN_Debug_Category = {
 		tag = FIN
 	}
 	visible = {
-		is_debug = yes
+		#is_debug = yes
 	}
 }

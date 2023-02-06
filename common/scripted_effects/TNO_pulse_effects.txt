@@ -1029,7 +1029,9 @@ first_every_month_script = {
 	BRG = {
 		BRG_monthly_pulse_effect = yes
 	}
-
+	FIN= {
+		FIN_Monthly_pops_change=yes
+	}
 	ANG = {
 		ANG_monthly_pulse_effect = yes
 	}

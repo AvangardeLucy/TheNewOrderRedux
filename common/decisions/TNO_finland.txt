@@ -1,54 +1,50 @@
 FIN_Debug_Category = {
-	FIN_demand_ceasefire = {
+	FIN_go_vote = {
 
 		icon = GFX_decision_generic_form_nation
 
 		available = {
-			has_global_flag = KARELIAN_WAR_FORCE_PEACE
-			NOT = { surrender_progress > 0.20 }
+			is_debug=yes
 		}
 
 		visible = {
-			is_debug = yes
+			#is_debug = yes
 		}
 
 		custom_cost_trigger = { always = yes } #no cost
 
-		days_re_enable = 90
+		days_re_enable = 10
 
 		fire_only_once = no
 
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision FIN_offer_ceasefire"
-			if = {
-				limit = { WSR = { exists = yes } }
-				WSR = {
-					country_event = {
-						id = murmansk_peace.6
-						days = 3
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					WSB = { exists = yes }
-				}
-				WSB = {
-					country_event = {
-						id = murmansk_peace.6
-						days = 3
-					}
-				}
-			}
-			else = {
-				SIB = {
-					country_event = {
-						id = murmansk_peace.6
-						days = 3
-					}
-				}
-			}
-			clr_global_flag = KARELIAN_WAR_FORCE_PEACE
+			FIN_assemble_parliament_backend=yes
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	FIN_pops_change = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			is_debug=yes
+		}
+
+		visible = {
+			#is_debug = yes
+		}
+
+		custom_cost_trigger = { always = yes } #no cost
+
+		days_re_enable = 1
+
+		fire_only_once = no
+
+		complete_effect = {
+			FIN_Monthly_pops_change=yes
 		}
 
 		ai_will_do = {
