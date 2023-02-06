@@ -17,20 +17,50 @@ FIN_initialise_national_popularities = { #Temporary system to be used until full
 	}
 	for_each_scope_loop = {
 		array = FINDomesticGUIStates
-		add_to_array = { THIS.party_pops = 12 }
-		add_to_array = { THIS.party_pops = 2 }
-		add_to_array = { THIS.party_pops = 37 }
-		add_to_array = { THIS.party_pops = 5 }
-		add_to_array = { THIS.party_pops = 31 }
-		add_to_array = { THIS.party_pops = 7 }
-		add_to_array = { THIS.party_pops = 1 }
-		add_to_array = { THIS.party_pops = 4 }
-		add_to_array = { THIS.party_pops = 19 }
-		add_to_array = { THIS.party_pops = 6 }
+		add_to_array = { THIS.party_pops = 12 }#労働者党=0
+		add_to_array = { THIS.party_pops = 2 } #共産党=1
+		add_to_array = { THIS.party_pops = 37 } #社会民主党=2
+		add_to_array = { THIS.party_pops = 5 } #フィンランド人民党=3
+		add_to_array = { THIS.party_pops = 31 } #農民連合=4
+		add_to_array = { THIS.party_pops = 7 } #スウェーデン人民党=5
+		add_to_array = { THIS.party_pops = 1 } #AA- Note - not technically used because AA is just hardcoded to always have one seat.
+		add_to_array = { THIS.party_pops = 4 } #田園党=7
+		add_to_array = { THIS.party_pops = 19 } #国民連合党=8
+		add_to_array = { THIS.party_pops = 6 } #愛国者国民運動=9
 		set_variable = { THIS.vote_rate = 50 }#投票率
 
 	}
-	#地域ごとの人気度
+	#地域ごとの人気度(4地域だけ州跨ぐため)
+	for_loop_effect = {
+		start = 0
+		end = 10
+		value = i
+		add = 1
+		add_to_array ={ vaasa_party_pops=0 }
+		add_to_array ={ savo_party_pops=0 }
+		add_to_array ={ kaakkois_party_pops=0 }
+		add_to_array ={ karjala_party_pops=0 }
+		add_to_variable={vaasa_party_pops^i = 149.party_pops^i}
+		add_to_variable={vaasa_party_pops^i = 1716.party_pops^i}
+		add_to_variable={savo_party_pops^i = 1721.party_pops^i}
+		add_to_variable={savo_party_pops^i = 1722.party_pops^i}
+		add_to_variable={kaakkois_party_pops^i = 1723.party_pops^i}
+		add_to_variable={kaakkois_party_pops^i = 1713.party_pops^i}
+		add_to_variable={karjala_party_pops^i = 1712.party_pops^i}
+		add_to_variable={karjala_party_pops^i = 146.party_pops^i}
+		divide_variable={vaasa_party_pops^i=2}
+		divide_variable={savo_party_pops^i=2}
+		divide_variable={kaakkois_party_pops^i=2}
+		divide_variable={karjala_party_pops^i=2}
+		round_variable = vaasa_party_pops^i
+		round_variable = savo_party_pops^i
+		round_variable = kaakkois_party_pops^i
+		round_variable = karjala_party_pops^i
+
+
+		
+		
+	}
 	#各政党の議席数
 	clear_array = FIN_parliament_seats
 	add_to_array = { FIN_parliament_seats = 0 } #SDTP
