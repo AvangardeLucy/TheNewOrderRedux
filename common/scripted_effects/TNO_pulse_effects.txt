@@ -1031,6 +1031,7 @@ first_every_month_script = {
 	}
 	FIN= {
 		FIN_Monthly_pops_change=yes
+		FIN_whole_pops_calculation=yes
 	}
 	ANG = {
 		ANG_monthly_pulse_effect = yes

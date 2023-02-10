@@ -1,8 +1,9 @@
 FIN_initialise_national_popularities = { #Temporary system to be used until full parliament mechanic is created.
-	#州ごとの人気度
+	
 	every_owned_state={FIN={add_to_array = { FINDomesticGUIStates = PREV }} } 
 	for_each_scope_loop = {
 		array = FINDomesticGUIStates
+		#州ごとの人気度
 		add_to_array = { THIS.party_pops = 1200 }#労働者党=0
 		add_to_array = { THIS.party_pops = 200 } #共産党=1
 		add_to_array = { THIS.party_pops = 3700 } #社会民主党=2
@@ -13,40 +14,40 @@ FIN_initialise_national_popularities = { #Temporary system to be used until full
 		add_to_array = { THIS.party_pops = 400 } #田園党=7
 		add_to_array = { THIS.party_pops = 1900 } #国民連合党=8
 		add_to_array = { THIS.party_pops = 600 } #愛国者国民運動=9
-		set_variable = { THIS.vote_rate = 50 }#投票率
-		#人気が上がる確率
-		add_to_array = { THIS.pops_up_rate =0.1} #労働者党=0
-		add_to_array = { THIS.pops_up_rate =0.1} #共産党=1
-		add_to_array = { THIS.pops_up_rate =0.1} #社会民主党=2
-		add_to_array = { THIS.pops_up_rate =0.1} #フィンランド人民党=3
-		add_to_array = { THIS.pops_up_rate =0.1} #農民連合=4
-		add_to_array = { THIS.pops_up_rate =0.1} #スウェーデン人民党=5
-		add_to_array = { THIS.pops_up_rate =0}
-		add_to_array = { THIS.pops_up_rate =0.1} #田園党=7
-		add_to_array = { THIS.pops_up_rate =0.1} #国民連合党=8
-		add_to_array = { THIS.pops_up_rate =0.1} #愛国者国民運動=9
-		#人気が下がる確率
-		add_to_array = { THIS.pops_down_rate =0.1} #労働者党=0
-		add_to_array = { THIS.pops_down_rate =0.1} #共産党=1
-		add_to_array = { THIS.pops_down_rate =0.1} #社会民主党=2
-		add_to_array = { THIS.pops_down_rate =0.1} #フィンランド人民党=3
-		add_to_array = { THIS.pops_down_rate =0.1} #農民連合=4
-		add_to_array = { THIS.pops_down_rate =0.1} #スウェーデン人民党=5
-		add_to_array = { THIS.pops_down_rate =0}
-		add_to_array = { THIS.pops_down_rate =0.1} #田園党=7
-		add_to_array = { THIS.pops_down_rate =0.1} #国民連合党=8
-		add_to_array = { THIS.pops_down_rate =0.1} #愛国者国民運動=9
-		#人気の増減率
-		add_to_array = { THIS.pops_change =1} #労働者党=0
-		add_to_array = { THIS.pops_change =1} #共産党=1
-		add_to_array = { THIS.pops_change =1} #社会民主党=2
-		add_to_array = { THIS.pops_change =1} #フィンランド人民党=3
-		add_to_array = { THIS.pops_change =1} #農民連合=4
-		add_to_array = { THIS.pops_change =1} #スウェーデン人民党=5
-		add_to_array = { THIS.pops_change =0}
-		add_to_array = { THIS.pops_change =1} #田園党=7
-		add_to_array = { THIS.pops_change =1} #国民連合党=8
-		add_to_array = { THIS.pops_change =1} #愛国者国民運動=9
+		#毎月の州ごとの人気度の変化
+		add_to_array = { THIS.party_pops_monthly_change =10} #労働者党=0
+		add_to_array = { THIS.party_pops_monthly_change =10} #共産党=1
+		add_to_array = { THIS.party_pops_monthly_change =10} #社会民主党=2
+		add_to_array = { THIS.party_pops_monthly_change =10} #フィンランド人民党=3
+		add_to_array = { THIS.party_pops_monthly_change =10} #農民連合=4
+		add_to_array = { THIS.party_pops_monthly_change =10} #スウェーデン人民党=5
+		add_to_array = { THIS.party_pops_monthly_change =0}
+		add_to_array = { THIS.party_pops_monthly_change =10} #田園党=7
+		add_to_array = { THIS.party_pops_monthly_change =10} #国民連合党=8
+		add_to_array = { THIS.party_pops_monthly_change =20} #愛国者国民運動=9
+		#毎月の州ごとの人気度の変化の減衰率
+		add_to_array = { THIS.party_pops_monthly_change_fade =1} #労働者党=0
+		add_to_array = { THIS.party_pops_monthly_change_fade =1} #共産党=1
+		add_to_array = { THIS.party_pops_monthly_change_fade =0.9} #社会民主党=2
+		add_to_array = { THIS.party_pops_monthly_change_fade =0.9} #フィンランド人民党=3
+		add_to_array = { THIS.party_pops_monthly_change_fade =0.9} #農民連合=4
+		add_to_array = { THIS.party_pops_monthly_change_fade =0.9} #スウェーデン人民党=5
+		add_to_array = { THIS.party_pops_monthly_change_fade =0}
+		add_to_array = { THIS.party_pops_monthly_change_fade =0.9} #田園党=7
+		add_to_array = { THIS.party_pops_monthly_change_fade =0.9} #国民連合党=8
+		add_to_array = { THIS.party_pops_monthly_change_fade =1} #愛国者国民運動=9
+		#州ごとの人気度の変化の影響力
+		add_to_array = { THIS.party_pops_effect =0.2} #労働者党=0
+		add_to_array = { THIS.party_pops_effect =0.2} #共産党=1
+		add_to_array = { THIS.party_pops_effect =0.1} #社会民主党=2
+		add_to_array = { THIS.party_pops_effect =0.1} #フィンランド人民党=3
+		add_to_array = { THIS.party_pops_effect =0.1} #農民連合=4
+		add_to_array = { THIS.party_pops_effect =0.1} #スウェーデン人民党=5
+		add_to_array = { THIS.party_pops_effect =0}
+		add_to_array = { THIS.party_pops_effect =0.1} #田園党=7
+		add_to_array = { THIS.party_pops_effect=0.1} #国民連合党=8
+		add_to_array = { THIS.party_pops_effect =0.2} #愛国者国民運動=9
+		set_variable = { THIS.vote_rate = 0.5 }#投票率
 
 	}
 	#地域ごとの人気度(4地域だけ州跨ぐため)
@@ -94,6 +95,16 @@ FIN_initialise_national_popularities = { #Temporary system to be used until full
 			}
 		}
 	}
+	set_variable = { FIN_state_sum = 0 }
+	every_owned_state={
+		FIN={add_to_variable = { FIN_state_sum = 1 }}
+	}
+	set_variable = {FIN_Red_Average_pops=FIN_party_pops^0}
+	add_to_variable = {FIN_Red_Average_pops=FIN_party_pops^1}
+	set_temp_variable={F_times=FIN_state_sum}
+	multiply_temp_variable={F_times=2}
+	divide_variable={FIN_Red_Average_pops=F_times}
+	
 	for_loop_effect = {
 		start = 0
 		end = 10
@@ -141,6 +152,8 @@ FIN_initialise_national_popularities = { #Temporary system to be used until full
 	add_to_array = { FIN_coalition = 1 } #IKL
 
 	set_variable = { FIN_temp_parliament_coalition_seats = 109 }
+
+	set_global_flag = FIN_RED_CRISIS
 }
 #全政党を合法化する
 FIN_legalise_all_parties = {
@@ -219,27 +232,21 @@ FIN_Monthly_pops_change={
 			end = 10
 			value = i
 			add = 1
-			set_temp_variable={ change_n=100 }
-			multiply_temp_variable={ change_n=THIS.pops_change^i}
-			
-			randomize_temp_variable = {
-				var = FIN_rates
-				distribution = uniform
-				min = 0
-				max = 1
+			set_temp_variable={effect_sum=0}
+			every_neighbor_state={
+				limit={
+					is_in_array = {
+						array = FINDomesticGUIStates
+						value = THIS
+					}
+				}
+				set_temp_variable={effect_partly_sum=THIS.party_pops_effect^i}
+				multiply_temp_variable={effect_partly_sum=THIS.party_pops_monthly_change^i}
+				add_to_temp_variable={effect_sum=effect_partly_sum}
 			}
-			set_temp_variable={ FIN_up=1 }
-			subtract_from_temp_variable={FIN_up=THIS.pops_down_rate^i}
-			if = {
-				limit={check_variable ={FIN_rates<THIS.pops_up_rate^i}}
-				add_to_variable={ THIS.party_pops^i=change_n}
-			}
-			if = {
-				limit={check_variable ={FIN_rates>FIN_up}}
-				subtract_from_variable={ THIS.party_pops^i=change_n}
-			}
-			
-
+			multiply_variable={ THIS.party_pops_monthly_change^i=THIS.party_pops_monthly_change_fade^i }
+			add_to_variable={THIS.party_pops^i=THIS.party_pops_monthly_change^i}
+			add_to_variable={THIS.party_pops^i=effect_sum}
 		}
 	}
 	for_loop_effect ={
@@ -263,10 +270,45 @@ FIN_Monthly_pops_change={
 		divide_variable={savo_party_pops^i=2}
 		divide_variable={kaakkois_party_pops^i=2}
 		divide_variable={karjala_party_pops^i=2}
-		round_variable = vaasa_party_pops^i
-		round_variable = savo_party_pops^i
-		round_variable = kaakkois_party_pops^i
-		round_variable = karjala_party_pops^i
+	}
+}
+FIN_whole_pops_calculation={
+	set_variable = { FIN_state_sum = 0 }
+	every_owned_state={
+		FIN={add_to_variable = { FIN_state_sum = 1 }}
+	}
+
+
+	clear_array = FIN_party_pops
+	set_variable = { party_pops_all_sum = 0 }
+	for_loop_effect = {
+		start = 0
+		end = 10
+		value = j
+		add = 1
+		add_to_array = { FIN_party_pops = 0 }
+		for_each_scope_loop = {
+			array=FINDomesticGUIStates
+			FIN={
+				add_to_variable={ THIS.FIN_party_pops^j = PREV.party_pops^j }
+				add_to_variable={ THIS.party_pops_all_sum = PREV.party_pops^j }
+			}
+		}
+	}
+	set_variable = {FIN_Red_Average_pops=FIN_party_pops^0}
+	add_to_variable = {FIN_Red_Average_pops=FIN_party_pops^1}
+	set_temp_variable={F_times=FIN_state_sum}
+	multiply_temp_variable={F_times=2}
+	divide_variable={FIN_Red_Average_pops=F_times}
+	
+	for_loop_effect = {
+		start = 0
+		end = 10
+		value = j
+		add = 1
+		divide_variable={FIN_party_pops^j=party_pops_all_sum}
+		multiply_variable = {FIN_party_pops^j=100}
+		round_variable=FIN_party_pops^j
 	}
 }
 FIN_parliament_coalition_calculations = {
@@ -2212,6 +2254,12 @@ FIN_calculate_civil_war = {
 				}
 			}
 			add_to_variable = { FIN_civil_war_certainty = 15 }
+		}
+		if = {
+			limit ={
+				check_variable={FIN_Red_Average_pops>100}
+			}
+			set_variable = { FIN_civil_war_certainty = 100 }
 		}
 		set_variable = { FIN_civil_war_certainty_inv = 100 }
 		subtract_from_variable = { FIN_civil_war_certainty_inv = FIN_civil_war_certainty }

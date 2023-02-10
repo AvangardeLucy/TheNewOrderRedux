@@ -39,3 +39,12 @@ FIN_Debug_Category = {
 		#is_debug = yes
 	}
 }
+FIN_punapelko = {
+	picture = GFX_decision_ENG_decision_rebellion
+	allowed = {
+		tag = FIN
+	}
+	visible = {
+		has_global_flag = FIN_RED_CRISIS
+	}
+}
