@@ -1778,49 +1778,97 @@ country_event = {
 
 	option = {
 		name = red_finland.1.a
-		111 = {
-			add_province_modifier = {
-				static_modifiers  = { FIN_FCW_helsinki_modifier }
-				province = { all_provinces = yes }
+		custom_effect_tooltip = red_finland_1_a_tooltip
+		hidden_effect = {
+			111 = {
+				add_province_modifier = {
+					static_modifiers  = { FIN_FCW_helsinki_modifier }
+					province = { all_provinces = yes }
+				}
+				set_state_flag = FIN_FCW_helsinki_modifier_flag
 			}
-			set_state_flag = FIN_FCW_helsinki_modifier_flag
-		}
-		RFI = {
-			transfer_state = 1715
-			transfer_state = 1714
-			transfer_state = 1718
-			transfer_state = 1713
-			transfer_state = 1723
-			add_state_core = 1715
-			add_state_core = 1714
-			add_state_core = 1718
-			add_state_core = 1713
-			add_state_core = 1723
-			load_oob = RFI_uprising
-			TNO_startup_nation = yes
-		}
-		FIN = {
-			load_oob = FIN_helsinki
-			country_event = {
-				id = white_finland.1
-				days = 14
+			RFI = {
+				transfer_state = 1715
+				transfer_state = 1714
+				transfer_state = 1718
+				transfer_state = 1713
+				transfer_state = 1723
+				add_state_core = 1715
+				add_state_core = 1714
+				add_state_core = 1718
+				add_state_core = 1713
+				add_state_core = 1723
+				load_oob = RFI_uprising
+				TNO_startup_nation = yes
 			}
-		}
-		RFI = {
-			declare_war_on = {
-				target = FIN
-				type = annex_everything
+			FIN = {
+				load_oob = FIN_helsinki
+				country_event = {
+					id = white_finland.1
+					days = 14
+				}
 			}
-		}
-		every_country = {
-			news_event = {
-				id = FIN_WORLD.8
-				days = 1
+			RFI = {
+				declare_war_on = {
+					target = FIN
+					type = annex_everything
+				}
+			}
+			every_country = {
+				news_event = {
+					id = FIN_WORLD.8
+					days = 1
+				}
 			}
 		}
 	}
-}
-
+	option = {
+		name = red_finland.1.b
+		custom_effect_tooltip = red_finland_1_b_tooltip
+		hidden_effect = {
+			111 = {
+				add_province_modifier = {
+					static_modifiers  = { FIN_FCW_helsinki_modifier }
+					province = { all_provinces = yes }
+				}
+				set_state_flag = FIN_FCW_helsinki_modifier_flag
+			}
+			RFI = {
+				transfer_state = 1715
+				transfer_state = 1714
+				transfer_state = 1718
+				transfer_state = 1713
+				transfer_state = 1723
+				add_state_core = 1715
+				add_state_core = 1714
+				add_state_core = 1718
+				add_state_core = 1713
+				add_state_core = 1723
+				load_oob = RFI_uprising
+				TNO_startup_nation = yes
+			}
+			FIN = {
+				load_oob = FIN_helsinki
+				country_event = {
+					id = white_finland.1
+					days = 14
+				}
+			}
+			RFI = {
+				declare_war_on = {
+					target = FIN
+					type = annex_everything
+				}
+				change_tag_from = ROOT 
+			}
+			every_country = {
+				news_event = {
+					id = FIN_WORLD.8
+					days = 1
+				}
+			}
+		}
+	}
 ### WHITE FINLAND
 
 country_event = {

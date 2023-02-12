@@ -1,0 +1,24 @@
+ideas = {
+	country = {
+		
+
+		RFI_Hot_like_Sauna = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FIN_Nyet_Vinjaya"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+
+			modifier = {
+				army_speed_factor=0.4
+				army_attack_factor=0.4
+				supply_consumption_factor=0.05
+				army_org_factor=-0.05
+			}
+		}
+	}
+}

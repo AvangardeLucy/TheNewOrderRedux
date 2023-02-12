@@ -214,6 +214,9 @@ FIN_punapelko={
 
 			}
 		}
+		ai_will_do = {
+			base = 10
+		}
 	}
 	FIN_RED_down_effect={
 		icon = GFX_decision_generic_form_nation
@@ -263,6 +266,9 @@ FIN_punapelko={
 				subtract_from_variable={THIS.party_pops_effect^1=0.02}
 
 			}
+		}
+		ai_will_do = {
+			base = 10
 		}
 	}
 	
@@ -315,6 +321,9 @@ FIN_punapelko={
 
 			}
 		}
+		ai_will_do = {
+			base = 10
+		}
 	}
 	FIN_RED_down_fading={
 		icon = GFX_decision_generic_form_nation
@@ -365,6 +374,9 @@ FIN_punapelko={
 
 			}
 		}
+		ai_will_do = {
+			base = 10
+		}
 	}
 	FIN_RED_pops_down={
 		icon = GFX_decision_generic_form_nation
@@ -402,6 +414,9 @@ FIN_punapelko={
 				subtract_from_variable={THIS.party_pops_monthly_change^1=50}
 
 			}
+		}
+		ai_will_do = {
+			base = 40
 		}
 	}
 }
