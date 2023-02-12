@@ -733,6 +733,10 @@ defined_text = {
 		localization_key = esoteric_nazism_deep_ecology_nazism_subtype
 	}
 	text = {
+		trigger = { has_country_leader_ideology = esoteric_nazism_Aryan_Enslave_Fins_subtype }
+		localization_key = esoteric_nazism_Aryan_Enslave_Fins_subtype
+	}
+	text = {
 		localization_key = esoteric_nazism
 	}
 }

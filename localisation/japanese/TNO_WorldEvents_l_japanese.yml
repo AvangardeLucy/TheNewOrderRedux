@@ -2532,3 +2532,7 @@
  VIN_news.6.t:0 "[Get_newspaper_header]Democratic Republic of Vietnam Declared"
  VIN_news.6.desc:0 "After more than twenty years of resistance, the Viet Minh have seized power in Vietnam. The anti-Japanese league has since issued a Declaration of Independence, calling for all Vietnamese to unite under the banner of the Democratic Republic, to defend the nation, and to lead the country towards a brighter future.\n\nWhile the new Democratic Republic has a provisional government that claims to represent all stripes of Vietnamese society, the majority of members are either communists or aligned with them. This act has led to strong denunciations from Tokyo, and alongside them most of Asia. In particular, Thailand has denounced the new government, and given shelter to a government-in-exile. Outside observers continue to monitor the region for signs of further escalation."
  VIN_news.6.a:0 "The flames of revolution spread to the Sphere."
+
+ FIN_WORLD.666.t: "[Get_newspaper_header]スネルマンが国家弁務官を自称"
+ FIN_WORLD.666.desc: "ヘルシンキから届いたニュースに世界は困惑している。\n\nスネルマン首相は突如として、自身が国家弁務官であると宣言し、スオミ(フィンランド)という国号を廃止することを発表したのだ。スネルマンは、フィンランドの親独派極右政党として悪名高いIKLの中でも、際立って親独的な人物であると評されており、「ライヒの奴隷」ともあだ名されていた。スネルマンの首相就任後、同じくIKL所属の大統領は謎の失踪を遂げており、ドイツの関与が噂されていた。そのような中での常軌を逸した発表は、フィンランドが独立した地位を失い、ドイツの傀儡国となり下がったことを意味している。\n\nフィンランドが完全にドイツの「奴隷」と成り下がった今、隣国のスウェーデンは統一条約に完全に包囲される形になっており、独立と中立を保ち続けることが可能なのか疑問が投げかけられている。"
+ FIN_WORLD.666.a: "フィンランド人が歴史上初めて奴隷を経験する。"

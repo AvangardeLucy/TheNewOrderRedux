@@ -16456,3 +16456,15 @@ news_event = { #Finnish Karelian Reform
 		name = FIN_WORLD.44.a
 	}
 }
+news_event = { 
+	id = FIN_WORLD.666
+	immediate = { log = "[GetDateText]: [Root.GetName]: FIN_WORLD.666" }
+	title = FIN_WORLD.666.t
+	desc = FIN_WORLD.666.desc
+	picture = GFX_news_event_IBR_council_legislative
+	is_triggered_only = yes
+
+	option = {
+		name = FIN_WORLD.666.a
+	}
+}

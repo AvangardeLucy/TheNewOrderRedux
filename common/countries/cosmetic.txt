@@ -2642,3 +2642,7 @@ MCW_bogi_smerti = {
 	color = rgb { 42 43 66 }
 	color_ui = rgb { 42 43 66 }
 }
+FIN_snellman = {
+	color = rgb { 40 30 40 }
+	color_ui = rgb { 40 30 40 }
+}

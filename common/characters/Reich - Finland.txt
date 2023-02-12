@@ -131,6 +131,7 @@ characters = {
 		}
 	}
 
+
 	### Fagerholm Affair ###
 
 	FIN_Vieno_Johannes_Sukselainen = { #ML
@@ -548,7 +549,14 @@ characters = {
 		portraits = {
 			civilian = {
 				small = "GFX_idea_FIN_minister_Teo_Snellman"
+				large = "gfx/leaders/FIN/Portrait_FIN_Teo_Snellman.dds"
 			}
+		}
+		country_leader = {
+			desc = "POLITICS_TEO_SNELLMAN_DESC"
+			expire = "1999.1.1"
+			ideology = esoteric_nazism_Aryan_Enslave_Fins_subtype
+			id = -1
 		}
 		advisor = {
 			slot = head_of_government

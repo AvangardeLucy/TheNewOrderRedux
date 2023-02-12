@@ -467,6 +467,7 @@ ideologies = {
 			esoteric_nazism_imperial_cult_subtype = { can_be_randomly_selected = no }
 			esoteric_nazism_agrarian_spartanism_subtype = { can_be_randomly_selected = no }
 			esoteric_nazism_deep_ecology_nazism_subtype = { can_be_randomly_selected = no }
+			esoteric_nazism_Aryan_Enslave_Fins_subtype= { can_be_randomly_selected = no }
 		}
 		dynamic_faction_names = {}
 		color = { 52 25 80 }

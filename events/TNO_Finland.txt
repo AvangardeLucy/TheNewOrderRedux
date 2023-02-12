@@ -1869,6 +1869,7 @@ country_event = {
 			}
 		}
 	}
+}
 ### WHITE FINLAND
 
 country_event = {
@@ -1922,6 +1923,43 @@ country_event = {
 		if = {
 			limit = { has_global_flag = german_civil_war_speervic }
 			FIN = { join_zollverein = yes }
+		}
+	}
+}
+
+# Blazed
+country_event = {
+	id = FIN.666
+	title = FIN.666.t
+	desc = FIN.666.desc
+	picture = GFX_report_event_lithuania_army
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FIN.666"}
+
+	option = {
+		name = FIN.666.a
+		custom_effect_tooltip = FIN_666_tooltip
+		hidden_effect = {
+			every_country = {
+				news_event = {
+					id = FIN_WORLD.666
+					days = 1
+				}
+			}
+			FIN = {
+				promote_character = FIN_Teo_Snellman
+				add_popularity = {
+					ideology =  esoteric_nazism
+					popularity = 0.80
+				}
+				set_politics = {
+					ruling_party = esoteric_nazism
+				}
+				set_cosmetic_tag=FIN_snellman
+			}
 		}
 	}
 }
