@@ -21,9 +21,6 @@ FIN_Debug_Category = {
 			FIN_assemble_parliament_backend=yes
 		}
 
-		ai_will_do = {
-			factor = 50
-		}
 	}
 	FIN_pops_change = {
 
@@ -48,9 +45,6 @@ FIN_Debug_Category = {
 			FIN_whole_pops_calculation=yes
 		}
 
-		ai_will_do = {
-			factor = 50
-		}
 	}
 	FIN_IKL_support = {
 
@@ -78,9 +72,6 @@ FIN_Debug_Category = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 50
-		}
 	}
 	FIN_summon_torni={
 		icon = GFX_decision_generic_form_nation
@@ -105,9 +96,6 @@ FIN_Debug_Category = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 50
-		} 
 	}
 	FIN_civilwar={
 		icon = GFX_decision_generic_form_nation
@@ -132,9 +120,7 @@ FIN_Debug_Category = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 50
-		} 
+
 	}
 	FIN_murmansk={
 		icon = GFX_decision_generic_form_nation
@@ -159,9 +145,6 @@ FIN_Debug_Category = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 50
-		} 
 	}
 	FIN_summon_snellman={
 		icon = GFX_decision_generic_form_nation
@@ -186,9 +169,6 @@ FIN_Debug_Category = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 50
-		} 
 	}
 }
 FIN_punapelko={
