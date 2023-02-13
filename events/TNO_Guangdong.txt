@@ -5794,9 +5794,7 @@ country_event = { #Reggie Plays Animal Crossing New Leaf on the Nintendo 3DS
 			picture = "Reggie_Fils_Aime.dds"
 			expire = "2000.1.1"
 			ideology = esoteric_nazism_subtype
-			traits = {
-				#
-			}
+			traits = { president_of_nintendo }
 		}
 		add_popularity = {
 			ideology = esoteric_nazism
@@ -5806,6 +5804,80 @@ country_event = { #Reggie Plays Animal Crossing New Leaf on the Nintendo 3DS
 			ruling_party = esoteric_nazism
 		}
 		set_cosmetic_tag = GNG_nintendo
+		leave_faction = yes
+		country_event={
+			id=nintendo.65
+			days=20	
+		}
+		for_loop_effect ={
+			start = 0
+    		end = 30
+    		add = 1
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "division_template = \"Police Response Brigade\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = GNG
+				}
+
+			}
+		}
+	}
+}
+country_event = { #Reggie Plays Animal Crossing New Leaf on the Nintendo 3DS
+	id = nintendo.65
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nintendo.65"}
+
+	title = nintendo.65.t
+	desc = nintendo.65.desc
+	picture = GFX_report_event_GNG_epic_gaming_win
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = nintendo.65.a
+		ai_chance = { factor = 1 }
+		country_event={
+			id=nintendo.65
+			days=20	
+		}
+		for_loop_effect ={
+			start = 0
+    		end = 10
+    		add = 1
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "division_template = \"Sensha Shidan - Armored Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = GNG
+				}
+
+			}
+		}
+		every_neighbor_country={
+			GNG={
+				declare_war_on = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+		if={
+			limit={
+				AND={
+					controls_state=637
+					controls_state=681
+					controls_state=1013
+				}
+			}
+			every_country={
+				GNG={
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+		}
 	}
 }
 

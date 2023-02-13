@@ -165,6 +165,21 @@ TNO_ArcadeMode_category = {
 			}
 		}
 	}
+	TNO_ArcadeMode_NintendoDirect = {
+		icon = GFX_decision_generic_ignite_civil_war
+
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TNO_ArcadeMode_NintendoDirect "
+			every_country = {
+				news_event = { id = ArcadeMode.64 }
+			}
+			GNG={
+				country_event = nintendo.64
+			}
+		}
+	}
 
 	TNO_ArcadeMode_Prevent_The_Conventillo = {
 		icon = GFX_decision_generic_ignite_civil_war

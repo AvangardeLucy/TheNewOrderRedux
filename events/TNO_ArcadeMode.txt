@@ -500,3 +500,16 @@ news_event = { #The Conventillo is saved!
 		name = ArcadeMode.7.a
 	}
 }
+news_event = { #The Conventillo is saved!
+	id = ArcadeMode.64
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ArcadeMode.64"}
+	title = ArcadeMode.64.t
+	desc = ArcadeMode.64.desc
+	picture = GFX_news_event_URG_Pilar_Barrios_Wins
+
+	is_triggered_only = yes
+
+	option = {
+		name = ArcadeMode.64.a
+	}
+}
