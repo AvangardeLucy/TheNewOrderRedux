@@ -148,7 +148,21 @@ characters = {
 			id = -1
 		}
 	}
-
+	### Joke ###
+	FIN_Keijo_Astala={
+		name = FIN_Keijo_Astala
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FIN/Portrait_Finland_Keijo_Astala.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_KEIJO_ASTALA_DESC"
+			expire = "1999.1.1"
+			ideology = ultranationalism_reactionary_nationalism_subtype
+			id = -1
+		}
+	}
 	################################################################################################################################
 	###################################################### PRIME MINISTERS #########################################################
 	################################################################################################################################

@@ -1963,3 +1963,38 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = FIN.888
+	title = FIN.888.t
+	desc = FIN.888.desc
+	picture = GFX_report_event_lithuania_army
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FIN.888"}
+
+	option = {
+		name = FIN.888.a
+		custom_effect_tooltip = FIN_888_tooltip
+		hidden_effect = {
+			every_country = {
+				news_event = {
+					id = FIN_WORLD.888
+					days = 1
+				}
+			}
+			FIN = {
+				promote_character = FIN_Keijo_Astala
+				add_popularity = {
+					ideology =  ultranationalism
+					popularity = 0.80
+				}
+				set_politics = {
+					ruling_party = ultranationalism
+				}
+			}
+		}
+	}
+}

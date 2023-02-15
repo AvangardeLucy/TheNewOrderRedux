@@ -170,6 +170,30 @@ FIN_Debug_Category = {
 		}
 
 	}
+	FIN_summon_Astala={
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			is_debug=yes
+		}
+
+		visible = {
+			#is_debug = yes
+		}
+
+		custom_cost_trigger = { always = yes } #no cost
+
+		days_re_enable = 1
+
+		fire_only_once = no
+
+		complete_effect = {
+			FIN={
+				country_event={id=FIN.888}
+			}
+		}
+
+	}
 }
 FIN_punapelko={
 	FIN_RED_up_effect={

@@ -38,6 +38,7 @@ recruit_character = FIN_Elias_Simojoki
 recruit_character = FIN_Vieno_Johannes_Sukselainen
 recruit_character = FIN_Matti_Virkkunen
 
+recruit_character =FIN_Keijo_Astala
 # Ministers
 
 # Prime Ministers

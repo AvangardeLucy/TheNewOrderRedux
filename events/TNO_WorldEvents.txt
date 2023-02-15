@@ -16468,3 +16468,15 @@ news_event = {
 		name = FIN_WORLD.666.a
 	}
 }
+news_event = { 
+	id = FIN_WORLD.888
+	immediate = { log = "[GetDateText]: [Root.GetName]: FIN_WORLD.888" }
+	title = FIN_WORLD.888.t
+	desc = FIN_WORLD.888.desc
+	picture = GFX_news_event_IBR_council_legislative
+	is_triggered_only = yes
+
+	option = {
+		name = FIN_WORLD.888.a
+	}
+}

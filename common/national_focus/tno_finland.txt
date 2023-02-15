@@ -5,10 +5,10 @@ focus_tree = {
 	id = FIN_intro
 	country = {
 		factor = 0
-		#modifier = {
-		#	add = 10
-		#	tag = FIN
-		#}
+		modifier = {
+			add = 10
+			tag = FIN
+		}
 	}
 	default = no
 

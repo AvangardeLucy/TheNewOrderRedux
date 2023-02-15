@@ -1,0 +1,106 @@
+focus_tree = {
+	id = FIN_intro
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FIN
+		}
+	}
+	default = no
+	focus = {
+		id = FIN_intro_start
+		#icon =  
+		x = 8
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_start"
+		}
+	}
+	focus = {
+		id = FIN_look_outward
+		#icon =  
+		x = 5
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_start
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_look_outward"
+		}
+	}
+	focus = {
+		id = FIN_a_letter_to_Germania
+		#icon =  
+		x = 4
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_look_outward
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_a_letter_to_Germania"
+		}
+	}
+	focus = {
+		id = FIN_to_white_house_with_love
+		#icon =  
+		x = 6
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_look_outward
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_to_white_house_with_love"
+		}
+	}
+	focus = {
+		id = FIN_German_Funding
+		icon = GFX_GER_economic_planning_shine
+		x = 4
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_a_letter_to_Germania
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_German_Funding"
+		}
+	}
+
+	focus = {
+		id = FIN_American_Funding
+		icon = GFX_American_Funding
+		x = 6
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_to_white_house_with_love
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_American_Funding"
+		}
+	}
+
+}
