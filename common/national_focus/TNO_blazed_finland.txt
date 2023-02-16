@@ -17,14 +17,307 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
+		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_start"
 		}
 	}
 	focus = {
+		id = FIN_economy_start
+		#icon =  
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_start
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_economy_start"
+		}
+	}
+	focus = {
+		id = FIN_begin_to_redevelop_Helsinki_metropolitan_area
+		#icon =  
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_economy_start
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_begin_to_redevelop_Helsinki_metropolitan_area"
+			111={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				11105={
+					add_building_construction = {
+						type = naval_base 
+						level = 1
+						instant_build = yes
+					}
+				}
+				add_resource = {
+					type = power
+					amount = 5
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.002 }
+			    econ_state_value_change_multiply = yes
+			}
+		}
+	}
+	focus = {
+		id = FIN_focus_on_suburbs_too
+		#icon =  
+		x = 0
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_begin_to_redevelop_Helsinki_metropolitan_area
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_focus_on_suburbs_too"
+			set_temp_variable = { pus_temp = 1 }
+			econ_pus_change = yes
+			1714={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.003 }
+			    econ_state_value_change_multiply = yes
+			}
+		}
+	}
+	focus = {
+		id = FIN_expand_Helsinki_Shipyard 
+		#icon =  
+		x = 0
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_focus_on_suburbs_too
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_expand_Helsinki_Shipyard "
+			111={
+				add_building_construction = {
+					type = dockyard 
+					level = 1
+					instant_build = yes
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.001 }
+			    econ_state_value_change_multiply = yes
+			}
+		}
+	}
+	focus = {
+		id = FIN_expand_Port_of_Turku
+		#icon =  
+		x = 0
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_expand_Helsinki_Shipyard 
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_expand_Port_of_Turku "
+			1715={
+				set_temp_variable = { state_value_multiplier_temp = 1.002 }
+			    econ_state_value_change_multiply = yes
+				3085={
+					add_building_construction = {
+						type = naval_base 
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = FIN_start_vaasa_city_planning
+		#icon = 
+		x = 2
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_economy_start  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_start_vaasa_city_planning"
+		}
+	}
+	focus = {
+		id = FIN_construct_highway_three
+		#icon = 
+		x = 2
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_start_vaasa_city_planning  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_construct_highway_three"
+		}
+	}
+	focus = {
+		id = FIN_call_to_migrate
+		#icon = 
+		x = 2
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_construct_highway_three  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_call_to_migrate"
+		}
+	}
+	focus = {
+		id = FIN_construct_vaasa_industrial_complex
+		#icon = 
+		x = 2
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_call_to_migrate  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_construct_vaasa_industrial_complex"
+		}
+	}
+	focus = {
+		id = FIN_reclaim_East_Karelia
+		#icon = 
+		x = 4
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_economy_start  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_reclaim_East_Karelia"
+		}
+	}
+	focus = {
+		id = FIN_subsidies_on_forestry
+		#icon = 
+		x = 4
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_reclaim_East_Karelia  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_subsidies_on_forestry"
+		}
+	}
+	focus = {
+		id = FIN_encourage_people_to_mechanize_agriculture
+		#icon = 
+		x = 4
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_subsidies_on_forestry  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_call_to_migrate"
+		}
+	}
+	focus = {
+		id = FIN_begin_operation_of_tampere_paper_mill
+		#icon = 
+		x = 4
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_encourage_people_to_mechanize_agriculture  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_construct_vaasa_industrial_complex"
+		}
+	}
+	focus = {
+		id = FIN_develop_Aland
+		#icon = 
+		x = 1
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_expand_Port_of_Turku  }
+		prerequisite = { focus =FIN_construct_vaasa_industrial_complex }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_develop_Aland"
+		}
+	}
+	focus = {
+		id = FIN_invest_in_Onega
+		#icon = 
+		x = 3
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_begin_operation_of_tampere_paper_mill  }
+		prerequisite = { focus =FIN_construct_vaasa_industrial_complex }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_invest_in_Onega"
+		}
+	}
+
+	focus = {
+		id = FIN_development_will_continue
+		#icon = 
+		x = 2
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_develop_Aland  }
+		prerequisite = { focus =FIN_invest_in_Onega}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_development_will_continue"
+		}
+	}
+
+
+	#外交ツリー
+	focus = {
 		id = FIN_look_outward
 		#icon =  
-		x = 5
+		x = 8
 		y = 2
 		cost = 5
 		ai_will_do = {
@@ -40,7 +333,7 @@ focus_tree = {
 	focus = {
 		id = FIN_a_letter_to_Germania
 		#icon =  
-		x = 4
+		x = 7
 		y = 3
 		cost = 5
 		ai_will_do = {
@@ -56,7 +349,7 @@ focus_tree = {
 	focus = {
 		id = FIN_to_white_house_with_love
 		#icon =  
-		x = 6
+		x = 9
 		y = 3
 		cost = 5
 		ai_will_do = {
@@ -72,7 +365,7 @@ focus_tree = {
 	focus = {
 		id = FIN_German_Funding
 		icon = GFX_GER_economic_planning_shine
-		x = 4
+		x = 7
 		y = 4
 		cost = 5
 		ai_will_do = {
@@ -81,6 +374,7 @@ focus_tree = {
 		prerequisite = {
 			focus = FIN_a_letter_to_Germania
 		}
+		mutually_exclusive = { focus = FIN_American_Funding }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_German_Funding"
 		}
@@ -89,18 +383,109 @@ focus_tree = {
 	focus = {
 		id = FIN_American_Funding
 		icon = GFX_American_Funding
-		x = 6
+		x = 9
 		y = 4
 		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
-		prerequisite = {
-			focus = FIN_to_white_house_with_love
-		}
+		prerequisite = { focus = FIN_to_white_house_with_love }
+		mutually_exclusive = { focus = FIN_German_Funding }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_American_Funding"
 		}
 	}
 
+	focus = {
+		id = FIN_Expand_Baltic_Sea_Route
+		#icon = 
+		x = 7
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_American_Funding focus=FIN_German_Funding  }
+		mutually_exclusive = { focus = FIN_Expand_Port_of_Murmansk }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Expand_Baltic_Sea_Route"
+		}
+	}
+
+	focus = {
+		id = FIN_Expand_Port_of_Murmansk
+		#icon = 
+		x = 9
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_American_Funding focus=FIN_German_Funding  }
+		mutually_exclusive = { focus = FIN_Expand_Baltic_Sea_Route }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Expand_Port_of_Murmansk"
+		}
+	}
+
+	focus = {
+		id = FIN_Go_for_Volkshalle
+		#icon = 
+		x = 7
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_Expand_Port_of_Murmansk focus=FIN_Expand_Baltic_Sea_Route  }
+		mutually_exclusive = { focus = FIN_Pursue_Light_of_Freedom }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Go_for_Volkshalle"
+		}
+	}
+	focus = {
+		id = FIN_Pursue_Light_of_Freedom
+		#icon = 
+		x = 9
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_Expand_Port_of_Murmansk focus=FIN_Expand_Baltic_Sea_Route  }
+		mutually_exclusive = { focus = FIN_Go_for_Volkshalle }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Pursue_Light_of_Freedom"
+		}
+	}
+	focus = {
+		id = FIN_Germania_Conference
+		#icon = 
+		x = 7
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_Pursue_Light_of_Freedom focus=FIN_Go_for_Volkshalle  }
+		mutually_exclusive = { focus = FIN_Edinburgh_Conference}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Germania_Conference"
+		}
+	}
+	focus = {
+		id = FIN_Edinburgh_Conference
+		#icon = 
+		x = 9
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_Pursue_Light_of_Freedom focus=FIN_Go_for_Volkshalle  }
+		mutually_exclusive = { focus = FIN_Germania_Conference }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Edinburgh_Conference"
+		}
+	}
 }

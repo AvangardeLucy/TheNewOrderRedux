@@ -259,10 +259,11 @@ ideas = {
 			removal_cost = -1
 			picture = GBE_militia_based_army
 			modifier = {
-				army_attack_factor = -0.05
+				army_attack_factor = -0.02
+				army_defence_factor =0.1
 				war_support_factor = 0.15
-				army_core_defence_factor = 0.1
-				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.2
 				conscription_factor = 0.25
 			}
 		}
@@ -278,9 +279,11 @@ ideas = {
 			removal_cost = -1
 			picture = GBE_militia_based_army
 			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor =0.1
 				war_support_factor = 0.2
-				army_core_defence_factor = 0.1
-				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.4
+				army_core_attack_factor = 0.4
 				conscription_factor = 0.2
 			}
 		}
@@ -297,8 +300,8 @@ ideas = {
 			picture = CNT_militia_army
 			modifier = {
 				war_support_factor = 0.2
-				army_core_defence_factor = 0.1
-				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.15
 				conscription_factor = 0.2
 				army_morale_factor = 0.1
 				experience_gain_army = 0.01
