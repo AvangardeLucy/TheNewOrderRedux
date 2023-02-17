@@ -1994,6 +1994,7 @@ country_event = {
 				set_politics = {
 					ruling_party = ultranationalism
 				}
+				load_focus_tree=FIN_Egypt
 			}
 		}
 	}

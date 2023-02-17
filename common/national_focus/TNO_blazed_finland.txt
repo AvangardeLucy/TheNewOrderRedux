@@ -330,7 +330,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FIN_a_letter_to_Germania
-		#icon =  
+		icon =  GFX_national_socialist_male_shine
 		x = 7
 		y = 3
 		cost = 5
@@ -346,7 +346,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FIN_to_white_house_with_love
-		#icon =  
+		icon = GFX_Focus_North_America_Orthographic 
 		x = 9
 		y = 3
 		cost = 5
@@ -658,7 +658,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FIN_aid_volunteers
-		#icon = 
+		icon = GFX_ONG_FIN_air
 		x = 20
 		y = 4
 		cost = 5
@@ -672,7 +672,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FIN_send_weapon
-		#icon = 
+		icon = GFX_ONG_FIN_advisors_shine
 		x = 19
 		y = 5
 		cost = 5
@@ -687,7 +687,7 @@ focus_tree = {
 	}
 	focus = {
 		id =FIN_send_money
-		#icon = 
+		icon = GFX_ONG_FIN_industry
 		x = 21
 		y = 5
 		cost = 5
@@ -786,6 +786,7 @@ focus_tree = {
 		}
 	}
 }
+#ミームモード
 focus_tree = {
 	id = FIN_Egypt
 	country = {
@@ -798,14 +799,369 @@ focus_tree = {
 	focus = {
 		id = FIN_Egypt_president_death
 		#icon = 
-		x = 1
+		x = 3
 		y = 0
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 80
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_president_death"
+		}
+	}
+	focus = {
+		id = FIN_Egypt_inherit_a_dream
+		#icon = 
+		x = 3
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_president_death}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_inherit_a_dream"
+		}
+	}
+	focus = {
+		id = FIN_Egypt_rename_capital_city
+		#icon = 
+		x = 1
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_inherit_a_dream}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_rename_capital_city"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_Great_Pyramid_project
+		#icon = 
+		x = 1
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_rename_capital_city}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_Great_Pyramid_project"
+		}
+	}
+	focus = {
+		id = FIN_Egypt_disperse_solar_theology
+		#icon = 
+		x = 3
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_inherit_a_dream}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_disperse_solar_theology"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_introduce_hieroglyph_into_education
+		#icon = 
+		x = 3
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_disperse_solar_theology}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_introduce_hieroglyph_into_education"
+		}
+	}
+	focus = {
+		id = FIN_Egypt_identify_adipocere_with_mummy
+		#icon = 
+		x = 5
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_inherit_a_dream}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_identify_adipocere_with_mummy"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_revive_Hand_of_Glory
+		#icon = 
+		x = 5
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_identify_adipocere_with_mummy}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_revive_Hand_of_Glory"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_pharaonic_declaration
+		#icon = 
+		x = 3
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_Great_Pyramid_project}
+		prerequisite = { focus =FIN_Egypt_introduce_hieroglyph_into_education}
+		prerequisite = { focus =FIN_Egypt_revive_Hand_of_Glory}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_pharaonic_declaration"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_initiate_a_contact_with_Egypt
+		#icon = 
+		x = 0
+		y = 5
+		cost = 4
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_pharaonic_declaration}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_initiate_a_contact_with_Egypt"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_dehypnotize_Estonians
+		#icon = 
+		x = 2
+		y = 5
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_pharaonic_declaration}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_dehypnotize_Estonians"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_Enlighten_Livonians
+		#icon = 
+		x = 4
+		y = 5
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_pharaonic_declaration}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_Enlighten_Livonians"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_salvation_Heruli
+		#icon = 
+		x = 6
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_pharaonic_declaration}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_salvation_Heruli"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_ethnic_universe_reborn
+		#icon = 
+		x = 3
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_initiate_a_contact_with_Egypt}
+		prerequisite = { focus =FIN_Egypt_dehypnotize_Estonians}
+		prerequisite = { focus =FIN_Egypt_Enlighten_Livonians}
+		prerequisite = { focus =FIN_Egypt_salvation_Heruli}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_ethnic_universe_reborn"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_prepare_for_the_super_trial
+		#icon = 
+		x = 3
+		y = 6
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_ethnic_universe_reborn}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_prepare_for_the_super_trial"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_unimaginable_friend
+		#icon = 
+		x = 1
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_prepare_for_the_super_trial}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_unimaginable_friend"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_under_sparkling_Hand_of_Glory
+		#icon = 
+		x = 3
+		y = 7
+		cost = 1
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_prepare_for_the_super_trial}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_under_sparkling_Hand_of_Glory"
+		}
+	}
+	focus = {
+		id = FIN_Egypt_Mesket
+		#icon = 
+		x = 5
+		y = 7
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_prepare_for_the_super_trial}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus  FIN_Egypt_Mesket"
+		}
+	}
+	focus = {
+		id =  FIN_Egypt_release_brethren
+		#icon = 
+		x = 3
+		y = 8
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_Mesket}
+		prerequisite = { focus =FIN_Egypt_under_sparkling_Hand_of_Glory}
+		prerequisite = { focus =FIN_Egypt_unimaginable_friend}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus  FIN_Egypt_release_brethren"
+		}
+	}
+	focus = {
+		id =  FIN_Egypt_to_south
+		#icon = 
+		x = 3
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_release_brethren}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus  FIN_Egypt_to_south"
+		}
+	}
+	focus = {
+		id =  FIN_Egypt_Dreams_of_Old_Fatherland
+		#icon = 
+		x = 3
+		y = 10
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_to_south}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus  FIN_Egypt_Dreams_of_Old_Fatherland"
+		}
+	}
+	focus = {
+		id =  FIN_Egypt_roads_to_java
+		#icon = 
+		x = 2
+		y = 11
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_Dreams_of_Old_Fatherland}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_roads_to_java"
+		}
+	}
+	focus = {
+		id =  FIN_Egypt_Mamjet
+		#icon = 
+		x = 4
+		y = 11
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_Dreams_of_Old_Fatherland}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_Mamjet"
+		}
+	}
+	focus = {
+		id =  FIN_Egypt_eat_east_apopis
+		#icon = 
+		x = 3
+		y = 12
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_roads_to_java}
+		prerequisite = { focus =FIN_Egypt_Mamjet}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_eat_east_apopis"
+		}
+	}
+	focus = {
+		id =  FIN_Egypt_set_sail_on_ancestral_land
+		#icon = 
+		x = 3
+		y = 13
+		cost = 3
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_eat_east_apopis}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_set_sail_on_ancestral_land"
 		}
 	}
 }
