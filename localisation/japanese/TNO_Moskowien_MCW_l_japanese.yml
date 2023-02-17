@@ -45,13 +45,3 @@
  MCW_GER_ultranationalism_ADJ:0 "モスコーヴィエン"
  MCW_ultranationalism_party:0 "未知なる裏切り者達"
  MCW_ultranationalism_party_long:0 "未知なる裏切り者達"
-
-#Dynamic Countries
- BSB:0 "ボギ・スメルチ"
- BSB_DEF:0 "ボギ・スメルチ"
- BSB_ADJ:0 "モスクワ"
- MCW_bogi_smerti:0 "ボギ・スメルチ"
- MCW_bogi_smerti_DEF:0 "ボギ・スメルチ"
- MCW_bogi_smerti_ADJ:0 "モスクワ"
- # Characters
- BSB_antikhrist:0 "アンチキリスト"

@@ -58,12 +58,3 @@ the_apathetic_reichskommissar:0 "Moskowien's Jailer"
   MCW_living_on_a_minefield:0 "Living on a Minefield"
   MCW_living_on_a_minefield_desc:0 "Moskowien is a prison - giant, deadly prison. Everyone has their cell in here, no matter the rank, place or belief - big or small, be it comfortable or threatening. Moskowien has already snuffed 5,000,000 souls - and trapped, hurt and exploited tens of millions more.\n\nIt is riddled with partisan groups as if they were mines on a post-war field, volatile and corrosive, crumbling Moskowien's walls, sending it closer to destruction and further downwards into the abyss.\n\nFew could ever escape this prison - but one man certainly will try."
 
-#Dynamic Countries
- BSB:0 "Bogi Smerti"
- BSB_DEF:0 "the Bogi Smerti"
- BSB_ADJ:0 "Moscovite"
- MCW_bogi_smerti:0 "Bogi Smerti"
- MCW_bogi_smerti_DEF:0 "the Bogi Smerti"
- MCW_bogi_smerti_ADJ:0 "Moscovite"
- # Characters
- BSB_antikhrist:0 "Antikhrist"

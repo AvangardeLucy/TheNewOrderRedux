@@ -31,8 +31,6 @@ recruit_character = MSK_Hermann_Ehrhardt
 recruit_character = MSK_Karl_Strecker
 recruit_character = MSK_Igor_Reshetnikov
 
-recruit_character = BSB_Generic_Vacant
-recruit_character = BSB_antikhrist
 
 promote_character = MCW_Siegfried_Kasche
 

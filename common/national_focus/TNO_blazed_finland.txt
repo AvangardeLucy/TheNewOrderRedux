@@ -786,3 +786,26 @@ focus_tree = {
 		}
 	}
 }
+focus_tree = {
+	id = FIN_Egypt
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FIN
+		}
+	}
+	focus = {
+		id = FIN_Egypt_president_death
+		#icon = 
+		x = 1
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_president_death"
+		}
+	}
+}
