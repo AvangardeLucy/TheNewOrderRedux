@@ -1822,6 +1822,10 @@ spriteTypes = {
 
 	### RFI ###
 	spriteType = {
+		name = "GFX_idea_RFI_minister_Taisto_Sinisalo"
+		texturefile = "gfx/interface/ideas/ministers/RFI/RFI_minister_Taisto_Sinisalo.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_RFI_minister_Erkki_Salomaa"
 		texturefile = "gfx/interface/ideas/ministers/RFI/RFI_minister_Erkki_Salomaa.dds"
 	}

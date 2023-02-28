@@ -658,7 +658,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FIN_aid_volunteers
-		icon = GFX_ONG_FIN_air
+		icon = GFX_ONG_FIN_advisors_shine
 		x = 20
 		y = 4
 		cost = 5
@@ -672,7 +672,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FIN_send_weapon
-		icon = GFX_ONG_FIN_advisors_shine
+		icon = GFX_ONG_FIN_air
 		x = 19
 		y = 5
 		cost = 5
