@@ -61,6 +61,10 @@ defined_text = {
 		localization_key = anarchism_anarcho_communism_subtype
 	}
 	text = {
+		trigger = { has_country_leader_ideology = anarchism_anarcho_syndicalism_subtype }
+		localization_key = anarchism_anarcho_syndicalism_subtype
+	}
+	text = {
 		localization_key = anarchism_subtype
 	}
 }

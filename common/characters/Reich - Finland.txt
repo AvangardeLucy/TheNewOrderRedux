@@ -1395,7 +1395,32 @@ characters = {
 			id = -1
 		}
 	}
-
+	RFI_Harry_Jarv={
+		name = RFI_Harry_Jarv
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RFI/Portrait_Red_Finland_Harry_Jarv.dds"
+			}
+			army = {
+				large = "gfx/leaders/RFI/Portrait_Red_Finland_Harry_Jarv2.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_HARRY_JARV_DESC"
+			expire = "1999.1.1"
+			ideology = anarchism_anarcho_syndicalism_subtype
+			id = -1
+		}
+		corps_commander = {
+			traits = { winter_specialist trickster}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
 	# Communism
 	RFI_Taisto_Sinisalo = {
 		name = RFI_Taisto_Sinisalo
@@ -1478,6 +1503,41 @@ characters = {
 			cost = -1
 			can_be_fired = no
 			ai_will_do = { factor = 0 }
+		}
+	}
+	#general
+	RFI_Akseli_Anttila={
+		name = RFI_Akseli_Anttila
+		portraits = {
+			army = {
+				large = "gfx/leaders/RFI/Portrait_Red_Finland_Akseli_Anttila.dds"
+			}
+		}
+		field_marshal = {
+			traits = { winter_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	RFI_Eyolf_Mattsson={
+		name = RFI_Eyolf_Mattsson
+		portraits = {
+			army = {
+			large = "gfx/leaders/RFI/Portrait_Red_Finland_Eyolf_Mattsson.dds"
+			}
+		}
+		corps_commander = {
+			traits = { winter_specialist }
+			skill = 1
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
 		}
 	}
 	

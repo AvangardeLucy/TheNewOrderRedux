@@ -1,5 +1,5 @@
 ﻿l_japanese:
- anarchism: "Anarchism"
+ anarchism: "無政府主義"
  communist: "共産主義"
  socialist: "社会主義"
  despotism: "専制主義"
@@ -368,6 +368,7 @@
 
 # TNO Redux
  anarchism: "無政府主義"
+ anarchism_anarcho_syndicalism_subtype: "無政府組合主義"
  anarchism_noun: "無政府主義"
  anarchism_desc: "無政府主義"
  anarchism_subtype_desc: "Anarchism is the rejection of authority itself, which promotes the division of society into self-managed and self-governing groups rather than a single centralized state."

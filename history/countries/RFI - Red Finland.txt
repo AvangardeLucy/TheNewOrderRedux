@@ -8,8 +8,11 @@ recruit_character = RFI_Tuure_Lehen
 recruit_character = RFI_Ville_Pessi
 
 # Vacant
-recruit_character = RFI_Generic_Vacant
-
+#recruit_character = RFI_Generic_Vacant
+#general
+recruit_character = RFI_Harry_Jarv
+recruit_character = RFI_Akseli_Anttila
+recruit_character = RFI_Eyolf_Mattsson
 #econtype
 set_variable = {TNO_economy_subtype = 13}
 set_variable = {TNO_economy_type = 3}
@@ -77,10 +80,11 @@ set_politics = {
 }
 
 set_popularities = {
-	communist = 65
+	communist = 60
 	socialist = 12
 	progressivism = 8
-	paternalism = 15
+	paternalism = 10
+	anarchism=10
 }
 
 set_technology = {
