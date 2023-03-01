@@ -17,6 +17,7 @@ state={
 			}
 		}
 		add_core_of = FRS
+		set_demilitarized_zone = yes
 
 	}
 
