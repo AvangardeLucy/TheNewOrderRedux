@@ -1,0 +1,231 @@
+defined_text = {
+	name = Get_stalinism_effects
+	text = {
+		trigger = {
+				check_variable = {RFI_Stalinism_effects>80}
+		}
+		localization_key = RFI_stalinism_effects_1
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Stalinism_effects>60}
+		}
+		localization_key = RFI_stalinism_effects_2
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Stalinism_effects>40}
+		}
+		localization_key = RFI_stalinism_effects_3
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Stalinism_effects>20}
+		}
+		localization_key = RFI_stalinism_effects_4
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Stalinism_effects>-10}
+		}
+		localization_key = RFI_stalinism_effects_5
+	}
+}
+defined_text = {
+	name = Get_Anarchism_effects
+	text = {
+		trigger = {
+				check_variable = {RFI_Anarchism_effects>80}
+		}
+		localization_key = RFI_Anarchism_effects_1
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Anarchism_effects>60}
+		}
+		localization_key = RFI_Anarchism_effects_2
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Anarchism_effects>40}
+		}
+		localization_key = RFI_Anarchism_effects_3
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Anarchism_effects>20}
+		}
+		localization_key = RFI_Anarchism_effects_4
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Anarchismm_effects>-10}
+		}
+		localization_key = RFI_Anarchism_effects_5
+	}
+}
+defined_text = {
+	name = Get_Trotskyism_effects
+	text = {
+		trigger = {
+				check_variable = {RFI_Trotskyism_effects>80}
+		}
+		localization_key = RFI_Trotskyism_effects_1
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Trotskyism_effects>60}
+		}
+		localization_key = RFI_Trotskyism_effects_2
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Trotskyism_effects>40}
+		}
+		localization_key = RFI_Trotskyism_effects_3
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Trotskyism_effects>20}
+		}
+		localization_key = RFI_Trotskyism_effects_4
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Trotskyism_effects>-10}
+		}
+		localization_key = RFI_Trotskyism_effects_5
+	}
+}
+defined_text = {
+	name = Get_Luxemburgism_effects
+	text = {
+		trigger = {
+				check_variable = {RFI_Luxemburgism_effects>80}
+		}
+		localization_key = RFI_Luxemburgism_effects_1
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Luxemburgism_effects>60}
+		}
+		localization_key = RFI_Luxemburgism_effects_2
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Luxemburgism_effects>40}
+		}
+		localization_key = RFI_Luxemburgism_effects_3
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Luxemburgism_effects>20}
+		}
+		localization_key = RFI_Luxemburgism_effects_4
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Luxemburgism_effects>-10}
+		}
+		localization_key = RFI_Luxemburgism_effects_5
+	}
+}
+defined_text = {
+	name = Get_Buharinism_effects
+	text = {
+		trigger = {
+				check_variable = {RFI_Buharinism_effects>80}
+		}
+		localization_key = RFI_Buharinism_effects_1
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Buharinism_effects>60}
+		}
+		localization_key = RFI_Buharinism_effects_2
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Buharinism_effects>40}
+		}
+		localization_key = RFI_Buharinism_effects_3
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Buharinism_effects>20}
+		}
+		localization_key = RFI_Buharinism_effects_4
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Buharinism_effects>-10}
+		}
+		localization_key = RFI_Buharinism_effects_5
+	}
+}
+defined_text = {
+	name = Get_Christian_effects
+	text = {
+		trigger = {
+				check_variable = {RFI_Christian_effects>80}
+		}
+		localization_key = RFI_Christian_effects_1
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Christian_effects>60}
+		}
+		localization_key = RFI_Christian_effects_2
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Christian_effects>40}
+		}
+		localization_key = RFI_Christian_effects_3
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Christian_effects>20}
+		}
+		localization_key = RFI_Christian_effects_4
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Christian_effects>-10}
+		}
+		localization_key = RFI_Christian_effects_5
+	}
+}
+defined_text = {
+	name = Get_solidarity
+	text = {
+		trigger = {
+				check_variable = {RFI_Punakaarti_solidarity>80}
+		}
+		localization_key = RFI_solidarity_1
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Punakaarti_solidarity>60}
+		}
+		localization_key = RFI_solidarity_2
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Punakaarti_solidarity>40}
+		}
+		localization_key = RFI_solidarity_3
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Punakaarti_solidarity>20}
+		}
+		localization_key = RFI_solidarity_4
+	}
+	text = {
+		trigger = {
+				check_variable = {RFI_Punakaarti_solidarity>-10}
+		}
+		localization_key = RFI_solidarity_5
+	}
+}

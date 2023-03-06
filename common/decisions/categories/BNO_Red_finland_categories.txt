@@ -1,0 +1,9 @@
+RFI_request_for_help = {
+	picture = GFX_decision_ENG_decision_rebellion
+	allowed = {
+		tag = RFI
+	}
+	visible = {
+			has_war_with = FIN
+	}
+}

@@ -1,0 +1,276 @@
+RFI_request_for_help = {
+	RFI_solidify_red_guard = {
+		icon = GFX_decision_generic_form_nation
+		fixed_random_seed = no
+		visible = {
+
+		}
+		cost = 10
+		days_remove = 5
+		days_re_enable = 25
+		fire_only_once = no
+
+		remove_effect = {
+			set_temp_variable = { RFI_effects_Temp = 5 }
+			set_temp_variable = { RFI_partys_Temp =0 }
+			RFI_effects_change = yes
+			set_temp_variable = { RFI_effects_Temp = 5 }
+			set_temp_variable = { RFI_partys_Temp =6 }
+			RFI_effects_change = yes
+			add_stability=0.01
+		}		
+
+	}
+	RFI_to_anarchist = {
+		icon = GFX_decision_generic_form_nation
+		fixed_random_seed = no
+		visible = {
+
+		}
+		cost = 20
+		days_remove = 5
+		days_re_enable = 25
+		fire_only_once = no
+
+		remove_effect = {
+			if={
+				limit = { check_variable = { RFI_Anarchism_effects>50 } }
+				add_manpower = 500
+				army_experience =30
+				FIN={
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 3000
+					target = RFI
+					}
+				}
+			}
+			else={
+				add_manpower = 100
+				FIN={
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 300
+					target = RFI
+					}
+				}
+			}
+			set_temp_variable = { RFI_effects_Temp = 5 }
+			set_temp_variable = { RFI_partys_Temp =1 }
+			RFI_effects_change = yes
+			set_temp_variable = { RFI_effects_Temp = -10 }
+			set_temp_variable = { RFI_partys_Temp =6 }
+			RFI_effects_change = yes
+		}		
+	}
+	RFI_to_Trotskyism = {
+		icon = GFX_decision_generic_form_nation
+		fixed_random_seed = no
+		visible = {
+		}
+		cost = 20
+		days_remove = 5
+		days_re_enable = 25
+		fire_only_once = no
+
+		remove_effect = {
+			if={
+				limit={check_variable={ RFI_Trotskyism_effects>50 }}
+				add_manpower = 200
+				army_experience =30
+				FIN={
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 3000
+					target = RFI
+					}
+				}
+			}
+			else={
+				add_manpower = 20
+				army_experience =10
+			}
+			set_temp_variable = { RFI_effects_Temp = 3 }
+			set_temp_variable = { RFI_partys_Temp =2 }
+			RFI_effects_change = yes
+			set_temp_variable = { RFI_effects_Temp = -10 }
+			set_temp_variable = { RFI_partys_Temp =6 }
+			RFI_effects_change = yes
+		}
+
+	}
+	RFI_to_Luxemburgism = {
+		icon = GFX_decision_generic_form_nation
+		fixed_random_seed = no
+
+
+		visible = {
+		}
+		cost = 20
+		days_remove = 5
+		days_re_enable = 25
+		fire_only_once = no
+
+		remove_effect = {
+			if={
+				limit={check_variable={ RFI_Luxemburgism_effects>50 }}
+				add_manpower = 500
+				add_equipment_to_stockpile={
+					type = anti_tank_equipment
+					amount = 100
+					producer = RFI
+				}
+				add_equipment_to_stockpile={
+					type = support_equipment
+					amount = 100
+					producer = RFI
+				}
+			}
+			else={
+				add_manpower = 150
+				add_equipment_to_stockpile={
+					type = support_equipment
+					amount = 20
+					producer = RFI
+				}
+			}
+			set_temp_variable = { RFI_effects_Temp = 15 }
+			set_temp_variable = { RFI_partys_Temp =3 }
+			RFI_effects_change = yes
+			set_temp_variable = { RFI_effects_Temp = -2 }
+			set_temp_variable = { RFI_partys_Temp =6 }
+			RFI_effects_change = yes
+		}
+
+	}
+	RFI_to_Buharinism = {
+		icon = GFX_decision_generic_form_nation
+		fixed_random_seed = no
+		visible = {
+		}
+		cost = 20
+		days_remove = 5
+		days_re_enable = 25
+		fire_only_once = no
+
+		remove_effect = {
+			if={
+				limit={ check_variable={ RFI_Buharinism_effects>50 }}
+				add_manpower = 2000
+			}
+			else={
+				add_manpower = 1000
+			}
+			set_temp_variable = { RFI_effects_Temp = 20 }
+			set_temp_variable = { RFI_partys_Temp =4 }
+			RFI_effects_change = yes
+			
+		}
+	}
+	RFI_to_Christian = {
+		icon = GFX_decision_generic_form_nation
+		fixed_random_seed = no
+		
+
+		visible = {
+		}
+		cost = 20
+		days_remove = 5
+		days_re_enable = 25
+		fire_only_once = no
+
+		remove_effect = {
+			if={
+				limit={check_variable={ RFI_Christian_effects>50 }}
+				add_manpower = 200
+				add_war_support=0.03
+			}
+			else={
+				add_manpower = 50
+				add_war_support=0.01
+			}
+			set_temp_variable = { RFI_effects_Temp = 2 }
+			set_temp_variable = { RFI_partys_Temp =5 }
+			RFI_effects_change = yes
+			set_temp_variable = { RFI_effects_Temp = -7 }
+			set_temp_variable = { RFI_partys_Temp =6 }
+			RFI_effects_change = yes
+			
+		}
+
+	}
+	RFI_suppress_opposition = {
+		icon = GFX_decision_generic_form_nation
+		fixed_random_seed = no
+		visible = {
+		}
+		cost = 50
+		days_remove = 5
+		days_re_enable = 25
+		fire_only_once = no
+
+		remove_effect = {
+			set_temp_variable = { RFI_effects_Temp = -3 }
+			set_temp_variable = { RFI_partys_Temp =1 }
+			RFI_effects_change = yes
+			set_temp_variable = { RFI_effects_Temp = -3 }
+			set_temp_variable = { RFI_partys_Temp =2 }
+			RFI_effects_change = yes
+			set_temp_variable = { RFI_effects_Temp = -3 }
+			set_temp_variable = { RFI_partys_Temp =3 }
+			RFI_effects_change = yes
+			set_temp_variable = { RFI_effects_Temp = -3 }
+			set_temp_variable = { RFI_partys_Temp =4 }
+			RFI_effects_change = yes
+			set_temp_variable = { RFI_effects_Temp = -3 }
+			set_temp_variable = { RFI_partys_Temp =5 }
+			RFI_effects_change = yes
+			set_temp_variable = { RFI_effects_Temp = -5 }
+			set_temp_variable = { RFI_partys_Temp =6 }
+			RFI_effects_change = yes
+			FIN={
+				add_manpower =100
+			}
+			
+		}
+
+	}
+	RFI_kill_opposition = {
+		icon = GFX_decision_generic_form_nation
+		fixed_random_seed = no
+		visible = {
+		}
+		cost = 200
+		days_remove = 50
+		days_re_enable = 100
+		fire_only_once = no
+
+		remove_effect = {
+			set_temp_variable = { RFI_effects_Temp = -10 }
+			set_temp_variable = { RFI_partys_Temp =1 }
+			RFI_effects_change = yes
+			set_temp_variable = { RFI_effects_Temp = -10 }
+			set_temp_variable = { RFI_partys_Temp =2 }
+			RFI_effects_change = yes
+			set_temp_variable = { RFI_effects_Temp = -10 }
+			set_temp_variable = { RFI_partys_Temp =3 }
+			RFI_effects_change = yes
+			set_temp_variable = { RFI_effects_Temp = -10 }
+			set_temp_variable = { RFI_partys_Temp =4 }
+			RFI_effects_change = yes
+			set_temp_variable = { RFI_effects_Temp = -10 }
+			set_temp_variable = { RFI_partys_Temp =5 }
+			RFI_effects_change = yes
+			set_temp_variable = { RFI_effects_Temp = -40 }
+			set_temp_variable = { RFI_partys_Temp =6 }
+			RFI_effects_change = yes
+			add_manpower = -3000
+			FIN={
+				add_manpower =2500
+			}
+			add_war_support=-0.02
+			add_stability=-0.02
+		}
+
+	}
+}

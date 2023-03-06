@@ -835,7 +835,9 @@ on_actions = {
 				FIN_initialise_national_popularities = yes
 				FIN_assemble_parliament_display_array = yes
 			}
-
+			RFI ={
+				RFI_initialise=yes
+			}
 
 			#			KAZ = {
 				#				set_variable = { KAZCorruptionLevel = 63 }
