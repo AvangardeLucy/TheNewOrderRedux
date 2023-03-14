@@ -163,6 +163,15 @@ focus_tree = {
 		prerequisite = { focus = FIN_economy_start  }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_start_vaasa_city_planning"
+			1716={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = FIN_vaasa_decisions_unlocked
+			custom_effect_tooltip = FIN_unlock_aasa_decisions
 		}
 	}
 	focus = {
@@ -177,6 +186,51 @@ focus_tree = {
 		prerequisite = { focus = FIN_start_vaasa_city_planning  }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_construct_highway_three"
+			1716={
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.005 }
+			    econ_state_value_change_multiply = yes
+			}
+			1719={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.003 }
+			    econ_state_value_change_multiply = yes
+			}
+			1718={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.002 }
+			    econ_state_value_change_multiply = yes
+			}
+			1714={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.003 }
+			    econ_state_value_change_multiply = yes
+			}
+			111={
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.002 }
+			    econ_state_value_change_multiply = yes
+			}
 		}
 	}
 	focus = {
@@ -191,6 +245,33 @@ focus_tree = {
 		prerequisite = { focus = FIN_construct_highway_three  }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_call_to_migrate"
+			1716={
+				add_manpower=10000
+			}
+			111={
+				add_manpower=-2000
+			}
+			1719={
+				add_manpower=-1000
+			}
+			1718={
+				add_manpower=-1000
+			}
+			1717={
+				add_manpower=-1000
+			}
+			149={
+				add_manpower=-500
+			}
+			666={
+				add_manpower=-2000
+			}
+			141={
+				add_manpower=-2000
+			}
+			145={
+				add_manpower=-500
+			}
 		}
 	}
 	focus = {
@@ -205,6 +286,13 @@ focus_tree = {
 		prerequisite = { focus = FIN_call_to_migrate  }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_construct_vaasa_industrial_complex"
+			set_temp_variable = { pus_temp = 2 }
+			econ_pus_change = yes
+			1716={
+				set_temp_variable = { state_value_multiplier_temp = 1.006 }
+			    econ_state_value_change_multiply = yes
+				add_manpower=3000
+			}
 		}
 	}
 	focus = {
