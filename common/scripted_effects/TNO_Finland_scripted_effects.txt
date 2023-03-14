@@ -154,6 +154,73 @@ FIN_initialise_national_popularities = { #Temporary system to be used until full
 	set_variable = { FIN_temp_parliament_coalition_seats = 109 }
 
 	set_global_flag = FIN_RED_CRISIS
+	#ついでに板挟みディシジョンのもここで初期化
+	set_variable={FIN_to_German_evalue =55} #0
+	set_variable={FIN_from_German_evalue =50} #1
+	set_variable={FIN_to_America_evalue =30} #2
+	set_variable={FIN_from_America_evalue =38} #3
+	set_variable={FIN_to_Russia_evalue =0} #4
+	set_variable={FIN_from_Russia_evalue =0} #5
+
+}
+FIN_dilemma_update={
+	set_temp_variable = { amount = FIN_effects_Temp }
+	if={
+		limit={
+			check_variable = {FIN_index_temp=0}
+		}
+		add_variable={ FIN_to_German_evalue = amount }
+		if ={
+			limit={check_variable = { FIN_to_German_evalue > 100}}
+			set_variable = {FIN_to_German_evalue=100}
+		}
+		if ={
+			limit={check_variable = { FIN_to_German_evalue < 0}}
+			set_variable = {FIN_to_German_evalue=0}
+		}
+	}
+	if={
+		limit={
+			check_variable = {FIN_index_temp=1}
+		}
+		add_variable={ FIN_from_German_evalue = amount }
+		if ={
+			limit={check_variable = { FIN_from_German_evalue > 100}}
+			set_variable = {FIN_from_German_evalue=100}
+		}
+		if ={
+			limit={check_variable = { FIN_from_German_evalue < 0}}
+			set_variable = {FIN_from_German_evalue=0}
+		}
+	}
+	if={
+		limit={
+			check_variable = {FIN_index_temp=2}
+		}
+		add_variable={ FIN_to_America_evalue = amount }
+		if ={
+			limit={check_variable = { FIN_to_America_evalue > 100}}
+			set_variable = {FIN_to_America_evalue=100}
+		}
+		if ={
+			limit={check_variable = { FIN_to_America_evalue < 0}}
+			set_variable = {FIN_to_America_evalue=0}
+		}
+	}
+	if={
+		limit={
+			check_variable = {FIN_index_temp=3}
+		}
+		add_variable={ FIN_from_America_evalue = amount }
+		if ={
+			limit={check_variable = { FIN_from_America_evalue > 100}}
+			set_variable = {FIN_from_America_evalue=100}
+		}
+		if ={
+			limit={check_variable = { FIN_from_America_evalue < 0}}
+			set_variable = {FIN_from_America_evalue=0}
+		}
+	}
 }
 #全政党を合法化する
 FIN_legalise_all_parties = {

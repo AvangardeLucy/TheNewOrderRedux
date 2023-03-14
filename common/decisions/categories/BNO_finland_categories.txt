@@ -39,6 +39,14 @@ FIN_Debug_Category = {
 		#is_debug = yes
 	}
 }
+FIN_dilemma={
+	allowed = {
+		tag = FIN
+	}
+	visible = {
+	}
+	
+}
 FIN_punapelko = {
 	picture = GFX_decision_ENG_decision_rebellion
 	allowed = {

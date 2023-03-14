@@ -633,3 +633,6 @@ FIN_winter_war = {
 		}
 	}
 }
+FIN_dilemma={
+	
+}
