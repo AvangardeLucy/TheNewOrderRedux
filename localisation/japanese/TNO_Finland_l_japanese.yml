@@ -213,7 +213,7 @@
  FIN.888.desc: "首相官邸は焼き討ちにした。大統領官邸もそうすれば良かったのだろうが、アスタラには目的があった。\n\n彼は大統領の死体の脂肪からロウソクを作ろうとしていた。まあ、まずその前に「ハンド・オブ・グローリー」を作ることが先であろうが。彼は大統領の手首を銀のナイフで切り落とした。赤が洪水のように、部屋に飛び散り、眼がくらみそうになる。\n\n誰も助けに来てくれる人はいない。大統領の死は確定している。死とは大いなる力である。大統領の死体は、ロウソクとなり、この国をラーのように照らすことだろう。"
  FIN.888.a: "だらんと垂れ下がった栄光の手を御覧。"
 
- FIN_intro_start: "???"
+ FIN_intro_start: "我等の地"
  FIN_look_outward: "外に目を向ける"
  FIN_a_letter_to_Germania: "ゲルマニアへの手紙"
  FIN_to_white_house_with_love: "ホワイトハウスへ愛をこめて"
@@ -225,6 +225,7 @@
  FIN_Pursue_Light_of_Freedom: "自由の灯を追って"
  FIN_Germania_Conference: "ゲルマニア会談"
  FIN_Edinburgh_Conference: "エディンバラ会談"
+ FIN_economy_start: "???"
  FIN_begin_to_redevelop_Helsinki_metropolitan_area: "ヘルシンキ都市圏再開発の開始"
  FIN_focus_on_suburbs_too: "郊外も重視する"
  FIN_expand_Helsinki_Shipyard: "ヘルシンキ造船所の拡張"

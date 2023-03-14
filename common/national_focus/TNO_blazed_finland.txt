@@ -40,7 +40,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FIN_begin_to_redevelop_Helsinki_metropolitan_area
-		#icon =  
+		icon =  GFX_FIN_begin_to_redevelop_Helsinki_metropolitan_area
 		x = 0
 		y = 3
 		cost = 5
@@ -153,7 +153,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FIN_start_vaasa_city_planning
-		#icon = 
+		icon = GFX_FIN_start_vaasa_city_planning
 		x = 2
 		y = 3
 		cost = 5
@@ -176,7 +176,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FIN_construct_highway_three
-		#icon = 
+		icon = GFX_FIN_construct_highway_three
 		x = 2
 		y = 4
 		cost = 5
@@ -235,7 +235,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FIN_call_to_migrate
-		#icon = 
+		icon = GFX_FIN_call_to_migrate
 		x = 2
 		y = 5
 		cost = 5
@@ -297,7 +297,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FIN_reclaim_East_Karelia
-		#icon = 
+		icon = GFX_FIN_reclaim_East_Karelia
 		x = 4
 		y = 3
 		cost = 5
@@ -307,11 +307,21 @@ focus_tree = {
 		prerequisite = { focus = FIN_economy_start  }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_reclaim_East_Karelia"
+			215={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.005 }
+			    econ_state_value_change_multiply = yes
+				add_manpower=5000
+			}
 		}
 	}
 	focus = {
 		id = FIN_subsidies_on_forestry
-		#icon = 
+		icon = GFX_FIN_subsidies_on_forestry
 		x = 4
 		y = 4
 		cost = 5
@@ -321,6 +331,9 @@ focus_tree = {
 		prerequisite = { focus = FIN_reclaim_East_Karelia  }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_subsidies_on_forestry"
+			set_temp_variable = { gdp_growth_temp = 0.3}
+			econ_gdp_growth_change = yes
+
 		}
 	}
 	focus = {
@@ -335,6 +348,9 @@ focus_tree = {
 		prerequisite = { focus = FIN_subsidies_on_forestry  }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_call_to_migrate"
+			set_temp_variable = { gdp_growth_temp = 0.2}
+			econ_gdp_growth_change = yes
+
 		}
 	}
 	focus = {
@@ -349,6 +365,10 @@ focus_tree = {
 		prerequisite = { focus = FIN_encourage_people_to_mechanize_agriculture  }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_construct_vaasa_industrial_complex"
+			1719={
+				set_temp_variable = { state_value_multiplier_temp = 1.003 }
+			    econ_state_value_change_multiply = yes
+			}
 		}
 	}
 	focus = {
@@ -364,6 +384,21 @@ focus_tree = {
 		prerequisite = { focus =FIN_construct_vaasa_industrial_complex }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_develop_Aland"
+			145={
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base 
+					level = 1
+					instant_build = yes
+					province=9228
+					}
+				set_temp_variable = { state_value_multiplier_temp = 1.002 }
+			    econ_state_value_change_multiply = yes
+			}
 		}
 	}
 	focus = {
@@ -379,6 +414,15 @@ focus_tree = {
 		prerequisite = { focus =FIN_construct_vaasa_industrial_complex }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_invest_in_Onega"
+			859={
+				set_temp_variable = { state_value_multiplier_temp = 1.005 }
+			    econ_state_value_change_multiply = yes
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -395,6 +439,10 @@ focus_tree = {
 		prerequisite = { focus =FIN_invest_in_Onega}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_development_will_continue"
+			set_temp_variable = { gdp_growth_temp = 0.6}
+			econ_gdp_growth_change = yes
+			set_temp_variable = { inflation_temp = 0.4 }
+			econ_inflation_change = yes
 		}
 	}
 

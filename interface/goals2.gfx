@@ -28408,4 +28408,29 @@ spriteTypes = {
 		name = "GFX_GER_global_industry"
 		texturefile = "gfx/interface/goals/GFX_GER_global_industry.png"
 	}
+	#BNO
+	SpriteType = {
+		name = "GFX_FIN_reclaim_East_Karelia"
+		texturefile = "gfx/interface/goals/BNO/FIN_reclaim_East_Karelia.png"
+	}
+	SpriteType = {
+		name = "GFX_FIN_start_vaasa_city_planning"
+		texturefile = "gfx/interface/goals/BNO/FIN_start_vaasa_city_planning.png"
+	}
+	SpriteType = {
+		name = "GFX_FIN_begin_to_redevelop_Helsinki_metropolitan_area"
+		texturefile = "gfx/interface/goals/BNO/FIN_begin_to_redevelop_Helsinki_metropolitan_area.png"
+	}
+	SpriteType = {
+		name = "GFX_FIN_call_to_migrate"
+		texturefile = "gfx/interface/goals/BNO/FIN_call_to_migrate.png"
+	}
+	SpriteType = {
+		name = "GFX_FIN_construct_highway_three"
+		texturefile = "gfx/interface/goals/BNO/FIN_construct_highway_three.png"
+	}
+	SpriteType = {
+		name = "GFX_FIN_subsidies_on_forestry"
+		texturefile = "gfx/interface/goals/BNO/FIN_subsidies_on_forestry.png"
+	}
 }
