@@ -1,0 +1,25 @@
+focus_tree = {
+	id = GER_tresckow_starting_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	default = no
+	shared_focus = GER_tresckow_salvation_junta
+}
+
+focus_tree = {
+	id = GER_tresckow_ending_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	default = no
+	shared_focus = GER_tresckow_its_over
+}

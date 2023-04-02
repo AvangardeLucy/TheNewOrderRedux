@@ -1,0 +1,7 @@
+﻿l_japanese:
+ IRE_DECCAT_ScaMec:0 "[GetIRE_DECCAT_ScaMec_title]"
+ IRE_DECCAT_ScaMec_title1:0 "スキャンダル・タイトル1"
+ IRE_DECCAT_ScaMec_title2:0 "スキャンダル・タイトル2"
+ IRE_DECCAT_ScaMec_desc:0 "[GetIRE_DECCAT_ScaMec_desc]"
+ IRE_DECCAT_ScaMec_desc1:0 "すること#1\n\n右派の権力: [?ScaMec_narrative_power_right|Y0]\n左派の権力: [?ScaMec_narrative_power_left|Y0]\nスキャンダル・パワー: [?ScaMec_scandal_power|Y0]\nスキャンダルの進行度: [?ScaMec_scandal_progress|Y0]"
+ IRE_DECCAT_ScaMec_desc2:0 "すること#2\n\n右派の権力: [?ScaMec_narrative_power_right|Y0]\n左派の権力: [?ScaMec_narrative_power_left|Y0]\nスキャンダル・パワー: [?ScaMec_scandal_power|Y0]\nスキャンダルの進行度: [?ScaMec_scandal_progress|Y0]"

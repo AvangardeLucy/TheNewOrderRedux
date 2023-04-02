@@ -1,0 +1,348 @@
+###tresckow startsieg###
+shared_focus = {
+	id = GER_tresckow_salvation_junta 
+	icon = GFX_GER_salvation_junta
+	cost = 2
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	x = 10
+	y = -1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_risen_from_the_ruins"
+		country_event = {
+			id = tresckow.3
+		}
+	}    
+}
+
+shared_focus = {
+	id = GER_tresckow_healing_party
+	icon = GFX_GER_healing_the_party
+	cost = 2
+	available_if_capitulated = no
+	relative_position_id = GER_tresckow_salvation_junta
+	prerequisite = { focus = GER_tresckow_salvation_junta }
+	ai_will_do = { factor = 1 }
+	x = 0
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = tresckow.4
+		}
+	}    
+}
+
+shared_focus = {
+	id = GER_tresckow_conc_with_moderates
+	icon = GFX_GER_conciliate_moderates
+	cost = 2
+	available_if_capitulated = no
+	relative_position_id = GER_tresckow_salvation_junta
+	prerequisite = { focus = GER_tresckow_healing_party }
+	ai_will_do = { factor = 1 }
+	x = -2
+	y = 2
+	completion_reward = {
+		country_event = {
+			id = tresckow.5
+		}
+	}    
+}
+
+shared_focus = {
+	id = GER_tresckow_out_speer
+	icon = GFX_GER_out_with_the_speerites
+	cost = 2
+	available_if_capitulated = no
+	relative_position_id = GER_tresckow_salvation_junta
+	prerequisite = { focus = GER_tresckow_healing_party }
+	ai_will_do = { factor = 1 }
+	x = 0
+	y = 2
+	completion_reward = {
+		country_event = {
+			id = tresckow.7
+		}
+	}    
+}
+
+shared_focus = {
+	id = GER_tresckow_promises_oberlander
+	icon = GFX_GER_promises_oberlander
+	cost = 2
+	available_if_capitulated = no
+	relative_position_id = GER_tresckow_salvation_junta
+	prerequisite = { focus = GER_tresckow_healing_party }
+	ai_will_do = { factor = 1 }
+	x = 2
+	y = 2
+	completion_reward = {
+		country_event = {
+			id = tresckow.6
+		}
+	}    
+}
+
+shared_focus = {
+	id = GER_tresckow_pardon_some
+	icon = GFX_GER_pardon_some
+	cost = 2
+	available_if_capitulated = no
+	relative_position_id = GER_tresckow_salvation_junta
+	prerequisite = { focus = GER_tresckow_conc_with_moderates }
+	prerequisite = { focus = GER_tresckow_out_speer }
+	prerequisite = { focus = GER_tresckow_promises_oberlander }
+	ai_will_do = { factor = 1 }
+	x = -1
+	y = 3
+	completion_reward = {
+		country_event = {
+			id = tresckow.8
+		}
+	}    
+}
+
+shared_focus = {
+	id = GER_tresckow_target_other
+	icon = GFX_GER_target_others
+	cost = 2
+	available_if_capitulated = no
+	relative_position_id = GER_tresckow_salvation_junta
+	prerequisite = { focus = GER_tresckow_conc_with_moderates }
+	prerequisite = { focus = GER_tresckow_out_speer }
+	prerequisite = { focus = GER_tresckow_promises_oberlander }
+	ai_will_do = { factor = 1 }
+	x = 1
+	y = 3
+	completion_reward = {
+		country_event = {
+			id = tresckow.9
+		}
+	}    
+}
+
+shared_focus = {
+	id = GER_tresckow_greatest_change
+	icon = GFX_GER_greatest_change
+	cost = 2
+	available_if_capitulated = no
+	relative_position_id = GER_tresckow_salvation_junta
+	prerequisite = { focus = GER_tresckow_pardon_some }
+	prerequisite = { focus = GER_tresckow_target_other }
+	ai_will_do = { factor = 1 }
+	x = 0
+	y = 4
+	completion_reward = {
+		custom_effect_tooltip = GER_tresckow_greatest_change_tooltip
+		hidden_effect = {
+			country_event = {
+				id = tresckow.1
+			}
+	}   }
+}
+
+shared_focus = {
+	id = GER_tresckow_cooperate_nobles
+	icon = GFX_GER_cooperate_nobles
+	cost = 2
+	available_if_capitulated = no
+	relative_position_id = GER_tresckow_salvation_junta
+	prerequisite = { focus = GER_tresckow_greatest_change }
+	ai_will_do = { factor = 1 }
+	x = -1
+	y = 5
+	completion_reward = {
+		custom_effect_tooltip = GER_tresckow_cooperate_nobles_tooltip
+	}    
+}
+
+shared_focus = {
+	id = GER_tresckow_invite_kaiser
+	icon = GFX_GER_kaiser_invitation
+	cost = 2
+	available_if_capitulated = no
+	relative_position_id = GER_tresckow_salvation_junta
+	prerequisite = { focus = GER_tresckow_greatest_change }
+	ai_will_do = { factor = 1 }
+	x = 1
+	y = 5
+	completion_reward = {
+		custom_effect_tooltip = GER_tresckow_invite_kaiser_tooltip
+	}    
+}
+
+shared_focus = {
+	id = GER_tresckow_gott_mitt_uns
+	icon = GFX_GER_gott_mitt_uns
+	cost = 2
+	available_if_capitulated = no
+	relative_position_id = GER_tresckow_salvation_junta
+	prerequisite = { focus = GER_tresckow_cooperate_nobles }
+	prerequisite = { focus = GER_tresckow_invite_kaiser }
+	ai_will_do = { factor = 1 }
+	x = 0
+	y = 6
+	completion_reward = {
+		custom_effect_tooltip = GER_tresckow_gott_mitt_uns_tooltip
+	}    
+}
+
+###tresckow endsieg###
+shared_focus = {
+	id = GER_tresckow_its_over
+	icon = GFX_GER_tresckow_its_over
+	cost = 2
+	ai_will_do = { factor = 1 }
+	x = 6
+	y = -1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_risen_from_the_ruins"
+		country_event = {
+				id = tresckow.10
+		}
+	}    
+}
+
+shared_focus = {
+	id = GER_tresckow_because_him
+	icon = GFX_GER_tresckow_because_him
+	cost = 2
+	ai_will_do = { factor = 1 }
+	relative_position_id = GER_tresckow_its_over
+	x = -1
+	y = 1
+	prerequisite = { focus = GER_tresckow_its_over }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_risen_from_the_ruins"
+		country_event = {
+			id = tresckow.13
+		}
+	}    
+}
+
+shared_focus = {
+	id = GER_tresckow_damage_control
+	icon = GFX_GER_tresckow_damage_control
+	cost = 2
+	ai_will_do = { factor = 1 }
+	relative_position_id = GER_tresckow_its_over
+	x = 1
+	y = 1
+	prerequisite = { focus = GER_tresckow_its_over }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_risen_from_the_ruins"
+		country_event = {
+			id = tresckow.14
+		}
+	}    
+}
+
+shared_focus = {
+	id = GER_tresckow_contact_americans
+	icon = GFX_GER_tresckow_contact_americans
+	cost = 2
+	ai_will_do = { factor = 1 }
+	relative_position_id = GER_tresckow_its_over
+	x = -2
+	y = 2
+	prerequisite = { focus = GER_tresckow_damage_control }
+	prerequisite = { focus = GER_tresckow_because_him }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_risen_from_the_ruins"
+		country_event = {
+			id = tresckow.15
+		}
+	}    
+}
+
+shared_focus = {
+	id = GER_tresckow_dissolve_nsdap
+	icon = GFX_GER_tresckow_dissolve_nsdap
+	cost = 2
+	ai_will_do = { factor = 1 }
+	relative_position_id = GER_tresckow_its_over
+	x = 0
+	y = 2
+	prerequisite = { focus = GER_tresckow_damage_control }
+	prerequisite = { focus = GER_tresckow_because_him }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_risen_from_the_ruins"
+		country_event = {
+			id = tresckow.16
+		}
+	}    
+}
+
+shared_focus = {
+	id = GER_tresckow_review_options
+	icon = GFX_GER_tresckow_review_options
+	cost = 2
+	ai_will_do = { factor = 1 }
+	relative_position_id = GER_tresckow_its_over
+	x = 2
+	y = 2
+	prerequisite = { focus = GER_tresckow_damage_control }
+	prerequisite = { focus = GER_tresckow_because_him }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_risen_from_the_ruins"
+		country_event = {
+			id = tresckow.17
+		}
+	}    
+}
+
+shared_focus = {
+	id = GER_tresckow_leave_kiesinger
+	icon = GFX_GER_tresckow_leave_kiesinger
+	cost = 2
+	ai_will_do = { factor = 1 }
+	relative_position_id = GER_tresckow_its_over
+	x = -1
+	y = 3
+	prerequisite = { focus = GER_tresckow_contact_americans }
+	prerequisite = { focus = GER_tresckow_dissolve_nsdap }
+	prerequisite = { focus = GER_tresckow_review_options }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_risen_from_the_ruins"
+		country_event = {
+			id = tresckow.18
+		}
+	}    
+}
+
+shared_focus = {
+	id = GER_tresckow_send_erhard_and_schmidt
+	icon = GFX_GER_tresckow_send_erhard_and_schmidt
+	cost = 2
+	ai_will_do = { factor = 1 }
+	relative_position_id = GER_tresckow_its_over
+	x = 1
+	y = 3
+	prerequisite = { focus = GER_tresckow_contact_americans }
+	prerequisite = { focus = GER_tresckow_dissolve_nsdap }
+	prerequisite = { focus = GER_tresckow_review_options }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_risen_from_the_ruins"
+		country_event = {
+			id = tresckow.19
+		}
+	}    
+}
+
+shared_focus = {
+	id = GER_tresckow_resignation
+	icon = GFX_GER_tresckow_resignation
+	cost = 2
+	ai_will_do = { factor = 1 }
+	relative_position_id = GER_tresckow_its_over
+	x = 0
+	y = 4
+	prerequisite = { focus = GER_tresckow_leave_kiesinger }
+	prerequisite = { focus = GER_tresckow_send_erhard_and_schmidt }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_risen_from_the_ruins"
+		country_event = {
+			id = tresckow.11
+		}
+	}    
+}

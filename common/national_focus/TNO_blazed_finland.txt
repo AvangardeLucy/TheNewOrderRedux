@@ -1,0 +1,1303 @@
+focus_tree = {
+	id = FIN_intro
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FIN
+		}
+	}
+	default = no
+	focus = {
+		id = FIN_intro_start
+		#icon =  
+		x = 12
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_start"
+		}
+	}
+	focus = {
+		id = FIN_economy_start
+		#icon =  
+		x = 2
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_start
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_economy_start"
+		}
+	}
+	focus = {
+		id = FIN_begin_to_redevelop_Helsinki_metropolitan_area
+		icon =  GFX_FIN_begin_to_redevelop_Helsinki_metropolitan_area
+		x = 0
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_economy_start
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_begin_to_redevelop_Helsinki_metropolitan_area"
+			111={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base 
+					level = 1
+					instant_build = yes
+					province = 11105
+				}
+				add_resource = {
+					type = power
+					amount = 5
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.002 }
+			    econ_state_value_change_multiply = yes
+			}
+		}
+	}
+	focus = {
+		id = FIN_focus_on_suburbs_too
+		#icon =  
+		x = 0
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_begin_to_redevelop_Helsinki_metropolitan_area
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_focus_on_suburbs_too"
+			set_temp_variable = { pus_temp = 1 }
+			econ_pus_change = yes
+			1714={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.003 }
+			    econ_state_value_change_multiply = yes
+			}
+		}
+	}
+	focus = {
+		id = FIN_expand_Helsinki_Shipyard 
+		#icon =  
+		x = 0
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_focus_on_suburbs_too
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_expand_Helsinki_Shipyard "
+			111={
+				add_building_construction = {
+					type = dockyard 
+					level = 1
+					instant_build = yes
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.001 }
+			    econ_state_value_change_multiply = yes
+			}
+		}
+	}
+	focus = {
+		id = FIN_expand_Port_of_Turku
+		#icon =  
+		x = 0
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_expand_Helsinki_Shipyard 
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_expand_Port_of_Turku "
+			1715={
+				set_temp_variable = { state_value_multiplier_temp = 1.002 }
+			    econ_state_value_change_multiply = yes
+				add_building_construction = {
+					type = naval_base 
+					level = 1
+					instant_build = yes
+					province=3085
+					}
+		        }
+		}
+	}
+	focus = {
+		id = FIN_start_vaasa_city_planning
+		icon = GFX_FIN_start_vaasa_city_planning
+		x = 2
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_economy_start  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_start_vaasa_city_planning"
+			1716={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = FIN_vaasa_decisions_unlocked
+			custom_effect_tooltip = FIN_unlock_aasa_decisions
+		}
+	}
+	focus = {
+		id = FIN_construct_highway_three
+		icon = GFX_FIN_construct_highway_three
+		x = 2
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_start_vaasa_city_planning  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_construct_highway_three"
+			1716={
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.005 }
+			    econ_state_value_change_multiply = yes
+			}
+			1719={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.003 }
+			    econ_state_value_change_multiply = yes
+			}
+			1718={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.002 }
+			    econ_state_value_change_multiply = yes
+			}
+			1714={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.003 }
+			    econ_state_value_change_multiply = yes
+			}
+			111={
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.002 }
+			    econ_state_value_change_multiply = yes
+			}
+		}
+	}
+	focus = {
+		id = FIN_call_to_migrate
+		icon = GFX_FIN_call_to_migrate
+		x = 2
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_construct_highway_three  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_call_to_migrate"
+			1716={
+				add_manpower=10000
+			}
+			111={
+				add_manpower=-2000
+			}
+			1719={
+				add_manpower=-1000
+			}
+			1718={
+				add_manpower=-1000
+			}
+			1717={
+				add_manpower=-1000
+			}
+			149={
+				add_manpower=-500
+			}
+			666={
+				add_manpower=-2000
+			}
+			141={
+				add_manpower=-2000
+			}
+			145={
+				add_manpower=-500
+			}
+		}
+	}
+	focus = {
+		id = FIN_construct_vaasa_industrial_complex
+		#icon = 
+		x = 2
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_call_to_migrate  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_construct_vaasa_industrial_complex"
+			set_temp_variable = { pus_temp = 2 }
+			econ_pus_change = yes
+			1716={
+				set_temp_variable = { state_value_multiplier_temp = 1.006 }
+			    econ_state_value_change_multiply = yes
+				add_manpower=3000
+			}
+		}
+	}
+	focus = {
+		id = FIN_reclaim_East_Karelia
+		icon = GFX_FIN_reclaim_East_Karelia
+		x = 4
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_economy_start  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_reclaim_East_Karelia"
+			215={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_temp_variable = { state_value_multiplier_temp = 1.005 }
+			    econ_state_value_change_multiply = yes
+				add_manpower=5000
+			}
+		}
+	}
+	focus = {
+		id = FIN_subsidies_on_forestry
+		icon = GFX_FIN_subsidies_on_forestry
+		x = 4
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_reclaim_East_Karelia  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_subsidies_on_forestry"
+			set_temp_variable = { gdp_growth_temp = 0.3}
+			econ_gdp_growth_change = yes
+
+		}
+	}
+	focus = {
+		id = FIN_encourage_people_to_mechanize_agriculture
+		#icon = 
+		x = 4
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_subsidies_on_forestry  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_call_to_migrate"
+			set_temp_variable = { gdp_growth_temp = 0.2}
+			econ_gdp_growth_change = yes
+
+		}
+	}
+	focus = {
+		id = FIN_begin_operation_of_tampere_paper_mill
+		#icon = 
+		x = 4
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_encourage_people_to_mechanize_agriculture  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_construct_vaasa_industrial_complex"
+			1719={
+				set_temp_variable = { state_value_multiplier_temp = 1.003 }
+			    econ_state_value_change_multiply = yes
+			}
+		}
+	}
+	focus = {
+		id = FIN_develop_Aland
+		#icon = 
+		x = 1
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_expand_Port_of_Turku  }
+		prerequisite = { focus =FIN_construct_vaasa_industrial_complex }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_develop_Aland"
+			145={
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base 
+					level = 1
+					instant_build = yes
+					province=9228
+					}
+				set_temp_variable = { state_value_multiplier_temp = 1.002 }
+			    econ_state_value_change_multiply = yes
+			}
+		}
+	}
+	focus = {
+		id = FIN_invest_in_Onega
+		#icon = 
+		x = 3
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_begin_operation_of_tampere_paper_mill  }
+		prerequisite = { focus =FIN_construct_vaasa_industrial_complex }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_invest_in_Onega"
+			859={
+				set_temp_variable = { state_value_multiplier_temp = 1.005 }
+			    econ_state_value_change_multiply = yes
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_development_will_continue
+		#icon = 
+		x = 2
+		y = 8
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_develop_Aland  }
+		prerequisite = { focus =FIN_invest_in_Onega}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_development_will_continue"
+			set_temp_variable = { gdp_growth_temp = 0.6}
+			econ_gdp_growth_change = yes
+			set_temp_variable = { inflation_temp = 0.4 }
+			econ_inflation_change = yes
+		}
+	}
+
+
+	#外交ツリー
+	focus = {
+		id = FIN_look_outward
+		#icon =  
+		x = 8
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_start
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_look_outward"
+		}
+	}
+	focus = {
+		id = FIN_a_letter_to_Germania
+		icon =  GFX_national_socialist_male_shine
+		x = 7
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_look_outward
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_a_letter_to_Germania"
+		}
+	}
+	focus = {
+		id = FIN_to_white_house_with_love
+		icon = GFX_Focus_North_America_Orthographic 
+		x = 9
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_look_outward
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_to_white_house_with_love"
+		}
+	}
+	focus = {
+		id = FIN_German_Funding
+		icon = GFX_GER_economic_planning_shine
+		x = 7
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_a_letter_to_Germania
+		}
+		mutually_exclusive = { focus = FIN_American_Funding }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_German_Funding"
+		}
+	}
+
+	focus = {
+		id = FIN_American_Funding
+		icon = GFX_American_Funding
+		x = 9
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_to_white_house_with_love }
+		mutually_exclusive = { focus = FIN_German_Funding }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_American_Funding"
+		}
+	}
+
+	focus = {
+		id = FIN_Expand_Baltic_Sea_Route
+		#icon = 
+		x = 7
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_American_Funding focus=FIN_German_Funding  }
+		prerequisite = {
+			focus = FIN_a_letter_to_Germania
+		}
+		mutually_exclusive = { focus = FIN_Expand_Port_of_Murmansk }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Expand_Baltic_Sea_Route"
+		}
+	}
+
+	focus = {
+		id = FIN_Expand_Port_of_Murmansk
+		#icon = 
+		x = 9
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_American_Funding focus=FIN_German_Funding  }
+		prerequisite = { focus = FIN_to_white_house_with_love }
+		mutually_exclusive = { focus = FIN_Expand_Baltic_Sea_Route }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Expand_Port_of_Murmansk"
+		}
+	}
+
+	focus = {
+		id = FIN_Go_for_Volkshalle
+		#icon = 
+		x = 7
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_Expand_Port_of_Murmansk focus=FIN_Expand_Baltic_Sea_Route  }
+		prerequisite = {
+			focus = FIN_a_letter_to_Germania
+		}
+		mutually_exclusive = { focus = FIN_Pursue_Light_of_Freedom }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Go_for_Volkshalle"
+		}
+	}
+	focus = {
+		id = FIN_Pursue_Light_of_Freedom
+		#icon = 
+		x = 9
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_Expand_Port_of_Murmansk focus=FIN_Expand_Baltic_Sea_Route  }
+		prerequisite = { focus = FIN_to_white_house_with_love }
+		mutually_exclusive = { focus = FIN_Go_for_Volkshalle }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Pursue_Light_of_Freedom"
+		}
+	}
+	focus = {
+		id = FIN_Germania_Conference
+		#icon = 
+		x = 7
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_Pursue_Light_of_Freedom focus=FIN_Go_for_Volkshalle  }
+		prerequisite = {
+			focus = FIN_a_letter_to_Germania
+		}
+		mutually_exclusive = { focus = FIN_Edinburgh_Conference}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Germania_Conference"
+		}
+	}
+	focus = {
+		id = FIN_Edinburgh_Conference
+		#icon = 
+		x = 9
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_Pursue_Light_of_Freedom focus=FIN_Go_for_Volkshalle  }
+		prerequisite = { focus = FIN_to_white_house_with_love }
+		mutually_exclusive = { focus = FIN_Germania_Conference }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Edinburgh_Conference"
+		}
+	}
+	#政治ツリー
+	focus = {
+		id = FIN_save_democracy
+		#icon = 
+		x = 15
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus=FIN_intro_start  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_save_democracy"
+		}
+	}
+	focus = {
+		id = FIN_crush_red_star
+		#icon = 
+		x = 14
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus=FIN_save_democracy  }
+		mutually_exclusive = { focus = FIN_bring_the_bear_under_control }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_crush_red_star"
+		}
+	}
+	focus = {
+		id = FIN_bring_the_bear_under_control
+		#icon = 
+		x = 16
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus=FIN_save_democracy  }
+		mutually_exclusive = { focus = FIN_crush_red_star }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_crush_red_star"
+		}
+	}
+	focus = {
+		id = FIN_propagate_our_accomplishment
+		#icon = 
+		x = 15
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus=FIN_bring_the_bear_under_control focus=FIN_crush_red_star  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_propagate_our_accomplishment"
+		}
+	}
+	focus = {
+		id = FIN_in_economy
+		#icon = 
+		x = 14
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus=FIN_propagate_our_accomplishment  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_in_economy"
+		}
+	}
+	focus = {
+		id = FIN_in_diplomacy
+		#icon = 
+		x = 14
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus=FIN_in_economy  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_in_diplomacy"
+		}
+	}
+	focus = {
+		id = FIN_to_urban
+		#icon = 
+		x = 16
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus=FIN_propagate_our_accomplishment  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_to_urban"
+		}
+	}
+	focus = {
+		id = FIN_to_rural
+		#icon = 
+		x = 16
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus=FIN_to_urban  }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_to_rural"
+		}
+	}
+	focus = {
+		id = FIN_our_democracy_was_saved
+		#icon = 
+		x = 15
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_in_diplomacy }
+		prerequisite = {focus =FIN_to_rural }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_our_democracy_was_saved"
+		}
+	}
+	focus = {
+		id = FIN_in_order_to_integrate
+		#icon = 
+		x = 22
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_intro_start }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_in_order_to_integrate"
+		}
+	}
+	focus = {
+		id = FIN_defence_against_Russia
+		#icon = 
+		x = 20
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_in_order_to_integrate }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_defence_against_Russia"
+		}
+	}
+	focus = {
+		id = FIN_aid_volunteers
+		icon = GFX_ONG_FIN_advisors_shine
+		x = 20
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_defence_against_Russia }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_aid_volunteers"
+		}
+	}
+	focus = {
+		id = FIN_send_weapon
+		icon = GFX_ONG_FIN_air
+		x = 19
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_aid_volunteers }
+		mutually_exclusive = { focus = FIN_send_money }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_send_guns"
+		}
+	}
+	focus = {
+		id =FIN_send_money
+		icon = GFX_ONG_FIN_industry
+		x = 21
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_aid_volunteers }
+		mutually_exclusive = { focus = FIN_send_weapon }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_send_money"
+		}
+	}
+	focus = {
+		id =FIN_take_precautions
+		#icon = 
+		x = 20
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = FIN_send_weapon focus = FIN_send_money }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_take_precautions"
+		}
+	}
+	focus = {
+		id = FIN_in_sacrifice_to_unification
+		#icon = 
+		x = 24
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_in_order_to_integrate }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_in_sacrifice_to_unification"
+		}
+	}
+	focus = {
+		id = FIN_but_grant_them_autonomy
+		#icon = 
+		x = 24
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_in_sacrifice_to_unification }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_but_grant_them_autonomy"
+		}
+	}
+	focus = {
+		id = FIN_encourage_people_to_migrate
+		#icon = 
+		x = 24
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_but_grant_them_autonomy }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_encourage_people_to_migrate"
+		}
+	}
+	focus = {
+		id = FIN_Murmansk_quasi_state
+		#icon = 
+		x = 24
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_encourage_people_to_migrate }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Murmansk_quasi_state"
+		}
+	}
+	focus = {
+		id = FIN_strong_unity
+		#icon = 
+		x = 22
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Murmansk_quasi_state }
+		prerequisite = { focus =FIN_take_precautions}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_strong_unity"
+		}
+	}
+}
+#ミームモード
+focus_tree = {
+	id = FIN_Egypt
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FIN
+		}
+	}
+	focus = {
+		id = FIN_Egypt_president_death
+		#icon = 
+		x = 3
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_president_death"
+		}
+	}
+	focus = {
+		id = FIN_Egypt_inherit_a_dream
+		#icon = 
+		x = 3
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_president_death}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_inherit_a_dream"
+		}
+	}
+	focus = {
+		id = FIN_Egypt_rename_capital_city
+		#icon = 
+		x = 1
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_inherit_a_dream}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_rename_capital_city"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_Great_Pyramid_project
+		#icon = 
+		x = 1
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_rename_capital_city}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_Great_Pyramid_project"
+		}
+	}
+	focus = {
+		id = FIN_Egypt_disperse_solar_theology
+		#icon = 
+		x = 3
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_inherit_a_dream}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_disperse_solar_theology"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_introduce_hieroglyph_into_education
+		#icon = 
+		x = 3
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_disperse_solar_theology}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_introduce_hieroglyph_into_education"
+		}
+	}
+	focus = {
+		id = FIN_Egypt_identify_adipocere_with_mummy
+		#icon = 
+		x = 5
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_inherit_a_dream}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_identify_adipocere_with_mummy"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_revive_Hand_of_Glory
+		#icon = 
+		x = 5
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_identify_adipocere_with_mummy}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_revive_Hand_of_Glory"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_pharaonic_declaration
+		#icon = 
+		x = 3
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_Great_Pyramid_project}
+		prerequisite = { focus =FIN_Egypt_introduce_hieroglyph_into_education}
+		prerequisite = { focus =FIN_Egypt_revive_Hand_of_Glory}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_pharaonic_declaration"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_initiate_a_contact_with_Egypt
+		#icon = 
+		x = 0
+		y = 5
+		cost = 4
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_pharaonic_declaration}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_initiate_a_contact_with_Egypt"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_dehypnotize_Estonians
+		#icon = 
+		x = 2
+		y = 5
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_pharaonic_declaration}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_dehypnotize_Estonians"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_Enlighten_Livonians
+		#icon = 
+		x = 4
+		y = 5
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_pharaonic_declaration}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_Enlighten_Livonians"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_salvation_Heruli
+		#icon = 
+		x = 6
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_pharaonic_declaration}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_salvation_Heruli"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_ethnic_universe_reborn
+		#icon = 
+		x = 3
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_initiate_a_contact_with_Egypt}
+		prerequisite = { focus =FIN_Egypt_dehypnotize_Estonians}
+		prerequisite = { focus =FIN_Egypt_Enlighten_Livonians}
+		prerequisite = { focus =FIN_Egypt_salvation_Heruli}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_ethnic_universe_reborn"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_prepare_for_the_super_trial
+		#icon = 
+		x = 3
+		y = 6
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_ethnic_universe_reborn}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_prepare_for_the_super_trial"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_unimaginable_friend
+		#icon = 
+		x = 1
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_prepare_for_the_super_trial}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_unimaginable_friend"
+		}
+	}
+	focus = {
+		id =FIN_Egypt_under_sparkling_Hand_of_Glory
+		#icon = 
+		x = 3
+		y = 7
+		cost = 1
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_prepare_for_the_super_trial}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_under_sparkling_Hand_of_Glory"
+		}
+	}
+	focus = {
+		id = FIN_Egypt_Mesket
+		#icon = 
+		x = 5
+		y = 7
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_prepare_for_the_super_trial}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus  FIN_Egypt_Mesket"
+		}
+	}
+	focus = {
+		id =  FIN_Egypt_release_brethren
+		#icon = 
+		x = 3
+		y = 8
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_Mesket}
+		prerequisite = { focus =FIN_Egypt_under_sparkling_Hand_of_Glory}
+		prerequisite = { focus =FIN_Egypt_unimaginable_friend}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus  FIN_Egypt_release_brethren"
+		}
+	}
+	focus = {
+		id =  FIN_Egypt_to_south
+		#icon = 
+		x = 3
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_release_brethren}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus  FIN_Egypt_to_south"
+		}
+	}
+	focus = {
+		id =  FIN_Egypt_Dreams_of_Old_Fatherland
+		#icon = 
+		x = 3
+		y = 10
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_to_south}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus  FIN_Egypt_Dreams_of_Old_Fatherland"
+		}
+	}
+	focus = {
+		id =  FIN_Egypt_roads_to_java
+		#icon = 
+		x = 2
+		y = 11
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_Dreams_of_Old_Fatherland}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_roads_to_java"
+		}
+	}
+	focus = {
+		id =  FIN_Egypt_Mamjet
+		#icon = 
+		x = 4
+		y = 11
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_Dreams_of_Old_Fatherland}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_Mamjet"
+		}
+	}
+	focus = {
+		id =  FIN_Egypt_eat_east_apopis
+		#icon = 
+		x = 3
+		y = 12
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_roads_to_java}
+		prerequisite = { focus =FIN_Egypt_Mamjet}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_eat_east_apopis"
+		}
+	}
+	focus = {
+		id =  FIN_Egypt_set_sail_on_ancestral_land
+		#icon = 
+		x = 3
+		y = 13
+		cost = 3
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus =FIN_Egypt_eat_east_apopis}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_Egypt_set_sail_on_ancestral_land"
+		}
+	}
+}

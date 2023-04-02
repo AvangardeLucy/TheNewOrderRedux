@@ -1,0 +1,638 @@
+FIN_Debug_Category = {
+	FIN_go_vote = {
+
+		icon = GFX_decision_generic_form_nation
+		fixed_random_seed = no
+		available = {
+			is_debug=yes
+		}
+
+		visible = {
+			#is_debug = yes
+		}
+
+		custom_cost_trigger = { always = yes } #no cost
+
+		days_re_enable = 10
+
+		fire_only_once = no
+
+		complete_effect = {
+			FIN_assemble_parliament_backend=yes
+		}
+
+	}
+	FIN_pops_change = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			is_debug=yes
+		}
+
+		visible = {
+			#is_debug = yes
+		}
+
+		custom_cost_trigger = { always = yes } #no cost
+
+		days_re_enable = 0
+
+		fire_only_once = no
+
+		complete_effect = {
+			FIN_Monthly_pops_change=yes
+			FIN_whole_pops_calculation=yes
+		}
+
+	}
+	FIN_IKL_support = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			is_debug=yes
+		}
+
+		visible = {
+			#is_debug = yes
+		}
+
+		custom_cost_trigger = { always = yes } #no cost
+
+		days_re_enable = 1
+
+		fire_only_once = no
+
+		complete_effect = {
+			FIN={
+				every_owned_state={
+					add_to_variable={THIS.party_pops_monthly_change^9=300}
+				}
+			}
+		}
+
+	}
+	FIN_summon_torni={
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			is_debug=yes
+		}
+
+		visible = {
+			#is_debug = yes
+		}
+
+		custom_cost_trigger = { always = yes } #no cost
+
+		days_re_enable = 1
+
+		fire_only_once = no
+
+		complete_effect = {
+			FIN={
+				country_event={id=white_finland.1}
+			}
+		}
+
+	}
+	FIN_civilwar={
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			is_debug=yes
+		}
+
+		visible = {
+			#is_debug = yes
+		}
+
+		custom_cost_trigger = { always = yes } #no cost
+
+		days_re_enable = 1
+
+		fire_only_once = no
+
+		complete_effect = {
+			FIN={
+				country_event={id=red_finland.1}
+			}
+		}
+
+
+	}
+	FIN_murmansk={
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			is_debug=yes
+		}
+
+		visible = {
+			#is_debug = yes
+		}
+
+		custom_cost_trigger = { always = yes } #no cost
+
+		days_re_enable = 1
+
+		fire_only_once = no
+
+		complete_effect = {
+			FIN={
+				country_event={id=murmansk.1}
+			}
+		}
+
+	}
+	FIN_summon_snellman={
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			is_debug=yes
+		}
+
+		visible = {
+			#is_debug = yes
+		}
+
+		custom_cost_trigger = { always = yes } #no cost
+
+		days_re_enable = 1
+
+		fire_only_once = no
+
+		complete_effect = {
+			FIN={
+				country_event={id=FIN.666}
+			}
+		}
+
+	}
+	FIN_summon_Astala={
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			is_debug=yes
+		}
+
+		visible = {
+			#is_debug = yes
+		}
+
+		custom_cost_trigger = { always = yes } #no cost
+
+		days_re_enable = 1
+
+		fire_only_once = no
+
+		complete_effect = {
+			FIN={
+				country_event={id=FIN.888}
+			}
+		}
+
+	}
+}
+FIN_punapelko={
+	FIN_RED_up_effect={
+		icon = GFX_decision_generic_form_nation
+		available = {
+			has_global_flag = FIN_RED_CRISIS
+		}
+		visible = {
+			has_global_flag = FIN_RED_CRISIS
+		}
+		fire_only_once = no
+		cost = 30
+		days_re_enable = 14
+		complete_effect = {
+			random_state={
+				limit={
+					AND={
+						controller = { tag = FIN }
+						check_variable={THIS.party_pops_effect^0<0.98}
+						check_variable={THIS.party_pops_effect^1<0.98}
+					}
+				}
+				add_to_variable={THIS.party_pops_effect^0=0.02}
+				add_to_variable={THIS.party_pops_effect^1=0.02}
+
+			}
+			random_state={
+				limit={
+					AND={
+						controller = { tag = FIN }
+						check_variable={THIS.party_pops_effect^0<0.98}
+						check_variable={THIS.party_pops_effect^1<0.98}
+					}
+				}
+				add_to_variable={THIS.party_pops_effect^0=0.02}
+				add_to_variable={THIS.party_pops_effect^1=0.02}
+
+			}
+			random_state={
+				limit={
+					AND={
+						controller = { tag = FIN }
+						check_variable={THIS.party_pops_effect^0<0.98}
+						check_variable={THIS.party_pops_effect^1<0.98}
+					}
+				}
+				add_to_variable={THIS.party_pops_effect^0=0.02}
+				add_to_variable={THIS.party_pops_effect^1=0.02}
+
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	FIN_RED_down_effect={
+		icon = GFX_decision_generic_form_nation
+		available = {
+			has_global_flag = FIN_RED_CRISIS
+		}
+		visible = {
+			has_global_flag = FIN_RED_CRISIS
+		}
+		fire_only_once = no
+		cost = 30
+		days_re_enable = 14
+		complete_effect = {
+			random_state={
+				limit={
+					AND={
+						controller = { tag = FIN }
+						check_variable={THIS.party_pops_effect^0>0.02}
+						check_variable={THIS.party_pops_effect^1>0.02}
+					}
+				}
+				subtract_from_variable={THIS.party_pops_effect^0=0.02}
+				subtract_from_variable={THIS.party_pops_effect^1=0.02}
+
+			}
+			random_state={
+				limit={
+					AND={
+						controller = { tag = FIN }
+						check_variable={THIS.party_pops_effect^0>0.02}
+						check_variable={THIS.party_pops_effect^1>0.02}
+					}
+				}
+				subtract_from_variable={THIS.party_pops_effect^0=0.02}
+				subtract_from_variable={THIS.party_pops_effect^1=0.02}
+
+			}
+			random_state={
+				limit={
+					AND={
+						controller = { tag = FIN }
+						check_variable={THIS.party_pops_effect^0>0.02}
+						check_variable={THIS.party_pops_effect^1>0.02}
+					}
+				}
+				subtract_from_variable={THIS.party_pops_effect^0=0.02}
+				subtract_from_variable={THIS.party_pops_effect^1=0.02}
+
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	
+	FIN_RED_up_fading={
+		icon = GFX_decision_generic_form_nation
+		available = {
+			has_global_flag = FIN_RED_CRISIS
+		}
+		visible = {
+			has_global_flag = FIN_RED_CRISIS
+		}
+		fire_only_once = no
+		cost = 20
+		days_re_enable = 7
+		complete_effect = {
+			random_state={
+				limit={
+					AND={
+						controller = { tag = FIN }
+						check_variable={THIS.party_pops_monthly_change_fade^0>0.01}
+						check_variable={THIS.party_pops_monthly_change_fade^1>0.01}
+					}
+				}
+				subtract_from_variable={THIS.party_pops_monthly_change_fade^0=0.01}
+				subtract_from_variable={THIS.party_pops_monthly_change_fade^1=0.01}
+
+			}
+			random_state={
+				limit={
+					AND={
+						controller = { tag = FIN }
+						check_variable={THIS.party_pops_monthly_change_fade^0>0.01}
+						check_variable={THIS.party_pops_monthly_change_fade^1>0.01}
+					}
+				}
+				subtract_from_variable={THIS.party_pops_monthly_change_fade^0=0.01}
+				subtract_from_variable={THIS.party_pops_monthly_change_fade^1=0.01}
+
+			}
+			random_state={
+				limit={
+					AND={
+						controller = { tag = FIN }
+						check_variable={THIS.party_pops_monthly_change_fade^0>0.01}
+						check_variable={THIS.party_pops_monthly_change_fade^1>0.01}
+					}
+				}
+				subtract_from_variable={THIS.party_pops_monthly_change_fade^0=0.01}
+				subtract_from_variable={THIS.party_pops_monthly_change_fade^1=0.01}
+
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	FIN_RED_down_fading={
+		icon = GFX_decision_generic_form_nation
+		available = {
+			has_global_flag = FIN_RED_CRISIS
+		}
+		visible = {
+			has_global_flag = FIN_RED_CRISIS
+		}
+		fire_only_once = no
+		cost = 20
+		days_re_enable = 7
+		complete_effect = {
+			random_state={
+				limit={
+					AND={
+						controller = { tag = FIN }
+						check_variable={THIS.party_pops_monthly_change_fade^0<0.99}
+						check_variable={THIS.party_pops_monthly_change_fade^1<0.99}
+					}
+				}
+				add_to_variable={THIS.party_pops_monthly_change_fade^0=0.01}
+				add_to_variable={THIS.party_pops_monthly_change_fade^1=0.01}
+
+			}
+			random_state={
+				limit={
+					AND={
+						controller = { tag = FIN }
+						check_variable={THIS.party_pops_monthly_change_fade^0<0.99}
+						check_variable={THIS.party_pops_monthly_change_fade^1<0.99}
+					}
+				}
+				add_to_variable={THIS.party_pops_monthly_change_fade^0=0.01}
+				add_to_variable={THIS.party_pops_monthly_change_fade^1=0.01}
+
+			}
+			random_state={
+				limit={
+					AND={
+						controller = { tag = FIN }
+						check_variable={THIS.party_pops_monthly_change_fade^0<0.99}
+						check_variable={THIS.party_pops_monthly_change_fade^1<0.99}
+					}
+				}
+				add_to_variable={THIS.party_pops_monthly_change_fade^0=0.01}
+				add_to_variable={THIS.party_pops_monthly_change_fade^1=0.01}
+
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	FIN_RED_pops_down={
+		icon = GFX_decision_generic_form_nation
+		available = {
+			has_global_flag = FIN_RED_CRISIS
+		}
+		visible = {
+			has_global_flag = FIN_RED_CRISIS
+		}
+		fire_only_once = no
+		cost = 60
+		days_re_enable = 10
+		complete_effect = {
+			random_state={
+				limit={
+						controller = { tag = FIN }
+				}
+				subtract_from_variable={THIS.party_pops_monthly_change^0=50}
+				subtract_from_variable={THIS.party_pops_monthly_change^1=50}
+
+			}
+			random_state={
+				limit={
+						controller = { tag = FIN }
+				}
+				subtract_from_variable={THIS.party_pops_monthly_change^0=50}
+				subtract_from_variable={THIS.party_pops_monthly_change^1=50}
+
+			}
+			random_state={
+				limit={
+						controller = { tag = FIN }
+				}
+				subtract_from_variable={THIS.party_pops_monthly_change^0=50}
+				subtract_from_variable={THIS.party_pops_monthly_change^1=50}
+
+			}
+		}
+		ai_will_do = {
+			base = 40
+		}
+	}
+}
+FIN_winter_war = {
+
+	FIN_demand_ceasefire = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			has_global_flag = KARELIAN_WAR_FORCE_PEACE
+			NOT = { surrender_progress > 0.20 }
+		}
+
+		visible = {
+			OR = {
+				has_war_with = WSR
+				has_war_with = WSB
+				has_war_with = SIB
+			}
+		}
+
+		custom_cost_trigger = { always = yes } #no cost
+
+		days_re_enable = 90
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision FIN_offer_ceasefire"
+			if = {
+				limit = { WSR = { exists = yes } }
+				WSR = {
+					country_event = {
+						id = murmansk_peace.6
+						days = 3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					WSB = { exists = yes }
+				}
+				WSB = {
+					country_event = {
+						id = murmansk_peace.6
+						days = 3
+					}
+				}
+			}
+			else = {
+				SIB = {
+					country_event = {
+						id = murmansk_peace.6
+						days = 3
+					}
+				}
+			}
+			clr_global_flag = KARELIAN_WAR_FORCE_PEACE
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+	FIN_offer_limited_surrender = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			surrender_progress > 0.20
+			NOT = { surrender_progress > 0.50 }
+		}
+
+		visible = {
+			OR = {
+				has_war_with = WSR
+				has_war_with = WSB
+				has_war_with = SIB
+			}
+		}
+
+		custom_cost_trigger = { always = yes } #no cost
+
+		days_re_enable = 90
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision FIN_offer_limited_surrender"
+			if = {
+				limit = { WSR = { exists = yes } }
+				WSR = {
+					country_event = {
+						id = murmansk_peace.3
+						days = 3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					WSB = { exists = yes }
+				}
+				WSB = {
+					country_event = {
+						id = murmansk_peace.3
+						days = 3
+					}
+				}
+			}
+			else = {
+				SIB = {
+					country_event = {
+						id = murmansk_peace.3
+						days = 3
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+	FIN_offer_unconditional_surrender = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			surrender_progress > 0.50
+		}
+
+		visible = {
+			OR = {
+				has_war_with = WSR
+				has_war_with = WSB
+				has_war_with = SIB
+			}
+		}
+
+		custom_cost_trigger = { always = yes } #no cost
+
+		days_re_enable = 90
+
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision FIN_offer_unconditional_surrender"
+			if = {
+				limit = { WSR = { exists = yes } }
+				WSR = {
+					country_event = {
+						id = murmansk_peace.1
+						days = 3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					WSB = { exists = yes }
+				}
+				WSB = {
+					country_event = {
+						id = murmansk_peace.1
+						days = 3
+					}
+				}
+			}
+			else = {
+				SIB = {
+					country_event = {
+						id = murmansk_peace.1
+						days = 3
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+FIN_dilemma={
+	
+}

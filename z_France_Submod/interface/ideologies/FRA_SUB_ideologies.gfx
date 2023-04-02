@@ -1,0 +1,28 @@
+spriteTypes = {
+	# --- Subideologies --- #
+	spriteType = {
+		name = "GFX_ideology_accelerationism_left_accelerationism_subtype"
+		texturefile = "gfx/interface/ideologies/socialist_utopian_socialism_subtype.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_accelerationism_ordoaccelerationism_subtype"
+		texturefile = "gfx/interface/ideologies/national_socialism_ariocriollismo_subtype.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_accelerationism_right_accelerationism_subtype"
+		texturefile = "gfx/interface/ideologies/socialist_panafricanism_subtype.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_accelerationism_unconditional_accelerationism_subtype"
+		texturefile = "gfx/interface/ideologies/despotism_interim_government_subtype.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_accelerationism_vanguard_accelerationism_subtype"
+		texturefile = "gfx/interface/ideologies/ultranationalism_slavo_aryanism_subtype.png"
+	}
+	# --- Main Ideologies --- #
+	spriteType = {
+		name = "GFX_ideology_accelerationism_group"
+		texturefile = "gfx/interface/ideologies/accelerationism_group.png"
+	}
+}

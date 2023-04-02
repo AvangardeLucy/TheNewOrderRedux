@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_TNO_BFI_GUI_bg"
+		texturefile = "gfx/interface/bfi_gui/TNO_BFI_GUI_bg.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_BFI_GUI_Italy_Folder_Button"
+		texturefile = "gfx/interface/bfi_gui/TNO_BFI_GUI_Italy_Folder_Button.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_BFI_GUI_Tab_Tier"
+		texturefile = "gfx/interface/bfi_gui/TNO_BFI_GUI_Tab_Tier.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_BFI_GUI_Tab_Button"
+		texturefile = "gfx/interface/bfi_gui/TNO_BFI_GUI_Tab_Button.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_BFI_GUI_Action_Button"
+		texturefile = "gfx/interface/bfi_gui/TNO_BFI_GUI_Action_Button.png"
+	}
+}

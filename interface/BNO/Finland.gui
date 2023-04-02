@@ -1,0 +1,78 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TNO_finland_GUI_Politics"
+		size = { width = 482 height = 330 }
+		position = { x = 7 y = 7 }
+
+		instantTextBoxType = {
+			name = "Cynicism_Title"
+			position = { x = -20 y = 20 }
+			maxWidth = 538
+			font = "aldrich_36_outline"
+			text = "Cynicism_Title_TT"
+			format = center
+		}
+		instantTextBoxType = {
+			name = "Idealism_Title_1"
+			position = { x = -30 y = 65 }
+			font = "aldrich_16_outline"
+			text = "TOM_IDEALISM"
+			format = center
+		}
+		instantTextBoxType = {
+			name = "Idealism_Title_2"
+			position = { x = 300 y = 65 }
+			font = "aldrich_16_outline"
+			text = "TOM_CYNICISM"
+			format = center
+		}
+		iconType = {
+		name = "TOM_Cynicism_control_bar_Frame"
+		spriteType = "GFX_Tomsk_control_bar_bg"
+		position = { x = 48 y = 93 }
+	}
+	iconType = {
+		name = "TOM_Cynicism_control_bar"
+		spriteType = "GFX_TOM_control_bars"
+		pdx_tooltip = "TOM_Cynicism_bar"
+		pdx_tooltip_delayed = "TOM_Cynicism_bar_desc"
+		position = { x = 51 y = 95 }
+	}
+
+
+	instantTextBoxType = {
+		name = "Integration_Title"
+		position = { x = -20 y = 170 }
+		maxWidth = 538
+		font = "aldrich_36_outline"
+		text = "Integration_Title_TT"
+		format = center
+	}
+	instantTextBoxType = {
+		name = "Integration_Title_1"
+		position = { x = -30 y = 215 }
+		font = "aldrich_16_outline"
+		text = "TOM_NO_OUTSIDERS"
+		format = center
+	}
+	instantTextBoxType = {
+		name = "Integration_Title_2"
+		position = { x = 300 y = 210 }
+		font = "aldrich_16_outline"
+		text = "TOM_EXTREME_OUTSIDERS"
+		format = center
+	}
+	iconType = {
+		name = "TOM_Integration_control_bar_Frame"
+		spriteType = "GFX_Tomsk_control_bar_bg"
+		position = { x = 48 y = 243 }
+	}
+	iconType = {
+		name = "TOM_Integration_control_bar"
+		spriteType = "GFX_TOM_control_bars"
+		pdx_tooltip = "TOM_Integration_bar"
+		pdx_tooltip_delayed = "TOM_Integration_bar_desc"
+		position = { x = 51 y = 245 }
+	}
+}
+}

@@ -1,0 +1,31 @@
+on_actions = {
+	on_ruling_party_change = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = GER
+					GER = { has_government = fascism }
+				}
+				country_event = { id = speer_rm.1 days = 5 }
+			}
+		}
+	}
+	on_daily_DDR = {
+		effect = {
+			set_variable = { stability_frame = DDR.stability }
+			set_variable = { war_support_frame = DDR.has_war_support }
+			multiply_variable = { stability_frame = 100 }
+			multiply_variable = { war_support_frame = 100 }
+			
+			set_variable = { congress_hammer = DDR_unity }
+			multiply_variable = { congress_hammer = 1.25 }
+			
+			if = {
+				limit = {
+					check_variable = { DDR_unity > 59 }
+				}
+				set_country_flag = completed_army_party_party
+			}
+		}
+	}
+}

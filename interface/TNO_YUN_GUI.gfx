@@ -1,0 +1,782 @@
+spriteTypes = {
+	progressbartype = {
+		name = "GFX_YUN_Xinan_GUI_Power"
+		textureFile1 = "gfx/interface/chi_gui/YUN_Xinan_insurgency_reverse.png"
+		textureFile2 = "gfx/interface/chi_gui/YUN_Xinan_insurgency_empty.png"
+		size = { x = 223 y = 20 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_WI_map_state_officers_bar"
+		textureFile1 = "gfx/interface/chi_gui/YUN_WI_map_officers.png"
+		textureFile2 = "gfx/interface/chi_gui/YUN_Xinan_insurgency_empty.png"
+		size = { x = 300 y = 26 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_WI_war_momentum"
+		textureFile1 = "gfx/interface/chi_gui/WI_momentum_bar_2.png"
+		textureFile2 = "gfx/interface/chi_gui/WI_momentum_bar_1.png"
+		size = { x = 330 y = 37 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_WI_legitimacy"
+		textureFile1 = "gfx/interface/chi_gui/WI_momentum_bar.png"
+		textureFile2 = "gfx/interface/chi_gui/WI_momentum_bar_empty.png"
+		size = { x = 37 y = 330 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+	progressbartype = {
+		name = "GFX_WI_war_buff"
+		textureFile1 = "gfx/interface/chi_gui/WI_momentum_bar.png"
+		textureFile2 = "gfx/interface/chi_gui/WI_momentum_bar_empty.png"
+		size = { x = 37 y = 330 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+	progressbartype = {
+		name = "WI_map_state_integration_progress_bar"
+		textureFile1 = "gfx/interface/chi_gui/YUN_WI_coring_progress_full.png"
+		textureFile2 = "gfx/interface/chi_gui/YUN_WI_coring_progress_empty.png"
+		size = {
+			x = 300
+			y = 27
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "WI_map_state_mil_level_bar"
+		textureFile1 = "gfx/interface/chi_gui/YUN_WI_mil_level_full.png"
+		textureFile2 = "gfx/interface/chi_gui/YUN_WI_coring_progress_empty.png"
+		size = {
+			x = 300
+			y = 27
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	spriteType = {
+		name = "WI_map_state_integration_progress_bar_frame"
+		textureFile = "gfx/interface/chi_gui/YUN_WI_coring_progress_frame.png"
+	}
+	spriteType = {
+		name = "GFX_YUN_insurgency_GUI_NRA"
+		texturefile = "gfx/interface/chi_gui/NRA.png"
+	}
+	spriteType = {
+		name = "GFX_YUN_insurgency_GUI_CCP"
+		texturefile = "gfx/interface/chi_gui/CCP.png"
+	}
+	spriteType = {
+		name = "GFX_YUN_insurgency_GUI_Bandits"
+		texturefile = "gfx/interface/chi_gui/Bandits.png"
+	}
+	spriteType = {
+		name = "GFX_YUN_insurgency_GUI_NPA"
+		texturefile = "gfx/interface/chi_gui/NPA.png"
+	}
+	spriteType = {
+		name = "GFX_YUN_insurgency_GUI_container"
+		texturefile = "gfx/interface/chi_gui/YUN_Xinan_insurgency_frame.png"
+	}
+	spriteType = {
+		name = "GFX_YUN_WI_decision_title"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_decision_title.png"
+	}
+	spriteType = {
+		name = "GFX_WI_momentum_title"
+		texturefile = "gfx/interface/chi_gui/WI_momentum.png"
+	}
+	spriteType = {
+		name = "GFX_WI_war_info"
+		texturefile = "gfx/interface/chi_gui/WI_war_info.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_WI_map_GUI_entry"
+		texturefile = "gfx/interface/chi_gui/China_GUI_new_map_button.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_GUI_entry_2"
+		texturefile = "gfx/interface/chi_gui/China_GUI_new_map_button_2.png"
+	}
+	spriteType = {
+		name = "GFX_YUN_WI_Warlord_GUI_flags"
+		texturefile = "gfx/interface/chi_gui/WI_warlord_flags.png"
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_YUN_WI_Warlord_flag_selected_box"
+		texturefile = "gfx/interface/chi_gui/WI_warlord_flag_selected_box.png"
+	}
+	spriteType = {
+		name = "GFX_YUN_WI_region_selected_box"
+		texturefile = "gfx/interface/chi_gui/WI_region_selected_box.png"
+	}
+	spriteType = {
+		name = "GFX_red_KMT_deccat_decision"
+		texturefile = "gfx/interface/chi_gui/red_KMT_deccat_decision.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_background"
+		texturefile = "gfx/interface/chi_gui/states/China_GUI_new_map.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_xinan"
+		texturefile = "gfx/interface/chi_gui/states/China_GUI_new_map_xinan.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_huazhong"
+		texturefile = "gfx/interface/chi_gui/states/China_GUI_new_map_huazhong.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_huadong"
+		texturefile = "gfx/interface/chi_gui/states/China_GUI_new_map_huadong.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_huanan"
+		texturefile = "gfx/interface/chi_gui/states/China_GUI_new_map_huanan.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_huabei"
+		texturefile = "gfx/interface/chi_gui/states/China_GUI_new_map_huabei.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_xibei"
+		texturefile = "gfx/interface/chi_gui/states/China_GUI_new_map_xibei.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_dongbei"
+		texturefile = "gfx/interface/chi_gui/states/China_GUI_new_map_dongbei.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_title"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_map_title.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_separate"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_map_separate.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_frame"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_box_frame.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_state"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_map_state.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_region_names"
+		texturefile = "gfx/interface/chi_gui/WI_region_names.png"
+		noOfFrames = 7
+	}
+	spriteType = {
+		name = "GFX_WI_map_state_status"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_state_status.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_total_supply"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_map_total_supply.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_coring_state"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_add_core.png"
+	}
+	spriteType = {
+		name = "GFX_YUN_influence_GUI_Scale"
+		texturefile = "gfx/interface/chi_gui/YUN_influence_GUI_Scale.png"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_WI_map_update_status"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_update.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_btn_x1"
+		texturefile = "gfx/interface/chi_gui/WI_map_btn_x1.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_officer_default"
+		texturefile = "gfx/interface/chi_gui/WI_map_officer_default.png"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_WI_map_adm_action"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_map_admin_button.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_mil_action"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_map_mil_button.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_officer_icon"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_map_officer_icon.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_state_admin"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_state_admin.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_state_admin_2"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_state_admin_2.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_state_mil"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_state_mil.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_state_mil_2"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_state_mil_2.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_admin_efficiency"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_map_admin_efficiency.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_core_icon"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_core_progress.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_sections"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_map_sections.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_WI_map_strategy_attack"
+		texturefile = "gfx/interface/chi_gui/YUN_GUI_strategy_1.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_strategy_defense"
+		texturefile = "gfx/interface/chi_gui/YUN_GUI_strategy_2.png"
+	}
+	spriteType = {
+		name = "GFX_WI_map_controller_status"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_map_controller_status.png"
+	}
+	spriteType = {
+		name = "GFX_YUN_WI_map_admin_button_2"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_map_admin_button_2.png"
+	}
+	spriteType = {
+		name = "GFX_YUN_WI_map_mil_button_2"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_map_mil_button_2.png"
+	}
+	spriteType = {
+		name = "GFX_YUN_WI_map_war_measures"
+		texturefile = "gfx/interface/chi_gui/YUN_WI_map_war_measures.png"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_WI_china_anhui"
+		texturefile = "gfx/interface/chi_gui/states/anhui.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_beijing"
+		texturefile = "gfx/interface/chi_gui/states/beijing.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_biluobizhan"
+		texturefile = "gfx/interface/chi_gui/states/biluobizhan.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_boli"
+		texturefile = "gfx/interface/chi_gui/states/boli.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_central_gansu"
+		texturefile = "gfx/interface/chi_gui/states/central_gansu.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_chamdo"
+		texturefile = "gfx/interface/chi_gui/states/chamdo.png"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_changde"
+		texturefile = "gfx/interface/chi_gui/states/changde.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_chaozhou"
+		texturefile = "gfx/interface/chi_gui/states/chaozhou.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_chintao"
+		texturefile = "gfx/interface/chi_gui/states/chintao.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_chongqing"
+		texturefile = "gfx/interface/chi_gui/states/chongqing.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_dabancheng"
+		texturefile = "gfx/interface/chi_gui/states/dabancheng.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_dairen"
+		texturefile = "gfx/interface/chi_gui/states/dairen.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_dali"
+		texturefile = "gfx/interface/chi_gui/states/dali.png"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_daxian"
+		texturefile = "gfx/interface/chi_gui/states/daxian.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_weifang"
+		texturefile = "gfx/interface/chi_gui/states/weifang.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_dzungaria"
+		texturefile = "gfx/interface/chi_gui/states/dzungaria.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_east_gansu"
+		texturefile = "gfx/interface/chi_gui/states/east_gansu.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_east_hebei"
+		texturefile = "gfx/interface/chi_gui/states/east_hebei.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_eastern_mongolia"
+		texturefile = "gfx/interface/chi_gui/states/eastern_mongolia.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_entai"
+		texturefile = "gfx/interface/chi_gui/states/entai.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_fujian"
+		texturefile = "gfx/interface/chi_gui/states/fujian.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_guilin"
+		texturefile = "gfx/interface/chi_gui/states/guilin.png"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_guizhou"
+		texturefile = "gfx/interface/chi_gui/states/guizhou.png"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_haishenwai"
+		texturefile = "gfx/interface/chi_gui/states/haishenwai.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_harbin"
+		texturefile = "gfx/interface/chi_gui/states/harbin.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_hebei"
+		texturefile = "gfx/interface/chi_gui/states/hebei.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_heilongjiang"
+		texturefile = "gfx/interface/chi_gui/states/heilongjiang.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_henan"
+		texturefile = "gfx/interface/chi_gui/states/henan.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_hokkai"
+		texturefile = "gfx/interface/chi_gui/states/hokkai.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_honkon"
+		texturefile = "gfx/interface/chi_gui/states/honkon.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_huangshan"
+		texturefile = "gfx/interface/chi_gui/states/huangshan.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_hubei"
+		texturefile = "gfx/interface/chi_gui/states/hubei.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_hunan"
+		texturefile = "gfx/interface/chi_gui/states/hunan.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_ikaiei"
+		texturefile = "gfx/interface/chi_gui/states/ikaiei.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_ikh_juu"
+		texturefile = "gfx/interface/chi_gui/states/ikh_juu.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_jiangsu"
+		texturefile = "gfx/interface/chi_gui/states/jiangsu.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_jiangxi"
+		texturefile = "gfx/interface/chi_gui/states/jiangxi.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_jieya"
+		texturefile = "gfx/interface/chi_gui/states/Jieya.png"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_jilin"
+		texturefile = "gfx/interface/chi_gui/states/jilin.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_jinan"
+		texturefile = "gfx/interface/chi_gui/states/jinan.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_kaifeng"
+		texturefile = "gfx/interface/chi_gui/states/kaifeng.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_kainan_to"
+		texturefile = "gfx/interface/chi_gui/states/kainan_to.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_koshu"
+		texturefile = "gfx/interface/chi_gui/states/koshu.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_kunlunshan"
+		texturefile = "gfx/interface/chi_gui/states/kunlunshan.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_lhasa"
+		texturefile = "gfx/interface/chi_gui/states/lhasa.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_liaobei"
+		texturefile = "gfx/interface/chi_gui/states/liaobei.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_liaoning"
+		texturefile = "gfx/interface/chi_gui/states/liaoning.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_makao"
+		texturefile = "gfx/interface/chi_gui/states/makao.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_maoming"
+		texturefile = "gfx/interface/chi_gui/states/maoming.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_mongolia"
+		texturefile = "gfx/interface/chi_gui/states/mongolia.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_mukden"
+		texturefile = "gfx/interface/chi_gui/states/mukden.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_nanchang"
+		texturefile = "gfx/interface/chi_gui/states/nanchang.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_nanjing"
+		texturefile = "gfx/interface/chi_gui/states/nanjing.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_nanning"
+		texturefile = "gfx/interface/chi_gui/states/nanning.png"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_nanyang"
+		texturefile = "gfx/interface/chi_gui/states/nanyang.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_ningxia"
+		texturefile = "gfx/interface/chi_gui/states/ningxia.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_qahar"
+		texturefile = "gfx/interface/chi_gui/states/qahar.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_qaidam_basin"
+		texturefile = "gfx/interface/chi_gui/states/qaidam_basin.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_qinghai"
+		texturefile = "gfx/interface/chi_gui/states/qinghai.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_rehe"
+		texturefile = "gfx/interface/chi_gui/states/rehe.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_shaanxi"
+		texturefile = "gfx/interface/chi_gui/states/shaanxi.png"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_shandong"
+		texturefile = "gfx/interface/chi_gui/states/shandong.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_shanhai"
+		texturefile = "gfx/interface/chi_gui/states/shanhai.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_shanxi"
+		texturefile = "gfx/interface/chi_gui/states/shanxi.png"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_shaoguan"
+		texturefile = "gfx/interface/chi_gui/states/shaoguan.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_shijiazhuang"
+		texturefile = "gfx/interface/chi_gui/states/shijiazhuang.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_chengdu"
+		texturefile = "gfx/interface/chi_gui/states/chengdu.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_taiwan"
+		texturefile = "gfx/interface/chi_gui/states/taiwan.png"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_tannu_tuva"
+		texturefile = "gfx/interface/chi_gui/states/tannu_tuva.png"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_tibet"
+		texturefile = "gfx/interface/chi_gui/states/tibet.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_ulanqab"
+		texturefile = "gfx/interface/chi_gui/states/ulanqab.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_urajio"
+		texturefile = "gfx/interface/chi_gui/states/urajio.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_urumqi"
+		texturefile = "gfx/interface/chi_gui/states/urumqi.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_west_gansu"
+		texturefile = "gfx/interface/chi_gui/states/west_gansu.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_western_mongolia"
+		texturefile = "gfx/interface/chi_gui/states/western_mongolia.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_wuhan"
+		texturefile = "gfx/interface/chi_gui/states/wuhan.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_xi_an"
+		texturefile = "gfx/interface/chi_gui/states/xi_an.png"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_xikang"
+		texturefile = "gfx/interface/chi_gui/states/xikang.png"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_hsinking"
+		texturefile = "gfx/interface/chi_gui/states/hsinking.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_yarkand"
+		texturefile = "gfx/interface/chi_gui/states/yarkand.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_yunnan"
+		texturefile = "gfx/interface/chi_gui/states/yunnan.png"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_yushu"
+		texturefile = "gfx/interface/chi_gui/states/yushu.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_zhaoqing"
+		texturefile = "gfx/interface/chi_gui/states/zhaoqing.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WI_china_zhejiang"
+		texturefile = "gfx/interface/chi_gui/states/zhejiang.png"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+}
+

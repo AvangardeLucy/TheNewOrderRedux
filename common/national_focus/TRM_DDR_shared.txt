@@ -1,0 +1,451 @@
+shared_focus = {
+	id = DDR_risen_from_the_ruins
+	icon = GFX_DDR_risen_from_ruins
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	x = 6
+	y = -1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_risen_from_the_ruins"
+		country_event = {id = ddr_risen.1}
+		country_event = { 
+			id = ddr_init.1
+			days = 3
+		}
+	}
+}
+
+shared_focus = {
+	id = DDR_the_chairman_speaks
+	icon = GFX_DDR_the_chairman_speaks
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = DDR_risen_from_the_ruins
+	}
+	x = 6
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_the_chairman_speaks"
+		country_event = {id = ddr_risen.2}
+	}    
+}
+
+shared_focus = {
+	id = DDR_uniting_the_sed
+	icon = GFX_DDR_uniting_the_sed
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_the_chairman_speaks
+    prerequisite = {
+        focus = DDR_the_chairman_speaks
+    }
+	ai_will_do = { factor = 1 }
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_uniting_the_sed"
+		country_event = {id = ddr_risen.8}
+		custom_effect_tooltip = uniting_the_sed_tt
+		set_country_flag = DDR_army_and_party_party
+	}
+}
+
+shared_focus = {
+	id = DDR_finishing_them_off
+	icon = GFX_DDR_finishing_them_off
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_the_chairman_speaks
+    prerequisite = {
+        focus = DDR_the_chairman_speaks
+    }
+	ai_will_do = { factor = 1 }
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_finishing_them_off"
+		custom_effect_tooltip = DDR_finishing_them_off_tooltip
+		country_event = ddr_risen.3
+		hidden_effect = {
+			country_event = ddr_nazis.1
+		}
+	}
+}
+
+shared_focus = {
+	id = DDR_begin_the_long_reconstruction
+	icon = GFX_DDR_begin_the_long_reconstruction
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_finishing_them_off
+    prerequisite = {
+        focus = DDR_the_chairman_speaks
+    }
+	ai_will_do = { factor = 1 }
+	x = 6
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_begin_the_long_reconstruction"
+		country_event = {id = ddr_risen.11}
+		set_temp_variable = { temp_econ_spending_amount = 0.5 }
+		econ_spend_money_once_effect_raw_money = yes
+	}
+}
+
+shared_focus = {
+	id = DDR_the_anti_fascist_elections
+	icon = GFX_DDR_the_anti_fascist_elections
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_uniting_the_sed
+    prerequisite = {
+        focus = DDR_uniting_the_sed
+    }
+	ai_will_do = { factor = 1 }
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_the_anti_fascist_elections"
+		add_political_power = 20
+		country_event = {id = ddr_risen.9}
+	}
+}
+
+shared_focus = {
+	id = DDR_securing_the_revolution
+	icon = GFX_DDR_securing_the_revolution
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_the_anti_fascist_elections
+    prerequisite = {
+        focus = DDR_the_anti_fascist_elections
+    }
+	ai_will_do = { factor = 1 }
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_securing_the_revolution"
+		country_event = {id = ddr_risen.10}
+		add_to_variable = { DDR_organisation = 25 }
+	}
+}
+
+shared_focus = {
+	id = DDR_found_the_stasi
+	icon = GFX_DDR_found_the_stasi
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_securing_the_revolution
+    prerequisite = {
+        focus = DDR_securing_the_revolution
+    }
+	ai_will_do = { factor = 1 }
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_found_the_stasi"
+		country_event = {id = ddr_risen.16}
+		tno_security_improve = yes
+	}
+}
+
+shared_focus = {
+	id = DDR_introduce_centralized_planning
+	icon = GFX_DDR_introduce_centralized_planning
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_found_the_stasi
+    prerequisite = {
+        focus = DDR_securing_the_revolution
+    }
+	ai_will_do = { factor = 1 }
+	x = 2
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_introduce_centralized_planning"
+		country_event = {id = ddr_risen.18}
+		TNO_improve_industrial_expertise_med = yes
+	}
+}
+
+shared_focus = {
+	id = DDR_rooting_out_the_rats
+	icon = GFX_DDR_rooting_out_the_rats
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_found_the_stasi
+    prerequisite = {
+        focus = DDR_found_the_stasi
+    }
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = did_three_battles_tt		
+			has_country_flag = did_three_battles
+		}
+	}
+	ai_will_do = { factor = 1 }
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_rooting_out_the_rats"
+		country_event = {id = ddr_risen.17}
+		add_political_power = -20
+		add_stability = -0.05
+	}
+}
+
+shared_focus = {
+	id = DDR_organizing_the_land_reform
+	icon = GFX_DDR_organizing_land_reform
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_introduce_centralized_planning
+    prerequisite = {
+        focus = DDR_introduce_centralized_planning
+    }
+	ai_will_do = { factor = 1 }
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_organizing_the_land_reform"
+		country_event = {id = ddr_risen.19}
+		add_political_power = 20
+		add_stability = -0.05
+	}
+}
+
+shared_focus = {
+	id = DDR_striking_their_bases
+	icon = GFX_DDR_striking_their_bases
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_finishing_them_off
+    prerequisite = {
+        focus = DDR_finishing_them_off
+    }
+	ai_will_do = { factor = 1 }
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_striking_their_bases"
+		hidden_effect = {
+			country_event = ddr_nazis.2
+			add_to_variable = {
+				var = base_morale 
+				value = 100
+				tooltip = base_morale_reward_tt
+			}
+			add_to_variable = {
+				var = base_nazi_supply 
+				value = -100
+				tooltip = base_nazi_supply_damage_tt
+			}
+		}
+		custom_effect_tooltip = DDR_striking_their_bases_tooltip
+	}
+}
+
+shared_focus = {
+	id = DDR_expose_their_crimes
+	icon = GFX_DDR_expose_their_crimes
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_finishing_them_off
+    prerequisite = {
+        focus = DDR_finishing_them_off
+    }
+	ai_will_do = { factor = 1 }
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_expose_their_crimes"
+		country_event = {id = ddr_risen.6}
+	}
+}
+
+shared_focus = {
+	id = DDR_hold_the_hamburg_trials
+	icon = GFX_DDR_hold_the_hamburg_trials
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_expose_their_crimes
+    prerequisite = {
+        focus = DDR_expose_their_crimes
+    }
+	ai_will_do = { factor = 1 }
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_hold_the_hamburg_trials"
+		country_event = {id = ddr_risen.7}
+		add_political_power = -20
+
+	}
+}
+
+shared_focus = {
+	id = DDR_smashing_the_swastika
+	icon = GFX_DDR_smashing_the_swastika
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_striking_their_bases
+    prerequisite = {
+        focus = DDR_striking_their_bases
+    }
+	ai_will_do = { factor = 1 }
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_smashing_the_swastika"
+		hidden_effect = {
+			country_event = ddr_nazis.3
+		}
+		country_event = {id = ddr_risen.5}
+		add_stability = -0.30
+		add_political_power = -30
+		custom_effect_tooltip = DDR_smashing_the_swastika_tooltip
+	}
+}
+
+shared_focus = {
+	id = DDR_enact_mass_nationalization
+	icon = GFX_DDR_enact_mass_nationalization
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_begin_the_long_reconstruction
+    prerequisite = {
+        focus = DDR_begin_the_long_reconstruction
+    }
+	ai_will_do = { factor = 1 }
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_enact_mass_nationalization"
+		country_event = {id = ddr_risen.12}
+		set_temp_variable = { gdp_growth_temp = 0.5 }
+		econ_gdp_growth_change = yes
+	}
+}
+
+shared_focus = {
+	id = DDR_a_house_for_every_german
+	icon = GFX_DDR_a_house_for_every_german
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_enact_mass_nationalization
+    prerequisite = {
+        focus = DDR_begin_the_long_reconstruction
+    }
+	ai_will_do = { factor = 1 }
+	x = 2
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_a_house_for_every_german"
+		country_event = {id = ddr_risen.14}
+		set_temp_variable = { temp_econ_spending_amount = 0.35 }
+		econ_spend_money_once_effect_raw_money = yes
+	}
+}
+
+shared_focus = {
+	id = DDR_form_the_peoples_enterprises
+	icon = GFX_DDR_form_the_peoples_enterprises
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_enact_mass_nationalization
+    prerequisite = {
+        focus = DDR_enact_mass_nationalization
+    }
+	ai_will_do = { factor = 1 }
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_form_the_peoples_enterprises"
+		country_event = {id = ddr_risen.13}
+		set_temp_variable = { inflation_temp = -0.40 }
+		econ_inflation_change = yes
+		#TODO: Reduces negative effects from the 'Great Break' idea
+	}
+}
+
+shared_focus = {
+	id = DDR_the_plattenbau_system
+	icon = GFX_DDR_the_plattenbau_system
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_a_house_for_every_german
+    prerequisite = {
+        focus = DDR_a_house_for_every_german
+    }
+	ai_will_do = { factor = 1 }
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_the_plattenbau_system"
+		
+		country_event = {id = ddr_risen.15}
+		set_temp_variable = { temp_econ_spending_amount = 0.20 }
+		econ_spend_money_once_effect_raw_money = yes
+		add_political_power = 30
+	}
+}
+
+shared_focus = {
+	id = DDR_and_the_assembly_declares
+	icon = GFX_DDR_and_the_assembly_declares
+	cost = 1
+	available_if_capitulated = no
+    relative_position_id = DDR_found_the_stasi
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = completed_army_party_party_tt		
+			has_country_flag = completed_army_party_party
+		}
+		custom_trigger_tooltip = {
+			tooltip = completed_army_party_army_tt		
+			OR = {
+				HOL = { has_capitulated = yes }
+				HOL = { has_government = communist } 
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = completed_werfolf_gui_tt
+		}
+	}
+    prerequisite = {
+        focus = DDR_rooting_out_the_rats
+    }
+    prerequisite = {
+        focus = DDR_organizing_the_land_reform
+    }
+	ai_will_do = { factor = 1 }
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_and_the_assembly_declares"
+		country_event = {id = ddr_risen.20}
+		
+	}
+}
+
+shared_focus = {
+	id = DDR_the_1966_socialist_constitution
+	icon = GFX_DDR_1966_socialist_constitution
+	cost = 1
+	available_if_capitulated = no
+	#TODO:Requirements: The army and party must be organized and united for the constitution to be proclaimed.
+    relative_position_id = DDR_and_the_assembly_declares
+    prerequisite = {
+        focus = DDR_and_the_assembly_declares
+    }
+	ai_will_do = { factor = 1 }
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DDR_the_1966_socialist_constitution"
+		country_event = {id = ddr_risen.21}
+	}
+}

@@ -1,0 +1,12 @@
+focus_tree = {
+	id = DDR_starting_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DDR
+		}
+	}
+	default = no
+	shared_focus = DDR_risen_from_the_ruins
+}

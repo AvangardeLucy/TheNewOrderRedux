@@ -1,0 +1,703 @@
+guiTypes = {
+    
+    containerWindowType = {
+        name = "TRM_DDR_Demobilization"
+        size = { width = -10 height = 283 }
+        position = { x = -2 y = 0 }
+
+        iconType = {
+			name = "TRM_Demobilization_Info"
+			quadTextureSprite = "GFX_BRG_DomesticGUI_Info_Button"
+			position = { x = -103 y = -62 }
+			Orientation = "UPPER_RIGHT"
+			scale = 1
+			pdx_tooltip = "TRM_Demobilization_Info_tt"
+		}
+
+        iconType = {
+            name = "DDR_Demobpicture"
+            position = { x = 20 y = -21 }
+            spriteType = GFX_DDR_Demobpicture
+            alwaystransparent = yes 
+        }
+      
+		containerWindowType = { #Combined progress bar together so it's easier to move it if needed.
+			name = "TRM_progress_bar_group"
+			size = { width = -10 height = 283 }
+			position = { x = 34 y = 164 }
+			instantTextboxType = {
+				name = "TRM_Partisans_Demobilization_text"
+				position = { x = 35 y = 11 }
+				font = "aldrich_20_outline"
+				text = "TRM_Partisans_Demobilization_text"
+				maxWidth = 415
+				maxHeight = 22
+			}
+			iconType = {
+				name = "DDR_doubleframe_box"
+				position = { x = 0 y = 0 }
+				spriteType = GFX_DDR_doubleframe_box
+				alwaystransparent = yes 
+			}
+			iconType = {
+				name = "DDR_progress_box_frame"
+				position = { x = 26 y = 40 }
+				spriteType = GFX_DDR_progress_box_frame
+				alwaystransparent = yes 
+			}
+			iconType = {
+				name = "DDR_Partisan_Bar"
+				position = { x = 34 y = 46 }
+				spriteType = GFX_DDR_Partisan_Bar
+			}
+		}
+    }
+	containerWindowType = {
+        name = "TRM_SPR_nationwide_riots_window"
+        size = { width = 500 height = 644 }
+        position = { x = 0 y = 0 }
+		iconType = {
+			name = "TRM_Riots_Info"
+			quadTextureSprite = "GFX_BRG_DomesticGUI_Info_Button"
+			position = { x = -75 y = -62 }
+			Orientation = "UPPER_RIGHT"
+			scale = 1
+			pdx_tooltip = "TRM_Riots_Info_tt"
+		}
+		iconType = {
+			name = "SPR_riot_banner"
+			quadTextureSprite = "GFX_SGR_Riot_Banner"
+			position = { x = 20 y = -19 }
+		}
+		containerWindowType = {
+			name = "TRM_SPR_nationwide_riots_map"
+			size = { width = 374 height = 261 }
+			position = { x = 60 y = 100 }
+			iconType = {
+				name = "SPR_big_map_box"
+				quadTextureSprite = "GFX_big_map_box"
+				position = { x = -35 y = -20 }
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "germany_map_outline"
+				position = { x = 0 y = 0 }
+				spriteType = GFX_germany_map_outline
+				alwaystransparent = yes
+			}
+			buttonType = { 
+				name = "DDR_riots_austria"
+				position = { x = 140 y = 168 }
+				quadTextureSprite = GFX_region_13
+				frame = 1
+			}
+			buttonType = {
+				name = "DDR_riots_elsas_lothringen"
+				position = { x = 5 y = 167 }
+				spriteType = GFX_region_10
+				frame = 1
+			}
+			buttonType = {
+				name = "DDR_riots_lower_saxony"
+				position = { x = 13 y = 55 }
+				spriteType = GFX_region_9
+				frame = 1
+			}
+			buttonType = {
+				name = "DDR_riots_pomerania"
+				position = { x = 99 y = 29 }
+				spriteType = GFX_region_6
+				frame = 1
+			}
+			buttonType = {
+				name = "DDR_riots_carinthia"
+				position = { x = 158 y = 236 }
+				spriteType = GFX_region_15
+				frame = 1
+			}
+			buttonType = {
+				name = "DDR_riots_westphalia"
+				position = { x = 1 y = 107 }
+				spriteType = GFX_region_8
+				frame = 1
+			}
+			buttonType = {
+				name = "DDR_riots_baden"
+				position = { x = 38 y = 162 }
+				spriteType = GFX_region_11
+				frame = 1
+			}
+			buttonType = {
+				name = "DDR_riots_tyrol"
+				position = { x = 75 y = 210 }
+				spriteType = GFX_region_14
+				frame = 1
+			}
+			buttonType = {
+				name = "DDR_riots_bavaria"
+				position = { x = 69 y = 132 }
+				spriteType = GFX_region_12
+				frame = 1
+			}
+			buttonType = {
+				name = "DDR_riots_bohemia"
+				position = { x = 124 y = 120 }
+				spriteType = GFX_region_3
+				frame = 1
+			}
+			buttonType = {
+				name = "DDR_riots_saxony"
+				position = { x = 121 y = 101 }
+				spriteType = GFX_region_4
+				frame = 1
+			}
+			buttonType = {
+				name = "DDR_riots_brandenburg"
+				position = { x = 110 y = 66 }
+				spriteType = GFX_region_5
+				frame = 1
+			}
+			buttonType = {
+				name = "DDR_riots_moravia"
+				position = { x = 188 y = 138 }
+				spriteType = GFX_region_1
+				frame = 1
+			}
+			buttonType = {
+				name = "DDR_riots_prussia"
+				position = { x = 226 y = 1 }
+				spriteType = GFX_region_2
+				frame = 1
+			}
+			buttonType = {
+				name = "DDR_riots_schleswig"
+				position = { x = 59 y = 8 }
+				spriteType = GFX_region_7
+				frame = 1
+			}
+			buttonType = {
+				name = "DDR_riots_posen"
+				position = { x = 184 y = 68 }
+				spriteType = GFX_region_16
+				frame = 1
+			}
+			buttonType = {
+				name = "DDR_riots_silesia"
+				position = { x = 226 y = 120 }
+				spriteType = GFX_region_17
+				frame = 1
+			}
+			iconType = {
+				name = "DDR_riots_posen_selected"
+				position = { x = 184 y = 68 }
+				spriteType = GFX_region_16_selected
+			}
+			iconType = {
+				name = "DDR_riots_austria_selected"
+				position = { x = 140 y = 168 }
+				spriteType = GFX_region_13_selected
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "DDR_riots_schleswig_selected"
+				position = { x = 59 y = 8 }
+				spriteType = GFX_region_7_selected
+			}
+			iconType = {
+				name = "DDR_riots_prussia_selected"
+				position = { x = 226 y = 1 }
+				spriteType = GFX_region_2_selected
+			}
+			iconType = {
+				name = "DDR_riots_moravia_selected"
+				position = { x = 188 y = 138 }
+				spriteType = GFX_region_1_selected
+			}
+			iconType = {
+				name = "DDR_riots_brandenburg_selected"
+				position = { x = 110 y = 66 }
+				spriteType = GFX_region_5_selected
+			}
+			iconType = {
+				name = "DDR_riots_saxony_selected"
+				position = {  x = 121 y = 101 }
+				spriteType = GFX_region_4_selected
+			}
+			iconType = {
+				name = "DDR_riots_bohemia_selected"
+				position = { x = 124 y = 120 }
+				spriteType = GFX_region_3_selected
+			}
+			iconType = {
+				name = "DDR_riots_bavaria_selected"
+				position = { x = 69 y = 132 }
+				spriteType = GFX_region_12_selected
+			}
+			iconType = {
+				name = "DDR_riots_tyrol_selected"
+				position = { x = 75 y = 210 }
+				spriteType = GFX_region_14_selected
+			}
+			iconType = {
+				name = "DDR_riots_baden_selected"
+				position = { x = 38 y = 162 }
+				spriteType = GFX_region_11_selected
+			}
+			iconType = {
+				name = "DDR_riots_westphalia_selected"
+				position = { x = 1 y = 107 }
+				spriteType = GFX_region_8_selected
+			}
+			iconType = {
+				name = "DDR_riots_carinthia_selected"
+				position = { x = 158 y = 236 }
+				spriteType = GFX_region_15_selected
+			}
+			iconType = {
+				name = "DDR_riots_lower_saxony_selected"
+				position = { x = 13 y = 55 }
+				spriteType = GFX_region_9_selected
+			}
+			iconType = {
+				name = "DDR_riots_pomerania_selected"
+				position = { x = 99 y = 29 }
+				quadTextureSprite = GFX_region_6_selected
+			}
+			iconType = {
+				name = "DDR_riots_elsas_lothringen_selected"
+				position = { x = 5 y = 167 }
+				quadTextureSprite = GFX_region_10_selected
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "DDR_riots_silesia_selected"
+				position = { x = 226 y = 120 }
+				quadTextureSprite = GFX_region_17_selected
+			}
+			
+		}
+		instantTextboxType = {
+			name = "DDR_chosen_state_text"
+			position = { x = 115 y = 400 }
+			font = "aldrich_30_outline"
+			text = "TRM_chosen_state"
+			maxWidth = 400
+			maxHeight = 35
+		}
+		containerWindowType = {
+			name = "TRM_SPR_ideologies"
+			size = { width = 193 height = 111 }
+			position = { x = 300 y = 475 }
+			iconType = {
+				name = "DDR_ideologies_box"
+				position = { x = 0 y = 0 }
+				spriteType = GFX_ideologies_box
+			}
+			iconType = {
+				name = "DDR_ideologies_anarchism"
+				position = { x = 5 y = 0 }
+				spriteType = GFX_ideology_anarchism
+			}
+			instantTextboxType = {
+				name = "DDR_ideologies_anarchism_text"
+				position = { x = 47 y = 13 }
+				font = "aldrich_16_outline"
+				text = "DDR_ideologies_anarchism_text"
+				maxWidth = 130
+				maxHeight = 35
+			}
+			iconType = {
+				name = "DDR_ideologies_communism"
+				position = { x = 5 y = 35 }
+				spriteType = GFX_ideology_communism
+			}
+			instantTextboxType = {
+				name = "DDR_ideologies_communism_text"
+				position = { x = 47 y = 47 }
+				font = "aldrich_16_outline"
+				text = "DDR_ideologies_communism_text"
+				maxWidth = 140
+				maxHeight = 35
+			}
+			iconType = {
+				name = "DDR_ideologies_fascism"
+				position = { x = 5 y = 70 }
+				spriteType = GFX_ideology_fascism
+			}
+			instantTextboxType = {
+				name = "DDR_ideologies_fascism_text"
+				position = { x = 47 y = 83 }
+				font = "aldrich_16_outline"
+				text = "DDR_ideologies_fascism_text"
+				maxWidth = 130
+				maxHeight = 35
+			}
+		}
+		containerWindowType = {
+			name = "TRM_SPR_riots_bars"
+			size = { width = 250 height = 104 }
+			position = { x = 25 y = 480 }
+			iconType = {
+				name = "DDR_pol_sta_big_box"
+				position = { x = 0 y = 0 }
+				spriteType = GFX_pol_sta_big_box
+			}
+			containerWindowType = {
+				name = "TRM_SPR_riots_bars_outlook"
+				size = { width = 250 height = 104 }
+				position = { x = 11 y = 25 }
+				iconType = {
+					name = "DDR_pol_sta_progress_box"
+					position = { x = 0 y = 1 }
+					spriteType = GFX_pol_sta_progress_box
+				}
+				instantTextboxType = {
+					name = "DDR_political_outlook_text"
+					position = { x = 5 y = -17 }
+					font = "aldrich_18_outline"
+					text = "DDR_political_outlook_text"
+					maxWidth = 200
+					maxHeight = 35
+				}
+				iconType = {
+					name = "DDR_political_outlook_bar_commie_part"
+					position = { x = 0 y = 0 }
+					spriteType = GFX_DDR_anarcho_commie_bar
+				}
+				iconType = {
+					name = "DDR_political_outlook_bar_speer_part"
+					position = { x = 0 y = 0 }
+					spriteType = GFX_DDR_speer_empty_bar
+				}
+			}
+			containerWindowType = {
+				name = "TRM_SPR_riots_bars_stability"
+				size = { width = 250 height = 104 }
+				position = { x = 11 y = 75 }
+				instantTextboxType = {
+					name = "DDR_stability_text"
+					position = { x = 5 y = -17 }
+					font = "aldrich_18_outline"
+					text = "DDR_stability_text"
+					maxWidth = 200
+					maxHeight = 35
+				}
+				iconType = {
+					name = "DDR_pol_sta_progress_box"
+					position = { x = 0 y = 1 }
+					spriteType = GFX_pol_sta_progress_box
+				}
+				iconType = {
+					name = "DDR_stability_bar"
+					position = { x = 0 y = 0 }
+					spriteType = GFX_DDR_stability_bar
+				}
+				
+			}
+		}
+ 
+	}
+	containerWindowType = {
+        name = "DDR_army_and_party_party"
+        size = { width = 448 height = 751 }
+        position = { x = 0 y = 0 }
+		
+        iconType = {
+            name = "parties_background"
+            position = { x = 0 y = 0 }
+            spriteType = GFX_parties_background
+            alwaystransparent = yes 
+        }
+		buttonType = { 
+			name = "army_button"
+			position = { x = 14 y = 0 }
+			spriteType = GFX_army_button
+		}
+		buttonType = { 
+			name = "party_button"
+			position = { x = 433 y = 0 }
+			spriteType = GFX_party_button
+		}
+		instantTextboxType = {
+			name = "DDR_call_congress_text"
+			position = { x = 10 y = 80 }
+			font = "aldrich_24_outline"
+			text = "DDR_call_congress"
+			maxWidth = 500
+			maxHeight = 500
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_unity_text"
+			position = { x = 309 y = 135 }
+			font = "aldrich_24_outline"
+			text = "DDR_party_unity"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		buttonType = {
+			name = "DDR_congress_hammer"
+			position = { x = 215 y = -20 }
+			spriteType = GFX_DDR_congress_hammer
+		}
+		iconType = {
+			name = "DDR_unity_bar"
+			position = { x = 309 y = 185 }
+			spriteType = GFX_DDR_unity_bar
+		}
+		iconType = {
+			name = "DDR_stability_bar"
+			position = { x = 30 y = 185 }
+			spriteType = GFX_DDR_stability_bar
+		}
+		instantTextboxType = {
+			name = "DDR_stability_text"
+			position = { x = 30 y = 125 }
+			font = "aldrich_24_outline"
+			text = "DDR_party_stability"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_landerkammer"
+			position = { x = -80 y = 230 }
+			font = "aldrich_24_outline"
+			text = "DDR_landerkammer"
+			maxWidth = 700
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_hardliners"
+			position = { x = 0 y = 259 }
+			font = "aldrich_16_outline"
+			text = "DDR_hardliners"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_hardliners_num"
+			position = { x = 0 y = 371 }
+			font = "aldrich_16_outline"
+			text = "30"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_hardliners_rel"
+			position = { x = 0 y = 398 }
+			font = "aldrich_16_outline"
+			text = "DDR_hardliners_rel"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_militarists"
+			position = { x = 162 y = 259 }
+			font = "aldrich_16_outline"
+			text = "DDR_militarists"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_militarists_num"
+			position = { x = 172 y = 371 }
+			font = "aldrich_16_outline"
+			text = "11"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_militarists_rel"
+			position = { x = 172 y = 398 }
+			font = "aldrich_16_outline"
+			text = "DDR_militarists_rel"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_reformists"
+			position = { x = 332 y = 259 }
+			font = "aldrich_16_outline"
+			text = "DDR_reformists"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_reformists_num"
+			position = { x = 342 y = 371 }
+			font = "aldrich_16_outline"
+			text = "9"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_reformists_rel"
+			position = { x = 342 y = 398 }
+			font = "aldrich_16_outline"
+			text = "DDR_reformists_rel"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		iconType = {
+			name = "TRM_army_and_party_party_Info"
+			spriteType = "GFX_Burgundy_GUI_Info_Button"
+			position = { x = 17 y = 221 }
+			Orientation = "UPPER_RIGHT"
+			scale = 1
+			pdx_tooltip = "TRM_Demobilization_Info_tt"
+		}
+	}
+	containerWindowType = {
+        name = "DDR_army_and_party_army"
+        size = { width = 448 height = 751 }
+        position = { x = 0 y = 0 }
+
+       
+        iconType = {
+            name = "army_background"
+            position = { x = 0 y = 0 }
+            spriteType = GFX_army_background
+            alwaystransparent = yes 
+        }
+		buttonType = { 
+			name = "army_button"
+			position = { x = 14 y = 0 }
+			spriteType = GFX_army_button
+		}
+		buttonType = { 
+			name = "party_button"
+			position = { x = 433 y = 0 }
+			spriteType = GFX_party_button
+		}
+		instantTextboxType = {
+			name = "DDR_organisation_text"
+			position = { x = 309 y = 125 }
+			font = "aldrich_24_outline"
+			text = "DDR_organisation"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		iconType = {
+			name = "DDR_organisation_bar"
+			position = { x = 309 y = 185 }
+			spriteType = GFX_DDR_unity_bar
+		}
+		iconType = {
+			name = "DDR_war_support_bar"
+			position = { x = 30 y = 185 }
+			spriteType = GFX_DDR_stability_bar
+		}
+		instantTextboxType = {
+			name = "DDR_nationale_volksarmee"
+			position = { x = 60 y = 0 }
+			font = "aldrich_32_outline"
+			text = "DDR_nationale_volksarmee"
+			maxWidth = 400
+			maxHeight = 100
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_army_condition"
+			position = { x = 20 y = 82 }
+			font = "aldrich_24_outline"
+			text = "DDR_army_condition"
+			maxWidth = 500
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_war_support_text"
+			position = { x = 20 y = 145 }
+			font = "aldrich_24_outline"
+			text = "DDR_war_support"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_volksarmee"
+			position = { x = -80 y = 225 }
+			font = "aldrich_24_outline"
+			text = "DDR_volksarmee"
+			maxWidth = 700
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_landstreitkrafte"
+			position = { x = 0 y = 259 }
+			font = "aldrich_16_outline"
+			text = "DDR_landstreitkrafte"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_landstreitkrafte_rel"
+			position = { x = 0 y = 371 }
+			font = "aldrich_16_outline"
+			text = "DDR_landstreitkrafte_rel"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_volksmarine"
+			position = { x = 171 y = 259 }
+			font = "aldrich_16_outline"
+			text = "DDR_volksmarine"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_volksmarine_rel"
+			position = { x = 172 y = 371 }
+			font = "aldrich_16_outline"
+			text = "DDR_volksmarine_rel"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_volksfliegerkorps"
+			position = { x = 341 y = 259 }
+			font = "aldrich_16_outline"
+			text = "DDR_volksfliegerkorps"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+		instantTextboxType = {
+			name = "DDR_volksfliegerkorps_rel"
+			position = { x = 342 y = 371 }
+			font = "aldrich_16_outline"
+			text = "DDR_volksfliegerkorps_rel"
+			maxWidth = 173
+			maxHeight = 35
+			format = centre
+		}
+
+		iconType = {
+			name = "TRM_army_and_party_party_Info"
+			spriteType = "GFX_Burgundy_GUI_Info_Button"
+			position = { x = 17 y = 221 }
+			Orientation = "UPPER_RIGHT"
+			scale = 1
+			pdx_tooltip = "TRM_Demobilization_Info_tt"
+		}
+	}
+}

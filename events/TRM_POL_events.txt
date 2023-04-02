@@ -1,0 +1,106 @@
+add_namespace = red_poland
+
+country_event = { #Spawn red poland
+	id = red_poland.1
+	title = red_poland.1.t
+	desc = red_poland.1.desc
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = red_poland.1.a
+		hidden_effect = {
+			country_event = red_poland.1000
+		}
+		POL = {
+			retire_country_leader = yes
+			set_party_name = {
+				ideology = communist
+				long_name = POL_communist_party_long
+				name = POL_communist_party
+			}
+			promote_character = POL_wladyslaw_gomulka
+			
+			set_politics = { ruling_party = communist }
+			set_political_party = {
+				ideology = communist
+				popularity = 50
+			}
+			remove_all_ministers = yes
+			add_ideas = {
+				POL_wladyslaw_bienkowski_for
+				POL_leon_kasman_hog
+				POL_mieczyslaw_moczar_sec
+				POL_oskar_lange_eco
+			}
+			
+			load_focus_tree = POL_red_poland_starting_tree
+		}
+		POL = {
+			set_country_leader_description = { desc = POL_wladislaw_gomulka_desc }
+			add_ideas = {
+				POL_not_yet_lost
+				POL_chaos_in_warsaw
+			}
+		}
+		POL = {
+			set_variable = { TNO_economy_type = 3 }
+			set_variable = { TNO_economy_subtype = 19 }
+		}
+		add_corps_commander_role = {
+			Character = POL_stefan_michnik
+			traits = { harsh_leader politically_connected }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		
+		add_field_marshal_role = {
+			character = POL_wojciech_jaruzelski
+			traits = { politically_connected defensive_doctrine }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		if = {
+			limit = {
+				DDR = {
+					exists = yes
+				}
+			}
+			DDR = {
+				add_to_faction = POL
+			}
+			POL = {
+				remove_ideas = Pakt_Marionettenstaat
+				econ_leave_sphere = yes
+				add_ideas = {
+					Rotfront_Member
+				}
+				set_temp_variable = { target = DDR }
+				econ_join_sphere_target = yes
+			}
+		}
+		
+	}
+}
+
+news_event = {
+	id = red_poland.1000
+	immediate = { log = "[GetDateText]: [Root.GetName]: event red_poland.1000" }
+	title = red_poland.1000.t
+	desc = red_poland.1000.desc
+	picture = GFX_news_report_event_polish_revolution
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = red_poland.1000.a
+	}
+}

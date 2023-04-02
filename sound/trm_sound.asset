@@ -1,0 +1,30 @@
+category = {
+ 	name = "TRM_Effects"
+	soundeffects = {
+		####### Super Events
+		trm_se_german_revolution
+	}
+	compressor = {
+		enabled = yes
+		pregain = 3.0
+		postgain = 0.0
+		ratio = 10.0
+		threshold = -15.0
+		attacktime = 0.030
+		releasetime = 1.2
+ 	}
+}
+
+sound = {
+	name = "trm_se_german_revolution"
+	file = "superevents/trm_se_german_revolution.wav"
+	always_load = no
+}
+
+soundeffect = {
+	name = trm_se_german_revolution
+	sounds = {
+		sound = trm_se_german_revolution
+	}
+	volume = 1
+}

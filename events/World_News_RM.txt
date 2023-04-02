@@ -1,0 +1,25 @@
+add_namespace = worldnews_rm
+
+news_event = {
+	id = worldnews_rm.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldnews_rm.1 FROM = [From.GetName]" }
+	title = worldnews_rm.1.t
+	desc = worldnews_rm.1.d
+	picture = GFX_news_event_SPEER_LOL
+
+	major = yes
+
+	is_triggered_only = yes
+
+	show_major = {
+		NOT = {
+			tag = SWF
+			tag = SPA
+			tag = SPR
+		}
+	}
+
+	option = {
+		name = worldnews_rm.1.a
+	}
+}

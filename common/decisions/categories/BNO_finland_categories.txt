@@ -1,0 +1,59 @@
+FIN_issues = {
+	picture = GFX_decision_ENG_decision_rebellion
+	allowed = {
+		tag = FIN
+	}
+	visible = {
+	}
+}
+
+FIN_the_economic_bridge = {
+	picture = GFX_decision_ENG_decision_rebellion
+	allowed = {
+		tag = FIN
+	}
+	visible = {
+		#has_completed_focus = FIN_a_new_economic_bridge
+	}
+}
+
+FIN_winter_war = {
+	picture = GFX_decision_ENG_decision_rebellion
+	allowed = {
+		tag = FIN
+	}
+	visible = {
+		OR = {
+			has_war_with = WSR
+			has_war_with = WSB
+			has_war_with = SIB
+		}
+	}
+}
+FIN_Debug_Category = {
+	picture = GFX_decision_ENG_decision_rebellion
+	allowed = {
+		tag = FIN
+	}
+	visible = {
+		#is_debug = yes
+	}
+}
+FIN_dilemma={
+	allowed = {
+		tag = FIN
+	}
+	visible = {
+	}
+	
+}
+FIN_punapelko = {
+	picture = GFX_decision_ENG_decision_rebellion
+	scripted_gui = TNO_Tomsk_GUI_Political_Situation
+	allowed = {
+		tag = FIN
+	}
+	visible = {
+		has_global_flag = FIN_RED_CRISIS
+	}
+}

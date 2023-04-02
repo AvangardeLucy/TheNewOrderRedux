@@ -1,0 +1,2185 @@
+spriteTypes = {
+
+	###############################################################
+	########            Lott Quadros Mechanic              ########
+	###############################################################
+
+	#### RESOURCES ####
+	spriteType = {
+		name = GFX_BRA_GUI_lott
+		texturefile = "gfx/interface/brazil/lottquadros/lott.png"
+	}
+	spriteType = {
+		name = GFX_BRA_GUI_quadros
+		texturefile = "gfx/interface/brazil/lottquadros/quadros.png"
+	}
+	
+	#### ICONS ####
+	spriteType = {
+		name = GFX_decision_BRA_decision_category_lottquadros
+		texturefile = "gfx/interface/decisions/BRA_decision_category_lottquadros.png"
+	}
+	spriteType = {
+		name = GFX_BRA_GUI_UDN
+		texturefile = "gfx/interface/brazil/lottquadros/UDN.png"
+	}
+	spriteType = {
+		name = GFX_BRA_GUI_PSD
+		texturefile = "gfx/interface/brazil/lottquadros/PSD.png"
+	}
+
+	#### PICTURES ####
+
+	#### PROGRESSBAR ####
+	progressbartype = {
+		name = "GFX_BRA_lottquadros_Progressbar"
+		textureFile1 = "gfx/interface/brazil/lottquadros/bar_full.png"
+		textureFile2 = "gfx/interface/brazil/lottquadros/bar_empty.png"
+		size = { x = 372 y = 40 } 
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+
+	spriteType = {
+		name = GFX_BRA_info_button
+		texturefile = "gfx/interface/info_button.png"
+	}
+
+	spriteType = {
+		name = GFX_decision_pull_lott
+		texturefile = "gfx/interface/decisions/decision_pull_lott.png"
+	}
+
+	spriteType = {
+		name = GFX_decision_pull_quadros
+		texturefile = "gfx/interface/decisions/decision_pull_quadros.png"
+	}
+
+	spriteType = {
+		name = GFX_decision_shake_hands_lott_quadros
+		texturefile = "gfx/interface/decisions/decision_shake_hands_lott_quadros.png"
+	}
+
+	###############################################################
+	########             Lacerda Coup Mechanic             ########
+	###############################################################
+
+	spriteType = {
+		name = GFX_decision_BRA_decision_category_lacerda_coup
+		texturefile = "gfx/interface/decisions/BRA_decision_category_lacerda_coup.png"
+	}
+
+	spriteType = {
+		name = GFX_BRA_Lacerda_Jango_Poster
+		texturefile = "gfx/interface/brazil/lacerda/jango_poster.png"
+	}
+	spriteType = {
+		name = GFX_BRA_Lacerda_Lacerda_Poster
+		texturefile = "gfx/interface/brazil/lacerda/lacerda_poster.png"
+		noOfFrames = 20
+	}
+	spriteType = {
+		name = GFX_BRA_Lacerda_Secure_Power
+		texturefile = "gfx/interface/brazil/lacerda/secure_power_button.png"
+	}
+
+	progressbartype = {
+		name = GFX_BRA_Lacerda_Military_Torch
+		textureFile1 = "gfx/interface/brazil/lacerda/military_torch.png"
+		textureFile2 = "gfx/interface/brazil/lacerda/torch_of_the_positivity.png"
+		size = { x = 59 y = 196 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+		steps = 10
+	}
+
+	progressbartype = {
+		name = GFX_BRA_Lacerda_Govt_Torch
+		textureFile1 = "gfx/interface/brazil/lacerda/politics_torch.png"
+		textureFile2 = "gfx/interface/brazil/lacerda/torch_of_the_positivity.png"
+		size = { x = 59 y = 196 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+		steps = 10
+	}
+
+	progressbartype = {
+		name = GFX_BRA_Lacerda_Voter_Torch
+		textureFile1 = "gfx/interface/brazil/lacerda/voter_torch.png"
+		textureFile2 = "gfx/interface/brazil/lacerda/torch_of_the_positivity.png"
+		size = { x = 59 y = 196 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+		steps = 10
+	}
+
+	progressbartype = {
+		name = GFX_BRA_Lacerda_USA_Torch
+		textureFile1 = "gfx/interface/brazil/lacerda/ofn_torch.png"
+		textureFile2 = "gfx/interface/brazil/lacerda/torch_of_the_positivity.png"
+		size = { x = 59 y = 196 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+		steps = 10
+	}
+
+
+	###############################################################
+	########             Hundred Days Mechanic             ########
+	###############################################################
+
+	spriteType = {
+		name = GFX_decision_BRA_decision_category_hundred_days
+		texturefile = "gfx/interface/decisions/BRA_decision_category_hundred_days_2.png"
+	}
+	progressbartype = {
+		name = "GFX_BRA_hd_pie1"
+		textureFile1 = "gfx/interface/brazil/hundred_days/pie_lacerda.png"
+		textureFile2 = "gfx/interface/brazil/hundred_days/pie_kubitschek.png"
+		size = { x = 400 y = 400 }
+		effectFile = "gfx/FX/progress_radial_gap.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_BRA_hd_pie2"
+		textureFile1 = "gfx/interface/brazil/hundred_days/pie_adhemar.png"
+		textureFile2 = "gfx/interface/brazil/hundred_days/pie_empty.png"
+		size = { x = 400 y = 400 }
+		effectFile = "gfx/FX/progress_radial_gap.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_BRA_hd_pie3"
+		textureFile1 = "gfx/interface/brazil/hundred_days/pie_goulart.png"
+		textureFile2 = "gfx/interface/brazil/hundred_days/pie_empty.png"
+		size = { x = 400 y = 400 }
+		effectFile = "gfx/FX/progress_radial_gap.lua"
+		horizontal = yes
+	}
+
+	###############################################################
+	########                 PL Mechanic                   ########
+	###############################################################
+
+	spriteType = {
+		name = GFX_BRA_pl_supporters_box
+		texturefile = "gfx/interface/brazil/pl/supporters_box.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = GFX_decision_generic_shake_hands
+		texturefile = "gfx/interface/decisions/decision_generic_shake_hands.png"
+	}
+	spriteType = {
+		name = GFX_BRA_pl_party_box_wide
+		texturefile = "gfx/interface/brazil/pl/party_box_wide.png"
+	}
+
+	spriteType = {
+		name = GFX_BRA_pl_timer_box
+		texturefile = "gfx/interface/brazil/pl/timer_box.png"
+	}
+
+
+	progressbartype = {
+		name = "GFX_BRA_pl_timer"
+		textureFile1 = "gfx/interface/brazil/pl/timer_bar.png"
+		textureFile2 = "gfx/interface/brazil/pl/timer_bar_empty.png"
+		size = { x = 485 y = 20 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+
+	###############################################################
+	########            Armed Forces Mechanic              ########
+	###############################################################
+
+	spriteType = {
+		name = GFX_BRA_Military_Crest
+		texturefile = "gfx/interface/brazil/military/military_crest.png"
+	}
+	spriteType = {
+		name = GFX_BRA_Military_Crest_Fill
+		texturefile = "gfx/interface/brazil/military/crest_fill.png"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = GFX_BRA_Military_Coup_Warning
+		texturefile = "gfx/interface/brazil/military/coup_warning.png"
+	}
+	spriteType = {
+		name = GFX_BRA_Military_Crest_Bad
+		texturefile = "gfx/interface/brazil/military/military_crest_bad.png"
+	}
+	spriteType = {
+		name = GFX_BRA_Military_Bar_Frame_Bad
+		texturefile = "gfx/interface/brazil/military/bar_frame_2_bad.png"
+	}
+
+
+	spriteType = {
+		name = GFX_BRA_Military_Bar_Frame
+		texturefile = "gfx/interface/brazil/military/bar_frame_2.png"
+	}
+
+	progressbartype = {
+		name = GFX_BRA_Military_Loyalty_Bar
+		textureFile1 = "gfx/interface/brazil/military/loyalty_bar_2.png"
+		textureFile2 = "gfx/interface/brazil/military/empty_bar.png"
+		size = { x = 26 y = 177 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+	progressbartype = {
+		name = GFX_BRA_Military_Loyalty_Bar_Low
+		textureFile1 = "gfx/interface/brazil/military/loyalty_bar_low_2.png"
+		textureFile2 = "gfx/interface/brazil/military/empty_bar.png"
+		size = { x = 26 y = 177 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+	progressbartype = {
+		name = GFX_BRA_Military_Nepotism_Bar
+		textureFile1 = "gfx/interface/brazil/military/nepotism_bar_2.png"
+		textureFile2 = "gfx/interface/brazil/military/empty_bar.png"
+		size = { x = 26 y = 177 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+
+
+	spriteType = {
+		name = "GFX_decision_generic_investigate"
+		texturefile = "gfx/interface/decisions/decision_generic_investigate.png"
+	}
+
+
+	###############################################################
+	########                   MAP SHIT                    ########
+	###############################################################
+	spriteType = {	
+		name = "GFX_BRA_Open_Map_Button"
+		textureFile = "gfx/interface/brazil/map/open_button.png"
+	}
+
+	spriteType = {
+		name = "GFX_BRA_Map_Vertical_Divider"
+		textureFile = "gfx/interface/brazil/map/vertical_divider.png"
+	}
+ 	spriteType = {
+		name = "GFX_BRA_Map_Main_Panel_Title"
+		textureFile = "gfx/interface/brazil/map/main_panel_title.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Tab"
+		textureFile = "gfx/interface/brazil/map/tab.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Side_Panel_Divider"
+		textureFile = "gfx/interface/brazil/map/side_panel_divider.png"
+	}
+
+	spriteType = {
+		name = "GFX_BRA_PSD_logo_bar"
+		textureFile = "gfx/interface/brazil/PSD.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_BRA_PTB_logo_bar"
+		textureFile = "gfx/interface/brazil/PTB.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_BRA_UDN_logo_bar"
+		textureFile = "gfx/interface/brazil/UDN.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_BRA_PSP_logo_bar"
+		textureFile = "gfx/interface/brazil/PSP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_BRA_PRP_logo_bar"
+		textureFile = "gfx/interface/brazil/PRP.png"
+		legacy_lazy_load = no
+	}
+
+	### Tab Icons
+	spriteType = {
+		name = "GFX_BRA_Map_Tab_Senado_Icon"
+		textureFile = "gfx/interface/brazil/map/tab_senado_icon.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Tab_Development_Icon"
+		textureFile = "gfx/interface/brazil/map/tab_development_icon.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Tab_Operations_Icon"
+		textureFile = "gfx/interface/brazil/map/tab_operations_icon.png"
+	}
+
+	spriteType = {
+		name = "GFX_BRA_Map_Party_Box"
+		textureFile = "gfx/interface/brazil/map/party_box.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Party_Box_Big"
+		textureFile = "gfx/interface/brazil/map/party_box_big.png"
+	}
+
+	### Candidate Stuff
+	spriteType = {
+		name = "GFX_BRA_Map_Candidate_Box"
+		textureFile = "gfx/interface/brazil/map/candidate_box.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Pres_Candidate_Box"
+		textureFile = "gfx/interface/brazil/map/pres_candidate_box.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Incumbent_Box"
+		textureFile = "gfx/interface/brazil/map/incumbent_box.png"
+	}
+
+	
+	progressbartype = {
+		name = "GFX_BRA_Map_Candidate_Progress"
+		textureFile1 = "gfx/interface/brazil/map/candidate_popularity_bar.png"
+		textureFile2 = "gfx/interface/brazil/map/candidate_popularity_bar_empty.png"
+		size = {
+			x = 155
+			y = 22
+		}
+	  effectFile = "gfx/FX/progress.lua"
+	  horizontal = yes
+	}
+
+	progressbartype = {
+		name = "GFX_BRA_Map_Pres_Candidate_Progress"
+		textureFile1 = "gfx/interface/brazil/map/pres_candidate_popularity_bar.png"
+		textureFile2 = "gfx/interface/brazil/map/pres_candidate_popularity_bar_empty.png"
+		size = {
+			x = 165
+			y = 22
+		}
+	  effectFile = "gfx/FX/progress.lua"
+	  horizontal = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_BRA_Map_Campaign_Button"
+		textureFile = "gfx/interface/brazil/map/campaign.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Slander_Button"
+		textureFile = "gfx/interface/brazil/map/slander.png"
+		noOfFrames = 2
+	}
+
+	
+	spriteType = {
+		name = "GFX_BRA_Map_Pres_Rally_Button"
+		textureFile = "gfx/interface/brazil/map/campaign/rally.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Pres_Campaign_Button"
+		textureFile = "gfx/interface/brazil/map/campaign/campaign.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Pres_Infra_Button"
+		textureFile = "gfx/interface/brazil/map/campaign/infra.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Pres_Negative_Button"
+		textureFile = "gfx/interface/brazil/map/campaign/negative.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Pres_Supporters_Button"
+		textureFile = "gfx/interface/brazil/map/campaign/supporters.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Pres_Missing_Campaign_Button"
+		textureFile = "gfx/interface/brazil/map/campaign/nothing.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Pres_Fatigue"
+		textureFile = "gfx/interface/brazil/map/campaign/fatigueheader.png"
+	}
+
+	spriteType = {
+		name = "GFX_BRA_Map_Election_Overlay"
+		textureFile = "gfx/interface/brazil/map/map_election_overlay.png"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_BRA_Map_Details_Button"
+		textureFile = "gfx/interface/brazil/map/details_button.png"
+	}
+ 
+ 
+	spriteType = {
+		name = "GFX_BRA_Map_Military_Coup_Overlay"
+		textureFile = "gfx/interface/brazil/map/military_suspended.png"
+	}
+
+	spriteType = {
+		name = "GFX_BRA_Map_Parliament_Seat"
+		textureFile = "gfx/interface/brazil/map/parliament_seat.png"
+		noOfFrames = 19
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Parliament_Seat_Major"
+		textureFile = "gfx/interface/brazil/map/parliament_seat_major.png"
+		noOfFrames = 19
+	}
+
+	spriteType = {
+		name = "GFX_BRA_Map_Parliament_Seat_Outline"
+		textureFile = "gfx/interface/brazil/map/parliament_seat_outline.png"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Parliament_Candidate"
+		textureFile = "gfx/interface/brazil/map/parliament_candidate.png"
+		noOfFrames = 19
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Parliament_Candidate_Major"
+		textureFile = "gfx/interface/brazil/map/parliament_candidate_major.png"
+		noOfFrames = 19
+	}
+
+
+	### State Buttons
+	spriteType = {
+		name = "GFX_BRA_Map_Acre_button"
+		texturefile = "gfx/interface/brazil/map/states/state_background/acre.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Alagoas_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/alagoas.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Amazonas_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/amazonas.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Bahia_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/bahia.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Ceara_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/ceara.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Espirito_Santo_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/espirito_santo.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Goias_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/goias.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Guanabara_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/guanabara.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Guanabara_2_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/guanabara_2.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Maranho_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/maranho.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Mato_Grosso_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/mato_grosso.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Minas_Gerais_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/minas_gerais.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Para_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/para.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Paraiba_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/paraiba.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Parana_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/parana.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Pernambuco_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/pernambuco.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Piaui_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/piaui.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Rio_De_Janeiro_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/rio_de_janeiro.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Rio_De_Janeiro_2_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/rio_de_janeiro_2.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Rio_Grande_Do_Norte_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/rio_grande_do_norte.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Rio_Grande_Do_Sul_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/rio_grande_do_sul.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Santa_Catarina_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/santa_catarina.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Sao_Paulo_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/sao_paulo.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Sergipe_button"
+		textureFile = "gfx/interface/brazil/map/states/state_background/sergipe.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_BRA_Map_Amazonia_button"
+		textureFile = "gfx/interface/brazil/map/regions/region_background/amazonia.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_North_East_button"
+		textureFile = "gfx/interface/brazil/map/regions/region_background/northeast.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Central_West_button"
+		textureFile = "gfx/interface/brazil/map/regions/region_background/centralwest.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_South_East_button"
+		textureFile = "gfx/interface/brazil/map/regions/region_background/southeast.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_South_button"
+		textureFile = "gfx/interface/brazil/map/regions/region_background/south.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_BRA_Map_States_Map"
+		textureFile = "gfx/interface/brazil/map/map.png"
+		allwaystransparent = yes
+	}
+
+	### State Outlines
+	spriteType = {
+		name = "GFX_BRA_Map_Acre_outline"
+		textureFile = "gfx/interface/brazil/map/states/acre_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Alagoas_outline"
+		textureFile = "gfx/interface/brazil/map/states/alagoas_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Amazonas_outline"
+		textureFile = "gfx/interface/brazil/map/states/amazonas_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Bahia_outline"
+		textureFile = "gfx/interface/brazil/map/states/bahia_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Ceara_outline"
+		textureFile = "gfx/interface/brazil/map/states/ceara_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Espirito_Santo_outline"
+		textureFile = "gfx/interface/brazil/map/states/epsirito_santo_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Goias_outline"
+		textureFile = "gfx/interface/brazil/map/states/goias_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Guanabara_outline"
+		textureFile = "gfx/interface/brazil/map/states/guanabara_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Guanabara_2_outline"
+		textureFile = "gfx/interface/brazil/map/states/guanabara_2_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Maranho_outline"
+		textureFile = "gfx/interface/brazil/map/states/maranho_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Mato_Grosso_outline"
+		textureFile = "gfx/interface/brazil/map/states/mato_grosso_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Minas_Gerais_outline"
+		textureFile = "gfx/interface/brazil/map/states/minas_gerais_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Para_outline"
+		textureFile = "gfx/interface/brazil/map/states/para_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Paraiba_outline"
+		textureFile = "gfx/interface/brazil/map/states/paraiba_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Parana_outline"
+		textureFile = "gfx/interface/brazil/map/states/parana_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Pernambuco_outline"
+		textureFile = "gfx/interface/brazil/map/states/pernambuco_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Piaui_outline"
+		textureFile = "gfx/interface/brazil/map/states/piaui_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Rio_De_Janeiro_outline"
+		textureFile = "gfx/interface/brazil/map/states/rio_de_janeiro_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Rio_De_Janeiro_2_outline"
+		textureFile = "gfx/interface/brazil/map/states/rio_de_janeiro_2_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Rio_Grande_Do_Norte_outline"
+		textureFile = "gfx/interface/brazil/map/states/rio_grande_do_norte_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Rio_Grande_Do_Sul_outline"
+		textureFile = "gfx/interface/brazil/map/states/rio_grande_do_sul_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Santa_Catarina_outline"
+		textureFile = "gfx/interface/brazil/map/states/santa_catarina_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Sao_Paulo_outline"
+		textureFile = "gfx/interface/brazil/map/states/sao_paulo_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Sergipe_outline"
+		textureFile = "gfx/interface/brazil/map/states/sergipe_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+
+	### State Campaign Shaders
+	progressbartype = {
+        name = "GFX_BRA_Map_Acre_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/acre_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.096 0.051 0.019 1 }
+        size = { x = 96 y = 51 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Alagoas_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/alagoas_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.041 0.022 0.019 1 }
+        size = { x = 41 y = 22 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Amazonas_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/amazonas_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.227 0.160 0.019 1 }
+        size = { x = 227 y = 160 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Bahia_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/bahia_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.118 0.129 0.019 1 }
+        size = { x = 118 y = 129 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Ceara_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/ceara_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.052 0.067 0.019 1 }
+        size = { x = 52 y = 67 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Espirito_Santo_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/espirito_santo_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.031 0.045 0.019 1 }
+        size = { x = 31 y = 45 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Goias_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/goias_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.097 0.187 0.019 1 }
+        size = { x = 97 y = 187 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Guanabara_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/guanabara_2_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.093 0.044 0.019 1 }
+        size = { x = 93 y = 44 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Maranho_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/maranho_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.088 0.119 0.019 1 }
+        size = { x = 88 y = 119 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Mato_Grosso_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/mato_grosso_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.146 0.217 0.019 1 }
+        size = { x = 146 y = 217 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Minas_Gerais_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/minas_gerais_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.143 0.112 0.019 1 }
+        size = { x = 143 y = 112 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Para_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/para_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.172 0.161 0.019 1 }
+        size = { x = 172 y = 161 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Paraiba_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/paraiba_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.051 0.030 0.019 1 }
+        size = { x = 51 y = 30 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Pernambuco_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/pernambuco_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.084 0.030 0.019 1 }
+        size = { x = 84 y = 30 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Parana_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/parana_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.078 0.055 0.019 1 }
+        size = { x = 78 y = 55 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Piaui_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/piaui_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.075 0.104 0.019 1 }
+        size = { x = 75 y = 104 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Rio_De_Janeiro_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/rio_de_janeiro_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.048 0.033 0.019 1 }
+        size = { x = 48 y = 33 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Rio_De_Janeiro_2_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/rio_de_janeiro_campaign_2.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.162 0.095 0.019 1 }
+        size = { x = 162 y = 95 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Rio_Grande_Do_Norte_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/rio_grande_do_norte_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.048 0.029 0.019 1 }
+        size = { x = 48 y = 29 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Rio_Grande_Do_Sul_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/rio_grande_do_sul_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.091 0.087 0.019 1 }
+        size = { x = 91 y = 87 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Santa_Catarina_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/santa_catarina_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.063 0.044 0.019 1 }
+        size = { x = 63 y = 44 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Sao_Paulo_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/sao_paulo_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.108 0.073 0.019 1 }
+        size = { x = 108 y = 73 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Sergipe_campaign"
+
+        textureFile1 = "gfx/interface/brazil/map/states/sergipe_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.025 0.029 0.019 1 }
+        size = { x = 25 y = 29 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+
+
+	progressbartype = {
+        name = "GFX_BRA_Map_Acre_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/acre_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.096 0.051 0.019 1 }
+        size = { x = 96 y = 51 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Alagoas_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/alagoas_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.041 0.022 0.019 1 }
+        size = { x = 41 y = 22 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Amazonas_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/amazonas_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.227 0.160 0.019 1 }
+        size = { x = 227 y = 160 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Bahia_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/bahia_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.118 0.129 0.019 1 }
+        size = { x = 118 y = 129 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Ceara_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/ceara_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.052 0.067 0.019 1 }
+        size = { x = 52 y = 67 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Espirito_Santo_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/espirito_santo_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.031 0.045 0.019 1 }
+        size = { x = 31 y = 45 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Goias_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/goias_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.097 0.187 0.019 1 }
+        size = { x = 97 y = 187 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Guanabara_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/guanabara_2_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.093 0.044 0.019 1 }
+        size = { x = 93 y = 44 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Maranho_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/maranho_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.088 0.119 0.019 1 }
+        size = { x = 88 y = 119 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Mato_Grosso_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/mato_grosso_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.146 0.217 0.019 1 }
+        size = { x = 146 y = 217 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Minas_Gerais_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/minas_gerais_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.143 0.112 0.019 1 }
+        size = { x = 143 y = 112 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Para_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/para_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.172 0.161 0.019 1 }
+        size = { x = 172 y = 161 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Paraiba_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/paraiba_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.051 0.030 0.019 1 }
+        size = { x = 51 y = 30 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Pernambuco_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/pernambuco_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.084 0.030 0.019 1 }
+        size = { x = 84 y = 30 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Parana_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/parana_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.078 0.055 0.019 1 }
+        size = { x = 78 y = 55 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Piaui_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/piaui_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.075 0.104 0.019 1 }
+        size = { x = 75 y = 104 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Rio_De_Janeiro_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/rio_de_janeiro_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.048 0.033 0.019 1 }
+        size = { x = 48 y = 33 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Rio_De_Janeiro_2_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/rio_de_janeiro_campaign_2.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.162 0.095 0.019 1 }
+        size = { x = 162 y = 95 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Rio_Grande_Do_Norte_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/rio_grande_do_norte_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.048 0.029 0.019 1 }
+        size = { x = 48 y = 29 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Rio_Grande_Do_Sul_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/rio_grande_do_sul_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.091 0.087 0.019 1 }
+        size = { x = 91 y = 87 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Santa_Catarina_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/santa_catarina_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.063 0.044 0.019 1 }
+        size = { x = 63 y = 44 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Sao_Paulo_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/sao_paulo_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.108 0.073 0.019 1 }
+        size = { x = 108 y = 73 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Sergipe_campaign_2"
+
+        textureFile1 = "gfx/interface/brazil/map/states/sergipe_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.025 0.029 0.019 1 }
+        size = { x = 25 y = 29 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+
+
+	### State Fills
+	progressbartype = {
+        name = "GFX_BRA_Map_Acre_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/acre_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.096 0.051 0.019 1 }
+        size = { x = 96 y = 51 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Alagoas_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/alagoas_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.041 0.022 0.019 1 }
+        size = { x = 41 y = 22 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Amazonas_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/amazonas_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.227 0.160 0.019 1 }
+        size = { x = 227 y = 160 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Bahia_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/bahia_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.118 0.129 0.019 1 }
+        size = { x = 118 y = 129 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Ceara_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/ceara_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.052 0.067 0.019 1 }
+        size = { x = 52 y = 67 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Espirito_Santo_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/espirito_santo_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.031 0.045 0.019 1 }
+        size = { x = 31 y = 45 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Goias_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/goias_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.097 0.187 0.019 1 }
+        size = { x = 97 y = 187 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Guanabara_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/guanabara_2_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.093 0.044 0.019 1 }
+        size = { x = 93 y = 44 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Maranho_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/maranho_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.088 0.119 0.019 1 }
+        size = { x = 88 y = 119 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Mato_Grosso_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/mato_grosso_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.146 0.217 0.019 1 }
+        size = { x = 146 y = 217 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Minas_Gerais_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/minas_gerais_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.143 0.112 0.019 1 }
+        size = { x = 143 y = 112 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Para_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/para_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.172 0.161 0.019 1 }
+        size = { x = 172 y = 161 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Paraiba_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/paraiba_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.051 0.030 0.019 1 }
+        size = { x = 51 y = 30 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Pernambuco_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/pernambuco_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.084 0.030 0.019 1 }
+        size = { x = 84 y = 30 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Parana_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/parana_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.078 0.055 0.019 1 }
+        size = { x = 78 y = 55 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Piaui_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/piaui_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.075 0.104 0.019 1 }
+        size = { x = 75 y = 104 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Rio_De_Janeiro_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/rio_de_janeiro_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.048 0.033 0.019 1 }
+        size = { x = 48 y = 33 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Rio_De_Janeiro_2_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/rio_de_janeiro_campaign_2.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.162 0.095 0.019 1 }
+        size = { x = 162 y = 95 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Rio_Grande_Do_Norte_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/rio_grande_do_norte_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.048 0.029 0.019 1 }
+        size = { x = 48 y = 29 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Rio_Grande_Do_Sul_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/rio_grande_do_sul_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.091 0.087 0.019 1 }
+        size = { x = 91 y = 87 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Santa_Catarina_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/santa_catarina_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.063 0.044 0.019 1 }
+        size = { x = 63 y = 44 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Sao_Paulo_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/sao_paulo_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.108 0.073 0.019 1 }
+        size = { x = 108 y = 73 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Sergipe_fill"
+
+        textureFile1 = "gfx/interface/brazil/map/states/sergipe_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.025 0.029 0.019 1 }
+        size = { x = 25 y = 29 }
+        effectFile = "gfx/FX/bra_map_fill.shader"
+		allwaystransparent = yes
+		steps = 10000
+    }
+
+	#### Development Tab
+
+	spriteType = {
+		name = "GFX_BRA_Map_Regions_Map"
+		textureFile = "gfx/interface/brazil/map/map_regions.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Regions_Map_Pres"
+		textureFile = "gfx/interface/brazil/map/map_regions_pres.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Highway"
+		textureFile = "gfx/interface/brazil/map/map_highway.png"
+		noOfFrames = 10
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_BRA_Map_Highway_Button"
+		textureFile = "gfx/interface/brazil/map/megaprojects/highway_button.png"
+	}
+
+	spriteType = {
+		name = "GFX_BRA_Map_Highway_Button_Empty"
+		textureFile = "gfx/interface/brazil/map/megaprojects/highway_button_empty.png"
+		allwaystransparent = yes
+	}
+
+
+
+	spriteType = {
+		name = "GFX_BRA_Map_Amazonia_outline"
+		textureFile = "gfx/interface/brazil/map/regions/amazonia_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_North_East_outline"
+		textureFile = "gfx/interface/brazil/map/regions/northeast_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Central_West_outline"
+		textureFile = "gfx/interface/brazil/map/regions/centralwest_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_South_East_outline"
+		textureFile = "gfx/interface/brazil/map/regions/southeast_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_South_outline"
+		textureFile = "gfx/interface/brazil/map/regions/south_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_BAH_outline"
+		textureFile = "gfx/interface/brazil/map/regions/BAH_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_MAR_PI_outline"
+		textureFile = "gfx/interface/brazil/map/regions/MAR_PI_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_MG_outline"
+		textureFile = "gfx/interface/brazil/map/regions/MG_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_NE_outline"
+		textureFile = "gfx/interface/brazil/map/regions/NE_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_RJ_ES_outline"
+		textureFile = "gfx/interface/brazil/map/regions/RJ_ES_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_SP_outline"
+		textureFile = "gfx/interface/brazil/map/regions/SP_outline.png"
+		noOfFrames = 2
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_BRA_Map_Amazonia_button"
+		textureFile = "gfx/interface/brazil/map/regions/region_background/amazonia.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_North_East_button"
+		textureFile = "gfx/interface/brazil/map/regions/region_background/northeast.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Central_West_button"
+		textureFile = "gfx/interface/brazil/map/regions/region_background/centralwest.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_South_East_button"
+		textureFile = "gfx/interface/brazil/map/regions/region_background/southeast.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_South_button"
+		textureFile = "gfx/interface/brazil/map/regions/region_background/south.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_BAH_button"
+		textureFile = "gfx/interface/brazil/map/regions/region_background/BAH.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_MAR_PI_button"
+		textureFile = "gfx/interface/brazil/map/regions/region_background/MAR_PI.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_NE_button"
+		textureFile = "gfx/interface/brazil/map/regions/region_background/NE.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_MG_button"
+		textureFile = "gfx/interface/brazil/map/regions/region_background/MG.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_RJ_ES_button"
+		textureFile = "gfx/interface/brazil/map/regions/region_background/RJ_ES.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_SP_button"
+		textureFile = "gfx/interface/brazil/map/regions/region_background/SP.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_BRA_Map_Amazonia_fill"
+		textureFile = "gfx/interface/brazil/map/regions/amazonia_fill.png"
+		noOfFrames = 5
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_North_East_fill"
+		textureFile = "gfx/interface/brazil/map/regions/northeast_fill.png"
+		noOfFrames = 5
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Central_West_fill"
+		textureFile = "gfx/interface/brazil/map/regions/centralwest_fill.png"
+		noOfFrames = 5
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_South_East_fill"
+		textureFile = "gfx/interface/brazil/map/regions/southeast_fill.png"
+		noOfFrames = 5
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_South_fill"
+		textureFile = "gfx/interface/brazil/map/regions/south_fill.png"
+		noOfFrames = 5
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_BRA_Map_Trans_Amazonian_Highway"
+		textureFile = "gfx/interface/brazil/map/trans_amazonian_highway.png"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_BRA_Encourage_Migration"
+		textureFile = "gfx/interface/brazil/map/encourage_migration.png"
+	}
+	spriteType = { 
+		name = "GFX_BRA_Sponsor_Projects"
+		textureFile = "gfx/interface/brazil/map/sponsor_projects.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Subsidize_Mech"
+		textureFile = "gfx/interface/brazil/map/subsidize_mech.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Requisition_Assets"
+		textureFile = "gfx/interface/brazil/map/requisition_assets.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Development_Region_Pic"
+		textureFile = "gfx/interface/brazil/map/region_pic.png"
+		noOfFrames = 5
+	}
+
+
+	progressbartype = {
+		name = "GFX_BRA_Map_Development_Megaproject_Bar"
+		textureFile1 = "gfx/interface/brazil/map/mega_project_bar.png"
+		textureFile2 = "gfx/interface/brazil/map/mega_project_empty.png"
+		size = {
+			x = 280
+			y = 40
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+
+	progressbartype = {
+		name = "GFX_Line_Segment"
+		textureFile1 = "gfx/interface/brazil/map/line_segment_full.png"
+		textureFile2 = "gfx/interface/brazil/map/line_segment_empty.png"
+		size = {
+			x = 25
+			y = 300
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+
+	spriteType = {
+		name = "GFX_BRA_Map_Graph_Vertical_Bar"
+		textureFile = "gfx/interface/brazil/map/graph_vertical_bar.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Graph_Horizontal_Bar"
+		textureFile = "gfx/interface/brazil/map/graph_horizontal_bar.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Graph_Selection_Box"
+		textureFile = "gfx/interface/brazil/map/graph_selection_box.png"
+		noOfFrames = 2
+	}
+
+
+
+	### Pres election
+
+	spriteType = {
+		name = "GFX_BRA_Map_Amazonia_fill_pres"
+		textureFile = "gfx/interface/brazil/map/regions/amazonia_fill_pres.png"
+		noOfFrames = 5
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_North_East_fill_pres"
+		textureFile = "gfx/interface/brazil/map/regions/northeast_fill_pres.png"
+		noOfFrames = 5
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_Central_West_fill_pres"
+		textureFile = "gfx/interface/brazil/map/regions/centralwest_fill_pres.png"
+		noOfFrames = 5
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_South_East_fill_pres"
+		textureFile = "gfx/interface/brazil/map/regions/southeast_fill_pres.png"
+		noOfFrames = 5
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_South_fill_pres"
+		textureFile = "gfx/interface/brazil/map/regions/south_fill_pres.png"
+		noOfFrames = 5
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_BAH_fill_pres"
+		textureFile = "gfx/interface/brazil/map/regions/BAH_fill_pres.png"
+		noOfFrames = 5
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_MAR_PI_fill_pres"
+		textureFile = "gfx/interface/brazil/map/regions/MAR_PI_fill_pres.png"
+		noOfFrames = 5
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_NE_fill_pres"
+		textureFile = "gfx/interface/brazil/map/regions/NE_fill_pres.png"
+		noOfFrames = 5
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_MG_fill_pres"
+		textureFile = "gfx/interface/brazil/map/regions/MG_fill_pres.png"
+		noOfFrames = 5
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_RJ_ES_fill_pres"
+		textureFile = "gfx/interface/brazil/map/regions/RJ_ES_fill_pres.png"
+		noOfFrames = 5
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_SP_fill_pres"
+		textureFile = "gfx/interface/brazil/map/regions/SP_fill_pres.png"
+		noOfFrames = 5
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_BRA_Map_election_senado_select"
+		textureFile = "gfx/interface/brazil/map/senado_select.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_BRA_Map_election_president_select"
+		textureFile = "gfx/interface/brazil/map/president_select.png"
+		noOfFrames = 2
+	}
+
+	progressbartype = {
+        name = "GFX_BRA_Map_Amazonia_campaign_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/amazonia_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.367 0.248 0.019 1 }
+        size = { x = 367 y = 248 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Central_West_campaign_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/centralwest_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.205 0.248 0.019 1 }
+        size = { x = 205 y = 248 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_South_East_campaign_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/southeast_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.167 0.142 0.019 1 }
+        size = { x = 167 y = 142 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_South_campaign_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/south_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.111 0.147 0.019 1 }
+        size = { x = 111 y = 147 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_North_East_campaign_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/northeast_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.177 0.229 0.019 1 }
+        size = { x = 177 y = 229 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_BAH_campaign_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/BAH_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.117 0.129 0.019 1 }
+        size = { x = 117 y = 129 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_MAR_PI_campaign_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/MAR_PI_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.105 0.130 0.019 1 }
+        size = { x = 105 y = 130 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_MG_campaign_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/MG_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.143 0.115 0.019 1 }
+        size = { x = 143 y = 115 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_NE_campaign_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/NE_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.085 0.118 0.019 1 }
+        size = { x = 85 y = 118 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_RJ_ES_campaign_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/RJ_ES_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.059 0.070 0.019 1 }
+        size = { x = 59 y = 70 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_SP_campaign_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/SP_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.112 0.069 0.019 1 }
+        size = { x = 112 y = 69 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+
+
+
+	progressbartype = {
+        name = "GFX_BRA_Map_Amazonia_campaign_2_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/amazonia_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.367 0.248 0.019 1 }
+        size = { x = 367 y = 248 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_Central_West_campaign_2_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/centralwest_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.205 0.248 0.019 1 }
+        size = { x = 205 y = 248 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_South_East_campaign_2_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/southeast_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.167 0.142 0.019 1 }
+        size = { x = 167 y = 142 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_South_campaign_2_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/south_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.111 0.147 0.019 1 }
+        size = { x = 111 y = 147 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_North_East_campaign_2_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/northeast_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.177 0.229 0.019 1 }
+        size = { x = 177 y = 229 }
+        effectFile = "gfx/FX/bra_map_fill_outline.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_BAH_campaign_2_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/BAH_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.117 0.129 0.019 1 }
+        size = { x = 117 y = 129 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_MAR_PI_campaign_2_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/MAR_PI_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.105 0.130 0.019 1 }
+        size = { x = 105 y = 130 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_MG_campaign_2_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/MG_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.143 0.115 0.019 1 }
+        size = { x = 143 y = 115 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_NE_campaign_2_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/NE_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.085 0.118 0.019 1 }
+        size = { x = 85 y = 118 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_RJ_ES_campaign_2_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/RJ_ES_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.059 0.070 0.019 1 }
+        size = { x = 59 y = 70 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+	progressbartype = {
+        name = "GFX_BRA_Map_SP_campaign_2_pres"
+
+        textureFile1 = "gfx/interface/brazil/map/regions/SP_campaign.png"
+        textureFile2 = "gfx/interface/brazil/map/party_colors.png"
+        color = { 0.112 0.069 0.019 1 }
+        size = { x = 112 y = 69 }
+        effectFile = "gfx/FX/bra_map_fill_outline_diag.shader"
+		allwaystransparent = yes
+    }
+
+
+
+	spriteType = {
+		name = "GFX_BRA_Pres_Line_Graph"
+		textureFile = "gfx/interface/brazil/map/graph.png"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_BRA_Pres_Growing_3"
+		textureFile = "gfx/interface/brazil/map/arrow_right_3.png"
+		noOfFrames = 7
+		animation_rate_fps = 1.5
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_BRA_Pres_Growing_2"
+		textureFile = "gfx/interface/brazil/map/arrow_right_2.png"
+		noOfFrames = 5
+		animation_rate_fps = 1.5
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_BRA_Pres_Growing_1"
+		textureFile = "gfx/interface/brazil/map/arrow_right_1.png"
+		noOfFrames = 3
+		animation_rate_fps = 1.5
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_BRA_Pres_Shrinking_3"
+		textureFile = "gfx/interface/brazil/map/arrow_left_3.png"
+		noOfFrames = 7
+		animation_rate_fps = 1.5
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_BRA_Pres_Shrinking_2"
+		textureFile = "gfx/interface/brazil/map/arrow_left_2.png"
+		noOfFrames = 5
+		animation_rate_fps = 1.5
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_BRA_Pres_Shrinking_1"
+		textureFile = "gfx/interface/brazil/map/arrow_left_1.png"
+		noOfFrames = 3
+		animation_rate_fps = 1.5
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	spriteType = {
+		name = "GFX_BRA_Pres_No_Momentum"
+		textureFile = "gfx/interface/brazil/map/arrow_empty.png"
+	}
+
+
+
+	progressbartype = {
+		name = "GFX_BRA_Map_Pres_Bar_0"
+		textureFile1 = "gfx/interface/brazil/map/pres_pop_bar_0.png"
+		textureFile2 = "gfx/interface/brazil/map/pres_pop_bar_empty.png"
+		size = {
+			x = 300
+			y = 33
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_BRA_Map_Pres_Bar_1"
+		textureFile1 = "gfx/interface/brazil/map/pres_pop_bar_1.png"
+		textureFile2 = "gfx/interface/brazil/map/pres_pop_bar_empty.png"
+		size = {
+			x = 300
+			y = 33
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_BRA_Map_Pres_Bar_2"
+		textureFile1 = "gfx/interface/brazil/map/pres_pop_bar_2.png"
+		textureFile2 = "gfx/interface/brazil/map/pres_pop_bar_empty.png"
+		size = {
+			x = 300
+			y = 33
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_BRA_Map_Pres_Bar_3"
+		textureFile1 = "gfx/interface/brazil/map/pres_pop_bar_3.png"
+		textureFile2 = "gfx/interface/brazil/map/pres_pop_bar_empty.png"
+		size = {
+			x = 300
+			y = 33
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_BRA_Map_Pres_Bar_4"
+		textureFile1 = "gfx/interface/brazil/map/pres_pop_bar_4.png"
+		textureFile2 = "gfx/interface/brazil/map/pres_pop_bar_empty.png"
+		size = {
+			x = 300
+			y = 33
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_BRA_Pres_Portrait_Goulart"
+		textureFile = "gfx/interface/brazil/map/candidates/goulart.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Pres_Portrait_Quadros"
+		textureFile = "gfx/interface/brazil/map/candidates/quadros.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Pres_Portrait_Adhemar"
+		textureFile = "gfx/interface/brazil/map/candidates/adhemar.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Pres_Portrait_Lacerda"
+		textureFile = "gfx/interface/brazil/map/candidates/lacerda.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Pres_Portrait_Kubitschek"
+		textureFile = "gfx/interface/brazil/map/candidates/kubitschek.png"
+	}
+	spriteType = {
+		name = "GFX_BRA_Pres_Portrait_Minor_Left"
+		textureFile = "gfx/interface/brazil/map/candidates/minor_left.png"
+	}
+}

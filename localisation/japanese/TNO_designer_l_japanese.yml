@@ -1,0 +1,12 @@
+﻿l_japanese:
+ NAME_THEME_HISTORICAL_COR:0 "史実のコルベット"
+ NAME_THEME_HISTORICAL_FRIGATE:0 "史実のフリゲート艦"
+ NAME_THEME_HISTORICAL_CRUISER:0 "史実の巡洋艦"
+ NAME_THEME_HISTORICAL_CAPITAL:0 "史実の主力艦"
+ NAME_THEME_HISTORICAL_LCS:0 "沿岸警備艇"
+ tank_designer_MBT_chassis_role_disallowed:0 "この役割に変更するには$tank_designer_MBT_chassis|H$に適合しないモジュールを取り外さなければならない。"
+ NAME_THEME_AAS:0 "現代空母"
+ NAME_THEME_IBR_SUBMARINES:0 "史実のイベリアの潜水艦"
+ NAME_THEME_IBR_CORVETTES:0 "史実のイベリアのコルベット"
+ NAME_THEME_IBR_DESTROYERS:0 "史実のイベリアの駆逐艦"
+ NAME_THEME_IBR_FRIGATES:0 "史実のイベリアのフリゲート"

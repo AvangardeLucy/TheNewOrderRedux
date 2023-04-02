@@ -1,0 +1,151 @@
+RFI_initialise={
+	set_variable = {RFI_Stalinism_effects=55} #0
+	set_variable = {RFI_Anarchism_effects=2} #1
+	set_variable = {RFI_Trotskyism_effects=1} #2
+	set_variable = {RFI_Luxemburgism_effects=5} #3
+	set_variable = {RFI_Buharinism_effects=35} #4
+	set_variable = {RFI_Christian_effects=3} #5
+	set_variable ={RFI_Punakaarti_solidarity=50} #6
+}
+RFI_effects_change={
+	set_temp_variable = { amount = RFI_effects_Temp }
+	if ={
+		limit={check_variable = { RFI_partys_Temp = 0}}
+		if = {
+			limit = { check_variable = { RFI_effects_Temp < 0 }}
+			custom_effect_tooltip = RFI_Stalinism_effects_decrease_tt
+		}
+		else = {
+			custom_effect_tooltip = RFI_Stalinism_effects_increase_tt
+		}
+		add_to_variable = { RFI_Stalinism_effects = RFI_effects_Temp }
+		if ={
+			limit={check_variable = { RFI_Stalinism_effects > 100}}
+			set_variable = {RFI_Stalinism_effects=100}
+		}
+		if ={
+			limit={check_variable = { RFI_Stalinism_effects < 0}}
+			set_variable = {RFI_Stalinism_effects=0}
+		}
+	}
+	set_temp_variable = { amount = RFI_effects_Temp }
+	if ={
+		limit={check_variable = { RFI_partys_Temp = 1}}
+		if = {
+			limit = { check_variable = { RFI_effects_Temp < 0 }}
+			custom_effect_tooltip = RFI_Anarchism_effects_decrease_tt
+		}
+		else = {
+			custom_effect_tooltip = RFI_Anarchism_effects_increase_tt
+		}
+		add_to_variable = { RFI_Anarchism_effects = RFI_effects_Temp }
+		if ={
+			limit={check_variable = { RFI_Anarchism_effects > 100}}
+			set_variable = {RFI_Anarchism_effects=100}
+		}
+		if ={
+			limit={check_variable = { RFI_Anarchism_effects < 0}}
+			set_variable = {RFI_Anarchism_effects=0}
+		}
+	}
+	set_temp_variable = { amount = RFI_effects_Temp }
+	if ={
+		limit={check_variable = { RFI_partys_Temp = 2}}
+		if = {
+			limit = { check_variable = { RFI_effects_Temp < 0 }}
+			custom_effect_tooltip = RFI_Trotskyism_effects_decrease_tt
+		}
+		else = {
+			custom_effect_tooltip = RFI_Trotskyism_effects_increase_tt
+		}
+		add_to_variable = { RFI_Trotskyism_effects = RFI_effects_Temp }
+		if ={
+			limit={check_variable = { RFI_Trotskyism_effects > 100}}
+			set_variable = {RFI_Trotskyism_effects=100}
+		}
+		if ={
+			limit={check_variable = { RFI_Trotskyism_effects < 0}}
+			set_variable = {RFI_Trotskyism_effects=0}
+		}
+	}
+	set_temp_variable = { amount = RFI_effects_Temp }
+	if ={
+		limit={check_variable = { RFI_partys_Temp = 3}}
+		if = {
+			limit = { check_variable = { RFI_effects_Temp < 0 }}
+			custom_effect_tooltip = RFI_Luxemburgism_effects_decrease_tt
+		}
+		else = {
+			custom_effect_tooltip = RFI_Luxemburgism_effects_increase_tt
+		}
+		add_to_variable = { RFI_Luxemburgism_effects = RFI_effects_Temp }
+		if ={
+			limit={check_variable = { RFI_Luxemburgismm_effects > 100}}
+			set_variable = {RFI_Luxemburgism_effects=100}
+		}
+		if ={
+			limit={check_variable = { RFI_Luxemburgism_effects < 0}}
+			set_variable = {RFI_Luxemburgism_effects=0}
+		}
+	}
+	set_temp_variable = { amount = RFI_effects_Temp }
+	if ={
+		limit={check_variable = { RFI_partys_Temp = 4}}
+		if = {
+			limit = { check_variable = { RFI_effects_Temp < 0 }}
+			custom_effect_tooltip = RFI_Buharinism_effects_decrease_tt
+		}
+		else = {
+			custom_effect_tooltip = RFI_Buharinism_effects_increase_tt
+		}
+		add_to_variable = { RFI_Buharinism_effects = RFI_effects_Temp }
+		if ={
+			limit={check_variable = { RFI_Buharinism_effects > 100}}
+			set_variable = {RFI_Buharinism_effects=100}
+		}
+		if ={
+			limit={check_variable = { RFI_Buharinism_effects < 0}}
+			set_variable = {RFI_Buharinism_effects=0}
+		}
+	}
+	set_temp_variable = { amount = RFI_effects_Temp }
+	if ={
+		limit={check_variable = { RFI_partys_Temp = 5}}
+		if = {
+			limit = { check_variable = { RFI_effects_Temp < 0 }}
+			custom_effect_tooltip = RFI_Christian_effects_decrease_tt
+		}
+		else = {
+			custom_effect_tooltip = RFI_Christian_effects_increase_tt
+		}
+		add_to_variable = { RFI_Christian_effects = RFI_effects_Temp }
+		if ={
+			limit={check_variable = { RFI_Christian_effects > 100}}
+			set_variable = {RFI_Christian_effects=100}
+		}
+		if ={
+			limit={check_variable = { RFI_Christian_effects < 0}}
+			set_variable = {RFI_Christian_effects=0}
+		}
+	}
+	set_temp_variable = { amount = RFI_effects_Temp }
+	if ={
+		limit={check_variable = { RFI_partys_Temp = 6}}
+		if = {
+			limit = { check_variable = { RFI_effects_Temp < 0 }}
+			custom_effect_tooltip = RFI_Punakaarti_solidarity_decrease_tt
+		}
+		else = {
+			custom_effect_tooltip = RFI_Punakaarti_solidarity_increase_tt
+		}
+		add_to_variable = { RFI_Punakaarti_solidarity = RFI_effects_Temp }
+		if ={
+			limit={check_variable = { RFI_Punakaarti_solidarity > 100}}
+			set_variable = {RFI_Punakaarti_solidarity=100}
+		}
+		if ={
+			limit={check_variable = { RFI_Punakaarti_solidaritys < 0}}
+			set_variable = {RFI_Punakaarti_solidarity=0}
+		}
+	}
+}

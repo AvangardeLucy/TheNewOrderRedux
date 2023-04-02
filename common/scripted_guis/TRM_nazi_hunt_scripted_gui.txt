@@ -1,0 +1,152 @@
+scripted_gui = {
+    TRM_DDR_nazi_hunt_GUI = {
+        context_type = player_context
+        window_name = "nazi_hunt_gui_window"
+
+        visible = {
+           has_country_flag = DDR_nazi_hunt_gui_open
+        }
+
+        triggers = {
+        }
+
+        effects = {
+			nazi_character_one_portrait_click = {
+				set_variable = { chosen_enemy = 1 }
+				set_variable = { one_chosen = 2}
+				set_variable = { two_chosen = 1}
+			}
+			skip_turn_button_click = {
+				TRM_DDR_nazi_hunt_nazi_turn = yes
+			}
+			targeted_arrests_button_click = {
+				TRM_DDR_nazi_hunt_targeted_arrest = yes
+				
+			}
+			raids_button_click = {
+				TRM_DDR_nazi_hunt_police_raid = yes
+			}
+			antinazi_propaganda_button_click = {
+				TRM_DDR_nazi_hunt_antinazi_propaganda = yes
+			}
+			infiltrate_nazis_button_click = {
+				TRM_DDR_nazi_hunt_infiltrate_nazis = yes
+			}
+			exalt_heroes_button_click = {
+				TRM_DDR_nazi_hunt_exalt_kpd = yes
+			}
+			request_support_button_click = {
+				TRM_DDR_nazi_hunt_request_support = yes
+			}
+        }
+
+        properties = {
+			DDR_hp_bar_commie = {
+				frame = commie_hp_bar
+			}
+			DDR_hp_bar_nazi = {
+				frame = nazi_hp_bar
+			}
+			stasi_character_one_portrait = {
+				frame = nazi_hunt_battle_num
+			}
+			nazi_character_one_portrait = {
+				frame = nazi_hunt_battle_num
+			}
+			nazi_character_one_portrait_chosen = {
+				frame = one_chosen
+			}
+			
+        }
+    }
+	stasi_character_two_gui = { ###workaround because "container_name"_visible doesnt fucking work.  
+        context_type = player_context
+        window_name = "stasi_character_two"
+
+        visible = {
+           has_country_flag = nazi_hunt_has_second_character
+        }
+		triggers = {
+		}
+		effects = {
+		}
+		properties = {
+			stasi_character_two_portrait = {
+				frame = nazi_hunt_battle_num
+			}
+		}
+	}
+	
+	stasi_character_three_gui = { ###workaround because "container_name"_visible doesnt fucking work.  
+        context_type = player_context
+        window_name = "stasi_character_three"
+
+        visible = {
+           has_country_flag = nazi_hunt_has_third_character
+        }
+		triggers = {
+		}
+		effects = {
+		}
+		properties = {
+			stasi_character_three_portrait = {
+				frame = nazi_hunt_battle_num
+			}
+		}
+	}
+	nazi_character_two_gui = { ###workaround because "container_name"_visible doesnt fucking work.  
+        context_type = player_context
+        window_name = "nazi_character_two"
+
+        visible = {
+           has_country_flag = nazi_hunt_nazi_has_second_character
+        }
+		triggers = {
+			
+		}
+		effects = {
+			nazi_character_two_portrait_click = {
+				set_variable = { chosen_enemy = 2 }
+				set_variable = { one_chosen = 1}
+				set_variable = { two_chosen = 2}
+			}
+		}
+		properties = {
+			nazi_character_two_portrait_chosen = {
+				frame = two_chosen
+			}
+			nazi_character_two_portrait = {
+				frame = nazi_hunt_battle_num
+			}
+		}
+	}
+	DDR_failed_signs_gui = {
+		context_type = player_context
+        window_name = "DDR_failed_signs"
+
+        visible = {
+			has_country_flag = DDR_nazi_hunt_gui_open
+        }
+		triggers = {
+			stasi_character_one_failed_visible = {
+				has_country_flag = nazi_hunt_has_first_character_failed
+			}
+			stasi_character_two_failed_visible = {
+				has_country_flag = nazi_hunt_has_second_character_failed
+			}
+			stasi_character_three_failed_visible = {
+				has_country_flag = nazi_hunt_has_third_character_failed
+			}
+			nazi_character_one_failed_visible = {
+				has_country_flag = nazi_hunt_nazi_has_first_character_eliminated
+			}
+			nazi_character_two_failed_visible = {
+				has_country_flag = nazi_hunt_nazi_has_second_character_eliminated
+			}
+		}
+		effects = {
+		}
+		properties = {
+		}
+	}
+}

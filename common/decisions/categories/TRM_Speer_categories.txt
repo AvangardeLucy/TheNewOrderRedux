@@ -1,0 +1,98 @@
+SPR_debug_category = {
+	icon = GFX_decision_category_slave_revolt
+	picture = GFX_GER_category_slave_revolt
+
+	visible_when_empty = yes
+
+	allowed = {
+		tag = GER
+	}
+
+	visible = {
+		is_debug = yes
+	}
+
+	priority = 1000
+}
+
+TRM_DDR_Demobilization_category = { 
+
+	icon = GFX_decision_category_slave_revolt
+
+	visible_when_empty = yes
+
+	allowed = {
+		tag = GER
+	}
+
+	visible = {
+		OR = {
+			AND = {
+				has_global_flag = german_civil_war_speervic
+				has_country_flag = SGR_phase3
+				NOT = {
+					OR = {
+						has_completed_focus = GER_volksarchitekt
+						has_completed_focus = GER_volksbund
+						has_completed_focus = GER_volkswille
+					}
+				}
+			}
+			has_country_flag = SPR_demobilisation_phase
+		}
+	}
+	scripted_gui = TRM_DDR_Demobilization_GUI
+	priority = 500
+}
+
+TRM_SPR_nationwide_riots_category = { 
+
+	icon = GFX_decision_category_slave_revolt
+
+	visible_when_empty = yes
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		has_country_flag = SPR_riots_phase
+	}
+	scripted_gui = TRM_DDR_Riots_GUI
+	priority = 1000
+}
+
+DDR_army_and_party_category = { 
+
+	icon = GFX_decision_category_slave_revolt
+
+	visible_when_empty = yes
+
+	allowed = {
+		original_tag = DDR
+	}
+
+	visible = {
+		has_country_flag = DDR_army_and_party_party
+	}
+	scripted_gui = DDR_army_and_party_GUI
+	
+	priority = 1000
+}
+DDR_army_and_party_army_category = { 
+
+	icon = GFX_decision_category_slave_revolt
+
+	visible_when_empty = yes
+
+	allowed = {
+		original_tag = DDR
+	}
+
+	visible = {
+		has_country_flag = DDR_army_and_party_army
+	}
+	scripted_gui = DDR_army_and_party_army_GUI
+	
+	priority = 1000
+}

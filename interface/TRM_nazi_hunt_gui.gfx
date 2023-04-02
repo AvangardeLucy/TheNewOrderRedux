@@ -1,0 +1,155 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_bg"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/nazi_hunt_background.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_bg_actions"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/nazi_hunt_background_actions.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_close_button"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/close_button.png"
+	}
+	spriteType = {
+		name = "GFX_DDR_nazi_hunt_portrait_chosen"
+		textureFile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/portrait_chosen.png"
+		noOfFrames = 2
+	}
+	#actions
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_targeted_arrests_button"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/targeted_arrests_button.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_raids_button"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/raids_button.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_antinazi_propaganda_button"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/antinazi_propaganda_button.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_infiltrate_nazis_button"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/infiltrate_nazis_button.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_exalt_heroes_button"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/exalt_heroes_button.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_request_support_button"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/request_support_button.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_local_bombing_button"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/local_bombing_button.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_officer_assassination_button"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/officer_assassination_button.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_anticommunist_propaganda_button"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/anticommunist_propaganda_button.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_bribes_blackmail_button"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/bribes_blackmail_button.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_smuggle_equipment_button"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/smuggle_equipment_button.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_glorify_past_button"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/glorify_past_button.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_skip_turn_button"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/skip_turn_button.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_information_button"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/information_button.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_eliminated"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/nazi_hunt_eliminated.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_failed"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/nazi_hunt_failed.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_stasi_icon"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/stasi_icon.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_werwolves_icon"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/werwolves_icon.png"
+	}
+	#portraits
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_nazi_portrait_one"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/nazi_portrait_1.png"
+		noOfFrames = 4
+	}
+
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_nazi_portrait_two"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/nazi_portrait_2.png"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_nazi_portrait_three"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/nazi_portrait_3.png"
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_stasi_portrait_one"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/stasi_portrait_1.png"
+		noOfFrames = 4
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_stasi_portrait_two"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/stasi_portrait_2.png"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_DDR_nazi_hunt_stasi_portrait_three"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/stasi_portrait_3.png"
+		noOfFrames = 2
+	}
+	
+    progressbartype = {
+		name = "GFX_DDR_hp_bar_commie"
+		textureFile1 = "gfx/interface/DDR_GUIS/nazi_hunt_gui/hp_bar_commie.png"
+		textureFile2 = "gfx/interface/DDR_GUIS/nazi_hunt_gui/hp_bar_empty.png"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 20
+			y = 550
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+	progressbartype = {
+		name = "GFX_DDR_hp_bar_nazi"
+		textureFile1 = "gfx/interface/DDR_GUIS/nazi_hunt_gui/hp_bar_nazi.png"
+		textureFile2 = "gfx/interface/DDR_GUIS/nazi_hunt_gui/hp_bar_empty.png"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 20
+			y = 550
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+	SpriteType = {
+		name = "GFX_DDR_hp_bar_frame"
+		texturefile = "gfx/interface/DDR_GUIS/nazi_hunt_gui/hp_bar_outline.png"
+		legacy_lazy_load = yes
+	}
+}

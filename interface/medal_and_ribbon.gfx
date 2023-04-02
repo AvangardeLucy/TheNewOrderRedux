@@ -1,0 +1,218 @@
+spriteTypes = {
+
+	# Medal layers
+	spriteType = {
+		name = "GFX_career_profile_medal_missing"
+		texturefile = "gfx/interface/career_profile/replace/medal_missing.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	spriteType = {
+		name = "GFX_career_profile_medal_bg"
+		texturefile = "gfx/interface/career_profile/replace/medal_bg.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	spriteType = {
+		name = "GFX_career_profile_medal_fg1"
+		texturefile = "gfx/interface/career_profile/replace/medal_fg1.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_career_profile_medal_mg"
+		texturefile = "gfx/interface/career_profile/replace/medal_mg.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		noOfFrames = 2
+	}
+
+	# Shiny medal layers
+	spriteType = {
+		name = "GFX_career_profile_medal_bg_shiny"
+		texturefile = "gfx/interface/career_profile/replace/medal_bg.png"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 1
+
+		animation = {
+			animationmaskfile = "gfx/interface/career_profile/replace/medal_bg.png"
+			animationtexturefile = "gfx/interface/career_profile/replace/shine_sharp.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.7				# in seconds - make this longer if there are more frames
+			animationdelay = 0				# in seconds
+			animationblendmode = "add"		#add, multiply, overlay
+			animationtype = "scrolling"		#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_career_profile_medal_fg1_shiny"
+		texturefile = "gfx/interface/career_profile/replace/medal_fg1.png"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 3
+
+		animation = {
+			animationmaskfile = "gfx/interface/career_profile/replace/medal_fg1.png"
+			animationtexturefile = "gfx/interface/career_profile/replace/shine_sharp.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 1.2				# in seconds - make this longer if there are more frames
+			animationdelay = 0				# in seconds
+			animationblendmode = "add"		#add, multiply, overlay
+			animationtype = "scrolling"		#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_career_profile_medal_mg_shiny"
+		texturefile = "gfx/interface/career_profile/replace/medal_mg.png"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 2
+
+		animation = {
+			animationmaskfile = "gfx/interface/career_profile/replace/medal_mg.png"
+			animationtexturefile = "gfx/interface/career_profile/replace/shine_sharp.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 1			# in seconds - make this longer if there are more frames
+			animationdelay = 0				# in seconds
+			animationblendmode = "add"		#add, multiply, overlay
+			animationtype = "scrolling"		#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	# Ribbon layers
+	spriteType = {
+		name = "GFX_career_profile_ribbon_missing"
+		texturefile = "gfx/interface/career_profile/replace/ribbon_missing.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_career_profile_ribbon_bg"
+		texturefile = "gfx/interface/career_profile/replace/ribbon_bg.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_career_profile_ribbon_fg1"
+		texturefile = "gfx/interface/career_profile/replace/ribbon_fg1.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_career_profile_ribbon_fg2"
+		texturefile = "gfx/interface/career_profile/replace/ribbon_fg2.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_career_profile_ribbon_fg3"
+		texturefile = "gfx/interface/career_profile/replace/ribbon_fg3.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		noOfFrames = 2
+	}
+
+	# Shiny ribbon layers
+	spriteType = {
+		name = "GFX_career_profile_ribbon_bg_shiny"
+		texturefile = "gfx/interface/career_profile/replace/ribbon_bg.png"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 1
+
+		animation = {
+			animationmaskfile = "gfx/interface/career_profile/replace/ribbon_bg.png"
+			animationtexturefile = "gfx/interface/career_profile/replace/shine_diffuse.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.7				# in seconds - make this longer if there are more frames
+			animationdelay = 0				# in seconds
+			animationblendmode = "add"		#add, multiply, overlay
+			animationtype = "scrolling"		#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_career_profile_ribbon_fg1_shiny"
+		texturefile = "gfx/interface/career_profile/replace/ribbon_fg1.png"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 2
+
+		animation = {
+			animationmaskfile = "gfx/interface/career_profile/replace/ribbon_fg1.png"
+			animationtexturefile = "gfx/interface/career_profile/replace/shine_diffuse.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 1				# in seconds - make this longer if there are more frames
+			animationdelay = 0				# in seconds
+			animationblendmode = "add"		#add, multiply, overlay
+			animationtype = "scrolling"		#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_career_profile_ribbon_fg2_shiny"
+		texturefile = "gfx/interface/career_profile/replace/ribbon_fg2.png"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 2
+
+		animation = {
+			animationmaskfile = "gfx/interface/career_profile/replace/ribbon_fg2.png"
+			animationtexturefile = "gfx/interface/career_profile/replace/shine_diffuse.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 1				# in seconds - make this longer if there are more frames
+			animationdelay = 0				# in seconds
+			animationblendmode = "add"		#add, multiply, overlay
+			animationtype = "scrolling"		#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_career_profile_ribbon_fg3_shiny"
+		texturefile = "gfx/interface/career_profile/replace/ribbon_fg3.png"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 2
+
+		animation = {
+			animationmaskfile = "gfx/interface/career_profile/replace/ribbon_fg3.png"
+			animationtexturefile = "gfx/interface/career_profile/replace/shine_sharp.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 1				# in seconds - make this longer if there are more frames
+			animationdelay = 0				# in seconds
+			animationblendmode = "add"		#add, multiply, overlay
+			animationtype = "scrolling"		#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+}

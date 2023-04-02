@@ -1,0 +1,262 @@
+defined_text = {
+    name = nazi_hunt_actor_acted
+    text = {
+        trigger = {
+			AND = {
+				check_variable = { nazi_character_turn = 1 }
+				check_variable = { nazi_hunt_battle_num = 1 }
+			}
+        }
+        localization_key = DDR_nazi_hunt_nazi_character_one_name_one
+    }
+    text = {
+        trigger = {
+			AND = {
+				check_variable = { nazi_character_turn = 2 }
+				check_variable = { nazi_hunt_battle_num = 1 }
+			}
+        }
+        localization_key = DDR_nazi_hunt_nazi_character_two_name_one
+    }
+	text = {
+        trigger = {
+			AND = {
+				check_variable = { nazi_character_turn = 1 }
+				check_variable = { nazi_hunt_battle_num = 2 }
+			}
+        }
+        localization_key = DDR_nazi_hunt_nazi_character_one_name_two
+    }
+    text = {
+        trigger = {
+			AND = {
+				check_variable = { nazi_character_turn = 2 }
+				check_variable = { nazi_hunt_battle_num = 2 }
+			}
+        }
+        localization_key = DDR_nazi_hunt_nazi_character_two_name_two
+    }
+	text = {
+        trigger = {
+			AND = {
+				check_variable = { nazi_character_turn = 1 }
+				check_variable = { nazi_hunt_battle_num = 3 }
+			}
+        }
+        localization_key = DDR_nazi_hunt_nazi_character_one_name_three
+    }
+	text = {
+        trigger = {
+			AND = {
+				check_variable = { nazi_character_turn = 1 }
+				check_variable = { nazi_hunt_battle_num = 4 }
+			}
+        }
+        localization_key = DDR_nazi_hunt_nazi_character_one_name_four
+    }
+}
+
+defined_text = {
+    name = nazi_hunt_actor_acts_next
+    text = {
+        trigger = {
+	 		AND = {
+	 			check_variable = { stasi_character_turn = 1 }
+	 			check_variable = { nazi_hunt_battle_num = 1 }
+	 		}
+        }
+        localization_key = DDR_nazi_hunt_stasi_character_one_name_one
+    }
+    text = {
+        trigger = {
+	 		AND = {
+	 			check_variable = { stasi_character_turn = 2 }
+	 			check_variable = { nazi_hunt_battle_num = 1 }
+	 		}
+        }
+        localization_key = DDR_nazi_hunt_stasi_character_two_name_one
+    }
+	text = {
+        trigger = {
+	 		AND = {
+	 			check_variable = { stasi_character_turn = 3 }
+	 			check_variable = { nazi_hunt_battle_num = 1 }
+	 		}
+        }
+        localization_key = DDR_nazi_hunt_stasi_character_three_name_one
+    }
+	text = {
+        trigger = {
+	 		AND = {
+	 			check_variable = { stasi_character_turn = 1 }
+	 			check_variable = { nazi_hunt_battle_num = 2 }
+	 		}
+        }
+        localization_key = DDR_nazi_hunt_stasi_character_one_name_two
+    }
+    text = {
+        trigger = {
+	 		AND = {
+	 			check_variable = { stasi_character_turn = 2 }
+	 			check_variable = { nazi_hunt_battle_num = 2 }
+	 		}
+        }
+        localization_key = DDR_nazi_hunt_stasi_character_two_name_two
+    }
+	text = {
+        trigger = {
+	 		AND = {
+	 			check_variable = { stasi_character_turn = 3 }
+	 			check_variable = { nazi_hunt_battle_num = 2 }
+	 		}
+        }
+        localization_key = DDR_nazi_hunt_stasi_character_three_name_two
+    }
+	text = {
+        trigger = {
+	 		AND = {
+	 			check_variable = { stasi_character_turn = 1 }
+	 			check_variable = { nazi_hunt_battle_num = 3 }
+	 		}
+        }
+        localization_key = DDR_nazi_hunt_stasi_character_one_name_three
+    }
+	text = {
+        trigger = {
+	 		AND = {
+	 			check_variable = { stasi_character_turn = 1 }
+	 			check_variable = { nazi_hunt_battle_num = 4 }
+	 		}
+        }
+        localization_key = DDR_nazi_hunt_stasi_character_one_name_four
+    }
+}
+
+defined_text = {
+    name = nazi_hunt_action
+    text = {
+        trigger = {
+			check_variable = { what_action_was = 1 }
+        }
+        localization_key = DDR_nazi_hunt_bombing_loc
+    }
+	text = {
+        trigger = {
+			check_variable = { what_action_was = 2 }
+        }
+        localization_key = DDR_nazi_hunt_officer_killed_loc
+    }
+	text = {
+        trigger = {
+			check_variable = { what_action_was = 3 }
+        }
+        localization_key = DDR_nazi_hunt_anticom_propaganda_found_loc
+    }
+	text = {
+        trigger = {
+			check_variable = { what_action_was = 4 }
+        }
+        localization_key = DDR_nazi_hunt_bribe_uncovered_loc
+    }
+	text = {
+        trigger = {
+			check_variable = { what_action_was = 5 }
+        }
+        localization_key = DDR_nazi_hunt_morale_recover_loc
+    }
+	text = {
+        trigger = {
+			check_variable = { what_action_was = 6 }
+        }
+        localization_key = DDR_nazi_hunt_equipment_smuggle_loc
+    }
+}
+
+defined_text = {
+    name = nazi_hunt_stasi_character_one_description
+    text = {
+        trigger = {
+			check_variable = { nazi_hunt_battle_num = 1 }
+        }
+        localization_key = DDR_nazi_hunt_stasi_character_one_name_one_desc
+    }
+    text = {
+        trigger = {
+			check_variable = { nazi_hunt_battle_num = 2 }
+        }
+        localization_key = DDR_nazi_hunt_stasi_character_one_name_two_desc
+    }
+	text = {
+        trigger = {
+			check_variable = { nazi_hunt_battle_num = 3 }
+        }
+        localization_key = DDR_nazi_hunt_stasi_character_one_name_three_desc
+	}
+}
+defined_text = {
+    name = nazi_hunt_stasi_character_two_description
+    text = {
+        trigger = {
+			check_variable = { nazi_hunt_battle_num = 1 }
+        }
+        localization_key = DDR_nazi_hunt_stasi_character_two_name_one_desc
+    }
+    text = {
+        trigger = {
+			check_variable = { nazi_hunt_battle_num = 2 }
+        }
+        localization_key = DDR_nazi_hunt_stasi_character_two_name_two_desc
+    }
+}
+defined_text = {
+    name = nazi_hunt_stasi_character_three_description
+    text = {
+        trigger = {
+			check_variable = { nazi_hunt_battle_num = 1 }
+        }
+        localization_key = DDR_nazi_hunt_stasi_character_three_name_one_desc
+    }
+    text = {
+        trigger = {
+			check_variable = { nazi_hunt_battle_num = 2 }
+        }
+        localization_key = DDR_nazi_hunt_stasi_character_three_name_two_desc
+    }
+}
+
+defined_text = {
+    name = nazi_hunt_nazi_character_one_description
+    text = {
+        trigger = {
+			check_variable = { nazi_hunt_battle_num = 1 }
+        }
+        localization_key = DDR_nazi_hunt_nazi_character_one_name_one_desc
+    }
+    text = {
+        trigger = {
+			check_variable = { nazi_hunt_battle_num = 2 }
+        }
+        localization_key = DDR_nazi_hunt_nazi_character_one_name_two_desc
+    }
+	text = {
+        trigger = {
+			check_variable = { nazi_hunt_battle_num = 3 }
+        }
+        localization_key = DDR_nazi_hunt_nazi_character_one_name_three_desc
+	}
+}
+defined_text = {
+    name = nazi_hunt_nazi_character_two_description
+    text = {
+        trigger = {
+			check_variable = { nazi_hunt_battle_num = 1 }
+        }
+        localization_key = DDR_nazi_hunt_nazi_character_two_name_one_desc
+    }
+    text = {
+        trigger = {
+			check_variable = { nazi_hunt_battle_num = 2 }
+        }
+        localization_key = DDR_nazi_hunt_nazi_character_two_name_two_desc
+    }
+}

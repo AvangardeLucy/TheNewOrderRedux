@@ -1,0 +1,121 @@
+﻿units = {
+    fleet = {
+        name = "Kriegsflottille"
+        naval_base = 3
+        task_force = {
+            name = "1. Trägerdivision"
+            location = 9347
+            ship = { name = "C1" definition = carrier equipment = { carrier_1 = { amount = 1 owner = GER } } }
+            ship = { name = "C2" definition = carrier equipment = { carrier_2 = { amount = 1 owner = GER  } } }
+        }
+        task_force = {
+            name = "1. Schlachtschiffdivision"
+            location = 9347
+            ship = { name = "B1" definition = battleship equipment = { battleship_2  = { amount = 1 owner = GER } } }
+            ship = { name = "B2" definition = battleship equipment = { battleship_2  = { amount = 1 owner = GER } } }
+         
+        }
+        task_force = {
+            name = "1. Kreuzerdivision"
+            location = 9347
+            ship = { name = "Cr1" definition = cruiser equipment = { cruiser_2 = { amount = 1 owner = GER } } }
+            ship = { name = "Cr2" definition = cruiser equipment = { cruiser_2 = { amount = 1 owner = GER } } }
+            ship = { name = "Cr3" definition = cruiser equipment = { cruiser_2 = { amount = 1 owner = GER } } }
+			ship = { name = "Cr4" definition = cruiser equipment = { cruiser_2 = { amount = 1 owner = GER } } }
+			ship = { name = "Cr5" definition = cruiser equipment = { cruiser_2 = { amount = 1 owner = GER } } }
+			ship = { name = "Cr6" definition = cruiser equipment = { cruiser_2 = { amount = 1 owner = GER } } }
+			ship = { name = "Cr7" definition = cruiser equipment = { cruiser_2 = { amount = 1 owner = GER } } }
+        }
+        task_force = {
+            name = "Küstengruppe 1."
+            location = 9347
+            ship = { name = "F120" definition = frigate equipment = { frigate_2 = { amount = 1 owner = GER } } }
+			ship = { name = "F121" definition = frigate equipment = { frigate_2 = { amount = 1 owner = GER } } }
+            ship = { name = "F122" definition = frigate equipment = { frigate_2 = { amount = 1 owner = GER } } }
+			ship = { name = "F123" definition = frigate equipment = { frigate_2 = { amount = 1 owner = GER } } }
+			ship = { name = "F124" definition = frigate equipment = { frigate_2 = { amount = 1 owner = GER } } }
+        }
+		task_force = {
+            name = "1. Unterseebootsflottille 'Weddigen'"
+            location = 9347
+            ship = { name = "U3622" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER } } }
+            ship = { name = "U3621" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER } } }
+            ship = { name = "U3620" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER } } }
+            ship = { name = "U3619" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U3618" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U3617" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U2199" definition = submarine  equipment = { submarine_2 = { amount = 1 owner = GER } } }
+            ship = { name = "U2198" definition = submarine  equipment = { submarine_2 = { amount = 1 owner = GER } } }
+            ship = { name = "U2722" definition = submarine  equipment = { submarine_2 = { amount = 1 owner = GER  } } }
+			ship = { name = "U3722" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U3821" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U3920" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U4019" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U4118" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U4217" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER } } }
+            ship = { name = "U4399" definition = submarine  equipment = { submarine_2 = { amount = 1 owner = GER } } }
+            ship = { name = "U4498" definition = submarine  equipment = { submarine_2 = { amount = 1 owner = GER } } }
+            ship = { name = "U4522" definition = submarine  equipment = { submarine_2 = { amount = 1 owner = GER } } }
+        }
+    }
+ 
+    fleet = {
+        name = "Küstenwache"
+        naval_base = 6
+        task_force = {
+            name = "1. Trägerdivision"
+            location = 321
+            ship = { name = "C3" definition = carrier  equipment = { carrier_1 = { amount = 1 owner = GER  } } }
+            ship = { name = "C4" definition = carrier  equipment = { carrier_2 = { amount = 1 owner = GER } } }
+        }
+        task_force = {
+            name = "1. Schlachtschiffdivision"
+            location = 321
+            ship = { name = "B3" definition = battleship  equipment = { battleship_2  = { amount = 1 owner = GER } } }
+            ship = { name = "B4" definition = battleship  equipment = { battleship_2  = { amount = 1 owner = GER } } }
+         
+        }
+        task_force = {
+            name = "1. Kreuzerdivision"
+            location = 321
+            ship = { name = "Cr9" definition = cruiser  equipment = { heavy_cruiser_2 = { amount = 1 owner = GER  } } }
+            ship = { name = "Cr9" definition = cruiser  equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
+            ship = { name = "Cr13" definition = cruiser  equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
+			ship = { name = "Cr14" definition = cruiser  equipment = { heavy_cruiser_2 = { amount = 1 owner = GER} } }
+			ship = { name = "Cr15" definition = cruiser  equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
+			ship = { name = "Cr16" definition = cruiser  equipment = { heavy_cruiser_2 = { amount = 1 owner = GER} } }
+			ship = { name = "Cr17" definition = cruiser  equipment = { heavy_cruiser_2 = { amount = 1 owner = GER} } }
+        }
+        task_force = {
+            name = "Küstengruppe 1."
+            location = 321
+            ship = { name = "F2120" definition = frigate  equipment = { frigate_2 = { amount = 1 owner = GER } } }
+			ship = { name = "F2121" definition = frigate  equipment = { frigate_2 = { amount = 1 owner = GER } } }
+            ship = { name = "F2122" definition = frigate  equipment = { frigate_2 = { amount = 1 owner = GER } } }
+			ship = { name = "F2123" definition = frigate  equipment = { frigate_2 = { amount = 1 owner = GER  } } }
+			ship = { name = "F2124" definition = frigate  equipment = { frigate_2 = { amount = 1 owner = GER  } } }
+        }
+		task_force = {
+            name = "1. Unterseebootsflottille 'Weddigen'"
+            location = 321
+            ship = { name = "U43622" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER } } }
+            ship = { name = "U43621" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U43620" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U43619" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U43618" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U43617" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U42199" definition = submarine  equipment = { submarine_2 = { amount = 1 owner = GER  } } }
+            ship = { name = "U42198" definition = submarine  equipment = { submarine_2 = { amount = 1 owner = GER  } } }
+            ship = { name = "U42722" definition = submarine  equipment = { submarine_2 = { amount = 1 owner = GER  } } }
+			ship = { name = "U43722" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U43821" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U43920" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U44019" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U44118" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U44217" definition = submarine  equipment = { submarine_3 = { amount = 1 owner = GER  } } }
+            ship = { name = "U44399" definition = submarine  equipment = { submarine_2 = { amount = 1 owner = GER  } } }
+            ship = { name = "U44498" definition = submarine  equipment = { submarine_2 = { amount = 1 owner = GER  } } }
+            ship = { name = "U44522" definition = submarine  equipment = { submarine_2 = { amount = 1 owner = GER  } } }
+        }
+    }
+}
